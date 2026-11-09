@@ -15,3 +15,6 @@ A marketplace for modular, interoperable, rights-protected skills with monetizat
 - **Paying skill authors**: choosing a payout basis for skills, measured contribution or invocation count.
 - **Multi-source skills**: crediting every source behind a skill ([[openattribution]], [[c2pa]]).
 - **Missing metadata**: no skill registry frontmatter carries author, license or source ([[agent-skills-signing]]).
+
+## Related
+- [[agent-plugins]] gives a package format but defines no marketplace or distribution.

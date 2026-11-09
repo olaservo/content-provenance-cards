@@ -17,4 +17,5 @@ Proposals for signing, lockfiles and lineage of SKILL.md folders: signature in f
 - **Retraction and signer identity**: withdrawing a bad skill and naming who signed it ([[cawg]]). No thread covers either.
 
 ## Related
+- [[agent-plugins]] carries author and licence in its manifest and lists signing as future work.
 - Digests from [[mcp-skills-extension]], catalog-side signing in [[ai-catalog]], sidecars from [[c2pa]], verification tiers in [[aaif-security-privacy-wg]].

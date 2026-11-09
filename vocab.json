@@ -11,7 +11,7 @@
  "stages": {
   "at-rest": "content or a skill is signed where it is stored",
   "in-transit": "the credential travels with the content across a tool call",
-  "boundary": "a gateway or hook checks it on the way through",
+  "boundary": "a gateway or context middleware checks it on the way through",
   "after-delivery": "credit and reporting once the content has left the protocol and its metadata is gone",
   "trust": "who may sign or report, and how that is decided. Not a place on the path, but every other stage depends on it"
  },

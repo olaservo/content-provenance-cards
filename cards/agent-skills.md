@@ -14,3 +14,6 @@ The SKILL.md format for packaging instructions and files for agents.
 ## Topics
 - **Skill provenance**: signing, lineage and authorship of skills ([[agent-skills-signing]]).
 - **Skill rights and payment**: paying authors and respecting licenses ([[skills-marketplace]]).
+
+## Related
+- Packaged with MCP servers by [[agent-plugins]].
