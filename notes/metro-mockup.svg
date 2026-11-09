@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Metro-map mockup: provenance and attribution lines</title>
+  <style>
+    .ink { fill: #22252b; }
+    .lbl { font-size: 12px; fill: #22252b; }
+    .lblb { font-size: 12px; font-weight: 600; fill: #22252b; }
+    .sub { font-size: 10px; fill: #6e6860; }
+    .col { font-size: 10px; letter-spacing: 1.5px; fill: #6e6860; }
+    .line { fill: none; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; }
+    .tie { fill: none; stroke: #9b958b; stroke-width: 1.5; stroke-dasharray: 4 4; }
+    .box { fill: #fdfbf7; stroke: #22252b; stroke-width: 3; }
+    .blurb { fill: #fdfbf7; stroke: #e2dcd1; }
+    .bt { font-size: 12px; fill: #22252b; }
+    .bh { font-size: 13px; font-weight: 700; fill: #22252b; }
+  </style>
+  <rect width="1600" height="820" fill="#f6f3ed"/>
+
+  <!-- stage columns, drawn only behind the outer legs -->
+  <g>
+    <rect x="150" y="100" width="300" height="60" fill="#ece7dd"/>
+    <rect x="680" y="100" width="180" height="60" fill="#ece7dd"/>
+    <rect x="1100" y="100" width="200" height="60" fill="#ece7dd"/>
+    <rect x="680" y="660" width="180" height="60" fill="#ece7dd"/>
+    <rect x="1100" y="660" width="200" height="60" fill="#ece7dd"/>
+    <g class="col" text-anchor="middle">
+      <text x="300" y="90">AT REST</text><text x="565" y="90">IN TRANSIT</text><text x="770" y="90">BOUNDARY</text><text x="980" y="90">AFTER DELIVERY</text><text x="1200" y="90">TRUST</text>
+      <text x="565" y="748">IN TRANSIT</text><text x="770" y="748">BOUNDARY</text><text x="980" y="748">AFTER DELIVERY</text><text x="1200" y="748">TRUST</text>
+    </g>
+  </g>
+
+  <!-- parent ties (part_of) -->
+  <path class="tie" d="M 760 318 C 760 230, 520 230, 520 148"/>
+  <path class="tie" d="M 760 412 C 760 560, 600 560, 600 672"/>
+
+  <!-- lines -->
+  <path class="line" stroke="#3a6db4" d="M 150 130 H 1400 Q 1440 130 1440 170 V 290 Q 1440 330 1400 330 H 330"/>
+  <path class="line" stroke="#4d8a3a" d="M 450 690 H 1460 Q 1500 690 1500 650 V 440 Q 1500 400 1460 400 H 330"/>
+  <!-- termini -->
+  <path d="M 150 118 V 142 M 330 318 V 342" stroke="#3a6db4" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 450 678 V 702 M 330 388 V 412" stroke="#4d8a3a" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- PROVENANCE outer leg -->
+  <!-- Agent Skills signing threads: proposal -->
+  <circle cx="200" cy="130" r="8" fill="#fdfbf7" stroke="#3a6db4" stroke-width="4" stroke-dasharray="3 3"/>
+  <text class="lbl" x="200" y="178" text-anchor="middle">Agent Skills signing threads</text>
+  <text class="sub" x="200" y="192" text-anchor="middle">part of Agent Skills</text>
+  <!-- AI Catalog: specification, also identity -->
+  <rect class="box" x="306" y="118" width="24" height="24" rx="6"/>
+  <circle cx="330" cy="118" r="5" fill="#1f8796" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="318" y="200" text-anchor="middle">AI Catalog</text>
+  <!-- C2PA: organization -->
+  <circle cx="400" cy="130" r="10" fill="#3a6db4" stroke="#fdfbf7" stroke-width="3"/>
+  <text class="lblb" x="400" y="178" text-anchor="middle">C2PA</text>
+  <text class="sub" x="400" y="192" text-anchor="middle">at rest · in transit · trust</text>
+  <!-- C2PA credentials in MCP _meta: proposal -->
+  <circle cx="520" cy="130" r="8" fill="#fdfbf7" stroke="#3a6db4" stroke-width="4" stroke-dasharray="3 3"/>
+  <text class="lbl" x="520" y="200" text-anchor="middle">C2PA credentials in MCP _meta</text>
+  <text class="sub" x="520" y="214" text-anchor="middle">part of MCP</text>
+  <!-- OpenLineage: project -->
+  <rect x="630" y="122" width="16" height="16" transform="rotate(45 638 130)" fill="#fdfbf7" stroke="#3a6db4" stroke-width="4"/>
+  <text class="lbl" x="638" y="178" text-anchor="middle">OpenLineage</text>
+
+  <!-- PROVENANCE inner leg (labels above) -->
+  <!-- Content Authenticity Initiative: project -->
+  <rect x="830" y="322" width="16" height="16" transform="rotate(45 838 330)" fill="#fdfbf7" stroke="#3a6db4" stroke-width="4"/>
+  <text class="lbl" x="838" y="300" text-anchor="middle">Content Authenticity Initiative</text>
+  <text class="sub" x="838" y="312" text-anchor="middle">part of C2PA</text>
+  <!-- CAWG: working group, also identity + access -->
+  <rect class="box" x="948" y="318" width="24" height="24" rx="6"/>
+  <circle cx="972" cy="318" r="5" fill="#1f8796" stroke="#fdfbf7" stroke-width="2"/>
+  <circle cx="972" cy="330" r="5" fill="#c0582f" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="960" y="280" text-anchor="middle">Creator Assertions WG</text>
+  <text class="sub" x="960" y="292" text-anchor="middle">part of DIF</text>
+  <!-- Data Provenance Initiative: project, also licensing -->
+  <rect class="box" x="1078" y="318" width="24" height="24" rx="6"/>
+  <circle cx="1102" cy="318" r="5" fill="#7d5ba6" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1090" y="300" text-anchor="middle">Data Provenance Initiative</text>
+  <!-- Croissant: specification, also licensing -->
+  <rect class="box" x="1208" y="318" width="24" height="24" rx="6"/>
+  <circle cx="1232" cy="318" r="5" fill="#7d5ba6" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1220" y="300" text-anchor="middle">Croissant</text>
+  <!-- EU AI Act: regulation, also access + governance -->
+  <rect class="box" x="1338" y="318" width="24" height="24" rx="6"/>
+  <circle cx="1362" cy="318" r="5" fill="#c0582f" stroke="#fdfbf7" stroke-width="2"/>
+  <circle cx="1362" cy="330" r="5" fill="#847c70" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1350" y="288" text-anchor="middle">EU AI Act and</text>
+  <text class="lbl" x="1350" y="302" text-anchor="middle">GPAI Code of Practice</text>
+
+  <!-- SHARED interchanges spanning both inner legs -->
+  <rect class="box" x="408" y="318" width="24" height="94" rx="8"/>
+  <text class="lblb" x="440" y="361">AAIF Observability</text>
+  <text class="lblb" x="440" y="375">and Traceability WG</text>
+  <rect class="box" x="578" y="318" width="24" height="94" rx="8"/>
+  <text class="lblb" x="610" y="361">MCP Financial</text>
+  <text class="lblb" x="610" y="375">Services IG</text>
+  <text class="sub" x="610" y="389">part of MCP</text>
+  <rect class="box" x="748" y="318" width="24" height="94" rx="8"/>
+  <text class="lblb" x="780" y="361">Model Context</text>
+  <text class="lblb" x="780" y="375">Protocol</text>
+  <text class="sub" x="780" y="389">part of AAIF</text>
+
+  <!-- ATTRIBUTION inner leg (labels below) -->
+  <!-- AI Disclosures Project: org, also governance + payments -->
+  <rect class="box" x="858" y="388" width="24" height="24" rx="6"/>
+  <circle cx="882" cy="412" r="5" fill="#847c70" stroke="#fdfbf7" stroke-width="2"/>
+  <circle cx="882" cy="400" r="5" fill="#9a6d12" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="870" y="436" text-anchor="middle">AI Disclosures Project</text>
+  <!-- COUNTER: organization -->
+  <circle cx="965" cy="400" r="10" fill="#4d8a3a" stroke="#fdfbf7" stroke-width="3"/>
+  <text class="lbl" x="965" y="462" text-anchor="middle">COUNTER Metrics</text>
+  <!-- CC Signals: proposal, also access -->
+  <rect class="box" x="1028" y="388" width="24" height="24" rx="6"/>
+  <circle cx="1052" cy="412" r="5" fill="#c0582f" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1040" y="436" text-anchor="middle">CC Signals</text>
+  <text class="sub" x="1040" y="448" text-anchor="middle">part of Creative Commons</text>
+  <!-- Creative Commons: org, also licensing + access -->
+  <rect class="box" x="1138" y="388" width="24" height="24" rx="6"/>
+  <circle cx="1162" cy="412" r="5" fill="#7d5ba6" stroke="#fdfbf7" stroke-width="2"/>
+  <circle cx="1162" cy="400" r="5" fill="#c0582f" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1150" y="470" text-anchor="middle">Creative Commons</text>
+  <!-- OpenAttribution: org, also identity + payments -->
+  <rect class="box" x="1248" y="388" width="24" height="24" rx="6"/>
+  <circle cx="1272" cy="412" r="5" fill="#1f8796" stroke="#fdfbf7" stroke-width="2"/>
+  <circle cx="1272" cy="400" r="5" fill="#9a6d12" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1260" y="436" text-anchor="middle">OpenAttribution.org</text>
+  <!-- Skills Marketplace: project, also licensing + payments -->
+  <rect class="box" x="1348" y="388" width="24" height="24" rx="6"/>
+  <circle cx="1372" cy="412" r="5" fill="#7d5ba6" stroke="#fdfbf7" stroke-width="2"/>
+  <circle cx="1372" cy="400" r="5" fill="#9a6d12" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1360" y="470" text-anchor="middle">Skills Marketplace</text>
+  <text class="sub" x="1360" y="482" text-anchor="middle">part of AI Disclosures Project</text>
+  <!-- Wikimedia: org, also identity -->
+  <rect class="box" x="1438" y="388" width="24" height="24" rx="6"/>
+  <circle cx="1462" cy="412" r="5" fill="#1f8796" stroke="#fdfbf7" stroke-width="2"/>
+  <text class="lbl" x="1450" y="436" text-anchor="middle">Wikimedia</text>
+
+  <!-- ATTRIBUTION outer leg (labels above) -->
+  <!-- OKFN: organization -->
+  <circle cx="500" cy="690" r="10" fill="#4d8a3a" stroke="#fdfbf7" stroke-width="3"/>
+  <text class="lbl" x="500" y="640" text-anchor="middle">Open Knowledge Foundation</text>
+  <!-- SEP-3094: proposal -->
+  <circle cx="600" cy="690" r="8" fill="#fdfbf7" stroke="#4d8a3a" stroke-width="4" stroke-dasharray="3 3"/>
+  <text class="lbl" x="600" y="612" text-anchor="middle">SEP-3094 Granular Citations</text>
+  <text class="sub" x="600" y="626" text-anchor="middle">part of MCP · in transit · after delivery</text>
+  <!-- Content Telemetry: specification -->
+  <rect x="922" y="682" width="16" height="16" fill="#fdfbf7" stroke="#4d8a3a" stroke-width="4"/>
+  <text class="lbl" x="930" y="640" text-anchor="middle">Content Telemetry</text>
+  <text class="sub" x="930" y="654" text-anchor="middle">part of SPUR</text>
+  <!-- SPUR Coalition: organization -->
+  <circle cx="1040" cy="690" r="10" fill="#4d8a3a" stroke="#fdfbf7" stroke-width="3"/>
+  <text class="lblb" x="1040" y="612" text-anchor="middle">SPUR Coalition</text>
+  <text class="sub" x="1040" y="626" text-anchor="middle">after delivery · trust</text>
+
+  <!-- line blurbs, after the 1995 PC Computing map -->
+  <g>
+    <rect class="blurb" x="780" y="176" width="520" height="86" rx="4"/>
+    <rect x="780" y="176" width="6" height="86" fill="#3a6db4"/>
+    <text class="bh" x="800" y="198">PROVENANCE LINE</text>
+    <text class="bt" x="800" y="218">Where content came from. Manifests, signatures and lineage records that</text>
+    <text class="bt" x="800" y="234">travel with an artifact or a tool result. Every stop so far is at rest or in</text>
+    <text class="bt" x="800" y="250">transit; nothing on this line claims to survive past delivery.</text>
+  </g>
+  <g>
+    <rect class="blurb" x="780" y="500" width="520" height="92" rx="4"/>
+    <rect x="780" y="500" width="6" height="92" fill="#4d8a3a"/>
+    <text class="bh" x="800" y="524">ATTRIBUTION LINE</text>
+    <text class="bt" x="800" y="544">Whether the source gets credited. Citations, telemetry and counts that are</text>
+    <text class="bt" x="800" y="560">meant to outlive the hand-off to a model or an agent. Most stops are also on</text>
+    <text class="bt" x="800" y="576">the access, licensing or payments lines.</text>
+  </g>
+
+  <!-- title and legend -->
+  <g>
+    <text class="ink" x="110" y="452" font-size="22" font-weight="700">Content provenance, access</text>
+    <text class="ink" x="110" y="478" font-size="22" font-weight="700">and attribution</text>
+    <text class="sub" x="110" y="496">Mockup: 2 of 7 lines, 27 of 58 cards. Data from ui/data.js, 2026-11-08.</text>
+
+    <g transform="translate(110 520)">
+      <text class="col" x="0" y="0">LEGEND</text>
+      <circle cx="8" cy="20" r="8" fill="#22252b" stroke="#fdfbf7" stroke-width="3"/><text class="lbl" x="26" y="24">organization</text>
+      <circle cx="8" cy="44" r="7" fill="#fdfbf7" stroke="#22252b" stroke-width="4"/><text class="lbl" x="26" y="48">working, interest or community group</text>
+      <rect x="1" y="61" width="14" height="14" fill="#fdfbf7" stroke="#22252b" stroke-width="4"/><text class="lbl" x="26" y="72">specification</text>
+      <rect x="2" y="86" width="12" height="12" transform="rotate(45 8 92)" fill="#fdfbf7" stroke="#22252b" stroke-width="4"/><text class="lbl" x="26" y="96">project</text>
+      <circle cx="8" cy="116" r="7" fill="#fdfbf7" stroke="#22252b" stroke-width="4" stroke-dasharray="3 3"/><text class="lbl" x="26" y="120">proposal</text>
+      <rect class="box" x="-4" y="132" width="24" height="24" rx="6"/><circle cx="20" cy="132" r="5" fill="#9a6d12" stroke="#fdfbf7" stroke-width="2"/><text class="lbl" x="30" y="148">interchange; chips name lines not drawn here</text>
+      <path class="tie" d="M 0 172 H 20"/><text class="lbl" x="26" y="176">part of (parent on another line)</text>
+    </g>
+    <g transform="translate(110 712)">
+      <rect x="0" y="0" width="18" height="6" fill="#3a6db4"/><text class="lbl" x="24" y="7">provenance</text>
+      <rect x="110" y="0" width="18" height="6" fill="#4d8a3a"/><text class="lbl" x="134" y="7">attribution</text>
+      <text class="sub" x="0" y="26">Not drawn: access, licensing, payments, identity, governance.</text>
+    </g>
+  </g>
+</svg>

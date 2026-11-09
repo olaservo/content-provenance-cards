@@ -1,0 +1,21 @@
+{
+ "layers": {
+  "provenance": "where content came from and what was done to it, carried as signed records",
+  "access": "whether a crawler or agent may read or use content, and how that preference is expressed",
+  "licensing": "the terms and prices for use, in a form machines can read",
+  "attribution": "whether the source is named and credited where the content ends up",
+  "payments": "how a use gets paid for, from HTTP 402 to agent checkout",
+  "identity": "who the agent, crawler or signer is",
+  "governance": "the foundations, policy bodies and regulation around the rest"
+ },
+ "stages": {
+  "at-rest": "content or a skill is signed where it is stored",
+  "in-transit": "the credential travels with the content across a tool call",
+  "boundary": "a gateway or hook checks it on the way through",
+  "after-delivery": "credit and reporting once the content has left the protocol and its metadata is gone",
+  "trust": "who may sign or report, and how that is decided. Not a place on the path, but every other stage depends on it"
+ },
+ "labels": {
+  "stage/boundary": "at the boundary"
+ }
+}
