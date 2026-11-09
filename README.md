@@ -1,4 +1,4 @@
-# Content Provenance, Access and Attribution
+# Content Provenance, Access and Attribution: A Field Guide
 
 Cards for the standards orgs, working groups, specs and proposals that decide where content came from (provenance), what may be done with it (access, preferences, licensing, payment), and whether its source gets credited (attribution), and where the Model Context Protocol fits among them. One markdown file per card, Obsidian-compatible, with a small static explorer and plain Markdown and JSON copies for agents.
 

@@ -155,7 +155,7 @@ function cardMd(c) {
 }
 
 const cardsMd = [
-  "# Content Provenance, Access and Attribution",
+  "# Content Provenance, Access and Attribution: A Field Guide",
   "",
   `${blurb} Compiled by Ola Hungerford (https://www.olahungerford.com/about/)${asOf ? ", as of " + asOf : ""}. ${caveat}`,
   "",
@@ -176,7 +176,7 @@ const cardsMd = [
   ...cards.map(cardMd),
 ].join("\n");
 
-const llms = `# Content Provenance, Access and Attribution
+const llms = `# Content Provenance, Access and Attribution: A Field Guide
 
 > ${blurb} Compiled by Ola Hungerford${asOf ? ", as of " + asOf : ""}.
 
@@ -194,7 +194,7 @@ ${caveat} Each card has a name, type, status, website, tags (layer, stage, type)
 `;
 
 const json = {
-  title: "Content Provenance, Access and Attribution",
+  title: "Content Provenance, Access and Attribution: A Field Guide",
   description: blurb,
   author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
   as_of: asOf,
