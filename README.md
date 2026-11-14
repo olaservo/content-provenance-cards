@@ -13,6 +13,7 @@ These are one person's working notes. Status lines carry the dates the sources g
 | `cards/<id>.md` | One card per org, group, spec or proposal. The filename is the id used in `[[links]]`. |
 | `vocab.json` | The layer and stage definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
 | `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json` and `ui/llms.txt` for agents and scripts. No dependencies. |
+| `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
 | `notes/metro-mockup.svg` | Hand-laid mockup of a metro-map view, two of seven lines. |
 | `private/` | Optional and gitignored. Personal notes per card and cards not yet public, see below. |
@@ -65,7 +66,7 @@ Then open `ui/index.html` directly in a browser. The generated files are gitigno
 
 ## Adding a card
 
-Copy an existing card, rename it to the new id, and fill in the fields. Run `node build.mjs`; it warns about `[[links]]` that point at no card.
+Copy an existing card, rename it to the new id, and fill in the fields. Run `node build.mjs`; it warns about `[[links]]` that point at no card. Add a line to `CHANGELOG.md` under the day's date for a new card or a change a reader would want to know about.
 
 ## Private notes
 

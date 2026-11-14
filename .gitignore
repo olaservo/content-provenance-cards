@@ -3,5 +3,6 @@ ui/private.js
 ui/cards.md
 ui/cards.json
 ui/llms.txt
+ui/changelog.md
 private/
 .obsidian/
