@@ -1,6 +1,6 @@
 // Reads cards/*.md and vocab.json, plus private/cards/*.md and private/*.private.md when present.
 // Writes ui/data.js and ui/private.js for the explorer, and ui/cards.md, ui/cards.json and
-// ui/llms.txt for agents and scripts.
+// ui/llms.txt for agents and scripts. Copies CHANGELOG.md to ui/changelog.md.
 // --public ignores private/ and leaves out cards marked `publish: false`.
 // --out <dir> also copies the finished site to <dir>.
 // No dependencies. Frontmatter supports scalars, quoted strings and inline [a, b] lists.
@@ -130,7 +130,7 @@ const SITE = "https://www.olahungerford.com/content-provenance/";
 const asOf = cards.map((c) => c.updated).filter(Boolean).sort().pop() || "";
 const byId = Object.fromEntries(cards.map((c) => [c.id, c]));
 const nameOf = (id) => (byId[id] ? byId[id].name : id);
-const md = (s) => s.replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]/g, (m, id, label) => `[${label || nameOf(id.trim())}](#${id.trim()})`);
+const md = (s, base = "") => s.replace(/\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]/g, (m, id, label) => `[${label || nameOf(id.trim())}](${base}#${id.trim()})`);
 const label = (t) => vocab.labels[t] || t.slice(t.indexOf("/") + 1).replace(/-/g, " ");
 const blurb = `${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.`;
 const caveat = "One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.";
@@ -159,7 +159,7 @@ const cardsMd = [
   "",
   `${blurb} Compiled by Ola Hungerford (https://www.olahungerford.com/about/)${asOf ? ", as of " + asOf : ""}. ${caveat}`,
   "",
-  `Explorer for people: ${SITE}. The same cards as JSON: ${SITE}cards.json. Links between cards point at the card's heading in this file; each card also has an Id line.`,
+  `Explorer for people: ${SITE}. The same cards as JSON: ${SITE}cards.json. What changed and when: ${SITE}changelog.md. Links between cards point at the card's heading in this file; each card also has an Id line.`,
   "",
   "## Layers",
   "",
@@ -190,6 +190,7 @@ ${caveat} Each card has a name, type, status, website, tags (layer, stage, type)
 ## Optional
 
 - [Explorer](${SITE}): the list and graph view for people
+- [Changelog](${SITE}changelog.md): cards added and changed, by date
 - [About the author](https://www.olahungerford.com/about/)
 `;
 
@@ -200,6 +201,7 @@ const json = {
   as_of: asOf,
   explorer: SITE,
   markdown: SITE + "cards.md",
+  changelog: SITE + "changelog.md",
   note: caveat,
   vocab,
   cards: cards.map((c) => ({ ...c, url: SITE + "#" + c.id })),
@@ -210,9 +212,15 @@ writeFileSync(join(root, "ui", "cards.json"), JSON.stringify(json, null, 1) + "\
 writeFileSync(join(root, "ui", "llms.txt"), llms);
 console.log(`${cards.length} cards -> ui/cards.md, ui/cards.json, ui/llms.txt`);
 
+// The changelog is written by hand. Its [[links]] become links into the explorer.
+const changelog = unlink(readFileSync(join(root, "CHANGELOG.md"), "utf8").replace(/\r\n/g, "\n"));
+for (const l of links(changelog)) if (!ids.has(l)) console.warn(`dangling link in CHANGELOG.md: [[${l}]]`);
+writeFileSync(join(root, "ui", "changelog.md"), md(changelog, SITE));
+console.log("CHANGELOG.md -> ui/changelog.md");
+
 if (outDir) {
   if (!isPublic) throw new Error("--out only runs with --public, so private notes never leave this repo");
   mkdirSync(outDir, { recursive: true });
-  for (const f of ["index.html", "data.js", "private.js", "cards.md", "cards.json", "llms.txt"]) copyFileSync(join(root, "ui", f), join(outDir, f));
+  for (const f of ["index.html", "data.js", "private.js", "cards.md", "cards.json", "llms.txt", "changelog.md"]) copyFileSync(join(root, "ui", f), join(outDir, f));
   console.log(`site copied to ${outDir}`);
 }
