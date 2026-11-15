@@ -5,7 +5,7 @@ description: Answer questions about who is working on content provenance, access
 
 # Content provenance field guide
 
-A set of short cards, one per organization, working group, specification or proposal. Each card has a type, a status line, tags, a summary, topics, links to related cards and, where known, a dated history and a public place to take part.
+A set of short cards, one per organization, working group, specification or proposal. Each card has a type, a status line, tags, a summary, topics, links to related cards and, where known, what is in use, a dated history and a public place to take part.
 
 The guide is one person's working notes. Status lines carry the dates the sources gave. Tell the reader the card's `Updated` date, and check the card's website before relying on a status for a decision.
 

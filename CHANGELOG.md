@@ -4,6 +4,9 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-15
 
+- Cards can carry a `## In use` section of released implementations and live uses, each with a date and a link. Twelve cards have one, including [[c2pa]], [[rsl]], [[croissant]] and [[cloudflare-content-signals]]. Commitments, pilots and open pull requests stay in the status line.
+- Added [[encypher]]. [[iptc]] gains the Origin Verified News Publishers List, and [[c2pa]] describes the text appendix (A.8).
+- [[microsoft-publisher-content-marketplace]] is described as a pilot, as Microsoft's 2026-02-03 post describes it. The card said "launched".
 - Cards can carry a `## History` section of dated events. 27 cards have one, restating the dates their status lines already gave, including [[rsl]], [[ietf-aipref]] and [[c2pa]]. The build collects them into `updates.md` and `updates.json`.
 - Added a prototype for agents at https://content-provenance-field-guide.olahungerford.workers.dev: a Markdown and JSON file per card, pages that read without JavaScript, and Markdown on request.
 - Added two agent skills, one for answering from the guide and one for suggesting pull requests to it, served as files and over MCP at `/mcp` with the Skills extension.
