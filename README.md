@@ -78,7 +78,7 @@ Then open `ui/index.html` directly in a browser. The generated files are gitigno
 
 Copy an existing card, rename it to the new id, and fill in the fields. Run `node build.mjs`; it warns about `[[links]]` that point at no card. Add a line to `CHANGELOG.md` under the day's date for a new card or a change a reader would want to know about.
 
-When something happens to an effort that already has a card, change its `status`, set `updated`, and add a History bullet dated when it happened. The changelog records edits to the guide. History records what happened to the efforts the cards describe. In use lists what is released or running now, so a launch can appear in both: the dated event in History, the current state with its link in In use.
+When something happens to an effort that already has a card, change its `status`, set `updated`, and add a History bullet dated when it happened. The build warns when a card's newest History date is later than every date in its status, which usually means the status was not updated. The changelog records edits to the guide. History records what happened to the efforts the cards describe. In use lists what is released or running now, so a launch can appear in both: the dated event in History, the current state with its link in In use.
 
 ## For agents
 

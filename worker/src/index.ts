@@ -61,7 +61,7 @@ const mcp = createMcpHandler(async () => {
     "search_cards",
     {
       title: "Search cards",
-      description: "Find cards in the field guide by words in the name, aliases, status, summary or topics, optionally limited to one layer or type. Returns one line per card with its id, status and the URI of its file.",
+      description: "Find cards in the field guide by words in the name, aliases, status, summary or topics, optionally limited to one layer or type. Returns one line per card with its id, status and the URI of its file. Cards with the words in their name or aliases come first. The rest mention the words elsewhere, sometimes only in passing, so a result with no name match can mean the guide has no card on the subject.",
       inputSchema: z.object({
         query: z.string().optional().describe("Words to match. Every word must appear somewhere in the card. Leave out to list by layer or type."),
         layer: z.enum(layers as [string, ...string[]]).optional().describe("Only cards on this layer"),
@@ -78,9 +78,26 @@ const mcp = createMcpHandler(async () => {
         const hay = [c.name, c.id, ...c.aliases, c.status, c.summary, ...c.sections.map((s) => s.text), ...c.tags].join(" ").toLowerCase();
         return words.every((w) => hay.includes(w));
       });
-      const shown = hits.slice(0, limit ?? 20);
-      const lines = shown.map((c) => `- ${c.name} (id ${c.id}; ${[c.type, ...layersOf(c)].join(", ")})${c.status ? `: ${plain(c.status)}` : ""} ${cardUri(c.id)}`);
-      return text(`${hits.length} of ${cards.length} cards match${hits.length > shown.length ? `, showing ${shown.length}` : ""}. Read a card with get_card or its URI.\n\n${lines.join("\n")}`);
+      const line = (c: Card) => `- ${c.name} (id ${c.id}; ${[c.type, ...layersOf(c)].join(", ")})${c.status ? `: ${plain(c.status)}` : ""} ${cardUri(c.id)}`;
+      const count = (n: number) => `${n} ${n === 1 ? "card" : "cards"}`;
+      if (hits.length === 0) return text(`No card matches. The guide may not cover this: it has ${cards.length} cards and is not a complete list.`);
+
+      // A card named for the words is about them. A card that only mentions them may not be.
+      const isNamed = (c: Card) => words.length > 0 && words.every((w) => [c.name, c.id, ...c.aliases].join(" ").toLowerCase().includes(w));
+      const max = limit ?? 20;
+      const named = hits.filter(isNamed);
+      const mentions = hits.filter((c) => !isNamed(c));
+      const shownNamed = named.slice(0, max);
+      const shownMentions = mentions.slice(0, max - shownNamed.length);
+      const shown = shownNamed.length + shownMentions.length;
+      const head = `${hits.length} of ${cards.length} cards match${hits.length > shown ? `, showing ${shown}` : ""}. Read a card with get_card or its URI.`;
+      if (words.length === 0) return text(`${head}\n\n${hits.slice(0, max).map(line).join("\n")}`);
+
+      const parts = [head];
+      if (named.length > 0) parts.push(`${count(named.length)} with these words in the name or aliases:\n${shownNamed.map(line).join("\n")}`);
+      else parts.push("No card has these words in its name or aliases.");
+      if (shownMentions.length > 0) parts.push(`${count(mentions.length)} ${mentions.length === 1 ? "mentions" : "mention"} them elsewhere, sometimes only in passing:\n${shownMentions.map(line).join("\n")}`);
+      return text(parts.join("\n\n"));
     },
   );
 

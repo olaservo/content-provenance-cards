@@ -4,6 +4,9 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-15
 
+- [[rsl]]: the status line now mentions the 2026-11-12 relaunch of the collective behind it. The build warns when a card's newest History date is later than every date in its status.
+- [[internet-licensing-collective]]: added the ten Publisher Steering Committee members shown on its About page, and the co-founder named in the launch release.
+- The `search_cards` tool on the MCP endpoint lists cards with the words in their name or aliases first, and says when the rest only mention them.
 - Cards can carry a `## In use` section of released implementations and live uses, each with a date and a link. Twelve cards have one, including [[c2pa]], [[rsl]], [[croissant]] and [[cloudflare-content-signals]]. Commitments, pilots and open pull requests stay in the status line.
 - Added [[encypher]]. [[iptc]] gains the Origin Verified News Publishers List, and [[c2pa]] describes the text appendix (A.8).
 - [[microsoft-publisher-content-marketplace]] is described as a pilot, as Microsoft's 2026-02-03 post describes it. The card said "launched".
