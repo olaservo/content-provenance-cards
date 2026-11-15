@@ -3,7 +3,7 @@ name: Really Simple Licensing
 aliases: [RSL]
 type: specification
 website: https://rslstandard.org
-status: RSL 1.0 published 2025-12-10
+status: RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 tags: [type/specification, layer/licensing, layer/payments]
 participate: "[GitHub](https://github.com/rslstandard)"
 updated: 2026-11-15

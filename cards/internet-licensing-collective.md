@@ -17,7 +17,9 @@ Nonprofit, publisher-led collecting society for AI use of web content, formerly 
 - **Usage reporting**: paying out on usage that licensees report. ILC is not in the content path, and its site does not say how reports are checked. [[content-telemetry]] standardizes reports of this kind.
 
 ## Related
-- Its About page lists 3,100+ supporting publications, among them the Guardian (a [[spur-coalition]] founder), Wikipedia ([[wikimedia]]) and O'Reilly Media.
+- A Publisher Steering Committee oversees the licensing framework, safeguards and economics. The About page shows ten members: Reddit, People Inc., Yahoo, Ziff Davis, the Wikimedia Foundation ([[wikimedia]]), USA Today, Internet Brands, Mediahuis, The Atlantic and Vox Media (read 2026-11-15). Yahoo Scout, the first licensee, is a Yahoo product.
+- The launch release names Doug Leeds as a co-founder. The About page names no staff.
+- Its About page lists 3,100+ supporting publications, among them the Guardian (a [[spur-coalition]] founder), Wikipedia and O'Reilly Media.
 - Mather Economics' report The Price of Intelligence (2026-11-12) estimates AI companies would pay 15% to 35% of revenue to keep access to licensed content. The launch release says ILC did not commission or fund it.
 
 ## In use

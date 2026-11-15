@@ -123,6 +123,20 @@ for (const c of cards) {
   c.history.sort((a, b) => b.date.localeCompare(a.date));
 }
 
+// A status whose dates all come before the card's newest History entry has probably gone stale.
+const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+const statusDates = (s) => [
+  ...[...s.matchAll(/\b\d{4}-\d{2}(?:-\d{2})?\b/g)].map((m) => m[0]),
+  ...[...s.matchAll(new RegExp(`\\b(${MONTHS.join("|")}) (\\d{4})\\b`, "gi"))].map((m) => `${m[2]}-${String(MONTHS.indexOf(m[1].toLowerCase()) + 1).padStart(2, "0")}`),
+];
+for (const c of cards) {
+  const newest = c.history[0]?.date;
+  const inStatus = statusDates(c.status).sort().pop();
+  if (!newest || !inStatus) continue;
+  const n = Math.min(newest.length, inStatus.length);
+  if (newest.slice(0, n) > inStatus.slice(0, n)) console.warn(`status of ${c.id} stops at ${inStatus} but its history goes to ${newest}`);
+}
+
 const vocab = JSON.parse(readFileSync(join(root, "vocab.json"), "utf8"));
 writeFileSync(join(root, "ui", "data.js"), `window.CARDS = ${JSON.stringify(cards, null, 1)};\nwindow.VOCAB = ${JSON.stringify(vocab, null, 1)};\n`);
 console.log(`${cards.length} cards -> ui/data.js` + (hidden.size ? ` (left out: ${[...hidden.keys()].join(", ")})` : ""));
