@@ -17,3 +17,6 @@ The SKILL.md format for packaging instructions and files for agents.
 
 ## Related
 - Packaged with MCP servers by [[agent-plugins]].
+
+## History
+- 2026-10-22: Joined AAIF.

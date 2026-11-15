@@ -18,3 +18,6 @@ Five reportable stages: `content_retrieved`, `content_grounded`, `content_cited`
 ## Related
 - Execution traces, which stop at the tool call: [[otel-mcp]].
 - [[counter]] plans to reference it in phase two.
+
+## History
+- 2026-09-02: v1.0 published.

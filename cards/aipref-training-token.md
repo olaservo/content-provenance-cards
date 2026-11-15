@@ -17,3 +17,6 @@ A robots.txt group whose `User-Agent` is the cross-vendor token `__usage_ai-trai
 
 ## Related
 - An alternative to the attach draft's `Content-Usage` directive in [[ietf-aipref]].
+
+## History
+- 2026-10-30: Individual draft posted.

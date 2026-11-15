@@ -14,3 +14,6 @@ Open standard for data lineage events. [RFC 4484](https://github.com/OpenLineage
 
 ## Related
 - Overlaps [[mcp-c2pa-in-meta]]. Introduced at [[mcp-fsig]] on 2026-09-05.
+
+## History
+- 2026-10-07: RFC 4484 updated.

@@ -20,3 +20,6 @@ Standards body for content credentials: signed manifests (claims and assertions)
 - Identity and consent assertions come from [[cawg]].
 - Signing skill folders: [[agent-skills-signing]].
 - Its trust layer is compared with [[aaif-identity-trust-wg]] and [[spur-coalition]].
+
+## History
+- 2026-10: Spec 2.5 published.

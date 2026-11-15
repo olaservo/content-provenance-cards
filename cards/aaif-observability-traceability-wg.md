@@ -17,3 +17,7 @@ Working group on agent-level observability, above the OpenTelemetry GenAI teleme
 
 ## Related
 - The conventions it builds above, and what they leave out: [[otel-mcp]].
+
+## History
+- 2026-10-28: OTel cross-domain provenance proposal.
+- 2026-09-02: Provenance initiative lead named.

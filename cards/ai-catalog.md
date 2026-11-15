@@ -13,3 +13,6 @@ Catalog format for discovering agents, MCP servers and skills.
 ## Topics
 - **Discovery**: finding agents, servers and skills across vendors.
 - **Catalog trust**: signing catalog entries with [identity-keyed trust manifests](https://github.com/Agent-Card/ai-catalog/pull/117), a path parallel to [[agent-skills-signing]].
+
+## History
+- 2026-10-28: Identity-keyed trust manifests merged.

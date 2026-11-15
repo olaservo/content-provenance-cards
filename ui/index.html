@@ -124,6 +124,7 @@
   <label id="privwrap" hidden><input type="checkbox" id="priv"> private notes</label>
   <button class="vbtn" id="theme" title="Colour theme">Theme: Auto</button>
 </header>
+<noscript><p style="padding: 0 16px">This explorer needs JavaScript. The same cards are available as <a href="cards/">plain pages</a>, <a href="cards.md">Markdown</a> and <a href="cards.json">JSON</a>.</p></noscript>
 <div class="filters" id="filters"></div>
 <main id="main">
   <div id="list"></div>
@@ -222,7 +223,7 @@ function renderList() {
 }
 
 function foot() {
-  return `<p class="foot">Compiled by <a href="${SITE}about/">Ola Hungerford</a>${AS_OF ? ", as of " + esc(AS_OF) : ""}. <a href="changelog.md">Changelog</a>. Also as <a href="cards.md">Markdown</a> and <a href="cards.json">JSON</a>. Source on <a href="https://github.com/olaservo/content-provenance-cards">GitHub</a>.</p>`;
+  return `<p class="foot">Compiled by <a href="${SITE}about/">Ola Hungerford</a>${AS_OF ? ", as of " + esc(AS_OF) : ""}. <a href="updates.md">Updates</a> and <a href="changelog.md">changelog</a>. Also as <a href="cards.md">Markdown</a> and <a href="cards.json">JSON</a>. Source on <a href="https://github.com/olaservo/content-provenance-cards">GitHub</a>.</p>`;
 }
 
 function intro() {

@@ -15,3 +15,6 @@ Context middleware for clients, servers and gateways: deterministic code that se
 - **Checking at the boundary**: verifying provenance in a gateway or in context middleware, since most clients will not.
 - **The `signature` field**: deciding what it signs and whether it ever carries content provenance.
 - **Sample validator**: a seal or citation validator for [[mcp-c2pa-in-meta]] or [[mcp-sep-3094-citations]].
+
+## History
+- 2026-10-27: Chain concept removed from the SEP.

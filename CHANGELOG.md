@@ -2,6 +2,12 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-15
+
+- Cards can carry a `## History` section of dated events. 27 cards have one, restating the dates their status lines already gave, including [[rsl]], [[ietf-aipref]] and [[c2pa]]. The build collects them into `updates.md` and `updates.json`.
+- Added a prototype for agents at https://content-provenance-field-guide.olahungerford.workers.dev: a Markdown and JSON file per card, pages that read without JavaScript, and Markdown on request.
+- Added two agent skills, one for answering from the guide and one for suggesting pull requests to it, served as files and over MCP at `/mcp` with the Skills extension.
+
 ## 2026-11-14
 
 - Added this changelog. The site serves it as `changelog.md`, linked from the explorer footer, `llms.txt` and `cards.json`.

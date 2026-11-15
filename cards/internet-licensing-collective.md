@@ -19,3 +19,6 @@ Nonprofit, publisher-led collecting society for AI use of web content, formerly 
 ## Related
 - Its About page lists 3,100+ supporting publications, among them the Guardian (a [[spur-coalition]] founder), Wikipedia ([[wikimedia]]) and O'Reilly Media.
 - Mather Economics' report The Price of Intelligence (2026-11-12) estimates AI companies would pay 15% to 35% of revenue to keep access to licensed content. The launch release says ILC did not commission or fund it.
+
+## History
+- 2026-11-12: Launched under this name, formerly the RSL Collective, with Yahoo Scout as first commercial licensee.

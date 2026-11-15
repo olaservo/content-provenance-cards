@@ -11,3 +11,9 @@ Project housed at Code for Science and Society working on the standards and mech
 ## Topics
 - **Value distribution**: the missing mechanisms for attribution and compensation in AI markets.
 - **Measuring harm**: ecosystem exploitation in search results and access violations in pre-training data (paper repos).
+
+## History
+- 2026-10: Convening at Foo Camp.
+- 2026-09: Convening at Microsoft Research New York.
+- 2026-06: Convening at Foo Camp.
+- 2026-04: Convening at Bellagio.

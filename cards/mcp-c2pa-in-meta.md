@@ -20,3 +20,6 @@ Carry a [[c2pa]] credential for tool results and resources in MCP `_meta` under 
 ## Related
 - A credential check could run as an interceptor validator ([[mcp-interceptors]]).
 - Lineage key overlap: [[openlineage]].
+
+## History
+- 2026-09-25: Discussion closed along with all spec-repo discussions.

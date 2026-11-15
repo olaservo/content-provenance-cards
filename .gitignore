@@ -6,3 +6,10 @@ ui/llms.txt
 ui/changelog.md
 private/
 .obsidian/
+worker/node_modules/
+worker/site/
+worker/generated/
+worker/.wrangler/
+worker/worker-configuration.d.ts
+ui/updates.md
+ui/updates.json

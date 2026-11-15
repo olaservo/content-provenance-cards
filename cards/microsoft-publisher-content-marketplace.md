@@ -9,3 +9,6 @@ Voluntary marketplace with publisher-set terms and pricing and usage reporting. 
 
 ## Topics
 - **Paying publishers**: compensating publishers for content used in AI answers, with usage reporting.
+
+## History
+- 2026-02-03: Launched with Copilot as first buyer.

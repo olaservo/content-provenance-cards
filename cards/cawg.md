@@ -18,3 +18,6 @@ Assertion specs that ride inside [[c2pa]] manifests: identity, training and data
 
 ## Related
 - Hosts the IPTC Data Mining photo-metadata property ([[iptc]]).
+
+## History
+- 2026-07: Consent assertion added.

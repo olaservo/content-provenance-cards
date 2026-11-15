@@ -1,0 +1,22 @@
+{
+  "name": "content-provenance-field-guide",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "wrangler": "^4.162.0"
+  },
+  "allowScripts": {
+    "workerd@1.20261113.1": true
+  }
+}

@@ -13,3 +13,6 @@ Publisher coalition founded by the BBC, FT, Guardian, Sky News and Telegraph, wi
 - **Visibility past retrieval**: letting publishers see grounding, citation, display and engagement, not only the fetch.
 - **Verifying reports**: checking self-reported events through sampled audits or canary content. Signed events are deferred to a later version of the spec (section 8.9).
 - **Publisher accreditation**: a conformance mark for agents that report at the required level.
+
+## History
+- 2026-09-02: [[content-telemetry]] v1.0 published.

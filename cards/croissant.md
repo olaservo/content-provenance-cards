@@ -11,3 +11,6 @@ MLCommons dataset metadata format. 1.1 added machine-actionable provenance, cons
 
 ## Topics
 - **Dataset provenance and consent**: recording what a training set was allowed to contain, the dataset-side counterpart to [[c2pa]] for assets.
+
+## History
+- 2026-02: 1.1 released.
