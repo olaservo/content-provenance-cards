@@ -7,7 +7,7 @@ part_of: "[[mcp]]"
 status: Conventions in Development; built into the Python SDK since v2.0.0; merged for the TypeScript SDK 2026-10-31, not yet released
 participate: "[semantic-conventions-genai issues](https://github.com/open-telemetry/semantic-conventions-genai/issues), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
 tags: [type/specification, venue/mcp, layer/provenance, stage/in-transit]
-updated: 2026-11-08
+updated: 2026-11-15
 ---
 OpenTelemetry semantic conventions for MCP spans and metrics, and the SDKs that emit them. Spans are named `{mcp.method.name} {target}`, for example `tools/call get-weather`, with `mcp.session.id`, `mcp.protocol.version` and `jsonrpc.request.id`. Trace context travels in `params._meta` under three keys that [SEP-414](https://modelcontextprotocol.io/seps/414-request-meta) proposed in April 2025 and the [2026-07-28 spec reserves](https://modelcontextprotocol.io/specification/2026-07-28/basic/index#_meta): `traceparent`, `tracestate` and `baggage`.
 
@@ -19,6 +19,9 @@ OpenTelemetry semantic conventions for MCP spans and metrics, and the SDKs that 
 ## Related
 - [SEP-2028](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2028), open, would forward `_meta` entries to HTTP headers for distributed tracing. [SEP-2448](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2448), server execution telemetry, closed without merging in March 2026.
 - Lineage after the tool call, rather than the call itself: [[openlineage]].
+
+## In use
+- The MCP Python SDK emits client and server spans as of [v2.0.0](https://github.com/modelcontextprotocol/python-sdk/releases/tag/v2.0.0) (2026-07-28).
 
 ## History
 - 2026-10-31: Conventions merged for the TypeScript SDK, not yet released.

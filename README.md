@@ -46,11 +46,14 @@ One-paragraph summary, with [[other-card]] links.
 ## Related
 - Optional extra links and facts that are not problems (overlaps, demos, who references whom).
 
+## In use
+- Optional released implementations and live uses, each with a date and a link.
+
 ## History
 - 2026-10-14: Optional dated events, newest first: a release, a charter, a launch, a rename.
 ```
 
-Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet starts with a bold label, then a colon, then the problem it solves. Everything else is optional. A History bullet starts with the date the event happened, as `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, then a colon. The build collects these from every card into `updates.md` and `updates.json`, and warns about a bullet with no date. Lists use the inline `[a, b]` form, which is what `build.mjs` parses. Inline `#tags` in the body are also picked up.
+Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet starts with a bold label, then a colon, then the problem it solves. Everything else is optional. An In use bullet names something a reader can use or observe today: a released version, a live service, or a license or requirement in effect. It gives the date of the release or of the last check, and a link. A registry kept by the effort is a better link than a list of names. Commitments, pilots and open pull requests belong in `status`. Remove a bullet when it stops being true. A History bullet starts with the date the event happened, as `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, then a colon. The build collects these from every card into `updates.md` and `updates.json`, and warns about a bullet with no date. Lists use the inline `[a, b]` form, which is what `build.mjs` parses. Inline `#tags` in the body are also picked up.
 
 `participate` is where a reader can take part, as one or more markdown links in a quoted string. Use the effort's own public venue (issue tracker, mailing list, join page), not a contact person. Leave it out when there is no public venue.
 
@@ -75,7 +78,7 @@ Then open `ui/index.html` directly in a browser. The generated files are gitigno
 
 Copy an existing card, rename it to the new id, and fill in the fields. Run `node build.mjs`; it warns about `[[links]]` that point at no card. Add a line to `CHANGELOG.md` under the day's date for a new card or a change a reader would want to know about.
 
-When something happens to an effort that already has a card, change its `status`, set `updated`, and add a History bullet dated when it happened. The changelog records edits to the guide. History records what happened to the efforts the cards describe.
+When something happens to an effort that already has a card, change its `status`, set `updated`, and add a History bullet dated when it happened. The changelog records edits to the guide. History records what happened to the efforts the cards describe. In use lists what is released or running now, so a launch can appear in both: the dated event in History, the current state with its link in In use.
 
 ## For agents
 

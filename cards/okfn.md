@@ -6,7 +6,7 @@ website: https://okfn.org
 status: MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources
 tags: [type/organization, layer/attribution, stage/in-transit, venue/mcp]
 participate: "[okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 CKAN maintainers. MCP Labs runs chat over official datasets with every answer linked to its source.
 
@@ -17,3 +17,6 @@ CKAN maintainers. MCP Labs runs chat over official datasets with every answer li
 ## Related
 - Plans to move charts to MCP Apps and citations to SEP-3094. [[wikimedia]] contributors review the same SEP.
 - A natural pilot for the [[creative-commons]] RAG attribution best practices.
+
+## In use
+- [MCP Labs](https://mcp.okfn.org) answers questions over official datasets and links each answer to its source (responding 2026-11-15).
