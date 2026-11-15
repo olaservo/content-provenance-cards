@@ -14,3 +14,7 @@ XML vocabulary for usage and compensation terms (per-crawl, per-inference, subsc
 - **Machine-readable terms**: publishing usage terms and prices that crawlers and AI systems can read and accept.
 - **Adoption**: getting model developers to honor it on the open web. None has committed; [[microsoft-publisher-content-marketplace]] is reported to support it, and Yahoo Scout licenses through [[internet-licensing-collective]] (2026-11-12).
 - **Enforcement**: supplying the lever [[content-telemetry]] manifests lack, through a SPUR profile binding drafted for the RSL WG.
+
+## History
+- 2026-11-12: The RSL Collective relaunched as [[internet-licensing-collective]].
+- 2025-12-10: RSL 1.0 published.

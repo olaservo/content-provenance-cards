@@ -20,3 +20,7 @@ Vocabulary for AI usage preferences and how they attach to content (`Content-Usa
 ## Related
 - Individual drafts: [[aipref-training-token]], [[cloudflare-content-signals]], and the [[creative-commons]] exclusions and parameters drafts.
 - Enforcement side: [[ietf-web-bot-auth]]. Layered on by [[cc-signals]].
+
+## History
+- 2026-09-13: vocab-08 posted, without consensus.
+- 2026-08-18: attach-05 posted.

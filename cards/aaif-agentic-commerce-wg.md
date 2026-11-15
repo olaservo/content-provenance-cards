@@ -12,3 +12,6 @@ Discovery and negotiation, checkout, delegated authority, agentic payments, frau
 
 ## Topics
 - **Commerce spec harmony**: comparing and aligning [[acp]], [[ucp]], [[ap2]] and [[x402]].
+
+## History
+- 2026-05-15: Chartered.

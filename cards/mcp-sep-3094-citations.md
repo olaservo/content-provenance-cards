@@ -19,3 +19,6 @@ Citations on tool results bound by CommonMark links in the text, each a flat sch
 
 ## Related
 - Reviewers include [[okfn]] and [[wikimedia]] contributors.
+
+## History
+- 2026-09-04: Revised.

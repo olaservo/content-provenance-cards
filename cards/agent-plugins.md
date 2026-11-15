@@ -17,3 +17,6 @@ Package format that puts [[agent-skills]] and MCP server configuration in one po
 
 ## Related
 - The skills inside a plugin follow the [[agent-skills]] specification unchanged; [[mcp-skills-extension]] serves the same skills over MCP instead of on disk.
+
+## History
+- 2026-08-06: 1.0.0 published.

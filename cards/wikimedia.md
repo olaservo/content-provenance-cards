@@ -13,3 +13,6 @@ Movement behind Wikipedia and Wikidata. Wikimedia Enterprise supplies Microsoft,
 - **Identifiable agents**: knowing which agents are reading the projects ([[ietf-web-bot-auth]], [[aims]]).
 - **Attribution for reuse**: meeting attribution requirements in agent answers. A WikiCite contributor listed six functions of citation on [[mcp-sep-3094-citations]], including provenance chains to primary sources.
 - **A seat at the table**: [[open-future]] argued in December 2025 that Wikimedia needs one at [[aaif]].
+
+## History
+- 2026-10-05: Published its investigation of OpenAI-run agents.

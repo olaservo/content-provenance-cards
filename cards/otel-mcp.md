@@ -19,3 +19,6 @@ OpenTelemetry semantic conventions for MCP spans and metrics, and the SDKs that 
 ## Related
 - [SEP-2028](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2028), open, would forward `_meta` entries to HTTP headers for distributed tracing. [SEP-2448](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2448), server execution telemetry, closed without merging in March 2026.
 - Lineage after the tool call, rather than the call itself: [[openlineage]].
+
+## History
+- 2026-10-31: Conventions merged for the TypeScript SDK, not yet released.

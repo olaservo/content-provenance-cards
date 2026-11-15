@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "content-provenance-field-guide",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-15",
+  "compatibility_flags": ["nodejs_compat"],
+  // Every request goes through the Worker so it can answer /mcp and serve Markdown on request.
+  "assets": { "directory": "./site", "binding": "ASSETS", "run_worker_first": true },
+  "observability": { "enabled": true },
+  // Rebuilds site/ and generated/ from the cards before dev and deploy. Always a --public build.
+  "build": { "command": "node ../build.mjs --public --worker --site https://content-provenance-field-guide.olahungerford.workers.dev" }
+}

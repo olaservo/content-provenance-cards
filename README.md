@@ -4,6 +4,8 @@ Cards for the standards orgs, working groups, specs and proposals that decide wh
 
 Browse it at https://www.olahungerford.com/content-provenance/. The same cards are at [cards.md](https://www.olahungerford.com/content-provenance/cards.md) and [cards.json](https://www.olahungerford.com/content-provenance/cards.json).
 
+A prototype for agents runs at https://content-provenance-field-guide.olahungerford.workers.dev: one Markdown and JSON file per card, pages that read without JavaScript, a dated list of updates, two agent skills, and an MCP endpoint at `/mcp`. See [For agents](#for-agents).
+
 These are one person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one. Corrections and new cards are welcome as issues or pull requests.
 
 ## Layout
@@ -12,9 +14,11 @@ These are one person's working notes. Status lines carry the dates the sources g
 |---|---|
 | `cards/<id>.md` | One card per org, group, spec or proposal. The filename is the id used in `[[links]]`. |
 | `vocab.json` | The layer and stage definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
-| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json` and `ui/llms.txt` for agents and scripts. No dependencies. |
+| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site. No dependencies. |
 | `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
+| `skills/<name>/SKILL.md` | Two agent skills, written by hand. `content-provenance-field-guide` tells an agent how to answer from the cards. `content-provenance-field-guide-contributor` tells it when and how to suggest a pull request here. |
+| `worker/` | A Cloudflare Worker that serves the guide to agents, see [For agents](#for-agents). |
 | `notes/metro-mockup.svg` | Hand-laid mockup of a metro-map view, two of seven lines. |
 | `private/` | Optional and gitignored. Personal notes per card and cards not yet public, see below. |
 
@@ -41,9 +45,12 @@ One-paragraph summary, with [[other-card]] links.
 
 ## Related
 - Optional extra links and facts that are not problems (overlaps, demos, who references whom).
+
+## History
+- 2026-10-14: Optional dated events, newest first: a release, a charter, a launch, a rename.
 ```
 
-Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet starts with a bold label, then a colon, then the problem it solves. Everything else is optional. Lists use the inline `[a, b]` form, which is what `build.mjs` parses. Inline `#tags` in the body are also picked up.
+Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet starts with a bold label, then a colon, then the problem it solves. Everything else is optional. A History bullet starts with the date the event happened, as `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, then a colon. The build collects these from every card into `updates.md` and `updates.json`, and warns about a bullet with no date. Lists use the inline `[a, b]` form, which is what `build.mjs` parses. Inline `#tags` in the body are also picked up.
 
 `participate` is where a reader can take part, as one or more markdown links in a quoted string. Use the effort's own public venue (issue tracker, mailing list, join page), not a contact person. Leave it out when there is no public venue.
 
@@ -67,6 +74,30 @@ Then open `ui/index.html` directly in a browser. The generated files are gitigno
 ## Adding a card
 
 Copy an existing card, rename it to the new id, and fill in the fields. Run `node build.mjs`; it warns about `[[links]]` that point at no card. Add a line to `CHANGELOG.md` under the day's date for a new card or a change a reader would want to know about.
+
+When something happens to an effort that already has a card, change its `status`, set `updated`, and add a History bullet dated when it happened. The changelog records edits to the guide. History records what happened to the efforts the cards describe.
+
+## For agents
+
+`node build.mjs --public --worker --site <url>` writes `worker/site/` and `worker/generated/`, and `worker/` serves them from Cloudflare. `wrangler dev` and `wrangler deploy` run that build first, so the Worker never serves a build that includes `private/`.
+
+```sh
+cd worker
+npm install
+npx wrangler dev      # http://127.0.0.1:8787
+npx wrangler deploy
+```
+
+What it serves, beyond the explorer and the flat files:
+
+- `cards/<id>.md` and `cards/<id>.json`, one card each, and `cards/<id>` as a plain HTML page. `index.md` lists every card in one line each, and `layers/<layer>.md` lists the cards on one layer.
+- Markdown on request: `/` and `/cards/<id>` answer `Accept: text/markdown` with the Markdown file.
+- `updates.md` and `updates.json`, the dated events from every card's History.
+- `skills/<name>/`, the two skills as plain files. The reader skill carries the index, the layer lists, every card, the updates and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs.
+- `/mcp`, an MCP server built on the TypeScript SDK. It serves both skills with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640), including `resources/directory/read`, and has three read-only tools for clients without skill support: `search_cards`, `get_card` and `list_updates`.
+- `robots.txt` and `sitemap.xml` for its own origin.
+
+The copy on olahungerford.com gets the flat files only. Jekyll renders any Markdown file that starts with frontmatter and stops serving the raw file, so the per-card files live on the Worker.
 
 ## Private notes
 

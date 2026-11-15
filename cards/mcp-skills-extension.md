@@ -16,3 +16,6 @@ Serves [[agent-skills]] over MCP, with digests and a `_meta` slot for intermedia
 
 ## Related
 - At-rest signing is not on the Skills WG agenda ([[agent-skills-signing]]).
+
+## History
+- 2026-09-13: SEP-2640 marked Final.

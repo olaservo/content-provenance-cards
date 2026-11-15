@@ -12,3 +12,6 @@ An AI system describes itself and its intended use; a content owner or marketpla
 
 ## Topics
 - **Licensing offers**: standardizing how an AI system states its intended use and how a publisher or marketplace answers with a package. Enforcement is assumed to happen at the edge.
+
+## History
+- 2026-03-10: 1.0 opened for public comment.

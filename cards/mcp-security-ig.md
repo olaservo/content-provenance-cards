@@ -11,3 +11,6 @@ First stop for security topics. Routes validated work to the owning group.
 
 ## Topics
 - **Routing**: sending [[mcp-c2pa-in-meta]] and [[mcp-sep-3094-citations]] to an owning group until a content group exists.
+
+## History
+- 2026-10-31: Restructured as a routing forum.

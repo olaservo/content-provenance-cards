@@ -16,3 +16,6 @@ Charter: agent identity, authentication and provenance, delegation chains, conse
 
 ## Related
 - Overlaps [[aims]] and [[ietf-web-bot-auth]].
+
+## History
+- 2026-05-12: Chartered.
