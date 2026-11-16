@@ -16,7 +16,7 @@ Network of authors' collecting societies, founded in 1926 and based in France. I
 - **Training transparency**: finding out which works a model was trained on. The same page says "AI providers must be obliged to inform on the training of copyrighted works".
 - **Revenue at risk**: putting a number on what generative AI costs creators. The [study](https://www.cisac.org/services/reports-and-research/cisacpmp-strategy-ai-study) it commissioned from PMP Strategy estimates that 24% of music creators' revenues and 21% of audiovisual creators' revenues are at risk by 2028.
 
-## Related
+## Compare
 - Collective licensing of AI use for web publishers: [[internet-licensing-collective]]. Its About page does not mention music societies (read 2026-11-15).
 
 ## History

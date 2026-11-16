@@ -16,4 +16,7 @@ The EU DSM Article 4 text and data mining opt-out: `tdm-reservation` and `tdm-po
 
 ## Related
 - Being weighed for the EU recognized opt-out list ([[eu-ai-act-gpai-code]]). Points at [[w3c-odrl]] for detailed policy.
-- Record companies reserve the same Article 4 rights by written declaration. IFPI [links to declarations](https://www.ifpi.org/ifpi-priorities/reservations-of-rights/) from 16 rights holders, among them Universal, Sony and Warner, and names no machine-readable protocol (read 2026-11-15). The Munich court applied Article 4 in both [[gema]] rulings.
+- Record companies reserve the same Article 4 rights by written declaration. IFPI [links to declarations](https://www.ifpi.org/ifpi-priorities/reservations-of-rights/) from 16 rights holders, among them Universal, Sony and Warner, and names no machine-readable protocol (read 2026-11-15).
+
+## Compare
+- The Munich court applied Article 4 in both [[gema]] rulings. Neither the court nor GEMA names TDMRep (searched 2026-11-15).

@@ -5,10 +5,13 @@ website: https://github.com/aaif/wg-security-and-privacy
 part_of: "[[aaif]]"
 tags: [type/working-group, layer/governance, stage/trust, topic/skills]
 participate: "[GitHub issues](https://github.com/aaif/wg-security-and-privacy/issues)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 Working group drafting a security and privacy best-practices guide for agents.
 
 ## Topics
-- **Skill verification tiers**: a four-tier ladder in which tier 2 verifies author attribution and tier 3 pins version and hash ([[agent-skills-signing]]).
+- **Skill verification tiers**: a four-tier ladder in which tier 2 verifies author attribution and tier 3 pins version and hash.
 - **Agent trust manifests**: from [[project-nanda]].
+
+## Compare
+- The [[agent-skills-signing]] cover the same ground as the tier ladder. The WG's guide does not cite them (searched 2026-11-15).

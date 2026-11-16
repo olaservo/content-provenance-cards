@@ -7,6 +7,8 @@ description: Answer questions about who is working on content provenance, access
 
 A set of short cards, one per organization, working group, specification or proposal. Each card has a type, a status line, tags, a summary, topics, links to related cards and, where known, what is in use, a dated history and a public place to take part.
 
+A link under a card's Compare heading is a comparison the guide makes, with no source that connects the two. Say so when you pass one on. Every other link is a connection a primary source states.
+
 The guide is one person's working notes. Status lines carry the dates the sources gave. Tell the reader the card's `Updated` date, and check the card's website before relying on a status for a decision.
 
 ## Find the right cards
@@ -24,6 +26,15 @@ Read as little as the question needs.
 - Give the card's `Updated` date with any status you quote.
 - If no card covers the question, say so. Do not fill the gap from memory as if it came from the guide.
 - If something is missing or out of date, the `content-provenance-field-guide-contributor` skill explains how to suggest a change.
+
+## Who should talk
+
+For "who should talk", "who is working on the same thing" or "is X connected to Y", read `references/matches.md`. It lists every pair of cards the guide compares that no primary source connects, with what was searched and when.
+
+- Give the pair, the reason the guide compares them, and the search date.
+- Say this is the guide's suggestion. It is not a statement from either effort.
+- Do not say the two have never talked. The guide only checked public material.
+- If a card links to another outside its Compare section, a source connects them. Say what the card says the connection is.
 
 ## Without the references folder
 

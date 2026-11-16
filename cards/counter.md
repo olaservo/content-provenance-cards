@@ -2,10 +2,10 @@
 name: COUNTER Metrics
 type: organization
 website: https://www.countermetrics.org
-status: Plans to reference Content Telemetry in phase two
+status: Phase two of its AI best practice says the guidelines are aligned with the SPUR telemetry framework (read 2026-11-15)
 tags: [type/organization, layer/attribution]
 participate: "[membership](https://www.countermetrics.org/membership/)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 Usage-metrics standard for scholarly publishers and libraries.
 

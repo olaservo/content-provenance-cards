@@ -12,4 +12,5 @@ worker/generated/
 worker/.wrangler/
 worker/worker-configuration.d.ts
 ui/updates.md
+ui/matches.md
 ui/updates.json

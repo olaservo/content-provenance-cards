@@ -87,6 +87,10 @@ const cards = parsed
     if (meta.part_of && hidden.has(links(meta.part_of)[0])) delete meta.part_of;
     const tags = [...new Set([...(meta.tags || []), ...inlineTags(body)])];
     const out = links(body).concat(meta.part_of ? links(meta.part_of) : []);
+    // A link that appears only under "## Compare" is a comparison made by the guide, not a connection a source states.
+    const sec = sections(body);
+    const firm = new Set(links(sec.summary).concat(...sec.sections.filter((s) => s.title !== "Compare").map((s) => links(s.text)), meta.part_of ? links(meta.part_of) : []));
+    const compares = [...new Set(links(sec.sections.find((s) => s.title === "Compare")?.text || ""))].filter((l) => l !== id && !firm.has(l));
     return {
       id,
       name: meta.name || id,
@@ -98,8 +102,9 @@ const cards = parsed
       participate: meta.participate || "",
       updated: meta.updated || "",
       tags,
-      ...sections(body),
+      ...sec,
       links: [...new Set(out)].filter((l) => l !== id),
+      compares,
     };
   })
   .sort((a, b) => a.name.localeCompare(b.name));
@@ -224,6 +229,12 @@ const cardsMd = [
   "",
   ...Object.entries(vocab.stages).map(([k, v]) => `- ${label("stage/" + k)}: ${v}.`),
   "",
+  "## Media",
+  "",
+  "The kind of content an effort is about, where its own material names one. A card with no medium tag is media-neutral.",
+  "",
+  ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
+  "",
   "## Cards",
   "",
   ...cards.map((c) => cardMd(c)),
@@ -233,7 +244,7 @@ const llmsHead = `# ${TITLE}
 
 > ${blurb} Compiled by Ola Hungerford${asOf ? ", as of " + asOf : ""}.
 
-${caveat} Each card has a name, type, status, website, tags (layer, stage, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part.
+${caveat} Each card has a name, type, status, website, tags (layer, stage, medium, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
 `;
 const llms = `${llmsHead}
 ## Cards
@@ -245,6 +256,7 @@ const llms = `${llmsHead}
 ## Optional
 
 - [Explorer](${SITE}): the list and graph view for people
+- [Not connected yet](${SITE}matches.md): pairs of cards the guide compares and no primary source connects
 - [Changelog](${SITE}changelog.md): cards added and changed in the guide, by date
 - [About the author](https://www.olahungerford.com/about/)
 `;
@@ -272,6 +284,42 @@ const updatesJson = {
 
 // The changelog is written by hand. Its [[links]] become links into the explorer.
 const changelogSrc = unlink(readFileSync(join(root, "CHANGELOG.md"), "utf8").replace(/\r\n/g, "\n"));
+// Pairs whose only links sit under a Compare heading: the guide compares them and no source connects them.
+const cmpOnly = (a, b) => !a.links.includes(b.id) || a.compares.includes(b.id);
+const cmpLines = (c, other) =>
+  (c.sections.find((s) => s.title === "Compare")?.text || "").split("\n").filter((l) => links(l).includes(other.id)).map((l) => l.replace(/^-\s+/, ""));
+const matches = [];
+for (const a of cards)
+  for (const id of a.links) {
+    const o = byId[id];
+    if (!o || (a.id > o.id && o.links.includes(a.id))) continue;
+    if (cmpOnly(a, o) && cmpOnly(o, a)) matches.push(a.name.localeCompare(o.name) <= 0 ? [a, o] : [o, a]);
+  }
+matches.sort((x, y) => x[0].name.localeCompare(y[0].name) || x[1].name.localeCompare(y[1].name));
+const matchesMd = (href) =>
+  [
+    "# Not connected yet",
+    "",
+    "Pairs of cards that this guide compares and that no primary source connects: neither effort's own material names the other, and no court, regulator or standards body ties them. Each line says what was searched and when. People from the two efforts may still have talked.",
+    "",
+    ...matches.map(([a, o]) => `- [${a.name}](${href(a.id)}) and [${o.name}](${href(o.id)}): ${[...cmpLines(a, o), ...cmpLines(o, a)].map((l) => md(l, href)).join(" ")}`),
+    "",
+  ].join("\n");
+
+// smoke/questions.json lists questions the guide should be able to answer, with the cards or pairs a good answer names.
+// A "match" question expects pairs that are still unconnected. It fails when a source turns up and the link moves out of Compare.
+const smokeFile = join(root, "smoke", "questions.json");
+if (existsSync(smokeFile)) {
+  const isMatch = (x, y) => matches.some(([a, o]) => (a.id === x && o.id === y) || (a.id === y && o.id === x));
+  let bad = 0;
+  const questions = JSON.parse(readFileSync(smokeFile, "utf8"));
+  for (const q of questions) {
+    for (const id of [...(q.cards || []), ...(q.pairs || []).flat()]) if (!ids.has(id)) (bad++, console.warn(`smoke ${q.id}: no card ${id}`));
+    for (const [x, y] of q.pairs || []) if (ids.has(x) && ids.has(y) && !isMatch(x, y)) (bad++, console.warn(`smoke ${q.id}: ${x} and ${y} are no longer an unconnected pair`));
+  }
+  console.log(`smoke: ${questions.length} questions, ${bad} problems`);
+}
+
 for (const l of links(changelogSrc)) if (!ids.has(l)) console.warn(`dangling link in CHANGELOG.md: [[${l}]]`);
 const changelog = md(changelogSrc, inExplorer);
 
@@ -280,6 +328,7 @@ const flat = {
   "cards.json": JSON.stringify(json, null, 1) + "\n",
   "updates.md": updatesMd(inExplorer),
   "updates.json": JSON.stringify(updatesJson, null, 1) + "\n",
+  "matches.md": matchesMd(inExplorer),
   "llms.txt": llms,
   "changelog.md": changelog,
 };
@@ -322,6 +371,12 @@ if (workerMode) {
     "",
     ...Object.entries(vocab.stages).map(([k, v]) => `- ${label("stage/" + k)}: ${v}.`),
     "",
+    "## Media",
+    "",
+    "The kind of content an effort is about, where its own material names one. A card with no medium tag is media-neutral.",
+    "",
+    ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
+    "",
   ].join("\n");
   const cardIndex = ["# Cards", "", "One line per card: name, type and layers, then the current status.", "", ...cards.map((c) => line(c, fromRoot)), ""].join("\n");
   const layerFile = (l) =>
@@ -341,6 +396,7 @@ if (workerMode) {
       "- One card per file: `cards/<id>.md` and `cards/<id>.json`. The ids are in the list below.",
       `- Cards by layer: ${Object.keys(vocab.layers).map((l) => `[${l}](layers/${l}.md)`).join(", ")}.`,
       "- [Updates](updates.md): dated events across all cards, newest first. Also as [JSON](updates.json).",
+      "- [Not connected yet](matches.md): pairs of cards the guide compares and no primary source connects.",
       "- [Changelog](changelog.md): cards added and changed in the guide.",
       "- Everything in one file: [cards.md](cards.md) or [cards.json](cards.json).",
       `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md).`,
@@ -356,13 +412,19 @@ if (workerMode) {
       "",
       ...Object.entries(vocab.stages).map(([k, v]) => `- ${label("stage/" + k)}: ${v}.`),
       "",
+      "## Media",
+      "",
+      "The kind of content an effort is about, where its own material names one. A card with no medium tag is media-neutral.",
+      "",
+      ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
+      "",
       "## Cards",
       "",
       ...cards.map((c) => line(c, fromRoot)),
       "",
     ].join("\n");
 
-  Object.assign(site, flat, { "index.md": indexMd, "updates.md": updatesMd(fromRoot) });
+  Object.assign(site, flat, { "index.md": indexMd, "updates.md": updatesMd(fromRoot), "matches.md": matchesMd(fromRoot) });
   for (const c of cards) {
     site[`cards/${c.id}.md`] = cardFile(c);
     site[`cards/${c.id}.json`] = JSON.stringify({ ...c, url: SITE + "cards/" + c.id, explorer: SITE + "#" + c.id }, null, 1) + "\n";
@@ -383,6 +445,7 @@ if (workerMode) {
   skills[ref + "index.md"] = cardIndex;
   skills[ref + "vocabulary.md"] = vocabulary;
   skills[ref + "updates.md"] = site["updates.md"];
+  skills[ref + "matches.md"] = site["matches.md"];
   skills[ref + "changelog.md"] = changelog;
   for (const c of cards) skills[`${ref}cards/${c.id}.md`] = site[`cards/${c.id}.md`];
   for (const l of Object.keys(vocab.layers)) skills[`${ref}layers/${l}.md`] = site[`layers/${l}.md`];
@@ -393,6 +456,7 @@ if (workerMode) {
 
 - [Guide index](${SITE}index.md): how the guide is laid out, the layer and stage definitions, and one line per card
 - [Updates](${SITE}updates.md): dated events from every card's history, newest first, also as [JSON](${SITE}updates.json)
+- [Not connected yet](${SITE}matches.md): pairs of cards the guide compares and no primary source connects
 - [Changelog](${SITE}changelog.md): cards added and changed in the guide, by date
 
 ## Cards

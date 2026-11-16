@@ -6,9 +6,12 @@ part_of: "[[mcp]]"
 status: Charter has a data lineage and citation pillar
 tags: [type/interest-group, venue/mcp, layer/provenance, layer/attribution]
 participate: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 Financial-services interest group. Its charter also has an audit and attestation pillar, which these cards do not cover.
 
 ## Topics
-- **Regulated data lineage and citation**: tracing financial data through agents. [[openlineage]] and [[mcp-sep-3094-citations]] have been presented or offered here.
+- **Regulated data lineage and citation**: tracing financial data through agents. [[openlineage]] has been presented here.
+
+## Compare
+- [[mcp-sep-3094-citations]] has been offered here. No public record of that was found (searched 2026-11-15).

@@ -17,8 +17,8 @@ Not-for-profit membership organisation, set up in 2006, that writes the message 
 - **AI as a use type**: naming AI training among the uses a message can refer to. The [allowed value sets](https://kb.ddex.net/reference-material/current-allowed-value-sets/) include `UseForGenerativeAI`, `UseForTrainingGenerativeAI` and `UseForTrainingNonGenerativeAI`.
 - **A standard for AI declarations**: its Artificial Intelligence group is set up "to investigate the metadata requirements for the communication of AI-generated music", including musical works. The group's Generative AI Declaration Standard has finished member comments on its committee draft.
 
-## Related
-- [[c2pa]] records how an asset was made in a signed manifest bound to the file. A search on 2026-11-15 found no DDEX page that refers to it.
+## Compare
+- [[c2pa]] records how an asset was made in a signed manifest bound to the file. No DDEX page refers to it, and no C2PA page refers to DDEX (searched 2026-11-15).
 
 ## In use
 - ERN 4.3.2 is the latest published version, and DDEX [advises implementing it](https://kb.ddex.net/implementing-each-standard/electronic-release-notification-message-suite-(ern)/). Its data dictionary is dated 2025-06-26. The allowed value sets are at version 012 (2026-09-16).

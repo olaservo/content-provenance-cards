@@ -6,9 +6,12 @@ website: https://identity.foundation
 status: Hosts CAWG
 tags: [type/organization, layer/identity]
 participate: "[join DIF](https://identity.foundation/join/)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 Standards body for decentralized identifiers and verifiable credentials. Hosts [[cawg]].
 
 ## Topics
-- **Decentralized identity**: interoperable identifiers and credentials that agent identity specs such as [[aims]] build on.
+- **Decentralized identity**: interoperable identifiers and credentials that agent identity specs build on.
+
+## Compare
+- [[aims]] builds on W3C DIDs and Verifiable Credentials. It names DIF only as the host of CAWG (searched 2026-11-15).

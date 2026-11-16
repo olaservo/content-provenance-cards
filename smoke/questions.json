@@ -1,0 +1,19 @@
+[
+ { "id": "opt-out", "kind": "lookup", "question": "Which efforts let a publisher say whether AI may train on its content?", "cards": ["ietf-aipref", "w3c-tdmrep", "rsl", "cc-signals", "cloudflare-content-signals", "ai-robots-txt", "aipref-training-token"] },
+ { "id": "c2pa-text", "kind": "status", "question": "Can C2PA sign plain text yet?", "cards": ["c2pa", "encypher"] },
+ { "id": "music-disclosure", "kind": "lookup", "question": "How does a streaming service learn that a track was made with AI?", "cards": ["ddex"] },
+ { "id": "court-memorisation", "kind": "lookup", "question": "What has a court said about AI models that memorise songs?", "cards": ["gema"] },
+ { "id": "agent-payment", "kind": "lookup", "question": "How could an agent pay for a page it reads?", "cards": ["x402", "mpp"] },
+ { "id": "blanket-licence", "kind": "lookup", "question": "Who sells one licence for AI use of many publishers' content?", "cards": ["internet-licensing-collective"] },
+ { "id": "usage-reporting", "kind": "lookup", "question": "How does a publisher find out that an AI answer used its article?", "cards": ["content-telemetry", "spur-coalition"] },
+ { "id": "mcp-citations", "kind": "status", "question": "What happened to the MCP citations proposal?", "cards": ["mcp-sep-3094-citations"], "say": "closed without merging on 2026-11-08" },
+ { "id": "gone-quiet", "kind": "status", "question": "Which efforts in the guide have gone quiet?", "cards": ["spawning", "fairly-trained", "data-provenance-initiative"] },
+ { "id": "take-part", "kind": "lookup", "question": "Where do I go to take part in the IETF AI preferences work?", "cards": ["ietf-aipref"] },
+ { "id": "recent", "kind": "change", "question": "What happened in the first half of November 2026?", "cards": ["internet-licensing-collective", "mcp-sep-3094-citations", "ddex", "agent-skills-signing"] },
+ { "id": "no-card", "kind": "gap", "question": "Is there a card on Audible Magic?", "cards": [], "say": "no card covers it" },
+ { "id": "who-should-talk", "kind": "match", "question": "Who should talk sometime?", "pairs": [["agent-skills-signing", "ai-catalog"], ["c2pa", "ddex"], ["content-telemetry", "internet-licensing-collective"]], "say": "these are pairs the guide compares and no primary source connects, with the date searched" },
+ { "id": "music-and-web", "kind": "match", "question": "Who in music should talk to someone working on web publishing?", "pairs": [["cisac", "internet-licensing-collective"], ["gema", "internet-licensing-collective"]] },
+ { "id": "skills-signing", "kind": "match", "question": "Who is working on signing agent skills without citing each other?", "pairs": [["agent-skills-signing", "ai-catalog"], ["agent-skills-signing", "aaif-security-privacy-wg"], ["agent-skills-signing", "agent-plugins"]] },
+ { "id": "agent-identity", "kind": "match", "question": "Which agent identity efforts do not reference each other?", "pairs": [["aims", "ietf-web-bot-auth"], ["aaif-identity-trust-wg", "aims"]] },
+ { "id": "ddex-c2pa", "kind": "match", "question": "Is DDEX connected to C2PA?", "pairs": [["c2pa", "ddex"]], "say": "no primary source connects them; do not say they have never talked" }
+]

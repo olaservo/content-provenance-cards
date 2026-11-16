@@ -17,9 +17,11 @@ German collecting society for composers, lyricists and music publishers, and [a 
 - **Training transparency**: its [AI Charter](https://www.gema.de/de/aktuelles/ki-und-musik/ki-charta-der-gema) of ten principles says it must be clear which works were used for training.
 
 ## Related
-- A revenue-share license for AI use of web publishers' content: [[internet-licensing-collective]].
-- Both court press releases list Article 4 of the DSM Directive among the provisions applied, the one [[w3c-tdmrep]] reservations rely on.
 - The accounts of both rulings here come from the court's press releases. The judgments were not read.
+
+## Compare
+- A revenue-share license for AI use of web publishers' content: [[internet-licensing-collective]]. Neither names the other (searched 2026-11-15).
+- Both court press releases list Article 4 of the DSM Directive among the provisions applied, the one [[w3c-tdmrep]] reservations rely on. Neither the court nor TDMRep names the other.
 
 ## In use
 - PLAI by GEMA has one named customer, Klangio, which trains music transcription tools on about 178,000 sound files ([press release](https://www.gema.de/de/w/plai-by-gema-musikdatensatz), 2026-07-23).
