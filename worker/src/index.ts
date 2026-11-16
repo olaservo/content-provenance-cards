@@ -1,5 +1,5 @@
 // Serves the field guide: static files from site/, Markdown for clients that ask for it,
-// and an MCP endpoint at /mcp with the skills (SEP-2640) and three read-only tools.
+// and an MCP endpoint at /mcp with the skills (SEP-2640) and four read-only tools.
 // site/ and generated/ are written by `node build.mjs --public --worker`.
 import { createMcpHandler, McpServer } from "@modelcontextprotocol/server";
 import { memorySkillFiles, SkillsExtension } from "@modelcontextprotocol/server/ext/skills";
@@ -24,12 +24,18 @@ interface Update {
   name: string;
   text: string;
 }
+interface Match {
+  a: string;
+  b: string;
+  text: string;
+}
 
 const READER = "content-provenance-field-guide";
 const CONTRIBUTOR = "content-provenance-field-guide-contributor";
 const files = skillFiles as Record<string, string>;
 const cards = data.cards as Card[];
 const updates = data.updates as Update[];
+const matches = data.matches as Match[];
 const byId = new Map(cards.map((c) => [c.id, c]));
 const layers = Object.keys(data.vocab.layers);
 const layersOf = (c: Card) => c.tags.filter((t) => t.startsWith("layer/")).map((t) => t.slice(6));
@@ -39,7 +45,7 @@ const text = (s: string) => ({ content: [{ type: "text" as const, text: s }] });
 
 const instructions = `A field guide to the organizations, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. ${cards.length} cards, as of ${data.as_of}.
 
-To answer questions from it, load the skill at skill://${READER}/SKILL.md. It reads the cards a few at a time. The tools search_cards, get_card and list_updates return the same content for clients without skill support.
+To answer questions from it, load the skill at skill://${READER}/SKILL.md. It reads the cards a few at a time. The tools search_cards, get_card, list_updates and list_unconnected return the same content for clients without skill support.
 
 To suggest a new card or a correction, see skill://${CONTRIBUTOR}/SKILL.md.`;
 
@@ -141,6 +147,27 @@ const mcp = createMcpHandler(async () => {
       const lines = hits.map((u) => `- ${u.date} ${u.name} (id ${u.card}): ${plain(u.text)}`);
       const note = `The guide records ${updates.length} dated events and was last updated ${data.as_of}. A card with no events here may still have changed: check its status with get_card.`;
       return text(`${hits.length} events match.\n\n${lines.join("\n")}\n\n${note}`);
+    },
+  );
+
+  server.registerTool(
+    "list_unconnected",
+    {
+      title: "List unconnected pairs",
+      description: "List pairs of cards that the guide compares and that no primary source connects: neither effort's own material names the other. Each line says what was searched and when. Use it for questions like who should talk, who is working on the same problem separately, or whether two efforts are connected.",
+      inputSchema: z.object({
+        card: z.string().optional().describe("Only pairs that include this card id"),
+        layer: z.enum(layers as [string, ...string[]]).optional().describe("Only pairs with a card on this layer"),
+      }),
+      annotations: { readOnlyHint: true },
+    },
+    async ({ card, layer }) => {
+      if (card && !byId.has(card)) return { ...text(`No card has the id ${card}. Use search_cards to find one.`), isError: true };
+      const onLayer = (id: string) => layersOf(byId.get(id)!).includes(layer!);
+      const hits = matches.filter((m) => (!card || m.a === card || m.b === card) && (!layer || onLayer(m.a) || onLayer(m.b)));
+      const lines = hits.map((m) => `- ${byId.get(m.a)!.name} (id ${m.a}) and ${byId.get(m.b)!.name} (id ${m.b}): ${plain(m.text)}`);
+      const note = "These are comparisons the guide makes. People from the two efforts may still have talked. A pair that is not listed is either connected by a source, which get_card shows as a link outside the card's Compare section, or not compared by the guide.";
+      return text(`${hits.length} of ${matches.length} unconnected pairs match.\n\n${lines.join("\n")}\n\n${note}`);
     },
   );
 

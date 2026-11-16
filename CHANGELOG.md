@@ -7,6 +7,8 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 - Checked the findings the link audit left open. [[mcp-security-ig]]: the restructure is dated 2026-08-26 in the charter changelog and was merged on 2026-10-31. [[mpp]]: the current draft is `draft-httpauth-payment`, which is active, and the earlier `draft-ryan-httpauth-payment` expired. [[counter]] published phase two on 2026-10-23. [[creative-commons]]: the AIPREF exclusions draft expired on 2026-10-24. [[rsl]]: the SPUR binding links its source.
 - [[mcp-fsig]]: the 2026-09-24 meeting notes show the [[openlineage]] lineage key presented and [[mcp-sep-3094-citations]] on the agenda. That pair is now connected by a source, and `matches.md` lists 48 pairs. BearingNode filed the lineage key as FSIG issue 16 on 2026-10-08.
 - [[openattribution]]: the status no longer lists the SDKs and the edge worker, which are in the [[spur-coalition]] GitHub organization. [[agent-skills-signing]] counts seven discussions.
+- The MCP endpoint has a fourth tool, `list_unconnected`, which lists the pairs in `matches.md` and can filter by card or layer. A client that only uses tools had no way to reach that list.
+- [[rsl]]: a Training opt-out topic names the `ai-train` usage token, and the spec's references to [[cloudflare-content-signals]] and [[ietf-aipref]].
 
 ## 2026-11-15
 

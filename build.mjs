@@ -627,6 +627,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   for (const [f, text] of Object.entries(site)) put(siteDir, f, text);
   for (const f of ["index.html", "data.js", "private.js"]) copyFileSync(join(root, "ui", f), join(siteDir, f));
   put(genDir, "skills.json", JSON.stringify(skills));
-  put(genDir, "data.json", JSON.stringify({ site: SITE, title: TITLE, as_of: asOf, vocab, cards, updates }));
+  const pairs = matches.map(([a, o]) => ({ a: a.id, b: o.id, text: [...cmpLines(a, o), ...cmpLines(o, a)].join(" ") }));
+  put(genDir, "data.json", JSON.stringify({ site: SITE, title: TITLE, as_of: asOf, vocab, cards, updates, matches: pairs }));
   console.log(`${Object.keys(site).length + 3} files -> worker/site, ${Object.keys(skills).length} skill files -> worker/generated`);
 }

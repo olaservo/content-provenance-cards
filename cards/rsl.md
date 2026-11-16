@@ -12,6 +12,7 @@ XML vocabulary for usage and compensation terms (per-crawl, per-inference, subsc
 
 ## Topics
 - **Machine-readable terms**: publishing usage terms and prices that crawlers and AI systems can read and accept.
+- **Training opt-out**: saying whether AI may train on content. The [usage vocabulary](https://rslstandard.org/rsl#_3-4-1-1-usage-vocabulary) (section 3.4.1.1) has `ai-train`, `ai-input`, `ai-index` and `ai-all` tokens for `<permits>` and `<prohibits>`. The spec says it includes the [[cloudflare-content-signals]] vocabulary and may add terms from [[ietf-aipref]].
 - **Adoption**: getting model developers to honor it on the open web. None has committed.
 - **Enforcement**: supplying the lever [[content-telemetry]] manifests lack, through a [SPUR profile binding](https://github.com/SPUR-Coalition/telemetry-profile/tree/main/bindings), a v0.1 draft marked for discussion with the RSL working group (read 2026-11-16).
 

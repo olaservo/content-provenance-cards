@@ -102,7 +102,7 @@ What it serves, beyond the explorer and the flat files:
 - Markdown on request: `/` and `/cards/<id>` answer `Accept: text/markdown` with the Markdown file.
 - `updates.md` and `updates.json`, the dated events from every card's History.
 - `skills/<name>/`, the two skills as plain files. The reader skill carries the index, the layer lists, every card, the updates and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs.
-- `/mcp`, an MCP server built on the TypeScript SDK. It serves both skills with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640), including `resources/directory/read`, and has three read-only tools for clients without skill support: `search_cards`, `get_card` and `list_updates`.
+- `/mcp`, an MCP server built on the TypeScript SDK. It serves both skills with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640), including `resources/directory/read`, and has four read-only tools for clients without skill support: `search_cards`, `get_card`, `list_updates` and `list_unconnected`, which lists the pairs in `matches.md`.
 - `robots.txt` and `sitemap.xml` for its own origin.
 
 ### Trying the MCP endpoint
@@ -130,9 +130,9 @@ Other clients take the same URL as a Streamable HTTP server.
 What a client gets depends on what it supports:
 
 - A client with the Skills extension lists two skills, `content-provenance-field-guide` and `content-provenance-field-guide-contributor`, and reads their files as it needs them.
-- Any other client gets the three tools, and can read the same files as `skill://` resources.
+- Any other client gets the four tools, and can read the same files as `skill://` resources.
 
-Checked as of 2026-11-15: requests on protocol versions 2026-07-28 and 2025-11-25 from a script, and Claude Code 2.1.325 in headless mode, which used the tools. No client with the Skills extension has been tried against it yet. Problems and requests go to [issues](https://github.com/olaservo/content-provenance-cards/issues).
+Checked as of 2026-11-16: requests on protocol versions 2026-07-28 and 2025-11-25 from a script, and Claude Code 2.1.325 in headless mode, which answered the questions in `smoke/questions.json` from the tools. No client with the Skills extension has been tried against it yet. Problems and requests go to [issues](https://github.com/olaservo/content-provenance-cards/issues).
 
 The copy on olahungerford.com gets the flat files only. Jekyll renders any Markdown file that starts with frontmatter and stops serving the raw file, so the per-card files live on the Worker.
 
