@@ -153,7 +153,7 @@ const SITE = "https://www.olahungerford.com/";
 const VOCAB = window.VOCAB || { layers: {}, stages: {}, labels: {} };
 const LAYER_TEXT = VOCAB.layers, STAGE_TEXT = VOCAB.stages, LABELS = VOCAB.labels;
 const LAYERS = Object.keys(LAYER_TEXT), STAGES = Object.keys(STAGE_TEXT);
-const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["type", "Type", null], ["", "Other", null]];
+const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["medium", "Medium", null], ["type", "Type", null], ["", "Other", null]];
 
 function human(t) {
   if (LABELS[t]) return LABELS[t];

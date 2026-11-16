@@ -4,6 +4,9 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-15
 
+- Added four music cards: [[ddex]], [[cisac]], [[gema]] and [[fairly-trained]]. They carry a new `medium/` tag, which the explorer shows as its own filter row. Existing cards are not tagged by medium yet.
+- [[c2pa]]: the Stripped metadata topic counts the soft-binding algorithms that list audio.
+- [[w3c-tdmrep]]: notes that record companies reserve Article 4 rights by written declaration, with IFPI's list of them.
 - [[rsl]]: the status line now mentions the 2026-11-12 relaunch of the collective behind it. The build warns when a card's newest History date is later than every date in its status.
 - [[internet-licensing-collective]]: added the ten Publisher Steering Committee members shown on its About page, and the co-founder named in the launch release.
 - The `search_cards` tool on the MCP endpoint lists cards with the words in their name or aliases first, and says when the rest only mention them.
