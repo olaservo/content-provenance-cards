@@ -7,7 +7,7 @@ part_of: "[[w3c]]"
 status: CG draft; last push 2026-09
 tags: [type/community-group, layer/access, layer/licensing]
 participate: "[join the community group](https://www.w3.org/community/tdmrep/join)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 The EU DSM Article 4 text and data mining opt-out: `tdm-reservation` and `tdm-policy` by HTTP header, HTML meta or `/.well-known/tdmrep.json`.
 
@@ -16,3 +16,4 @@ The EU DSM Article 4 text and data mining opt-out: `tdm-reservation` and `tdm-po
 
 ## Related
 - Being weighed for the EU recognized opt-out list ([[eu-ai-act-gpai-code]]). Points at [[w3c-odrl]] for detailed policy.
+- Record companies reserve the same Article 4 rights by written declaration. IFPI [links to declarations](https://www.ifpi.org/ifpi-priorities/reservations-of-rights/) from 16 rights holders, among them Universal, Sony and Warner, and names no machine-readable protocol (read 2026-11-15). The Munich court applied Article 4 in both [[gema]] rulings.

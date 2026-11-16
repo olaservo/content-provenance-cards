@@ -62,6 +62,7 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet s
 - `type/...` mirrors `type` so it shows in the tag pane.
 - `layer/provenance`, `layer/access`, `layer/licensing`, `layer/attribution`, `layer/payments`, `layer/identity`, `layer/governance`.
 - `stage/at-rest`, `stage/in-transit`, `stage/boundary`, `stage/after-delivery`, `stage/trust`: where a card sits on the path content takes through an agent, from the Attribution by Design talk (which calls them stations), used only where a card clearly sits at one. Trust is the exception: it is the question of who may sign or report, which every other stage depends on.
+- `medium/audio`, `medium/video`: the kind of content an effort is about, used only where its own material names the medium. A card with no medium tag is media-neutral or not yet tagged.
 - `venue/mcp` for MCP threads and groups, `topic/skills` for skills work.
 
 ## Using it
