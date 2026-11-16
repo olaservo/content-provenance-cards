@@ -13,8 +13,8 @@ These are one person's working notes. Status lines carry the dates the sources g
 | Path | What |
 |---|---|
 | `cards/<id>.md` | One card per org, group, spec or proposal. The filename is the id used in `[[links]]`. |
-| `vocab.json` | The layer and stage definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
-| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site. No dependencies. |
+| `vocab.json` | The layer, stage and medium definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
+| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json`, `ui/matches.md` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site. No dependencies. |
 | `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
 | `smoke/questions.json` | Questions the guide should be able to answer, each with the cards or unconnected pairs a good answer names. The build checks that the cards exist and that each pair is still unconnected. |

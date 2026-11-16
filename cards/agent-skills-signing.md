@@ -1,13 +1,13 @@
 ---
 name: Agent Skills at-rest signing threads
-aliases: ["#252", "#393", "#588", "#564", "#620", "#643"]
+aliases: ["#252", "#393", "#588", "#564", "#620", "#643", "#651"]
 type: proposal
 website: https://github.com/agentskills/agentskills/discussions/393
 part_of: "[[agent-skills]]"
-status: Six open discussions in Ideas, one maintainer, no convergence
+status: Seven open discussions in Ideas, one maintainer, no convergence
 tags: [type/proposal, layer/provenance, stage/at-rest, topic/skills, medium/code]
 participate: "[GitHub discussions](https://github.com/agentskills/agentskills/discussions)"
-updated: 2026-11-15
+updated: 2026-11-16
 ---
 Proposals for signing, lockfiles and lineage of SKILL.md folders: signature in frontmatter ([#252](https://github.com/agentskills/agentskills/discussions/252)), SKILL.sig sidecar ([#393](https://github.com/agentskills/agentskills/discussions/393)), skills-lock.json ([#588](https://github.com/agentskills/agentskills/discussions/588)), `metadata.source` ([#564](https://github.com/agentskills/agentskills/discussions/564)), `metadata.derived-from` ([#620](https://github.com/agentskills/agentskills/discussions/620)), skill-evidence documents keyed by digest ([#643](https://github.com/agentskills/agentskills/discussions/643)).
 

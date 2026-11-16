@@ -7,7 +7,7 @@ part_of: "[[ietf]]"
 status: vocab-08 (2026-09-13) without consensus; attach-05 (2026-08-18); IETF 127 sessions 2026-11-16 and 11-19
 tags: [type/working-group, layer/access, stage/after-delivery]
 participate: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/), [GitHub issues](https://github.com/ietf-wg-aipref/drafts/issues)"
-updated: 2026-11-03
+updated: 2026-11-16
 ---
 Vocabulary for AI usage preferences and how they attach to content (`Content-Usage` header and robots.txt directive).
 
@@ -18,7 +18,7 @@ Vocabulary for AI usage preferences and how they attach to content (`Content-Usa
 - **Inference-time use**: covering grounding and agent use, which the vocabulary does not yet do. [[microsoft-grounding-preference]] is the first vendor signal there. MCP has no field for a server to declare it.
 
 ## Related
-- Individual drafts: [[aipref-training-token]], [[cloudflare-content-signals]], and the [[creative-commons]] exclusions and parameters drafts.
+- Individual drafts: [[aipref-training-token]], [[cloudflare-content-signals]], and the [[creative-commons]] exclusions and parameters drafts. The exclusions draft expired on 2026-10-24.
 - Enforcement side: [[ietf-web-bot-auth]]. Layered on by [[cc-signals]].
 
 ## History

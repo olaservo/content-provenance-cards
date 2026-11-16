@@ -6,9 +6,9 @@ website: https://creativecommons.org
 status: Attribution to become a requirement in the next CC Signals iteration; RAG attribution best practices planned
 tags: [type/organization, layer/licensing, layer/access, layer/attribution]
 participate: "[contact](https://creativecommons.org/about/contact/)"
-updated: 2026-11-15
+updated: 2026-11-16
 ---
-Steward of the CC licenses and CC REL machine-readable license metadata. Proposes [[cc-signals]] and filed AIPREF drafts on exclusions and parameters ([[ietf-aipref]]).
+Steward of the CC licenses and CC REL machine-readable license metadata. Proposes [[cc-signals]] and filed AIPREF drafts on exclusions and parameters ([[ietf-aipref]]). The exclusions draft expired on 2026-10-24.
 
 ## Topics
 - **AI reuse beyond licensing**: giving stewards terms for AI reuse, since licensing alone cannot address it (September 2026 guidance).
