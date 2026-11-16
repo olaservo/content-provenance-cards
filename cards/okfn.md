@@ -12,11 +12,15 @@ CKAN maintainers. MCP Labs runs chat over official datasets with every answer li
 
 ## Topics
 - **Attributable open-data answers**: linking every answer to its dataset, which open licenses can make a legal requirement.
-- **Interim convention to standard**: mapping its required `structuredContent.sources` list onto [[mcp-sep-3094-citations]].
+- **Interim convention to standard**: moving its required `structuredContent.sources` list onto a standard citation format.
 
 ## Related
-- Plans to move charts to MCP Apps and citations to SEP-3094. [[wikimedia]] contributors review the same SEP.
-- A natural pilot for the [[creative-commons]] RAG attribution best practices.
+- Plans to move charts to MCP Apps and citations to SEP-3094.
+
+## Compare
+- Its `sources` list could map onto [[mcp-sep-3094-citations]]. An OKFN developer reviewed the SEP, and no OKFN page names it (searched 2026-11-15).
+- A [[wikimedia]] contributor reviewed the same SEP. No source connects the two organisations (searched 2026-11-15).
+- A natural pilot for the [[creative-commons]] RAG attribution best practices. Neither names the other (searched 2026-11-15).
 
 ## In use
 - [MCP Labs](https://mcp.okfn.org) answers questions over official datasets and links each answer to its source (responding 2026-11-15).

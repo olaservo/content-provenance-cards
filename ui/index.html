@@ -68,6 +68,7 @@
   #graph { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; user-select: none; }
   #graph:active { cursor: grabbing; }
   .edge { stroke: var(--edge); stroke-width: 1; }
+  .edge.cmp { stroke-dasharray: 3 4; }
   .edge.on { stroke: var(--accent); stroke-width: 1.8; }
   .edge.fade { opacity: .2; }
   .node circle { stroke: var(--canvas); stroke-width: 1.5; cursor: pointer; }
@@ -79,6 +80,7 @@
   .legend { position: absolute; left: 10px; bottom: 10px; font-size: 12px; color: var(--muted); background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; }
   .legend span { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; }
   .legend .note { margin-top: 4px; border-top: 1px solid var(--line); padding-top: 4px; }
+  .legend svg { vertical-align: middle; margin-right: 5px; }
   .hint { position: absolute; right: 10px; bottom: 10px; font-size: 12px; color: var(--muted); }
   #detail { padding: 16px 24px 24px; overflow-y: auto; }
   #detail h2 { margin: 0 0 4px; }
@@ -150,10 +152,11 @@ const store = {
 const AS_OF = cards.map(c => c.updated).filter(Boolean).sort().pop() || "";
 const SITE = "https://www.olahungerford.com/";
 
-const VOCAB = window.VOCAB || { layers: {}, stages: {}, labels: {} };
+const VOCAB = window.VOCAB || { layers: {}, stages: {}, media: {}, labels: {} };
 const LAYER_TEXT = VOCAB.layers, STAGE_TEXT = VOCAB.stages, LABELS = VOCAB.labels;
 const LAYERS = Object.keys(LAYER_TEXT), STAGES = Object.keys(STAGE_TEXT);
-const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["medium", "Medium", null], ["type", "Type", null], ["", "Other", null]];
+const MEDIA_TEXT = VOCAB.media || {}, MEDIA = Object.keys(MEDIA_TEXT);
+const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["medium", "Medium", MEDIA], ["type", "Type", null], ["", "Other", null]];
 
 function human(t) {
   if (LABELS[t]) return LABELS[t];
@@ -236,6 +239,9 @@ function intro() {
 <h3>Stages</h3>
 <p>Where a card sits on the path content takes through an agent, from my Attribution by Design talk. Not every card has one.</p>
 <ul>${STAGES.map(s => `<li><strong>${human("stage/" + s)}</strong>: ${STAGE_TEXT[s]}.</li>`).join("")}</ul>
+<h3>Media</h3>
+<p>The kind of content an effort is about, where its own material names one. A card with no medium tag is media-neutral.</p>
+<ul>${MEDIA.map(m => `<li><strong>${m}</strong>: ${MEDIA_TEXT[m]}.</li>`).join("")}</ul>
 ${foot()}</div>`;
 }
 
@@ -289,7 +295,9 @@ function initGraph() {
     const key = [c.id, l].sort().join("|");
     if (seen.has(key)) continue;
     seen.add(key);
-    edges.push({ s: idx[c.id], t: idx[l] });
+    // Dotted when every link between the two cards sits under a Compare heading.
+    const o = byId[l], cmpOnly = (a, b) => !a.links.includes(b.id) || (a.compares || []).includes(b.id);
+    edges.push({ s: idx[c.id], t: idx[l], cmp: cmpOnly(c, o) && cmpOnly(o, c) });
     idx[c.id].deg++; idx[l].deg++;
   }
   G = { nodes, edges, idx, alpha: 1 };
@@ -298,7 +306,7 @@ function initGraph() {
   svg.innerHTML = "";
   const vp = mk("g", svg, { id: "vp" });
   const eg = mk("g", vp), ng = mk("g", vp);
-  for (const e of edges) e.el = mk("line", eg, { class: "edge" });
+  for (const e of edges) e.el = mk("line", eg, { class: "edge" + (e.cmp ? " cmp" : "") });
   for (const n of nodes) {
     n.r = 4 + Math.sqrt(n.deg) * 2.2;
     n.el = mk("g", ng, { class: "node" });
@@ -307,7 +315,7 @@ function initGraph() {
     const t = mk("text", n.el, { x: n.r + 3, y: 4 });
     t.textContent = n.c.name;
   }
-  $("legend").innerHTML = LAYERS.map(l => `<div><span style="background:var(--l-${l})"></span>${l}</div>`).join("") + `<div class="note">size: number of links</div>`;
+  $("legend").innerHTML = LAYERS.map(l => `<div><span style="background:var(--l-${l})"></span>${l}</div>`).join("") + `<div class="note">size: number of links</div><div><svg width="26" height="8"><line class="edge on" x1="0" y1="4" x2="26" y2="4"/></svg> a source connects them</div><div><svg width="26" height="8"><line class="edge on cmp" x1="0" y1="4" x2="26" y2="4"/></svg> compared by this guide</div>`;
 
   for (let i = 0; i < 250; i++) tick();
   fit();
@@ -380,7 +388,7 @@ function styleGraph() {
   for (const e of G.edges) {
     const on = nb.size && (e.s.id === focus || e.t.id === focus);
     const off = !vis.has(e.s.id) || !vis.has(e.t.id) || (nb.size && !on);
-    e.el.setAttribute("class", "edge" + (on ? " on" : "") + (off ? " fade" : ""));
+    e.el.setAttribute("class", "edge" + (e.cmp ? " cmp" : "") + (on ? " on" : "") + (off ? " fade" : ""));
   }
 }
 

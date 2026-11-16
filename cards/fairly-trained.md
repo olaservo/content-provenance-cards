@@ -16,7 +16,9 @@ Non-profit that certifies generative AI companies, products and models whose tra
 
 ## Related
 - BRIA AI and Somms.ai were among the nine companies certified at launch and are not on the list read on 2026-11-15.
-- Audits of dataset licenses from outside the developer: [[data-provenance-initiative]].
+
+## Compare
+- Audits of dataset licenses from outside the developer: [[data-provenance-initiative]]. Neither names the other (searched 2026-11-15).
 
 ## In use
 - The [certified list](https://www.fairlytrained.org/certified-models) showed 19 entries on 2026-11-15: 12 companies, 2 products and 5 models.

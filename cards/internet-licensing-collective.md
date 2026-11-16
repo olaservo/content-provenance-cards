@@ -14,13 +14,17 @@ Nonprofit, publisher-led collecting society for AI use of web content, formerly 
 - **Blanket licensing**: replacing a separate deal between every publisher and every AI company with one agreement per side. Fees scale with the AI product's revenue, and the licensee picks the uses it needs (training, RAG, grounding, agentic use, AI overviews).
 - **Publisher control**: letting a publisher choose which content it offers, to which licensees and for which uses. Joining is free and non-exclusive, and terms are declared with [[rsl]] on the publisher's own site.
 - **Royalty allocation**: dividing revenue by what each work contributed to AI outputs, how often it is relied on and the value of the AI product.
-- **Usage reporting**: paying out on usage that licensees report. ILC is not in the content path, and its site does not say how reports are checked. [[content-telemetry]] standardizes reports of this kind.
+- **Usage reporting**: paying out on usage that licensees report. ILC is not in the content path, and its site does not say how reports are checked.
 
 ## Related
 - A Publisher Steering Committee oversees the licensing framework, safeguards and economics. The About page shows ten members: Reddit, People Inc., Yahoo, Ziff Davis, the Wikimedia Foundation ([[wikimedia]]), USA Today, Internet Brands, Mediahuis, The Atlantic and Vox Media (read 2026-11-15). Yahoo Scout, the first licensee, is a Yahoo product.
 - The launch release names Doug Leeds as a co-founder. The About page names no staff.
-- Its About page lists 3,100+ supporting publications, among them the Guardian (a [[spur-coalition]] founder), Wikipedia and O'Reilly Media.
+- Its About page lists 3,100+ supporting publications, among them the Guardian, Wikipedia and O'Reilly Media.
 - Mather Economics' report The Price of Intelligence (2026-11-12) estimates AI companies would pay 15% to 35% of revenue to keep access to licensed content. The launch release says ILC did not commission or fund it.
+
+## Compare
+- [[content-telemetry]] standardizes usage reports of the kind ILC pays out on. Neither names the other (searched 2026-11-15).
+- The Guardian supports ILC and is a [[spur-coalition]] founder. No source connects the two bodies themselves (searched 2026-11-15).
 
 ## In use
 - Yahoo Scout is its first licensee ([launch release](https://internetcollective.org/press/ilc-launch-2026), 2026-11-12).

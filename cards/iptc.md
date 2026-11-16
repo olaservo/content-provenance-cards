@@ -4,10 +4,10 @@ aliases: [International Press Telecommunications Council]
 type: organization
 website: https://iptc.org
 status: RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
-tags: [type/organization, layer/licensing, layer/access, layer/provenance, stage/trust]
+tags: [type/organization, layer/licensing, layer/access, layer/provenance, stage/trust, medium/image, medium/video]
 updated: 2026-11-15
 ---
-News-media standards body. RightsML is a profile of [[w3c-odrl]]. Its Data Mining photo-metadata property is maintained with [[cawg]]. With Project Origin it runs the Origin Verified News Publishers List for [[c2pa]] signing.
+News-media standards body. RightsML is a profile of [[w3c-odrl]]. Its photo metadata standard has a Data Mining property. [[cawg]]'s metadata assertion can bind IPTC metadata to a C2PA manifest. With Project Origin it runs the Origin Verified News Publishers List for [[c2pa]] signing.
 
 ## Topics
 - **News rights**: expressing rights for news content in machine-readable form (RightsML).

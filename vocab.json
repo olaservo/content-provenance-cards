@@ -15,6 +15,14 @@
   "after-delivery": "credit and reporting once the content has left the protocol and its metadata is gone",
   "trust": "who may sign or report, and how that is decided. Not a place on the path, but every other stage depends on it"
  },
+ "media": {
+  "text": "articles, books, web pages and other written content",
+  "image": "photographs, illustrations and other still images",
+  "audio": "music, speech and other sound recordings, and the musical works behind them",
+  "video": "film, broadcast and other moving images",
+  "code": "software, and agent skills and plugins made of instructions and scripts",
+  "data": "datasets and the pipelines that produce them"
+ },
  "labels": {
   "stage/boundary": "at the boundary"
  }

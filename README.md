@@ -13,10 +13,11 @@ These are one person's working notes. Status lines carry the dates the sources g
 | Path | What |
 |---|---|
 | `cards/<id>.md` | One card per org, group, spec or proposal. The filename is the id used in `[[links]]`. |
-| `vocab.json` | The layer and stage definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
-| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site. No dependencies. |
+| `vocab.json` | The layer, stage and medium definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
+| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json`, `ui/matches.md` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site. No dependencies. |
 | `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
+| `smoke/questions.json` | Questions the guide should be able to answer, each with the cards or unconnected pairs a good answer names. The build checks that the cards exist and that each pair is still unconnected. |
 | `skills/<name>/SKILL.md` | Two agent skills, written by hand. `content-provenance-field-guide` tells an agent how to answer from the cards. `content-provenance-field-guide-contributor` tells it when and how to suggest a pull request here. |
 | `worker/` | A Cloudflare Worker that serves the guide to agents, see [For agents](#for-agents). |
 | `notes/metro-mockup.svg` | Hand-laid mockup of a metro-map view, two of seven lines. |
@@ -46,6 +47,9 @@ One-paragraph summary, with [[other-card]] links.
 ## Related
 - Optional extra links and facts that are not problems (overlaps, demos, who references whom).
 
+## Compare
+- Optional comparisons with other cards that no source makes. Say what was searched and when.
+
 ## In use
 - Optional released implementations and live uses, each with a date and a link.
 
@@ -53,7 +57,7 @@ One-paragraph summary, with [[other-card]] links.
 - 2026-10-14: Optional dated events, newest first: a release, a charter, a launch, a rename.
 ```
 
-Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet starts with a bold label, then a colon, then the problem it solves. Everything else is optional. An In use bullet names something a reader can use or observe today: a released version, a live service, or a license or requirement in effect. It gives the date of the release or of the last check, and a link. A registry kept by the effort is a better link than a list of names. Commitments, pilots and open pull requests belong in `status`. Remove a bullet when it stops being true. A History bullet starts with the date the event happened, as `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, then a colon. The build collects these from every card into `updates.md` and `updates.json`, and warns about a bullet with no date. Lists use the inline `[a, b]` form, which is what `build.mjs` parses. Inline `#tags` in the body are also picked up.
+Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet starts with a bold label, then a colon, then the problem it solves. Everything else is optional. A `[[link]]` to another card says a primary source connects the two: the effort's own material names the other, or a court, regulator or standards body does. A comparison that only this guide makes goes under `## Compare`, and the explorer draws it as a dotted line. An In use bullet names something a reader can use or observe today: a released version, a live service, or a license or requirement in effect. It gives the date of the release or of the last check, and a link. A registry kept by the effort is a better link than a list of names. Commitments, pilots and open pull requests belong in `status`. Remove a bullet when it stops being true. A History bullet starts with the date the event happened, as `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, then a colon. The build collects these from every card into `updates.md` and `updates.json`, and warns about a bullet with no date. Lists use the inline `[a, b]` form, which is what `build.mjs` parses. Inline `#tags` in the body are also picked up.
 
 `participate` is where a reader can take part, as one or more markdown links in a quoted string. Use the effort's own public venue (issue tracker, mailing list, join page), not a contact person. Leave it out when there is no public venue.
 
@@ -62,7 +66,7 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet s
 - `type/...` mirrors `type` so it shows in the tag pane.
 - `layer/provenance`, `layer/access`, `layer/licensing`, `layer/attribution`, `layer/payments`, `layer/identity`, `layer/governance`.
 - `stage/at-rest`, `stage/in-transit`, `stage/boundary`, `stage/after-delivery`, `stage/trust`: where a card sits on the path content takes through an agent, from the Attribution by Design talk (which calls them stations), used only where a card clearly sits at one. Trust is the exception: it is the question of who may sign or report, which every other stage depends on.
-- `medium/audio`, `medium/video`: the kind of content an effort is about, used only where its own material names the medium. A card with no medium tag is media-neutral or not yet tagged.
+- `medium/text`, `medium/image`, `medium/audio`, `medium/video`, `medium/code`, `medium/data`: the kind of content an effort is about, used only where its own material names the medium. A card with no medium tag is media-neutral.
 - `venue/mcp` for MCP threads and groups, `topic/skills` for skills work.
 
 ## Using it
@@ -73,7 +77,7 @@ node build.mjs --public  # cards only
 node build.mjs --public --out ../olaservo.github.io/content-provenance  # publish copy for olahungerford.com
 ```
 
-Then open `ui/index.html` directly in a browser. The generated files are gitignored. `cards.md` is one Markdown file with the vocabularies first and a section per card, wikilinks resolved to links within the file. `cards.json` is the same cards as structured data under `cards`, with the vocabularies under `vocab`. `llms.txt` describes both for an agent that lands on the section. The Graph button draws cards as nodes and `[[links]]` as edges, coloured by the first `layer/` tag and sized by link count: hover to see neighbours, click to open a card, drag to move nodes or pan, scroll to zoom. Tag filters and search fade out cards that do not match. To use it in Obsidian, open this folder as a vault; Dataview can query the frontmatter, for example `TABLE status FROM #layer/attribution`.
+Then open `ui/index.html` directly in a browser. The generated files are gitignored. `cards.md` is one Markdown file with the vocabularies first and a section per card, wikilinks resolved to links within the file. `cards.json` is the same cards as structured data under `cards`, each with its `links` and the subset that are `compares`, with the vocabularies under `vocab`. `llms.txt` describes both for an agent that lands on the section. The Graph button draws cards as nodes and `[[links]]` as edges, dotted where the only links between two cards are under Compare, coloured by the first `layer/` tag and sized by link count: hover to see neighbours, click to open a card, drag to move nodes or pan, scroll to zoom. Tag filters and search fade out cards that do not match. To use it in Obsidian, open this folder as a vault; Dataview can query the frontmatter, for example `TABLE status FROM #layer/attribution`.
 
 ## Adding a card
 

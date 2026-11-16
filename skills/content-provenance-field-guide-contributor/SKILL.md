@@ -38,7 +38,8 @@ Say what you noticed, which card it affects, and the source. Ask whether they wa
 
 Work in a fork of {{repo}}. The README there has the full card format.
 
-- A card is `cards/<id>.md`: YAML frontmatter (`name`, `type`, `tags` required; `aliases`, `website`, `part_of`, `status`, `participate`, `updated` optional), a one-paragraph summary, a `## Topics` list, and optional `## Related`, `## In use` and `## History` sections. Links to other cards are `[[id]]`.
+- A card is `cards/<id>.md`: YAML frontmatter (`name`, `type`, `tags` required; `aliases`, `website`, `part_of`, `status`, `participate`, `updated` optional), a one-paragraph summary, a `## Topics` list, and optional `## Related`, `## Compare`, `## In use` and `## History` sections. Links to other cards are `[[id]]`.
+- A `[[link]]` to another card needs a primary source that connects the two. A comparison no source makes goes under `## Compare`, with what was searched and when.
 - `## In use` lists released implementations and live uses, each with a date and a link. Commitments, pilots and open pull requests go in `status`.
 - For a new card, copy an existing card of the same type and fill it in.
 - For an update, change `status`, set `updated` to today's date, and add a line to `## History` as `- YYYY-MM-DD: what happened.` The date is when the event happened, not when the card was edited.

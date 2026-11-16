@@ -14,8 +14,8 @@ Signed bot traffic with RFC 9421 HTTP message signatures and a key directory at 
 ## Topics
 - **Bot identity**: proving who a crawler or agent is. The preference ([[ietf-aipref]]) says what is allowed, bot auth says who is asking.
 
-## Related
-- Pairs with [[aims]] and the agent identifiability asks from [[wikimedia]].
+## Compare
+- Pairs with [[aims]] and with [[wikimedia]]'s ask that agents be easy to identify. Neither names Web Bot Auth (searched 2026-11-15).
 
 ## In use
 - [cloudflare/web-bot-auth](https://github.com/cloudflare/web-bot-auth) publishes libraries for signing and verifying requests. `web-bot-auth` on npm is at 0.2.0 (2026-08-31) and was first published on 2025-04-14.

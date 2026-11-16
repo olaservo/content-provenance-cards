@@ -4,7 +4,7 @@ aliases: [Coalition for Content Provenance and Authenticity]
 type: organization
 website: https://c2pa.org
 status: Spec 2.5 published October 2026
-tags: [type/organization, layer/provenance, stage/at-rest, stage/in-transit, stage/trust]
+tags: [type/organization, layer/provenance, stage/at-rest, stage/in-transit, stage/trust, medium/image, medium/video, medium/audio, medium/text]
 participate: "[membership](https://c2pa.org/membership/), [spec issues](https://github.com/c2pa-org/specifications/issues)"
 updated: 2026-11-15
 ---
@@ -19,7 +19,10 @@ Standards body for content credentials: signed manifests (claims and assertions)
 ## Related
 - Identity and consent assertions come from [[cawg]].
 - Signing skill folders: [[agent-skills-signing]].
-- Its trust layer is compared with [[aaif-identity-trust-wg]] and [[spur-coalition]].
+- [[spur-coalition]]'s Content Telemetry accepts a C2PA manifest hash as a content identifier.
+
+## Compare
+- Its trust list answers the same question as the [[aaif-identity-trust-wg]]: who may sign. Neither names the other (searched 2026-11-15).
 
 ## In use
 - The [conforming products list](https://github.com/c2pa-org/conformance-public/blob/main/conforming-products/conforming-products-list.json) had 342 records from 216 applicants on 2026-11-14: 300 generators and 42 validators. Most sign images, video and audio. One lists a plain-text format and none lists HTML. The [Conformance Explorer](https://spec.c2pa.org/conformance-explorer/) shows the same data.

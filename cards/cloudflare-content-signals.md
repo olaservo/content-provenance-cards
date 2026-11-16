@@ -1,9 +1,9 @@
 ---
 name: Cloudflare Content Signals
-aliases: [draft-romm-aipref-vocab-contentsignals]
+aliases: [draft-romm-aipref-contentsignals]
 type: proposal
 website: https://contentsignals.org
-status: Individual AIPREF draft; parsed by policycheck
+status: Individual AIPREF draft, shown as expired on Datatracker (read 2026-11-15); parsed by policycheck
 tags: [type/proposal, layer/access]
 participate: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)"
 updated: 2026-11-15
