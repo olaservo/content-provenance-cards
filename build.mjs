@@ -698,14 +698,10 @@ ${body}
     ].join("\n"),
   });
 
-  // Same preferences as olahungerford.com's robots.txt: search and answer-time use yes, training no.
+  // Search and answer-time use yes. No training preference: the cards are CC BY 4.0, which allows it with credit.
   site["robots.txt"] = `User-Agent: *
 Allow: /
-Content-Usage: train-ai=n
-Content-Signal: search=yes, ai-input=yes, ai-train=no
-
-User-Agent: __usage_ai-training
-Disallow: /
+Content-Signal: search=yes, ai-input=yes
 
 Sitemap: ${SITE}sitemap.xml
 `;
