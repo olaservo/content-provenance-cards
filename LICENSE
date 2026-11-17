@@ -2,8 +2,6 @@ MIT License
 
 Copyright (c) 2026 Ola Hungerford
 
-This licence covers the code in this repository: build.mjs, worker/, ui/index.html and the scripts under .claude/skills/. The cards and other content are under CC BY 4.0, see LICENSE-CC-BY-4.0 and the README.
-
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
