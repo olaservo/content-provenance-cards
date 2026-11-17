@@ -2,6 +2,8 @@
 name: Fairly Trained
 type: organization
 website: https://www.fairlytrained.org
+news: https://www.fairlytrained.org/blog
+feed: https://www.fairlytrained.org/blog?format=rss
 status: Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)
 tags: [type/organization, layer/licensing]
 participate: "[apply for certification](https://www.fairlytrained.org/apply)"

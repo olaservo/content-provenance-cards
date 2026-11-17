@@ -3,6 +3,8 @@ name: Creative Commons
 aliases: [CC]
 type: organization
 website: https://creativecommons.org
+news: https://creativecommons.org/blog/
+feed: https://creativecommons.org/feed/
 status: Attribution to become a requirement in the next CC Signals iteration; RAG attribution best practices planned
 tags: [type/organization, layer/licensing, layer/access, layer/attribution]
 participate: "[contact](https://creativecommons.org/about/contact/)"

@@ -3,6 +3,8 @@ name: GetFTR
 aliases: [Get Full Text Research]
 type: project
 website: https://www.getfulltextresearch.com
+news: https://www.getfulltextresearch.com/blog
+feed: https://www.getfulltextresearch.com/feed
 status: MCP service available to partners and developers since January 2026
 tags: [type/project, layer/access, medium/text]
 participate: "[integrator documentation](https://docs.getfulltextresearch.com/latest/integrators/mcp-service), [publishers](https://www.getfulltextresearch.com/why-publishers-should-join)"

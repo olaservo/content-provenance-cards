@@ -3,6 +3,7 @@ name: W3C ODRL
 aliases: [Open Digital Rights Language]
 type: community-group
 website: https://www.w3.org/community/odrl/
+feed: https://www.w3.org/community/odrl/feed/
 part_of: "[[w3c]]"
 status: 2.2 is a W3C Recommendation; a W3C WG for 3.0 is being chartered; ai-vocab draft
 tags: [type/community-group, layer/licensing]

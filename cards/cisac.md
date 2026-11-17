@@ -3,6 +3,7 @@ name: CISAC
 aliases: [International Confederation of Societies of Authors and Composers]
 type: organization
 website: https://www.cisac.org
+news: https://www.cisac.org/newsroom
 status: Asks policymakers for licensing, transparency and an effective opt-out from data mining exceptions (AI page read 2026-11-15)
 tags: [type/organization, layer/licensing, layer/payments, layer/governance, medium/audio, medium/video]
 updated: 2026-11-16

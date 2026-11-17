@@ -3,6 +3,8 @@ name: Microsoft training and grounding preferences
 aliases: [ai-grounding:disallow]
 type: proposal
 website: https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/
+news: https://blogs.bing.com/search/
+feed: https://blogs.bing.com/search/feed/
 status: Effective 2027-02-01
 tags: [type/proposal, layer/access, stage/after-delivery]
 updated: 2026-11-03

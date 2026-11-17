@@ -13,8 +13,9 @@ These are one person's working notes. Status lines carry the dates the sources g
 | Path | What |
 |---|---|
 | `cards/<id>.md` | One card per org, group, spec or proposal. The filename is the id used in `[[links]]`. |
+| `watchlist.json` | Blogs and other sources worth following that have no card, each with a `name`, a `news` page, a `feed` and a `note`. |
 | `vocab.json` | The layer, stage and medium definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
-| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json`, `ui/matches.md` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site and the plugin. No dependencies. |
+| `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json`, `ui/matches.md`, `ui/watch.md`, `ui/watch.json` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site and the plugin. No dependencies. |
 | `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
 | `smoke/questions.json` | Questions the guide should be able to answer, each with the cards or unconnected pairs a good answer names. The build checks that the cards exist and that each pair is still unconnected. |
@@ -34,6 +35,8 @@ name: C2PA
 aliases: [Coalition for Content Provenance and Authenticity]
 type: organization
 website: https://c2pa.org
+news: https://c2pa.org/news/
+feed: https://c2pa.org/feed/
 part_of: "[[some-parent]]"
 status: Spec 2.5 published October 2026
 participate: "[membership](https://c2pa.org/membership/)"
@@ -62,6 +65,8 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet s
 
 `participate` is where a reader can take part, as one or more markdown links in a quoted string. Use the effort's own public venue (issue tracker, mailing list, join page), not a contact person. Leave it out when there is no public venue.
 
+`news` is the page where the effort posts its blog or announcements, and `feed` is that page's RSS, Atom or JSON feed. Each takes one URL or an inline list. Use the effort's own page, not a social media account. For a specification that lives in a repository, the releases page and its `releases.atom` count. A card whose news appears only on its parent's blog leaves both out, and the parent's card carries them. See [Watch list](#watch-list).
+
 `type` is one of `organization`, `working-group`, `interest-group`, `community-group`, `specification`, `proposal`, `project`, `regulation`. Tags are nested Obsidian tags:
 
 - `type/...` mirrors `type` so it shows in the tag pane.
@@ -89,6 +94,12 @@ Copy an existing card, rename it to the new id, and fill in the fields. Run `nod
 
 When something happens to an effort that already has a card, change its `status`, set `updated`, and add a History bullet dated when it happened. The build warns when a card's newest History date is later than every date in its status, which usually means the status was not updated. The changelog records edits to the guide. History records what happened to the efforts the cards describe. In use lists what is released or running now, so a launch can appear in both: the dated event in History, the current state with its link in In use.
 
+## Watch list
+
+The build collects every card's `news` and `feed` into `watch.md` and `watch.json`, and adds the entries in `watchlist.json`. That file is for sources with no card: a blog that covers the field and belongs to no single effort, or an effort that has not earned a card yet. When one of them gets a card, move its `news` and `feed` to the card. The build warns when an id is in both places.
+
+`watch.json` has one entry per source under `sources`, each with `id`, `name`, `news` and `feed` as lists, and `card`, which is the card's id or `null`. It is the list a feed watcher reads. Fetching the feeds and analysing the posts happen outside this repo.
+
 ## For agents
 
 `node build.mjs --public --worker --site <url>` writes `worker/site/`, `worker/generated/` and `plugin/`, and `worker/` serves the first two from Cloudflare. `wrangler dev` and `wrangler deploy` run that build first, so the Worker never serves a build that includes `private/`.
@@ -105,7 +116,8 @@ What it serves, beyond the explorer and the flat files:
 - `cards/<id>.md` and `cards/<id>.json`, one card each, and `cards/<id>` as a plain HTML page. `index.md` lists every card in one line each, `layers/<layer>.md` lists the cards on one layer, and `topics/<topic>.md` lists the cards with one topic tag.
 - Markdown on request: `/` and `/cards/<id>` answer `Accept: text/markdown` with the Markdown file.
 - `updates.md` and `updates.json`, the dated events from every card's History.
-- `skills/<name>/`, the two skills as plain files. The reader skill carries the index, the layer and topic lists, every card, the updates and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs.
+- `watch.md` and `watch.json`, the [watch list](#watch-list).
+- `skills/<name>/`, the two skills as plain files. The reader skill carries the index, the layer and topic lists, every card, the updates, the watch list and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs.
 - `/mcp`, an MCP server built on the TypeScript SDK. It serves both skills with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640), including `resources/directory/read`, and has four read-only tools for clients without skill support: `search_cards`, `get_card`, `list_updates` and `list_unconnected`, which lists the pairs in `matches.md`.
 - `robots.txt` and `sitemap.xml` for its own origin.
 

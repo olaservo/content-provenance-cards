@@ -233,7 +233,7 @@ function renderList() {
 }
 
 function foot() {
-  return `<p class="foot">Compiled by <a href="${SITE}about/">Ola Hungerford</a>${AS_OF ? ", as of " + esc(AS_OF) : ""}. <a href="updates.md">Updates</a> and <a href="changelog.md">changelog</a>. Also as <a href="cards.md">Markdown</a> and <a href="cards.json">JSON</a>. Source on <a href="https://github.com/olaservo/content-provenance-cards">GitHub</a>.</p>`;
+  return `<p class="foot">Compiled by <a href="${SITE}about/">Ola Hungerford</a>${AS_OF ? ", as of " + esc(AS_OF) : ""}. <a href="updates.md">Updates</a>, <a href="watch.md">watch list</a> and <a href="changelog.md">changelog</a>. Also as <a href="cards.md">Markdown</a> and <a href="cards.json">JSON</a>. Source on <a href="https://github.com/olaservo/content-provenance-cards">GitHub</a>.</p>`;
 }
 
 function intro() {
@@ -266,6 +266,8 @@ function renderDetail() {
   if (c.status) h += `<br>Status: ${esc(c.status)}`;
   if (c.updated) h += ` (as of ${esc(c.updated)})`;
   if (c.participate) h += `<br>Take part: ${inline(c.participate)}`;
+  const news = [...c.news, ...c.feed];
+  if (news.length) h += `<br>News: ${news.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, ""))}</a>`).join(", ")}`;
   h += `<div class="tags">${c.tags.map(chip).join("")}</div></div>`;
   h += block(c.summary);
   for (const s of c.sections) h += `<h3>${esc(s.title)}</h3>${block(s.text)}`;

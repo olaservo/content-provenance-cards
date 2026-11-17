@@ -3,6 +3,8 @@ name: DDEX
 aliases: [Digital Data Exchange]
 type: organization
 website: https://ddex.net
+news: https://ddex.net/press/
+feed: https://ddex.net/feed/
 status: Generative AI Declaration Standard (GAI-D) in peer review, with publication expected in early 2027 (announced 2026-11-05)
 tags: [type/organization, layer/provenance, layer/attribution, layer/licensing, medium/audio]
 participate: "[working groups](https://ddex.net/about-ddex/working-groups/), for Charter and Full Members"

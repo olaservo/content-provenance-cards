@@ -3,6 +3,8 @@ name: Dataspace Protocol
 aliases: [DSP, Eclipse Dataspace Protocol]
 type: specification
 website: https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/
+news: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases
+feed: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases.atom
 status: 2025-1 released 2025-08-29 and considered stable; second errata tagged 2026-09-11
 tags: [type/specification, layer/licensing, layer/access, medium/data]
 participate: "[GitHub issues](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/issues)"

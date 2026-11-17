@@ -2,6 +2,8 @@
 name: SPUR Coalition
 type: organization
 website: https://www.spurcoalition.org
+news: https://www.spurcoalition.org/updates
+feed: https://www.spurcoalition.org/updates?format=rss
 status: Content Telemetry v1.0 published 2026-09-02
 tags: [type/organization, layer/attribution, stage/after-delivery, stage/trust]
 participate: "[GitHub](https://github.com/SPUR-Coalition)"

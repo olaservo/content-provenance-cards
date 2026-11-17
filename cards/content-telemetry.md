@@ -2,6 +2,8 @@
 name: Content Telemetry
 type: specification
 website: https://github.com/SPUR-Coalition/telemetry
+news: https://github.com/SPUR-Coalition/telemetry/releases
+feed: https://github.com/SPUR-Coalition/telemetry/releases.atom
 part_of: "[[spur-coalition]]"
 status: v1.0 published 2026-09-02; signed events deferred (section 8.9)
 tags: [type/specification, layer/attribution, stage/after-delivery]

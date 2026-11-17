@@ -3,6 +3,7 @@ name: NISO
 aliases: [National Information Standards Organization]
 type: organization
 website: https://www.niso.org
+news: https://www.niso.org/press-releases
 status: Twelve-month provenance and attribution pilot announced October 2026; KBART Phase III published 2026-08-26
 tags: [type/organization, layer/provenance, layer/attribution, layer/governance, medium/text]
 participate: "[NISO standards committees](https://www.niso.org/standards-committees)"

@@ -1,6 +1,6 @@
-// Reads cards/*.md and vocab.json, plus private/cards/*.md and private/*.private.md when present.
-// Writes ui/data.js and ui/private.js for the explorer, and ui/cards.md, ui/cards.json,
-// ui/updates.md, ui/updates.json, ui/topics/<topic>.md and ui/llms.txt for agents and scripts. Copies CHANGELOG.md to ui/changelog.md.
+// Reads cards/*.md, vocab.json and watchlist.json, plus private/cards/*.md and private/*.private.md when present.
+// Writes ui/data.js and ui/private.js for the explorer, and ui/cards.md, ui/cards.json, ui/updates.md, ui/updates.json,
+// ui/watch.md, ui/watch.json, ui/topics/<topic>.md and ui/llms.txt for agents and scripts. Copies CHANGELOG.md to ui/changelog.md.
 // --public ignores private/ and leaves out cards marked `publish: false`.
 // --out <dir> also copies the finished site to <dir>.
 // --worker also writes the site the Cloudflare Worker serves to worker/site, the skills and card data it bundles to worker/generated,
@@ -59,6 +59,8 @@ function sections(body) {
 }
 
 const links = (s) => [...s.matchAll(LINK)].map((m) => m[1].trim());
+// `news` and `feed` take one URL or an inline list.
+const urls = (v) => (Array.isArray(v) ? v : v ? [v] : []);
 const inlineTags = (s) => [...s.matchAll(/(?:^|\s)#([a-z][\w/-]*)/g)].map((m) => m[1]);
 
 const privDir = join(root, "private");
@@ -98,6 +100,8 @@ const cards = parsed
       aliases: meta.aliases || [],
       type: meta.type || "",
       website: meta.website || "",
+      news: urls(meta.news),
+      feed: urls(meta.feed),
       part_of: meta.part_of ? links(meta.part_of)[0] : "",
       status: meta.status || "",
       participate: meta.participate || "",
@@ -115,6 +119,12 @@ for (const c of cards) {
   c.backlinks = cards.filter((o) => o.links.includes(c.id)).map((o) => o.id);
   for (const l of c.links) if (!ids.has(l)) console.warn(`dangling link in ${c.id}: [[${l}]]`);
 }
+
+// Where each effort posts its news, plus the sources in watchlist.json that have no card. A watcher reads both from watch.json.
+const watchlist = JSON.parse(readFileSync(join(root, "watchlist.json"), "utf8")).map((w) => ({ ...w, news: urls(w.news), feed: urls(w.feed) }));
+for (const s of [...cards, ...watchlist]) for (const u of [...s.news, ...s.feed]) if (!/^https?:\/\/\S+$/.test(u)) console.warn(`news or feed of ${s.id} is not a URL: ${u}`);
+for (const w of watchlist) if (ids.has(w.id)) console.warn(`watchlist.json: ${w.id} has a card, so its news and feed belong there`);
+const watched = cards.filter((c) => c.news.length || c.feed.length);
 
 // "## History" bullets are dated events: "- 2026-11-12: what happened". A date is YYYY, YYYY-MM or YYYY-MM-DD.
 const DATED = /^-\s+(\d{4}(?:-\d{2}){0,2}):\s+(.+)$/;
@@ -196,6 +206,8 @@ function cardMd(c, href = inFile, level = 3) {
     `- Type: ${c.type}`,
     c.status ? `- Status: ${md(c.status, href)}` : "",
     c.website ? `- Website: ${c.website}` : "",
+    c.news.length ? `- News: ${c.news.join(", ")}` : "",
+    c.feed.length ? `- Feed: ${c.feed.join(", ")}` : "",
     c.part_of ? `- Part of: [${nameOf(c.part_of)}](${href(c.part_of)})` : "",
     c.participate ? `- Take part: ${c.participate}` : "",
     `- Tags: ${c.tags.join(", ")}`,
@@ -219,6 +231,25 @@ const updatesMd = (href) =>
     "Dated events from the History section of each card, newest first. These are things that happened to the efforts the cards describe. Edits to the guide itself are in the changelog.",
     "",
     ...updates.map((u) => `- ${u.date} [${u.name}](${href(u.card)}): ${md(u.text, href)}`),
+    "",
+  ].join("\n");
+
+const watchLines = (s) => [s.news.length ? `  - News: ${s.news.join(", ")}` : "", s.feed.length ? `  - Feed: ${s.feed.join(", ")}` : ""].filter(Boolean);
+const watchMd = (href) =>
+  [
+    "# Watch list",
+    "",
+    "Where each effort in the guide posts its blog or announcements, with a feed where it has one. For a specification that lives in a repository, this can be its releases page. A card with no entry here had no news page of its own when checked. The same list as JSON is in watch.json.",
+    "",
+    "## Cards",
+    "",
+    ...watched.flatMap((c) => [`- [${c.name}](${href(c.id)})`, ...watchLines(c)]),
+    "",
+    "## Other sources",
+    "",
+    "Sources that have no card and are worth following.",
+    "",
+    ...watchlist.flatMap((w) => [`- ${w.name}${w.note ? ": " + w.note : ""}`, ...watchLines(w)]),
     "",
   ].join("\n");
 
@@ -270,6 +301,7 @@ ${topics.map((t) => `- [Topic: ${t}](${SITE}topics/${t}.md): the cards tagged to
 
 - [Explorer](${SITE}): the list and graph view for people
 - [Not connected yet](${SITE}matches.md): pairs of cards the guide compares and no primary source connects
+- [Watch list](${SITE}watch.md): where each effort posts its news, with feeds, plus sources that have no card, also as [JSON](${SITE}watch.json)
 - [Changelog](${SITE}changelog.md): cards added and changed in the guide, by date
 - [About the author](https://www.olahungerford.com/about/)
 `;
@@ -293,6 +325,17 @@ const updatesJson = {
   as_of: asOf,
   cards: SITE + "cards.json",
   updates: updates.map((u) => ({ ...u, url: SITE + "#" + u.card })),
+};
+
+const watchJson = {
+  title: `${TITLE}: watch list`,
+  description: "Where each effort in the guide posts its blog or announcements, with a feed where it has one, and sources that have no card. A source with a card has the card's id under card.",
+  as_of: asOf,
+  cards: SITE + "cards.json",
+  sources: [
+    ...watched.map((c) => ({ id: c.id, name: c.name, card: c.id, url: SITE + "#" + c.id, news: c.news, feed: c.feed })),
+    ...watchlist.map((w) => ({ id: w.id, name: w.name, card: null, note: w.note || "", news: w.news, feed: w.feed })),
+  ],
 };
 
 // The changelog is written by hand. Its [[links]] become links into the explorer.
@@ -342,6 +385,8 @@ const flat = {
   "updates.md": updatesMd(inExplorer),
   "updates.json": JSON.stringify(updatesJson, null, 1) + "\n",
   "matches.md": matchesMd(inExplorer),
+  "watch.md": watchMd(inExplorer),
+  "watch.json": JSON.stringify(watchJson, null, 1) + "\n",
   ...Object.fromEntries(topics.map((t) => [`topics/${t}.md`, topicFile(t, inExplorer)])),
   "llms.txt": llms,
   "changelog.md": changelog,
@@ -351,6 +396,7 @@ for (const [f, text] of Object.entries(flat)) {
   writeFileSync(join(root, "ui", f), text);
 }
 console.log(`${cards.length} cards, ${updates.length} dated events -> ui/${Object.keys(flat).join(", ui/")}`);
+console.log(`watch list: ${watched.length} of ${cards.length} cards have a news page or feed, plus ${watchlist.length} from watchlist.json`);
 
 if (outDir) {
   if (!isPublic) throw new Error("--out only runs with --public, so private notes never leave this repo");
@@ -418,6 +464,7 @@ if (workerMode) {
       `- Cards by topic tag: ${topics.map((t) => `[${t}](topics/${t}.md)`).join(", ")}.`,
       "- [Updates](updates.md): dated events across all cards, newest first. Also as [JSON](updates.json).",
       "- [Not connected yet](matches.md): pairs of cards the guide compares and no primary source connects.",
+      "- [Watch list](watch.md): where each effort posts its news, with feeds, plus sources that have no card. Also as [JSON](watch.json).",
       "- [Changelog](changelog.md): cards added and changed in the guide.",
       "- Everything in one file: [cards.md](cards.md) or [cards.json](cards.json).",
       `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md).`,
@@ -448,7 +495,7 @@ if (workerMode) {
       "",
     ].join("\n");
 
-  Object.assign(site, flat, { "index.md": indexMd, "updates.md": updatesMd(fromRoot), "matches.md": matchesMd(fromRoot) });
+  Object.assign(site, flat, { "index.md": indexMd, "updates.md": updatesMd(fromRoot), "matches.md": matchesMd(fromRoot), "watch.md": watchMd(fromRoot) });
   for (const c of cards) {
     site[`cards/${c.id}.md`] = cardFile(c);
     site[`cards/${c.id}.json`] = JSON.stringify({ ...c, url: SITE + "cards/" + c.id, explorer: SITE + "#" + c.id }, null, 1) + "\n";
@@ -471,6 +518,7 @@ if (workerMode) {
   skills[ref + "vocabulary.md"] = vocabulary;
   skills[ref + "updates.md"] = site["updates.md"];
   skills[ref + "matches.md"] = site["matches.md"];
+  skills[ref + "watch.md"] = site["watch.md"];
   skills[ref + "changelog.md"] = changelog;
   for (const c of cards) skills[`${ref}cards/${c.id}.md`] = site[`cards/${c.id}.md`];
   for (const l of Object.keys(vocab.layers)) skills[`${ref}layers/${l}.md`] = site[`layers/${l}.md`];
@@ -483,6 +531,7 @@ if (workerMode) {
 - [Guide index](${SITE}index.md): how the guide is laid out, the layer and stage definitions, and one line per card
 - [Updates](${SITE}updates.md): dated events from every card's history, newest first, also as [JSON](${SITE}updates.json)
 - [Not connected yet](${SITE}matches.md): pairs of cards the guide compares and no primary source connects
+- [Watch list](${SITE}watch.md): where each effort posts its news, with feeds, plus sources that have no card, also as [JSON](${SITE}watch.json)
 - [Changelog](${SITE}changelog.md): cards added and changed in the guide, by date
 
 ## Cards
@@ -575,6 +624,7 @@ ${body}
       c.aliases.length ? `Also: ${esc(c.aliases.join(", "))}` : "",
       c.status ? `Status: ${inline(c.status, toCard)}${c.updated ? ` (as of ${c.updated})` : ""}` : "",
       c.participate ? `Take part: ${inline(c.participate, toCard)}` : "",
+      c.news.length || c.feed.length ? `News: ${[...c.news, ...c.feed].map((u) => `<a href="${esc(u)}">${esc(u.replace(/^https?:\/\//, ""))}</a>`).join(", ")}` : "",
       `Tags: ${esc(c.tags.join(", "))}`,
     ].filter(Boolean);
     site[`cards/${c.id}.html`] = page({

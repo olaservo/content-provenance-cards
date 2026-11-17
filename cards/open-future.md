@@ -2,6 +2,8 @@
 name: Open Future
 type: organization
 website: https://openfuture.eu
+news: https://openfuture.eu/blog/
+feed: https://openfuture.eu/feed/
 tags: [type/organization, layer/governance, layer/access]
 updated: 2026-11-03
 ---

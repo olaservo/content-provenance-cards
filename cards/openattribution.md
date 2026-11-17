@@ -2,6 +2,8 @@
 name: OpenAttribution.org
 type: organization
 website: https://openattribution.org
+news: https://openattribution.org/blog
+feed: https://openattribution.org/feed.xml
 status: policycheck, commerce profile, AIMS draft
 tags: [type/organization, layer/attribution, layer/identity, layer/payments]
 participate: "[GitHub](https://github.com/openattribution-org)"

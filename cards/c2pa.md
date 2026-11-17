@@ -3,6 +3,8 @@ name: C2PA
 aliases: [Coalition for Content Provenance and Authenticity]
 type: organization
 website: https://c2pa.org
+news: [https://c2pa.org/news/, https://c2pa.org/blog/]
+feed: https://c2pa.org/feed/
 status: Spec 2.5 published October 2026
 tags: [type/organization, layer/provenance, stage/at-rest, stage/in-transit, stage/trust, medium/image, medium/video, medium/audio, medium/text]
 participate: "[membership](https://c2pa.org/membership/), [spec issues](https://github.com/c2pa-org/specifications/issues)"

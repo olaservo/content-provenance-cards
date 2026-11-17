@@ -3,6 +3,8 @@ name: Model Context Protocol
 aliases: [MCP]
 type: specification
 website: https://modelcontextprotocol.io
+news: https://blog.modelcontextprotocol.io/
+feed: https://blog.modelcontextprotocol.io/index.xml
 part_of: "[[aaif]]"
 status: Next spec release moved to 2027-03-30 (SEP-3398); WG-first rule for SEPs
 tags: [type/specification, venue/mcp, layer/provenance, layer/attribution]

@@ -1,0 +1,37 @@
+[
+ {
+  "id": "scholarly-kitchen",
+  "name": "The Scholarly Kitchen",
+  "news": "https://scholarlykitchen.sspnet.org/",
+  "feed": "https://scholarlykitchen.sspnet.org/feed/",
+  "note": "The Society for Scholarly Publishing's blog on scholarly publishing"
+ },
+ {
+  "id": "mlcommons",
+  "name": "MLCommons",
+  "news": "https://mlcommons.org/insights/",
+  "feed": "https://mlcommons.org/feed/",
+  "note": "Publishes Croissant. The feed covers all of its work, including the MLPerf benchmarks"
+ },
+ {
+  "id": "iab-tech-lab",
+  "name": "IAB Tech Lab",
+  "news": "https://iabtechlab.com/iab-tech-lab-news/",
+  "feed": "https://iabtechlab.com/feed/",
+  "note": "Publishes CoMP. The feed covers all of its advertising standards"
+ },
+ {
+  "id": "opentelemetry-blog",
+  "name": "OpenTelemetry Blog",
+  "news": "https://opentelemetry.io/blog/",
+  "feed": "https://opentelemetry.io/blog/index.xml",
+  "note": "The project behind the GenAI and MCP semantic conventions"
+ },
+ {
+  "id": "bing-webmaster-blog",
+  "name": "Bing Webmaster Blog",
+  "news": "https://blogs.bing.com/webmaster/",
+  "feed": "https://blogs.bing.com/webmaster/feed/",
+  "note": "Bing's blog for site owners, including how sites appear in its AI answers"
+ }
+]

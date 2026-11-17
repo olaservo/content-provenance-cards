@@ -3,6 +3,8 @@ name: Open Knowledge Foundation
 aliases: [OKFN, CKAN, MCP Labs]
 type: organization
 website: https://okfn.org
+news: https://blog.okfn.org/
+feed: https://blog.okfn.org/feed/
 status: MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources
 tags: [type/organization, layer/attribution, stage/in-transit, venue/mcp]
 participate: "[okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)"

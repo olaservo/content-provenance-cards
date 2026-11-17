@@ -2,6 +2,8 @@
 name: OpenLineage
 type: project
 website: https://openlineage.io
+news: https://openlineage.io/blog/
+feed: https://openlineage.io/blog/feed.json
 status: RFC 4484 open (updated 2026-10-07); BearingNode proposed an MCP `_meta` lineage key to the FSIG 2026-10-08
 tags: [type/project, layer/provenance, stage/in-transit, medium/data]
 participate: "[GitHub issues](https://github.com/OpenLineage/OpenLineage/issues)"

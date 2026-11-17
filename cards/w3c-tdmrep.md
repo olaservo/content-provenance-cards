@@ -3,6 +3,7 @@ name: W3C TDM Reservation Protocol Community Group
 aliases: [TDMRep]
 type: community-group
 website: https://www.w3.org/community/tdmrep/
+feed: https://www.w3.org/community/tdmrep/feed/
 part_of: "[[w3c]]"
 status: CG draft; last push 2026-09
 tags: [type/community-group, layer/access, layer/licensing]
