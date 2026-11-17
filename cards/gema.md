@@ -4,7 +4,7 @@ type: organization
 website: https://www.gema.de
 status: Won at Munich Regional Court against OpenAI (2025-11-11, under appeal) and Suno (2026-07-31, not final)
 tags: [type/organization, layer/licensing, layer/payments, medium/audio]
-updated: 2026-11-15
+updated: 2026-11-16
 ---
 German collecting society for composers, lyricists and music publishers, and [a member](https://www.gema.de/de/die-gema/organisation) of [[cisac]]. It has sued two AI companies and won both cases at first instance. It has also published a licensing model for generative AI and sells a licensed training dataset.
 
@@ -18,6 +18,7 @@ German collecting society for composers, lyricists and music publishers, and [a 
 
 ## Related
 - The accounts of both rulings here come from the court's press releases. The judgments were not read.
+- Koda, the Danish society, sued Suno in November 2025. It [says](https://koda.dk/en/about-koda/news/pressure-mounts-on-ai-music-service-suno-new-lawsuit-filed) its case has been referred to the Eastern High Court. A [second post](https://koda.dk/en/about-koda/news/suno-found-to-have-unlawfully-used-copyright-protected-music) says the Munich ruling "could have major implications for similar cases, including Koda's own lawsuit against Suno" (both read 2026-11-16).
 
 ## Compare
 - A revenue-share license for AI use of web publishers' content: [[internet-licensing-collective]]. Neither names the other (searched 2026-11-15).

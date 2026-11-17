@@ -4,6 +4,8 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-16
 
+- Added three music cards: [[stim]], [[socan]] and [[rights-and-ai]]. STIM offers a license for AI services that requires attribution technology. SOCAN registers works made with AI tools, has named an attribution partner and is suing Suno. Rights & AI is the music publishers' declaration reserving rights against AI training, with a file of the companies behind it.
+- [[cisac]]: the STIM license and its attribution requirement moved to [[stim]]. [[gema]]: notes Koda's case against Suno and its referral to the Eastern High Court.
 - Checked the findings the link audit left open. [[mcp-security-ig]]: the restructure is dated 2026-08-26 in the charter changelog and was merged on 2026-10-31. [[mpp]]: the current draft is `draft-httpauth-payment`, which is active, and the earlier `draft-ryan-httpauth-payment` expired. [[counter]] published phase two on 2026-10-23. [[creative-commons]]: the AIPREF exclusions draft expired on 2026-10-24. [[rsl]]: the SPUR binding links its source.
 - [[mcp-fsig]]: the 2026-09-24 meeting notes show the [[openlineage]] lineage key presented and [[mcp-sep-3094-citations]] on the agenda. That pair is now connected by a source, and `matches.md` lists 48 pairs. BearingNode filed the lineage key as FSIG issue 16 on 2026-10-08.
 - [[openattribution]]: the status no longer lists the SDKs and the edge worker, which are in the [[spur-coalition]] GitHub organization. [[agent-skills-signing]] counts seven discussions.
