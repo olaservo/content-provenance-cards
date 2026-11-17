@@ -470,7 +470,7 @@ if (workerMode) {
       "- Everything in one file: [cards.md](cards.md) or [cards.json](cards.json).",
       `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md).`,
       `- Over MCP: ${SITE}mcp serves both skills with the Skills extension, plus tools to search cards and list updates.`,
-      `- As a plugin for Codex and Claude Code, with both skills and the MCP server: ${REPO}#as-a-plugin.`,
+      `- As a plugin for Codex and Claude Code, with both skills and the MCP server: ${REPO}#start-here.`,
       "",
       "## Layers",
       "",
@@ -551,7 +551,7 @@ One card is at ${SITE}cards/<id>.md and ${SITE}cards/<id>.json. The ids are in t
 
 An MCP server at ${SITE}mcp serves both skills with the Skills extension (io.modelcontextprotocol/skills), plus tools to search cards and list updates.
 
-Both skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#as-a-plugin.
+Both skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
 
 ## Optional
 
@@ -749,7 +749,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
       "",
       `Generated from ${REPO} by build.mjs${asOf ? ", with cards as of " + asOf : ""}. Do not edit these files. Changes go to the cards and skills on the main branch.`,
       "",
-      `Two agent skills and the MCP server at ${SITE}mcp, in the [Agent Plugins](https://agent-plugins.org/) layout. Install steps are in the [README on main](${REPO}#as-a-plugin).`,
+      `Two agent skills and the MCP server at ${SITE}mcp, in the [Agent Plugins](https://agent-plugins.org/) layout. Install steps are in the [README on main](${REPO}#start-here).`,
       "",
     ].join("\n"),
     ...Object.fromEntries(Object.entries(skills).map(([f, text]) => ["skills/" + f, text])),
