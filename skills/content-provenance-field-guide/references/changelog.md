@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-17
 
+- `llms.txt` on olahungerford.com now points at the prototype that serves one file per card, with its index, the reader skill and the plugin. It listed only `cards.md`, which holds every card in one file.
 - [Agent Skills at-rest signing threads](https://content-provenance-field-guide.olahungerford.workers.dev/#agent-skills-signing): discussion 651's mechanism, its example repository, and topics on covering the whole folder and on a removed credential. [C2PA](https://content-provenance-field-guide.olahungerford.workers.dev/#c2pa): a topic on YAML front matter, where the spec's own example does not parse in PyYAML. [Content Authenticity Initiative](https://content-provenance-field-guide.olahungerford.workers.dev/#content-authenticity-initiative) notes the open c2pa-rs pull request the example depends on.
 - The watch list gains Internet Exchange, a weekly newsletter on Internet governance and digital rights. It has no card.
 - Cards can now say where an effort posts its news. `news` is its blog or announcements page and `feed` is the RSS, Atom or JSON feed. 42 cards have one or both, read on 2026-11-17. A new watch list, `watch.md` and `watch.json`, collects them for feed readers and scripts. It also lists sources with no card, kept in `watchlist.json`: The Scholarly Kitchen, MLCommons, IAB Tech Lab, the OpenTelemetry blog and the Bing Webmaster blog.
