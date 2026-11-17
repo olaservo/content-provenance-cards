@@ -177,6 +177,10 @@ console.log(isPublic ? "private notes excluded (--public)" : `${Object.keys(priv
 const SITE = siteArg > -1 ? process.argv[siteArg + 1].replace(/\/*$/, "/") : "https://www.olahungerford.com/content-provenance/";
 const TITLE = "Content Provenance, Access and Attribution: A Field Guide";
 const REPO = "https://github.com/olaservo/content-provenance-cards";
+// The Worker serves one file per card. The site's llms.txt points at it.
+const WORKER = "https://content-provenance-field-guide.olahungerford.workers.dev/";
+const READER = "content-provenance-field-guide";
+const CONTRIBUTOR = "content-provenance-field-guide-contributor";
 const asOf = cards.map((c) => c.updated).filter(Boolean).sort().pop() || "";
 const byId = Object.fromEntries(cards.map((c) => [c.id, c]));
 const nameOf = (id) => (byId[id] ? byId[id].name : id);
@@ -300,6 +304,15 @@ const llms = `${llmsHead}
 - [All cards as JSON](${SITE}cards.json): the same cards as structured data, with the vocabularies under "vocab"
 - [Updates](${SITE}updates.md): dated events from every card's history, newest first, also as [JSON](${SITE}updates.json)
 ${topics.map((t) => `- [Topic: ${t}](${SITE}topics/${t}.md): the cards tagged topic/${t}`).join("\n")}
+
+## One card at a time
+
+The Markdown file above holds every card. A prototype at ${WORKER} serves the same cards as one file each. It is experimental and its address may move.
+
+- [Guide index](${WORKER}index.md): the layer and stage definitions and one line per card. One card is at ${WORKER}cards/<id>.md
+- [Field guide skill](${WORKER}skills/${READER}/SKILL.md): how to answer questions from the guide, loading only the cards a question needs
+- [More for agents](${WORKER}llms.txt): the cards by layer, the contributor skill and an MCP server
+- [Plugin](${REPO}#start-here): both skills and the MCP server for Codex and Claude Code
 
 ## Optional
 
@@ -454,8 +467,6 @@ if (workerMode) {
   const cardIndex = ["# Cards", "", "One line per card: name, type and layers, then the current status.", "", ...cards.map((c) => line(c, fromRoot)), ""].join("\n");
   const layerFile = (l) =>
     [`# Layer: ${l}`, "", `${l[0].toUpperCase() + l.slice(1)}: ${vocab.layers[l]}.`, "", ...cards.filter((c) => layersOf(c).includes(l)).map((c) => line(c, (id) => "../cards/" + id + ".md")), ""].join("\n");
-  const READER = "content-provenance-field-guide";
-  const CONTRIBUTOR = "content-provenance-field-guide-contributor";
 
   const indexMd =
     front({ title: TITLE, description: blurb, updated: asOf, canonical: SITE }) +
