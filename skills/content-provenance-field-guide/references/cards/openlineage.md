@@ -13,6 +13,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: project
 - Status: RFC 4484 open (updated 2026-10-07); BearingNode proposed an MCP `_meta` lineage key to the FSIG 2026-10-08
 - Website: https://openlineage.io
+- News: https://openlineage.io/blog/
+- Feed: https://openlineage.io/blog/feed.json
 - Take part: [GitHub issues](https://github.com/OpenLineage/OpenLineage/issues)
 - Tags: type/project, layer/provenance, stage/in-transit, medium/data
 - Updated: 2026-11-16

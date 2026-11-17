@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: IETF 127 San Francisco, November 2026
 - Website: https://www.ietf.org
+- News: https://www.ietf.org/blog/
+- Feed: https://www.ietf.org/blog/feed/
 - Take part: [how to participate](https://www.ietf.org/participate/)
 - Tags: type/organization, layer/access, layer/identity
 - Updated: 2026-11-03

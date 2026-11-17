@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: working-group
 - Status: httpsig-protocol draft; Cloudflare libraries
 - Website: https://datatracker.ietf.org/wg/webbotauth/about/
+- News: https://datatracker.ietf.org/wg/webbotauth/history/
+- Feed: https://datatracker.ietf.org/feed/group-changes/webbotauth/
 - Part of: [IETF](ietf.md)
 - Take part: [web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/)
 - Tags: type/working-group, layer/identity, layer/access

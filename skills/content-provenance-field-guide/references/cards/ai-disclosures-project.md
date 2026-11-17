@@ -13,6 +13,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Convenings at Bellagio (April 2026), Foo Camp (June and October 2026), Microsoft Research New York (September 2026)
 - Website: https://ai-disclosures.org
+- News: https://ai-disclosures.org/blog
+- Feed: https://asimovaddendum.substack.com/feed
 - Tags: type/organization, layer/governance, layer/attribution, layer/payments
 - Updated: 2026-11-08
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ai-disclosures-project

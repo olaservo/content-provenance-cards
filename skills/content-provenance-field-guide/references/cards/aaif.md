@@ -14,6 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Linux Foundation; ten hosted projects in its first year
 - Website: https://aaif.io
+- News: https://aaif.io/news, https://aaif.io/blog
 - Take part: [working group repos on GitHub](https://github.com/aaif)
 - Tags: type/organization, layer/governance
 - Updated: 2026-11-03

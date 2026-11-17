@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: Donated by Google to the FIDO Alliance
 - Website: https://ap2-protocol.org
+- News: https://github.com/google-agentic-commerce/AP2/releases
+- Feed: https://github.com/google-agentic-commerce/AP2/releases.atom
 - Take part: [GitHub](https://github.com/google-agentic-commerce/AP2)
 - Tags: type/specification, layer/payments, layer/identity
 - Updated: 2026-11-03

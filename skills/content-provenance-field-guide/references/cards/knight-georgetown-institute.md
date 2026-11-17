@@ -12,6 +12,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Also known as: KGI
 - Type: organization
 - Website: https://kgi.georgetown.edu
+- News: https://kgi.georgetown.edu/news/
 - Tags: type/organization, layer/governance, layer/access
 - Updated: 2026-11-03
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#knight-georgetown-institute

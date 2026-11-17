@@ -19,6 +19,7 @@ Read as little as the question needs.
 2. For a question about one layer, read `references/layers/<layer>.md`. The layers are provenance, access, licensing, attribution, payments, identity and governance. For a subject that runs across layers, read `references/topics/<topic>.md`. The topics are skills and discovery. `references/vocabulary.md` defines the layers, the stage tags and the topic tags.
 3. Open `references/cards/<id>.md` for each card the question needs. Links between cards are relative, so follow them to related efforts. "Linked from" at the end of a card lists the cards that point at it.
 4. For "what changed" or "what happened since a date", read `references/updates.md`. It lists dated events from every card, newest first. `references/changelog.md` lists edits to the guide itself.
+5. For where an effort posts its own news, read the `News` and `Feed` lines on its card. `references/watch.md` lists them for every card, with a few sources that have no card.
 
 ## Answer
 

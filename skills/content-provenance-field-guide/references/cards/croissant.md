@@ -13,6 +13,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: 1.1 (February 2026); required for NeurIPS 2026 dataset submissions
 - Website: https://github.com/mlcommons/croissant
+- News: https://mlcommons.org/tag/croissant/
+- Feed: https://mlcommons.org/tag/croissant/feed/
 - Take part: [GitHub issues](https://github.com/mlcommons/croissant/issues)
 - Tags: type/specification, layer/provenance, layer/licensing, medium/data
 - Updated: 2026-11-15

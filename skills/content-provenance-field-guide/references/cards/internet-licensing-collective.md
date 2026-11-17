@@ -14,6 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 - Website: https://internetcollective.org
+- News: https://internetcollective.org/press
 - Take part: [publishers](https://internetcollective.org/publishers), [AI companies](https://internetcollective.org/ai-companies)
 - Tags: type/organization, layer/licensing, layer/payments
 - Updated: 2026-11-15

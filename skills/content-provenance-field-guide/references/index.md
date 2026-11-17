@@ -39,6 +39,7 @@ One line per card: name, type and layers, then the current status.
 - [Fairly Trained](cards/fairly-trained.md) (organization, licensing): Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)
 - [GEMA](cards/gema.md) (organization, licensing, payments): Won at Munich Regional Court against OpenAI (2025-11-11, under appeal) and Suno (2026-07-31, not final)
 - [GetFTR](cards/getftr.md) (project, access): MCP service available to partners and developers since January 2026
+- [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23
 - [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md) (specification, licensing, payments): 1.0, public comment from 2026-03-10
 - [IETF](cards/ietf.md) (organization, access, identity): IETF 127 San Francisco, November 2026
 - [IETF AI Preferences Working Group](cards/ietf-aipref.md) (working-group, access): vocab-08 (2026-09-13) without consensus; attach-05 (2026-08-18); IETF 127 sessions 2026-11-16 and 11-19

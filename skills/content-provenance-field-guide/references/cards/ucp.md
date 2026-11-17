@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: Google-led consortium, no foundation home
 - Website: https://github.com/Universal-Commerce-Protocol/ucp
+- News: https://ucp.dev/documentation/announcements/
+- Feed: https://github.com/Universal-Commerce-Protocol/ucp/releases.atom
 - Take part: [GitHub issues](https://github.com/Universal-Commerce-Protocol/ucp/issues)
 - Tags: type/specification, layer/payments
 - Updated: 2026-11-03

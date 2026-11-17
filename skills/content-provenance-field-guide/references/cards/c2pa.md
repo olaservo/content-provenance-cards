@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Spec 2.5 published October 2026
 - Website: https://c2pa.org
+- News: https://c2pa.org/news/, https://c2pa.org/blog/
+- Feed: https://c2pa.org/feed/
 - Take part: [membership](https://c2pa.org/membership/), [spec issues](https://github.com/c2pa-org/specifications/issues)
 - Tags: type/organization, layer/provenance, stage/at-rest, stage/in-transit, stage/trust, medium/image, medium/video, medium/audio, medium/text
 - Updated: 2026-11-15

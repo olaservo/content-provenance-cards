@@ -13,6 +13,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Sued Suno on 2026-09-02, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-16)
 - Website: https://www.socan.com
+- News: https://www.socan.com/media-centre/
 - Tags: type/organization, layer/licensing, layer/payments, layer/attribution, medium/audio
 - Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#socan

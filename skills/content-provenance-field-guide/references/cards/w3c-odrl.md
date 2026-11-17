@@ -14,6 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: community-group
 - Status: 2.2 is a W3C Recommendation; a W3C WG for 3.0 is being chartered; ai-vocab draft
 - Website: https://www.w3.org/community/odrl/
+- Feed: https://www.w3.org/community/odrl/feed/
 - Part of: [W3C](w3c.md)
 - Take part: [join the community group](https://www.w3.org/community/odrl/join)
 - Tags: type/community-group, layer/licensing

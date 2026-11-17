@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: proposal
 - Status: Effective 2027-02-01
 - Website: https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/
+- News: https://blogs.bing.com/search/
+- Feed: https://blogs.bing.com/search/feed/
 - Tags: type/proposal, layer/access, stage/after-delivery
 - Updated: 2026-11-03
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#microsoft-grounding-preference

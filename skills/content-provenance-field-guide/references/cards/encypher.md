@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date
 - Website: https://encypher.com
+- News: https://encypher.com/blog
+- Feed: https://encypher.com/feed.xml
 - Take part: [c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)
 - Tags: type/organization, layer/provenance, layer/licensing, stage/at-rest, medium/text, medium/image, medium/audio, medium/video
 - Updated: 2026-11-15

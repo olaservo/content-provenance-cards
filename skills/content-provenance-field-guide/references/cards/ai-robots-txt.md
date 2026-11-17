@@ -11,6 +11,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: ai-robots-txt
 - Type: project
 - Website: https://github.com/ai-robots-txt/ai.robots.txt
+- News: https://github.com/ai-robots-txt/ai.robots.txt/releases
+- Feed: https://github.com/ai-robots-txt/ai.robots.txt/releases.atom
 - Take part: [GitHub issues](https://github.com/ai-robots-txt/ai.robots.txt/issues)
 - Tags: type/project, layer/access
 - Updated: 2026-11-03

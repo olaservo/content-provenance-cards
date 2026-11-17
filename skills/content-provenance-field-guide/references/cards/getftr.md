@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: project
 - Status: MCP service available to partners and developers since January 2026
 - Website: https://www.getfulltextresearch.com
+- News: https://www.getfulltextresearch.com/blog
+- Feed: https://www.getfulltextresearch.com/feed
 - Take part: [integrator documentation](https://docs.getfulltextresearch.com/latest/integrators/mcp-service), [publishers](https://www.getfulltextresearch.com/why-publishers-should-join)
 - Tags: type/project, layer/access, medium/text
 - Updated: 2026-11-16

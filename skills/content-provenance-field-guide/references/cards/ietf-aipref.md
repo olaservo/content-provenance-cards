@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: working-group
 - Status: vocab-08 (2026-09-13) without consensus; attach-05 (2026-08-18); IETF 127 sessions 2026-11-16 and 11-19
 - Website: https://datatracker.ietf.org/wg/aipref/about/
+- News: https://datatracker.ietf.org/wg/aipref/history/
+- Feed: https://datatracker.ietf.org/feed/group-changes/aipref/
 - Part of: [IETF](ietf.md)
 - Take part: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/), [GitHub issues](https://github.com/ietf-wg-aipref/drafts/issues)
 - Tags: type/working-group, layer/access, stage/after-delivery

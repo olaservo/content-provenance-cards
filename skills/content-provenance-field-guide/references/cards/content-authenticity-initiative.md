@@ -14,6 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: project
 - Status: Maintains c2pa-rs, c2pa-python, c2pa-js and c2patool
 - Website: https://contentauthenticity.org
+- News: https://contentauthenticity.org/blog
 - Take part: [join CAI](https://contentauthenticity.org/join), [GitHub](https://github.com/contentauth)
 - Tags: type/project, layer/provenance
 - Updated: 2026-11-15

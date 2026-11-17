@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Generative AI Declaration Standard (GAI-D) in peer review, with publication expected in early 2027 (announced 2026-11-05)
 - Website: https://ddex.net
+- News: https://ddex.net/press/
+- Feed: https://ddex.net/feed/
 - Take part: [working groups](https://ddex.net/about-ddex/working-groups/), for Charter and Full Members
 - Tags: type/organization, layer/provenance, layer/attribution, layer/licensing, medium/audio
 - Updated: 2026-11-15

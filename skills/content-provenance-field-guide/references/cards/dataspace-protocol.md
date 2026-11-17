@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: 2025-1 released 2025-08-29 and considered stable; second errata tagged 2026-09-11
 - Website: https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/2025-1/
+- News: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases
+- Feed: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases.atom
 - Take part: [GitHub issues](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/issues)
 - Tags: type/specification, layer/licensing, layer/access, medium/data
 - Updated: 2026-11-16

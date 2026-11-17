@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08
 - Website: https://wikimediafoundation.org
+- News: https://wikimediafoundation.org/news/
+- Feed: https://wikimediafoundation.org/news/feed/
 - Tags: type/organization, layer/attribution, layer/identity
 - Updated: 2026-11-15
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#wikimedia

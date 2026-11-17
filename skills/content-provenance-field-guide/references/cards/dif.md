@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Hosts CAWG
 - Website: https://identity.foundation
+- News: https://blog.identity.foundation/
+- Feed: https://blog.identity.foundation/rss/
 - Take part: [join DIF](https://identity.foundation/join/)
 - Tags: type/organization, layer/identity
 - Updated: 2026-11-15

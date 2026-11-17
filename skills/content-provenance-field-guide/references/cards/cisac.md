@@ -14,6 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Asks policymakers for licensing, transparency and an effective opt-out from data mining exceptions (AI page read 2026-11-15)
 - Website: https://www.cisac.org
+- News: https://www.cisac.org/newsroom
 - Tags: type/organization, layer/licensing, layer/payments, layer/governance, medium/audio, medium/video
 - Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#cisac

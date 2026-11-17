@@ -9,6 +9,7 @@ Attribution: whether the source is named and credited where the content ends up.
 - [COUNTER Metrics](../cards/counter.md) (organization, attribution): Phase two of its AI best practice published 2026-10-23; it says the guidelines are aligned with the SPUR telemetry framework
 - [Creative Commons](../cards/creative-commons.md) (organization, licensing, access, attribution): Attribution to become a requirement in the next CC Signals iteration; RAG attribution best practices planned
 - [DDEX](../cards/ddex.md) (organization, provenance, attribution, licensing): Generative AI Declaration Standard (GAI-D) in peer review, with publication expected in early 2027 (announced 2026-11-05)
+- [Google Scholar Mediated Reading](../cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23
 - [MCP Financial Services Interest Group](../cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter has a data lineage and citation pillar
 - [Model Context Protocol](../cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); WG-first rule for SEPs
 - [NISO](../cards/niso.md) (organization, provenance, attribution, governance): Twelve-month provenance and attribution pilot announced October 2026; KBART Phase III published 2026-08-26

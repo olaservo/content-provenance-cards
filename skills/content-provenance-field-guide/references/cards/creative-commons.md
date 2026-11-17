@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Attribution to become a requirement in the next CC Signals iteration; RAG attribution best practices planned
 - Website: https://creativecommons.org
+- News: https://creativecommons.org/blog/
+- Feed: https://creativecommons.org/feed/
 - Take part: [contact](https://creativecommons.org/about/contact/)
 - Tags: type/organization, layer/licensing, layer/access, layer/attribution
 - Updated: 2026-11-16

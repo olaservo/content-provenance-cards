@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: 1.0, public comment from 2026-03-10
 - Website: https://github.com/IABTechLab/CoMP
+- News: https://github.com/IABTechLab/CoMP/releases
+- Feed: https://github.com/IABTechLab/CoMP/releases.atom
 - Take part: [GitHub issues](https://github.com/IABTechLab/CoMP/issues)
 - Tags: type/specification, layer/licensing, layer/payments
 - Updated: 2026-11-03

@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: Next spec release moved to 2027-03-30 (SEP-3398); WG-first rule for SEPs
 - Website: https://modelcontextprotocol.io
+- News: https://blog.modelcontextprotocol.io/
+- Feed: https://blog.modelcontextprotocol.io/index.xml
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [MCP community channels](https://modelcontextprotocol.io/community/communication), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)
 - Tags: type/specification, venue/mcp, layer/provenance, layer/attribution

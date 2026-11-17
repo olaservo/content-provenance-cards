@@ -11,6 +11,7 @@ Access: whether a crawler or agent may read or use content, and how that prefere
 - [Enterprise-Managed Authorization](../cards/mcp-enterprise-managed-authorization.md) (specification, identity, access): Stable since 2026-06-18; its interest group was folded into the Authorization IG on 2026-08-17
 - [EU AI Act and GPAI Code of Practice](../cards/eu-ai-act-gpai-code.md) (regulation, access, governance, provenance): Commission compiling a list of recognized machine-readable opt-out mechanisms
 - [GetFTR](../cards/getftr.md) (project, access): MCP service available to partners and developers since January 2026
+- [Google Scholar Mediated Reading](../cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23
 - [IETF](../cards/ietf.md) (organization, access, identity): IETF 127 San Francisco, November 2026
 - [IETF AI Preferences Working Group](../cards/ietf-aipref.md) (working-group, access): vocab-08 (2026-09-13) without consensus; attach-05 (2026-08-18); IETF 127 sessions 2026-11-16 and 11-19
 - [IETF Web Bot Auth Working Group](../cards/ietf-web-bot-auth.md) (working-group, identity, access): httpsig-protocol draft; Cloudflare libraries

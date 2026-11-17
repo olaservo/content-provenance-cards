@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources
 - Website: https://okfn.org
+- News: https://blog.okfn.org/
+- Feed: https://blog.okfn.org/feed/
 - Take part: [okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)
 - Tags: type/organization, layer/attribution, stage/in-transit, venue/mcp
 - Updated: 2026-11-15

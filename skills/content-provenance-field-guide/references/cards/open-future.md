@@ -11,6 +11,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: open-future
 - Type: organization
 - Website: https://openfuture.eu
+- News: https://openfuture.eu/blog/
+- Feed: https://openfuture.eu/feed/
 - Tags: type/organization, layer/governance, layer/access
 - Updated: 2026-11-03
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#open-future

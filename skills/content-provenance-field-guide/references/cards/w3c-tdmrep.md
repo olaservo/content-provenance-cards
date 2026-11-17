@@ -14,6 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: community-group
 - Status: CG draft; last push 2026-09
 - Website: https://www.w3.org/community/tdmrep/
+- Feed: https://www.w3.org/community/tdmrep/feed/
 - Part of: [W3C](w3c.md)
 - Take part: [join the community group](https://www.w3.org/community/tdmrep/join)
 - Tags: type/community-group, layer/access, layer/licensing

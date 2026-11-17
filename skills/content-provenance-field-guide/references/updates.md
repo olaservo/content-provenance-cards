@@ -16,18 +16,21 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-10-28 [AI Catalog](cards/ai-catalog.md): Identity-keyed trust manifests merged.
 - 2026-10-27 [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md): Chain concept removed from the SEP.
 - 2026-10-23 [COUNTER Metrics](cards/counter.md): [Phase two](https://www.countermetrics.org/ai-phase-two/) of the AI best practice published.
+- 2026-10-23 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [phase two](https://www.countermetrics.org/ai-phase-two/) announcement says "We've also mapped Google Scholar's new MERU tool to our metrics."
 - 2026-10-22 [Agent Skills](cards/agent-skills.md): Joined AAIF.
 - 2026-10-08 [OpenLineage](cards/openlineage.md): BearingNode filed the `_meta` lineage key proposal as FSIG issue 16.
 - 2026-10-07 [OpenLineage](cards/openlineage.md): RFC 4484 updated.
 - 2026-10-06 [COUNTER Metrics](cards/counter.md): TRACE funding announced.
 - 2026-10-06 [SEP-2127 Server Cards](cards/mcp-server-cards.md): SEP-2127 PR merged.
 - 2026-10-06 [TRACE](cards/trace.md): Launched at the STM conference in Frankfurt.
+- 2026-10-05 [NISO](cards/niso.md): Journal Article Versions RP-8-2026 published.
 - 2026-10-05 [Wikimedia](cards/wikimedia.md): Published its investigation of OpenAI-run agents.
 - 2026-10 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Foo Camp.
 - 2026-10 [C2PA](cards/c2pa.md): Spec 2.5 published.
 - 2026-10 [NISO](cards/niso.md): [Provenance and attribution pilot](https://www.niso.org/niso-io/2026/10/niso-develop-metadata-model-provenance-and-attribution-ai-systems) announced.
 - 2026-09-25 [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md): Discussion closed along with all spec-repo discussions.
 - 2026-09-24 [OpenLineage](cards/openlineage.md): Presented to the MCP Financial Services Interest Group.
+- 2026-09-18 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [update](https://www.countermetrics.org/ai-update-sept26/) on phase two calls MERU "a form of syndicated usage" and says it has mapped how MERU messages should be reported.
 - 2026-09-13 [IETF AI Preferences Working Group](cards/ietf-aipref.md): vocab-08 posted, without consensus.
 - 2026-09-13 [SEP-2640 Skills Extension](cards/mcp-skills-extension.md): SEP-2640 marked Final.
 - 2026-09-11 [Dataspace Protocol](cards/dataspace-protocol.md): Second errata to 2025-1 tagged.

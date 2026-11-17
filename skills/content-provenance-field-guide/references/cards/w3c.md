@@ -12,6 +12,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Also known as: World Wide Web Consortium
 - Type: organization
 - Website: https://www.w3.org
+- News: https://www.w3.org/news/, https://www.w3.org/blog/
+- Feed: https://www.w3.org/news/feed/, https://www.w3.org/blog/feed/
 - Take part: [how to participate](https://www.w3.org/participate/)
 - Tags: type/organization, layer/licensing, layer/access
 - Updated: 2026-11-03

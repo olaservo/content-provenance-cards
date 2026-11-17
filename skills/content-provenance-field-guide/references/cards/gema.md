@@ -13,6 +13,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Won at Munich Regional Court against OpenAI (2025-11-11, under appeal) and Suno (2026-07-31, not final)
 - Website: https://www.gema.de
+- News: https://www.gema.de/en/news
 - Tags: type/organization, layer/licensing, layer/payments, medium/audio
 - Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#gema

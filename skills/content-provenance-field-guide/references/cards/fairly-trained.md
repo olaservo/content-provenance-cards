@@ -13,6 +13,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)
 - Website: https://www.fairlytrained.org
+- News: https://www.fairlytrained.org/blog
+- Feed: https://www.fairlytrained.org/blog?format=rss
 - Take part: [apply for certification](https://www.fairlytrained.org/apply)
 - Tags: type/organization, layer/licensing
 - Updated: 2026-11-15

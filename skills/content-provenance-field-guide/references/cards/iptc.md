@@ -14,6 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 - Website: https://iptc.org
+- News: https://iptc.org/news/
+- Feed: https://iptc.org/feed/
 - Tags: type/organization, layer/licensing, layer/access, layer/provenance, stage/trust, medium/image, medium/video
 - Updated: 2026-11-15
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#iptc
