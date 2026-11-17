@@ -54,4 +54,4 @@ The version in `plugin/plugin.json` is the newest date in the cards or the chang
 
 ## The private-notes check
 
-`check-private.sh` looks in the folders it is given for every line of 30 or more characters from `private/*.md` and `private/cards/*.md`, and for each private card id. It exits 1 and lists the files when it finds one. Run it as its own step and read the result before the next command. Do not chain it to a push or a deploy.
+`check-private.sh` looks in the folders it is given for every line of 30 or more characters from `private/*.md` and `private/cards/*.md`, and for each private card id. It exits 1 and lists the files when it finds one. Run from a git worktree, it reads `private/` in the main checkout, and its last line names the folder it used. Run it as its own step and read the result before the next command. Do not chain it to a push or a deploy.
