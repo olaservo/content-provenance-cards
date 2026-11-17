@@ -1,0 +1,12 @@
+{
+  "name": "content-provenance-cards",
+  "description": "The Content Provenance, Access and Attribution field guide as a plugin.",
+  "owner": { "name": "Ola Hungerford", "url": "https://www.olahungerford.com/about/" },
+  "plugins": [
+    {
+      "name": "content-provenance-field-guide",
+      "description": "Two skills and a read-only MCP server for the Content Provenance, Access and Attribution field guide.",
+      "source": { "source": "url", "url": "https://github.com/olaservo/content-provenance-cards.git", "ref": "plugin" }
+    }
+  ]
+}

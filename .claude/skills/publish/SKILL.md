@@ -1,18 +1,19 @@
 ---
 name: publish
-description: Maintainer steps to ship field guide changes end to end. Opens and merges the cards repo PR, rebuilds the Jekyll copy in olaservo.github.io through its own PR, and deploys the Cloudflare Worker, with a private-notes check before each publish. Use when the maintainer asks to publish, ship or deploy the guide.
+description: Maintainer steps to ship field guide changes end to end. Opens and merges the cards repo PR, rebuilds the Jekyll copy in olaservo.github.io through its own PR, deploys the Cloudflare Worker and pushes the plugin branch, with a private-notes check before each publish. Use when the maintainer asks to publish, ship or deploy the guide.
 disable-model-invocation: true
 ---
 
 # Publish the field guide
 
-A change goes to three places, in this order:
+A change goes to four places, in this order:
 
 1. `main` in this repo.
 2. The Jekyll copy in `olaservo/olaservo.github.io` under `content-provenance/`, served at https://www.olahungerford.com/content-provenance/.
 3. The Worker at https://content-provenance-field-guide.olahungerford.workers.dev.
+4. The `plugin` branch in this repo, which `.claude-plugin/marketplace.json` points at.
 
-Running this skill is the request to open and merge both PRs and deploy the Worker. If the request names a narrower scope, such as "open the PR" or "site only", do that part and stop. Stop and report when a check fails. Do not work around it.
+Running this skill is the request to open and merge both PRs, deploy the Worker and push the plugin branch. If the request names a narrower scope, such as "open the PR" or "site only", do that part and stop. Stop and report when a check fails. Do not work around it.
 
 ## 1. Cards repo
 
@@ -33,15 +34,23 @@ Running this skill is the request to open and merge both PRs and deploy the Work
 
 ## 3. Worker
 
-1. From `worker/`, run the `build.command` in `wrangler.jsonc`. It is the same build `wrangler deploy` runs.
-2. Run `bash ../.claude/skills/publish/check-private.sh site generated`. It must exit 0.
+1. From `worker/`, run the `build.command` in `wrangler.jsonc`. It is the same build `wrangler deploy` runs. It also writes `plugin/` in the repo root.
+2. Run `bash ../.claude/skills/publish/check-private.sh site generated ../plugin`. It must exit 0.
 3. Run `npx wrangler deploy`.
 4. Fetch `index.md` from the Worker and confirm the card count. If cards were added, fetch one of them at `cards/<id>.md`.
 
-## 4. Afterwards
+## 4. Plugin
+
+1. Use the `plugin/` folder from step 3, after its private-notes check passed. Do not rebuild in between.
+2. From the repo root, run `bash .claude/skills/publish/push-plugin.sh`. It commits `plugin/` to the `plugin` branch with the version and the `main` commit in the message, and pushes it. It prints a line and stops when the branch already matches.
+3. Run `git ls-remote origin plugin` and confirm the branch moved.
+
+The version in `plugin/plugin.json` is the newest date in the cards or the changelog. A second publish on the same day keeps the same version.
+
+## 5. Afterwards
 
 - Run `node build.mjs` in this repo so the local explorer has the private notes again.
-- Report the two PR links, the merge commits, the Worker version, what was verified and what was not.
+- Report the two PR links, the merge commits, the Worker version, the plugin version and branch commit, what was verified and what was not.
 
 ## The private-notes check
 
