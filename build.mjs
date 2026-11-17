@@ -336,6 +336,7 @@ const updatesJson = {
 const watchJson = {
   title: `${TITLE}: watch list`,
   description: "Where each effort in the guide posts its blog or announcements, with a feed where it has one, and sources that have no card. A source with a card has the card's id under card.",
+  license: LICENCE,
   as_of: asOf,
   cards: SITE + "cards.json",
   sources: [
