@@ -7,6 +7,10 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 - Cards can now say where an effort posts its news. `news` is its blog or announcements page and `feed` is the RSS, Atom or JSON feed. 42 cards have one or both, read on 2026-11-17. A new watch list, `watch.md` and `watch.json`, collects them for feed readers and scripts. It also lists sources with no card, kept in `watchlist.json`: The Scholarly Kitchen, MLCommons, IAB Tech Lab, the OpenTelemetry blog and the Bing Webmaster blog.
 - The two skills and the MCP endpoint now install as one plugin in the [[agent-plugins]] layout. The README has the steps for Codex and Claude Code.
 - Topic tags now have definitions and their own lists. `topics/skills.md` and `topics/discovery.md` list the cards with each tag, and the reader skill carries both. The explorer has a Topic filter row, and its front page defines the two topics. [[project-nanda]] gains the `topic/discovery` tag.
+- Added [[google-scholar-mediated-reading]]: Google Scholar's Mediated Reading program and its MERU usage protocol, which [[counter]] reports as `SYNDICATED:Google_MERU`. Google's page gives policies and no message format.
+- [[counter]]: new topics on retrieval metrics and the Agent access method, how [[content-telemetry]] events map to metrics, third-party reporting, and the absence of a denial metric for AI access. It notes that the AI metrics are optional and not audited.
+- [[content-telemetry]]: new topics on coverage declarations and on reporting for an institution. v1.0 has no event for a refused retrieval.
+- [[niso]]: Journal Article Versions RP-8-2026, published 2026-10-05.
 
 ## 2026-11-16
 
