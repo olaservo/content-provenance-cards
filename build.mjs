@@ -198,6 +198,9 @@ const topicFile = (t, href) =>
 const topicDefs = ["## Topic tags", "", "Subjects that cards on different layers share.", "", ...Object.entries(vocab.topics).map(([k, v]) => `- ${k}: ${v}.`)];
 const blurb = `${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.`;
 const caveat = "One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.";
+// The cards and everything built from them are CC BY 4.0. The code is MIT. See the README.
+const LICENCE = "https://creativecommons.org/licenses/by/4.0/";
+const licence = `The cards are licensed under CC BY 4.0 (${LICENCE}): reuse them with credit to Ola Hungerford and a link to the guide.`;
 
 function cardMd(c, href = inFile, level = 3) {
   const h = "#".repeat(level);
@@ -257,7 +260,7 @@ const watchMd = (href) =>
 const cardsMd = [
   `# ${TITLE}`,
   "",
-  `${blurb} Compiled by Ola Hungerford (https://www.olahungerford.com/about/)${asOf ? ", as of " + asOf : ""}. ${caveat}`,
+  `${blurb} Compiled by Ola Hungerford (https://www.olahungerford.com/about/)${asOf ? ", as of " + asOf : ""}. ${caveat} ${licence}`,
   "",
   `Explorer for people: ${SITE}. The same cards as JSON: ${SITE}cards.json. Dated events across all cards: ${SITE}updates.md. What changed in the guide and when: ${SITE}changelog.md. Links between cards point at the card's heading in this file; each card also has an Id line.`,
   "",
@@ -288,7 +291,7 @@ const llmsHead = `# ${TITLE}
 
 > ${blurb} Compiled by Ola Hungerford${asOf ? ", as of " + asOf : ""}.
 
-${caveat} Each card has a name, type, status, website, tags (layer, stage, medium, topic, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
+${caveat} ${licence} Each card has a name, type, status, website, tags (layer, stage, medium, topic, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
 `;
 const llms = `${llmsHead}
 ## Cards
@@ -311,6 +314,7 @@ const json = {
   title: TITLE,
   description: blurb,
   author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
+  license: LICENCE,
   as_of: asOf,
   explorer: SITE,
   markdown: SITE + "cards.md",
@@ -323,6 +327,7 @@ const json = {
 const updatesJson = {
   title: `${TITLE}: updates`,
   description: "Dated events from the History section of each card, newest first.",
+  license: LICENCE,
   as_of: asOf,
   cards: SITE + "cards.json",
   updates: updates.map((u) => ({ ...u, url: SITE + "#" + u.card })),
@@ -331,6 +336,7 @@ const updatesJson = {
 const watchJson = {
   title: `${TITLE}: watch list`,
   description: "Where each effort in the guide posts its blog or announcements, with a feed where it has one, and sources that have no card. A source with a card has the card's id under card.",
+  license: LICENCE,
   as_of: asOf,
   cards: SITE + "cards.json",
   sources: [
@@ -456,7 +462,7 @@ if (workerMode) {
     [
       `# ${TITLE}`,
       "",
-      `${blurb} Compiled by Ola Hungerford (https://www.olahungerford.com/about/)${asOf ? ", as of " + asOf : ""}. ${caveat}`,
+      `${blurb} Compiled by Ola Hungerford (https://www.olahungerford.com/about/)${asOf ? ", as of " + asOf : ""}. ${caveat} ${licence}`,
       "",
       "## How to read this guide",
       "",
@@ -612,7 +618,7 @@ Both skills and the MCP server also install as one plugin in the Agent Plugins l
 <body>
 <nav><a href="${SITE}">${esc(TITLE)}</a> · <a href="${SITE}cards/">All cards</a> · <a href="${SITE}updates.md">Updates</a></nav>
 ${body}
-<footer>Compiled by <a href="https://www.olahungerford.com/about/">Ola Hungerford</a>${asOf ? ", as of " + asOf : ""}. ${esc(caveat)} Also as <a href="${SITE}${alternate}">Markdown</a>. Source on <a href="${REPO}">GitHub</a>.</footer>
+<footer>Compiled by <a href="https://www.olahungerford.com/about/">Ola Hungerford</a>${asOf ? ", as of " + asOf : ""}. ${esc(caveat)} Cards under <a rel="license" href="${LICENCE}">CC BY 4.0</a>. Also as <a href="${SITE}${alternate}">Markdown</a>. Source on <a href="${REPO}">GitHub</a>.</footer>
 </body>
 </html>
 `;
@@ -637,6 +643,7 @@ ${body}
         "@context": "https://schema.org",
         "@type": "Article",
         headline: c.name,
+        license: LICENCE,
         description: summary,
         url: SITE + "cards/" + c.id,
         dateModified: c.updated || asOf,
@@ -662,6 +669,7 @@ ${body}
     ld: {
       "@context": "https://schema.org",
       "@type": "Dataset",
+      license: LICENCE,
       name: TITLE,
       description: blurb,
       url: SITE,
@@ -727,6 +735,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
     author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
     homepage: SITE,
     repository: REPO,
+    license: "CC-BY-4.0",
     keywords: ["content-provenance", "attribution", "licensing", "standards", "mcp"],
   };
   const SERVER = "field-guide";
@@ -744,6 +753,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
     "mcp.json": pretty({ $schema: "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json", mcpServers: { [SERVER]: { type: "streamable-http", url: SITE + "mcp" } } }),
     ".claude-plugin/plugin.json": pretty(about),
     ".mcp.json": pretty({ mcpServers: { [SERVER]: { type: "http", url: SITE + "mcp" } } }),
+    LICENSE: readFileSync(join(root, "LICENSE-CC-BY-4.0"), "utf8").replace(/\r\n/g, "\n"),
     "README.md": [
       `# ${TITLE}: plugin`,
       "",

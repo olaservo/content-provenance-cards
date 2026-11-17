@@ -119,6 +119,7 @@ The copy on olahungerford.com gets the flat files only. Jekyll renders any Markd
 | `.claude-plugin/marketplace.json` | Lists the plugin for Codex and Claude Code, see [As a plugin](#as-a-plugin). |
 | `notes/metro-mockup.svg` | Hand-laid mockup of a metro-map view, two of seven lines. |
 | `private/` | Optional and gitignored. Personal notes per card and cards not yet public, see [Private notes](#private-notes). |
+| `LICENSE`, `LICENSE-CC-BY-4.0` | MIT for the code and CC BY 4.0 for the cards and other content, see [Licence](#licence). |
 
 ## Card format
 
@@ -217,3 +218,9 @@ npx wrangler deploy
 ## Private notes
 
 `private/` is gitignored, so it can hold a separate repository. `private/<id>.private.md` is a personal note for a card, with one property, `card: "[[id]]"`, and free sections such as `## Contacts` and `## Notes`. Naming it `<id>.private.md` keeps `[[id]]` resolving to the card in Obsidian. `private/cards/<id>.md` holds cards that are not public yet, in the same format. A build without `--public` includes both and turns on a private-notes toggle in the explorer. `--public` ignores the folder, and `--out` refuses to run without `--public`, so nothing in it reaches the site. A card anywhere can also carry `publish: false`; the `--public` build leaves it out and removes sentences in other cards that link to it.
+
+## Licence
+
+The cards, the two skills, the data files (`vocab.json`, `watchlist.json`, `smoke/questions.json`), the changelog and this README are under [CC BY 4.0](LICENSE-CC-BY-4.0), and so is every file the build makes from them. Reuse them with credit to Ola Hungerford and a link to https://www.olahungerford.com/content-provenance/. `cards.json`, the plugin manifests and the Worker's pages name the licence.
+
+The code is under the [MIT licence](LICENSE): `build.mjs`, `worker/`, `ui/index.html` and the scripts under `.claude/skills/`.
