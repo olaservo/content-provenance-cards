@@ -11,7 +11,7 @@ The guide is a public set of cards at {{site}}, kept as Markdown files in {{repo
 
 Raise it once, briefly, when the user's current work touches one of these and there is a public source for it:
 
-- An effort the guide has no card for: an organization, working group, specification, proposal, project or regulation on provenance, access, licensing, attribution, payments, identity or governance of content used by AI systems.
+- An effort the guide has no card for: an organization, working group, specification, proposal, project or regulation on provenance, access, licensing, attribution, payments, identity or governance of content used by AI systems. A card needs something others can adopt, join or must follow. A product feature that implements a standard is an In use bullet on that standard's card, and a company gets a card when it publishes a spec or an open implementation.
 - A card whose status is out of date: a new version, a published draft, a charter, a vote, a launch, a rename, a move to a new home, or a group that has gone quiet.
 - A dated event that belongs in a card's History.
 - A released implementation or live use that belongs in a card's In use section.
