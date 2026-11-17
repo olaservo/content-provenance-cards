@@ -45,7 +45,7 @@ Running this skill is the request to open and merge both PRs, deploy the Worker 
 2. From the repo root, run `bash .claude/skills/publish/push-plugin.sh`. It commits `plugin/` to the `plugin` branch with the version and the `main` commit in the message, and pushes it. It prints a line and stops when the branch already matches.
 3. Run `git ls-remote origin plugin` and confirm the branch moved.
 
-The version in `plugin/plugin.json` is the newest date in the cards or the changelog. A second publish on the same day keeps the same version.
+The version in `plugin/plugin.json` is the newest date in the cards or the changelog, then `+` and the number of commits on the branch it was built from. Codex and Claude Code keep an installed copy until that string changes, so build from `main` after the merge.
 
 ## 5. Afterwards
 

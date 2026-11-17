@@ -168,7 +168,7 @@ claude plugin marketplace add olaservo/content-provenance-cards
 claude plugin install content-provenance-field-guide@content-provenance-cards
 ```
 
-The reader skill in the plugin carries the cards as they were at the last publish. The MCP tools read the Worker's copy. The plugin's version is the newest date in the cards or the changelog, written as `2026.11.17`.
+The reader skill in the plugin carries the cards as they were at the last publish. The MCP tools read the Worker's copy. The plugin's version is the newest date in the cards or the changelog, then the number of commits on `main`, written as `2026.11.17+19`. Codex and Claude Code keep an installed copy until that string changes.
 
 Checked as of 2026-11-17 with Codex CLI 0.169.0 and Claude Code 2.1.326, each installing from GitHub with the commands above. Both listed the plugin at its version and its MCP server. Claude Code in headless mode answered one question from `smoke/questions.json` through the MCP tools and, with those tools blocked, a second through the reader skill and its references. Codex in `codex exec` answered one. It read the reader skill's `SKILL.md` and `references/index.md` from its installed copy and called three of the MCP tools.
 
