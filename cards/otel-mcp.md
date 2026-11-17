@@ -17,7 +17,7 @@ OpenTelemetry semantic conventions for MCP spans and metrics, and the SDKs that 
 
 ## Related
 - The conventions are an OpenTelemetry document, in its `semantic-conventions-genai` repository. [[mcp]] reserves the three `_meta` trace keys in the [2026-07-28 spec](https://modelcontextprotocol.io/specification/2026-07-28/basic/index#_meta), and its SDKs emit the spans.
-- [SEP-2028](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2028), open, would forward `_meta` entries to HTTP headers for distributed tracing. [SEP-2448](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2448), server execution telemetry, closed without merging in March 2026.
+- [SEP-2028](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2028), open, would forward `_meta` entries to HTTP headers for distributed tracing. [SEP-2448](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2448), server execution telemetry, closed without merging on 2026-09-22.
 
 ## Compare
 - [[mcp-c2pa-in-meta]] proposes the same `_meta` slot for content credentials. Neither names the other (searched 2026-11-15).

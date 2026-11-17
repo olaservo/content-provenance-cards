@@ -67,7 +67,8 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Each topic bullet s
 - `layer/provenance`, `layer/access`, `layer/licensing`, `layer/attribution`, `layer/payments`, `layer/identity`, `layer/governance`.
 - `stage/at-rest`, `stage/in-transit`, `stage/boundary`, `stage/after-delivery`, `stage/trust`: where a card sits on the path content takes through an agent, from the Attribution by Design talk (which calls them stations), used only where a card clearly sits at one. Trust is the exception: it is the question of who may sign or report, which every other stage depends on.
 - `medium/text`, `medium/image`, `medium/audio`, `medium/video`, `medium/code`, `medium/data`: the kind of content an effort is about, used only where its own material names the medium. A card with no medium tag is media-neutral.
-- `venue/mcp` for MCP threads and groups, `topic/skills` for skills work.
+- `venue/mcp` for MCP threads and groups.
+- `topic/skills`, `topic/discovery`: a subject that cards on different layers share. Each topic has a definition under `topics` in `vocab.json`, and the build warns about a `topic/` tag that has none.
 
 ## Using it
 
@@ -77,7 +78,7 @@ node build.mjs --public  # cards only
 node build.mjs --public --out ../olaservo.github.io/content-provenance  # publish copy for olahungerford.com
 ```
 
-Then open `ui/index.html` directly in a browser. The generated files are gitignored. `cards.md` is one Markdown file with the vocabularies first and a section per card, wikilinks resolved to links within the file. `cards.json` is the same cards as structured data under `cards`, each with its `links` and the subset that are `compares`, with the vocabularies under `vocab`. `llms.txt` describes both for an agent that lands on the section. The Graph button draws cards as nodes and `[[links]]` as edges, dotted where the only links between two cards are under Compare, coloured by the first `layer/` tag and sized by link count: hover to see neighbours, click to open a card, drag to move nodes or pan, scroll to zoom. Tag filters and search fade out cards that do not match. To use it in Obsidian, open this folder as a vault; Dataview can query the frontmatter, for example `TABLE status FROM #layer/attribution`.
+Then open `ui/index.html` directly in a browser. The generated files are gitignored. `topics/<topic>.md` lists the cards with one topic tag. The maintainer's steps for merging a change, rebuilding the site copy and deploying the Worker are in `.claude/skills/publish/SKILL.md`, which Claude Code runs as `/publish`. `cards.md` is one Markdown file with the vocabularies first and a section per card, wikilinks resolved to links within the file. `cards.json` is the same cards as structured data under `cards`, each with its `links` and the subset that are `compares`, with the vocabularies under `vocab`. `llms.txt` describes both for an agent that lands on the section. The Graph button draws cards as nodes and `[[links]]` as edges, dotted where the only links between two cards are under Compare, coloured by the first `layer/` tag and sized by link count: hover to see neighbours, click to open a card, drag to move nodes or pan, scroll to zoom. Tag filters and search fade out cards that do not match. To use it in Obsidian, open this folder as a vault; Dataview can query the frontmatter, for example `TABLE status FROM #layer/attribution`.
 
 ## Adding a card
 
@@ -100,10 +101,10 @@ npx wrangler deploy
 
 What it serves, beyond the explorer and the flat files:
 
-- `cards/<id>.md` and `cards/<id>.json`, one card each, and `cards/<id>` as a plain HTML page. `index.md` lists every card in one line each, and `layers/<layer>.md` lists the cards on one layer.
+- `cards/<id>.md` and `cards/<id>.json`, one card each, and `cards/<id>` as a plain HTML page. `index.md` lists every card in one line each, `layers/<layer>.md` lists the cards on one layer, and `topics/<topic>.md` lists the cards with one topic tag.
 - Markdown on request: `/` and `/cards/<id>` answer `Accept: text/markdown` with the Markdown file.
 - `updates.md` and `updates.json`, the dated events from every card's History.
-- `skills/<name>/`, the two skills as plain files. The reader skill carries the index, the layer lists, every card, the updates and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs.
+- `skills/<name>/`, the two skills as plain files. The reader skill carries the index, the layer and topic lists, every card, the updates and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs.
 - `/mcp`, an MCP server built on the TypeScript SDK. It serves both skills with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640), including `resources/directory/read`, and has four read-only tools for clients without skill support: `search_cards`, `get_card`, `list_updates` and `list_unconnected`, which lists the pairs in `matches.md`.
 - `robots.txt` and `sitemap.xml` for its own origin.
 

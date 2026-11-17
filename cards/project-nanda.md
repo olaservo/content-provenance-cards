@@ -2,7 +2,7 @@
 name: Project NANDA
 type: project
 website: https://nanda.media.mit.edu
-tags: [type/project, layer/identity]
+tags: [type/project, layer/identity, topic/discovery]
 participate: "[GitHub](https://github.com/projnanda)"
 updated: 2026-11-03
 ---

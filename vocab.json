@@ -23,6 +23,10 @@
   "code": "software, and agent skills and plugins made of instructions and scripts",
   "data": "datasets and the pipelines that produce them"
  },
+ "topics": {
+  "skills": "agent skills and plugins, and how they are packaged, signed, listed and credited",
+  "discovery": "how an agent finds a server, an agent or a skill, through registries, catalogs and well-known files"
+ },
  "labels": {
   "stage/boundary": "at the boundary"
  }

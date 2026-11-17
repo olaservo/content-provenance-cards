@@ -1,6 +1,6 @@
 // Reads cards/*.md and vocab.json, plus private/cards/*.md and private/*.private.md when present.
 // Writes ui/data.js and ui/private.js for the explorer, and ui/cards.md, ui/cards.json,
-// ui/updates.md, ui/updates.json and ui/llms.txt for agents and scripts. Copies CHANGELOG.md to ui/changelog.md.
+// ui/updates.md, ui/updates.json, ui/topics/<topic>.md and ui/llms.txt for agents and scripts. Copies CHANGELOG.md to ui/changelog.md.
 // --public ignores private/ and leaves out cards marked `publish: false`.
 // --out <dir> also copies the finished site to <dir>.
 // --worker also writes the site the Cloudflare Worker serves to worker/site, and the skills and card data it bundles to worker/generated.
@@ -175,6 +175,15 @@ const inExplorer = (id) => SITE + "#" + id;
 const md = (s, href = inFile) => s.replace(WIKI, (m, id, label) => `[${label || nameOf(id.trim())}](${href(id.trim())})`);
 const plain = (s) => s.replace(WIKI, (m, id, label) => label || nameOf(id.trim()));
 const label = (t) => vocab.labels[t] || t.slice(t.indexOf("/") + 1).replace(/-/g, " ");
+// A topic/ tag marks a subject that cards on different layers share. vocab.json defines each one.
+const topics = Object.keys(vocab.topics);
+const topicsOf = (c) => c.tags.filter((t) => t.startsWith("topic/")).map((t) => t.slice(6));
+for (const c of cards) for (const t of topicsOf(c)) if (!topics.includes(t)) console.warn(`topic/${t} on ${c.id} has no definition in vocab.json`);
+const layersOf = (c) => c.tags.filter((t) => t.startsWith("layer/")).map((t) => t.slice(6));
+const line = (c, href) => `- [${c.name}](${href(c.id)}) (${[c.type, ...layersOf(c)].join(", ")})${c.status ? ": " + plain(c.status) : ""}`;
+const topicFile = (t, href) =>
+  [`# Topic: ${t}`, "", `${t[0].toUpperCase() + t.slice(1)}: ${vocab.topics[t]}.`, "", ...cards.filter((c) => topicsOf(c).includes(t)).map((c) => line(c, href)), ""].join("\n");
+const topicDefs = ["## Topic tags", "", "Subjects that cards on different layers share.", "", ...Object.entries(vocab.topics).map(([k, v]) => `- ${k}: ${v}.`)];
 const blurb = `${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.`;
 const caveat = "One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.";
 
@@ -235,6 +244,8 @@ const cardsMd = [
   "",
   ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
   "",
+  ...topicDefs,
+  "",
   "## Cards",
   "",
   ...cards.map((c) => cardMd(c)),
@@ -244,7 +255,7 @@ const llmsHead = `# ${TITLE}
 
 > ${blurb} Compiled by Ola Hungerford${asOf ? ", as of " + asOf : ""}.
 
-${caveat} Each card has a name, type, status, website, tags (layer, stage, medium, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
+${caveat} Each card has a name, type, status, website, tags (layer, stage, medium, topic, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
 `;
 const llms = `${llmsHead}
 ## Cards
@@ -252,6 +263,7 @@ const llms = `${llmsHead}
 - [All cards as Markdown](${SITE}cards.md): one file, one section per card, with the layer and stage definitions first
 - [All cards as JSON](${SITE}cards.json): the same cards as structured data, with the vocabularies under "vocab"
 - [Updates](${SITE}updates.md): dated events from every card's history, newest first, also as [JSON](${SITE}updates.json)
+${topics.map((t) => `- [Topic: ${t}](${SITE}topics/${t}.md): the cards tagged topic/${t}`).join("\n")}
 
 ## Optional
 
@@ -329,16 +341,23 @@ const flat = {
   "updates.md": updatesMd(inExplorer),
   "updates.json": JSON.stringify(updatesJson, null, 1) + "\n",
   "matches.md": matchesMd(inExplorer),
+  ...Object.fromEntries(topics.map((t) => [`topics/${t}.md`, topicFile(t, inExplorer)])),
   "llms.txt": llms,
   "changelog.md": changelog,
 };
-for (const [f, text] of Object.entries(flat)) writeFileSync(join(root, "ui", f), text);
+for (const [f, text] of Object.entries(flat)) {
+  mkdirSync(dirname(join(root, "ui", f)), { recursive: true });
+  writeFileSync(join(root, "ui", f), text);
+}
 console.log(`${cards.length} cards, ${updates.length} dated events -> ui/${Object.keys(flat).join(", ui/")}`);
 
 if (outDir) {
   if (!isPublic) throw new Error("--out only runs with --public, so private notes never leave this repo");
   mkdirSync(outDir, { recursive: true });
-  for (const f of ["index.html", "data.js", "private.js", ...Object.keys(flat)]) copyFileSync(join(root, "ui", f), join(outDir, f));
+  for (const f of ["index.html", "data.js", "private.js", ...Object.keys(flat)]) {
+    mkdirSync(dirname(join(outDir, f)), { recursive: true });
+    copyFileSync(join(root, "ui", f), join(outDir, f));
+  }
   console.log(`site copied to ${outDir}`);
 }
 
@@ -350,8 +369,6 @@ if (workerMode) {
   const esc = (s) => s.replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[ch]);
   const yaml = (v) => (Array.isArray(v) ? `[${v.map((x) => JSON.stringify(x)).join(", ")}]` : JSON.stringify(v));
   const front = (fields) => ["---", ...Object.entries(fields).filter(([, v]) => v && v.length).map(([k, v]) => `${k}: ${yaml(v)}`), "---", ""].join("\n");
-  const layersOf = (c) => c.tags.filter((t) => t.startsWith("layer/")).map((t) => t.slice(6));
-  const line = (c, href) => `- [${c.name}](${href(c.id)}) (${[c.type, ...layersOf(c)].join(", ")})${c.status ? ": " + plain(c.status) : ""}`;
 
   // Markdown. Links are relative, so the same bytes work on the site and inside the skill.
   const sibling = (id) => id + ".md";
@@ -377,6 +394,8 @@ if (workerMode) {
     "",
     ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
     "",
+    ...topicDefs,
+    "",
   ].join("\n");
   const cardIndex = ["# Cards", "", "One line per card: name, type and layers, then the current status.", "", ...cards.map((c) => line(c, fromRoot)), ""].join("\n");
   const layerFile = (l) =>
@@ -395,6 +414,7 @@ if (workerMode) {
       "",
       "- One card per file: `cards/<id>.md` and `cards/<id>.json`. The ids are in the list below.",
       `- Cards by layer: ${Object.keys(vocab.layers).map((l) => `[${l}](layers/${l}.md)`).join(", ")}.`,
+      `- Cards by topic tag: ${topics.map((t) => `[${t}](topics/${t}.md)`).join(", ")}.`,
       "- [Updates](updates.md): dated events across all cards, newest first. Also as [JSON](updates.json).",
       "- [Not connected yet](matches.md): pairs of cards the guide compares and no primary source connects.",
       "- [Changelog](changelog.md): cards added and changed in the guide.",
@@ -418,6 +438,8 @@ if (workerMode) {
       "",
       ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
       "",
+      ...topicDefs,
+      "",
       "## Cards",
       "",
       ...cards.map((c) => line(c, fromRoot)),
@@ -430,6 +452,7 @@ if (workerMode) {
     site[`cards/${c.id}.json`] = JSON.stringify({ ...c, url: SITE + "cards/" + c.id, explorer: SITE + "#" + c.id }, null, 1) + "\n";
   }
   for (const l of Object.keys(vocab.layers)) site[`layers/${l}.md`] = layerFile(l);
+  for (const t of topics) site[`topics/${t}.md`] = topicFile(t, (id) => "../cards/" + id + ".md");
 
   // Skills. skills/<name>/ is written by hand; the reader skill also gets the cards as references.
   const skills = {};
@@ -449,6 +472,7 @@ if (workerMode) {
   skills[ref + "changelog.md"] = changelog;
   for (const c of cards) skills[`${ref}cards/${c.id}.md`] = site[`cards/${c.id}.md`];
   for (const l of Object.keys(vocab.layers)) skills[`${ref}layers/${l}.md`] = site[`layers/${l}.md`];
+  for (const t of topics) skills[`${ref}topics/${t}.md`] = site[`topics/${t}.md`];
   for (const [f, text] of Object.entries(skills)) site["skills/" + f] = text;
 
   site["llms.txt"] = `${llmsHead}
@@ -464,6 +488,7 @@ if (workerMode) {
 - [All cards as Markdown](${SITE}cards.md): one file, one section per card
 - [All cards as JSON](${SITE}cards.json): the same cards as structured data, with the vocabularies under "vocab"
 ${Object.keys(vocab.layers).map((l) => `- [Layer: ${l}](${SITE}layers/${l}.md): the cards on the ${l} layer`).join("\n")}
+${topics.map((t) => `- [Topic: ${t}](${SITE}topics/${t}.md): the cards tagged topic/${t}`).join("\n")}
 
 One card is at ${SITE}cards/<id>.md and ${SITE}cards/<id>.json. The ids are in the guide index.
 
