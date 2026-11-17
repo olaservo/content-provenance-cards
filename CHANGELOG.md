@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-17
 
+- The two skills and the MCP endpoint now install as one plugin in the [[agent-plugins]] layout. The README has the steps for Codex and Claude Code.
 - Topic tags now have definitions and their own lists. `topics/skills.md` and `topics/discovery.md` list the cards with each tag, and the reader skill carries both. The explorer has a Topic filter row, and its front page defines the two topics. [[project-nanda]] gains the `topic/discovery` tag.
 
 ## 2026-11-16

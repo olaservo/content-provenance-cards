@@ -3,7 +3,8 @@
 // ui/updates.md, ui/updates.json, ui/topics/<topic>.md and ui/llms.txt for agents and scripts. Copies CHANGELOG.md to ui/changelog.md.
 // --public ignores private/ and leaves out cards marked `publish: false`.
 // --out <dir> also copies the finished site to <dir>.
-// --worker also writes the site the Cloudflare Worker serves to worker/site, and the skills and card data it bundles to worker/generated.
+// --worker also writes the site the Cloudflare Worker serves to worker/site, the skills and card data it bundles to worker/generated,
+// and the same skills as an Agent Plugins package to plugin/.
 // --site <url> sets the URL the output is published at.
 // No dependencies. Frontmatter supports scalars, quoted strings and inline [a, b] lists.
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, copyFileSync, rmSync, statSync } from "node:fs";
@@ -421,6 +422,7 @@ if (workerMode) {
       "- Everything in one file: [cards.md](cards.md) or [cards.json](cards.json).",
       `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md).`,
       `- Over MCP: ${SITE}mcp serves both skills with the Skills extension, plus tools to search cards and list updates.`,
+      `- As a plugin for Codex and Claude Code, with both skills and the MCP server: ${REPO}#as-a-plugin.`,
       "",
       "## Layers",
       "",
@@ -498,6 +500,8 @@ One card is at ${SITE}cards/<id>.md and ${SITE}cards/<id>.json. The ids are in t
 - [Contributor skill](${SITE}skills/${CONTRIBUTOR}/SKILL.md): when and how to suggest a new card or a correction
 
 An MCP server at ${SITE}mcp serves both skills with the Skills extension (io.modelcontextprotocol/skills), plus tools to search cards and list updates.
+
+Both skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#as-a-plugin.
 
 ## Optional
 
@@ -655,4 +659,47 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   const pairs = matches.map(([a, o]) => ({ a: a.id, b: o.id, text: [...cmpLines(a, o), ...cmpLines(o, a)].join(" ") }));
   put(genDir, "data.json", JSON.stringify({ site: SITE, title: TITLE, as_of: asOf, vocab, cards, updates, matches: pairs }));
   console.log(`${Object.keys(site).length + 3} files -> worker/site, ${Object.keys(skills).length} skill files -> worker/generated`);
+
+  // The plugin: both skills and the MCP endpoint in one directory, in the Agent Plugins layout (plugin.json, mcp.json, skills/).
+  // Claude Code reads .claude-plugin/plugin.json and .mcp.json, so the package carries those as well.
+  // The version is the newest date in the cards or the changelog, as major.minor.patch, so each publish with a changelog entry moves it forward.
+  const newest = [asOf, ...[...changelogSrc.matchAll(/^## (\d{4}-\d{2}-\d{2})$/gm)].map((m) => m[1])].sort().pop();
+  const about = {
+    name: READER,
+    version: newest.split("-").map(Number).join("."),
+    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Two skills and a read-only MCP server.",
+    author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
+    homepage: SITE,
+    repository: REPO,
+    keywords: ["content-provenance", "attribution", "licensing", "standards", "mcp"],
+  };
+  const SERVER = "field-guide";
+  const pretty = (o) => JSON.stringify(o, null, 2) + "\n";
+  const plugin = {
+    "plugin.json": pretty({
+      $schema: "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+      ...about,
+      extensions: {
+        "com.openai": {
+          interface: { displayName: "Content Provenance Field Guide", shortDescription: about.description, developerName: about.author.name, category: "Research", websiteURL: SITE },
+        },
+      },
+    }),
+    "mcp.json": pretty({ $schema: "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json", mcpServers: { [SERVER]: { type: "streamable-http", url: SITE + "mcp" } } }),
+    ".claude-plugin/plugin.json": pretty(about),
+    ".mcp.json": pretty({ mcpServers: { [SERVER]: { type: "http", url: SITE + "mcp" } } }),
+    "README.md": [
+      `# ${TITLE}: plugin`,
+      "",
+      `Generated from ${REPO} by build.mjs${asOf ? ", with cards as of " + asOf : ""}. Do not edit these files. Changes go to the cards and skills on the main branch.`,
+      "",
+      `Two agent skills and the MCP server at ${SITE}mcp, in the [Agent Plugins](https://agent-plugins.org/) layout. Install steps are in the [README on main](${REPO}#as-a-plugin).`,
+      "",
+    ].join("\n"),
+    ...Object.fromEntries(Object.entries(skills).map(([f, text]) => ["skills/" + f, text])),
+  };
+  const pluginDir = join(root, "plugin");
+  rmSync(pluginDir, { recursive: true, force: true });
+  for (const [f, text] of Object.entries(plugin)) put(pluginDir, f, text);
+  console.log(`${Object.keys(plugin).length} files -> plugin (version ${about.version})`);
 }
