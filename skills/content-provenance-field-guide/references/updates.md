@@ -6,7 +6,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-11-12 [Really Simple Licensing](cards/rsl.md): The RSL Collective relaunched as [Internet Licensing Collective](cards/internet-licensing-collective.md).
 - 2026-11-11 [Encypher](cards/encypher.md): Announced that The Atlantic plans to implement its provenance technology.
 - 2026-11-08 [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md): Closed without merging.
-- 2026-11-05 [Agent Skills at-rest signing threads](cards/agent-skills-signing.md): Discussion 651 proposed C2PA content credentials for skills.
+- 2026-11-05 [Agent Skills at-rest signing threads](cards/agent-skills-signing.md): Discussion 651 proposed C2PA content credentials for skills, with an example repository the same day.
 - 2026-11-05 [AI Catalog](cards/ai-catalog.md): ADR-0028 accepted, opening catalog and entry objects to unrecognized members.
 - 2026-11-05 [DDEX](cards/ddex.md): [Announced](https://ddex.net/ddex-announces-elevenlabs-as-first-ai-company-to-join-membership/) ElevenLabs as the first AI company among its members, and said GAI-D would go through peer review before publication in early 2027.
 - 2026-10-31 [MCP Security Interest Group](cards/mcp-security-ig.md): The restructure was merged into the charter ([#3331](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3331)).

@@ -39,4 +39,4 @@ Carry a [C2PA](c2pa.md) credential for tool results and resources in MCP `_meta`
 
 - 2026-09-25: Discussion closed along with all spec-repo discussions.
 
-Linked from: [C2PA](c2pa.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Security Interest Group](mcp-security-ig.md), [Model Context Protocol](mcp.md), [OpenLineage](openlineage.md), [OpenTelemetry for MCP](otel-mcp.md)
+Linked from: [Agent Skills at-rest signing threads](agent-skills-signing.md), [C2PA](c2pa.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Security Interest Group](mcp-security-ig.md), [Model Context Protocol](mcp.md), [OpenLineage](openlineage.md), [OpenTelemetry for MCP](otel-mcp.md)

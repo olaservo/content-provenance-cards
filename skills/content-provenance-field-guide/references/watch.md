@@ -137,3 +137,6 @@ Sources that have no card and are worth following.
 - Bing Webmaster Blog: Bing's blog for site owners, including how sites appear in its AI answers
   - News: https://blogs.bing.com/webmaster/
   - Feed: https://blogs.bing.com/webmaster/feed/
+- Internet Exchange: A weekly newsletter on Internet governance, digital rights and technology and society
+  - News: https://internet.exchangepoint.tech/
+  - Feed: https://internet.exchangepoint.tech/rss/
