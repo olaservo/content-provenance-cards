@@ -1,0 +1,43 @@
+---
+title: "AAIF Observability and Traceability WG"
+id: "aaif-observability-traceability-wg"
+type: "working-group"
+status: "Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; OTel cross-domain provenance proposal 2026-10-28"
+tags: ["type/working-group", "layer/provenance", "layer/attribution"]
+updated: "2026-11-15"
+canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif-observability-traceability-wg"
+---
+# AAIF Observability and Traceability WG
+
+- Id: aaif-observability-traceability-wg
+- Type: working-group
+- Status: Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; OTel cross-domain provenance proposal 2026-10-28
+- Website: https://github.com/aaif/wg-observability-and-traceability
+- Part of: [Agentic AI Foundation](aaif.md)
+- Take part: [GitHub issues](https://github.com/aaif/wg-observability-and-traceability/issues)
+- Tags: type/working-group, layer/provenance, layer/attribution
+- Updated: 2026-11-15
+- Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif-observability-traceability-wg
+
+Working group on agent-level observability, above the OpenTelemetry GenAI telemetry conventions.
+
+## Topics
+
+- **Evidence records**: tamper-evident records of agent behavior ([Evidence Record Spec proposal](https://github.com/aaif/wg-observability-and-traceability/issues/37)).
+- **Responsibility chains**: attributing which agent or human initiated, delegated or approved an action.
+- **Liaisons**: the [liaison roster](https://github.com/aaif/wg-observability-and-traceability/issues/11) has no content-side member.
+
+## Related
+
+- The conventions it builds above, and what they leave out: [OpenTelemetry for MCP](otel-mcp.md).
+
+## Compare
+
+- [Content Telemetry](content-telemetry.md) reports what happens to content after a tool call. Nothing connects it to this group (searched 2026-11-15).
+
+## History
+
+- 2026-10-28: OTel cross-domain provenance proposal.
+- 2026-09-02: Provenance initiative lead named.
+
+Linked from: [Agentic AI Foundation](aaif.md), [OpenTelemetry for MCP](otel-mcp.md)

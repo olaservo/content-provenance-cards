@@ -1,0 +1,30 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "content-provenance-field-guide",
+  "version": "2026.11.17",
+  "description": "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Two skills and a read-only MCP server.",
+  "author": {
+    "name": "Ola Hungerford",
+    "url": "https://www.olahungerford.com/about/"
+  },
+  "homepage": "https://content-provenance-field-guide.olahungerford.workers.dev/",
+  "repository": "https://github.com/olaservo/content-provenance-cards",
+  "keywords": [
+    "content-provenance",
+    "attribution",
+    "licensing",
+    "standards",
+    "mcp"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Content Provenance Field Guide",
+        "shortDescription": "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Two skills and a read-only MCP server.",
+        "developerName": "Ola Hungerford",
+        "category": "Research",
+        "websiteURL": "https://content-provenance-field-guide.olahungerford.workers.dev/"
+      }
+    }
+  }
+}

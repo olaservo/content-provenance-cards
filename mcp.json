@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "field-guide": {
+      "type": "streamable-http",
+      "url": "https://content-provenance-field-guide.olahungerford.workers.dev/mcp"
+    }
+  }
+}
