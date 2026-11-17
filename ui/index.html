@@ -48,6 +48,7 @@
   .frow { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
   .flab { flex: none; width: 56px; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
   .fmeta { margin-left: auto; font-size: 12px; color: var(--muted); display: flex; gap: 8px; align-items: center; }
+  .fnote { font-size: 12px; color: var(--muted); }
   .ftoggle { display: none; }
   .fhead { display: none; }
   .chip, .vbtn { font: inherit; font-size: 12px; padding: 2px 8px; border-radius: 999px; background: var(--chip); border: 1px solid transparent; cursor: pointer; color: var(--fg); }
@@ -166,7 +167,9 @@ function human(t) {
 
 function chip(t) {
   const dot = t.startsWith("layer/") ? `<i style="background:var(--l-${t.slice(6)})"></i>` : "";
-  return `<span class="chip${active.has(t) ? " on" : ""}" data-t="${esc(t)}" title="${esc(t)}">${dot}${esc(human(t))}</span>`;
+  const medium = t.startsWith("medium/") && MEDIA_TEXT[t.slice(7)];
+  const tip = medium ? `${t.slice(7)}: ${medium}. A card with no medium tag is media-neutral.` : t;
+  return `<span class="chip${active.has(t) ? " on" : ""}" data-t="${esc(t)}" title="${esc(tip)}">${dot}${esc(human(t))}</span>`;
 }
 
 function inline(s) {
@@ -203,7 +206,9 @@ function renderFilters() {
   const rows = GROUPS.map(([p, label, order]) => {
     let ts = tags.filter(t => p ? t.startsWith(p + "/") : !GROUPS.some(([q]) => q && t.startsWith(q + "/")));
     if (order) ts.sort((a, b) => order.indexOf(a.slice(p.length + 1)) - order.indexOf(b.slice(p.length + 1)));
-    return ts.length ? `<div class="frow"><span class="flab">${label}</span>${ts.map(chip).join("")}</div>` : "";
+    const untagged = p === "medium" ? cards.filter(c => !c.tags.some(t => t.startsWith("medium/"))).length : 0;
+    const note = untagged ? `<span class="fnote">${untagged} cards are media-neutral and have no medium tag</span>` : "";
+    return ts.length ? `<div class="frow"><span class="flab">${label}</span>${ts.map(chip).join("")}${note}</div>` : "";
   }).join("");
   const filtered = active.size || $("q").value.trim();
   const n = visible().length;
