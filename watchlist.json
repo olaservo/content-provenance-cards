@@ -33,5 +33,12 @@
   "news": "https://blogs.bing.com/webmaster/",
   "feed": "https://blogs.bing.com/webmaster/feed/",
   "note": "Bing's blog for site owners, including how sites appear in its AI answers"
+ },
+ {
+  "id": "internet-exchange",
+  "name": "Internet Exchange",
+  "news": "https://internet.exchangepoint.tech/",
+  "feed": "https://internet.exchangepoint.tech/rss/",
+  "note": "A weekly newsletter on Internet governance, digital rights and technology and society"
  }
 ]

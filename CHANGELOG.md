@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-17
 
+- The watch list gains Internet Exchange, a weekly newsletter on Internet governance and digital rights. It has no card.
 - Cards can now say where an effort posts its news. `news` is its blog or announcements page and `feed` is the RSS, Atom or JSON feed. 42 cards have one or both, read on 2026-11-17. A new watch list, `watch.md` and `watch.json`, collects them for feed readers and scripts. It also lists sources with no card, kept in `watchlist.json`: The Scholarly Kitchen, MLCommons, IAB Tech Lab, the OpenTelemetry blog and the Bing Webmaster blog.
 - The two skills and the MCP endpoint now install as one plugin in the [[agent-plugins]] layout. The README has the steps for Codex and Claude Code.
 - The plugin's version now changes with every publish, written as `2026.11.17+20`. A copy installed on 2026-11-17 kept its first set of cards after a second publish that day, and updates from this one on.
