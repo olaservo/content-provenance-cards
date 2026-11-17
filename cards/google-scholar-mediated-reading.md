@@ -24,4 +24,4 @@ A Google Scholar program that publishers opt journals or collections into, with 
 
 ## History
 - 2026-10-23: COUNTER's [phase two](https://www.countermetrics.org/ai-phase-two/) announcement says "We've also mapped Google Scholar's new MERU tool to our metrics."
-- 2026-09: COUNTER's [update](https://www.countermetrics.org/ai-update-sept26/) on phase two says it has mapped how MERU messages should be reported.
+- 2026-09-18: COUNTER's [update](https://www.countermetrics.org/ai-update-sept26/) on phase two calls MERU "a form of syndicated usage" and says it has mapped how MERU messages should be reported.
