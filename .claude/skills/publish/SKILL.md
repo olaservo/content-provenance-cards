@@ -45,7 +45,7 @@ Running this skill is the request to open and merge both PRs, deploy the Worker 
 2. From the repo root, run `bash .claude/skills/publish/push-plugin.sh`. It commits `plugin/` to the `plugin` branch with the version and the `main` commit in the message, and pushes it. It prints a line and stops when the branch already matches.
 3. Run `git ls-remote origin plugin` and confirm the branch moved.
 
-The version in `plugin/plugin.json` is the newest date in the cards or the changelog. A second publish on the same day keeps the same version.
+The version in `plugin/plugin.json` is the newest date in the cards or the changelog, then `+` and the number of commits on the branch it was built from. Codex and Claude Code keep an installed copy until that string changes, so build from `main` after the merge.
 
 ## 5. Afterwards
 
@@ -54,4 +54,4 @@ The version in `plugin/plugin.json` is the newest date in the cards or the chang
 
 ## The private-notes check
 
-`check-private.sh` looks in the folders it is given for every line of 30 or more characters from `private/*.md` and `private/cards/*.md`, and for each private card id. It exits 1 and lists the files when it finds one. Run it as its own step and read the result before the next command. Do not chain it to a push or a deploy.
+`check-private.sh` looks in the folders it is given for every line of 30 or more characters from `private/*.md` and `private/cards/*.md`, and for each private card id. It exits 1 and lists the files when it finds one. Run from a git worktree, it reads `private/` in the main checkout, and its last line names the folder it used. Run it as its own step and read the result before the next command. Do not chain it to a push or a deploy.

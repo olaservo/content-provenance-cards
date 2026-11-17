@@ -7,12 +7,15 @@ set -euo pipefail
 root="$(cd "$(dirname "$0")/../../.." && pwd)"
 [ $# -gt 0 ] || { echo "usage: check-private.sh <output folder>..." >&2; exit 2; }
 for d in "$@"; do [ -e "$d" ] || { echo "no such folder: $d" >&2; exit 2; }; done
-[ -d "$root/private" ] || { echo "no private/ folder, nothing to look for"; exit 0; }
+# private/ is gitignored, so a git worktree has none. Use the main checkout's in that case.
+priv="$root/private"
+[ -d "$priv" ] || priv="$(git -C "$root" worktree list --porcelain | sed -n '1s/^worktree //p')/private"
+[ -d "$priv" ] || { echo "no private/ folder, nothing to look for"; exit 0; }
 
 pat="$(mktemp)"
 trap 'rm -f "$pat"' EXIT
-find "$root/private" -maxdepth 2 -name '*.md' -exec cat {} + | tr -d '\r' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | awk 'length >= 30' | sort -u > "$pat"
-for f in "$root"/private/cards/*.md; do [ -e "$f" ] && basename "$f" .md >> "$pat"; done
+find "$priv" -maxdepth 2 -name '*.md' -exec cat {} + | tr -d '\r' | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' | awk 'length >= 30' | sort -u > "$pat"
+for f in "$priv"/cards/*.md; do [ -e "$f" ] && basename "$f" .md >> "$pat"; done
 [ -s "$pat" ] || { echo "private/ has no text to look for"; exit 0; }
 
 hits="$(grep -rlF -f "$pat" "$@" || true)"
@@ -21,4 +24,4 @@ if [ -n "$hits" ]; then
   echo "$hits"
   exit 1
 fi
-echo "0 hits for $(wc -l < "$pat" | tr -d ' ') private lines and ids in: $*"
+echo "0 hits for $(wc -l < "$pat" | tr -d ' ') private lines and ids from $priv in: $*"

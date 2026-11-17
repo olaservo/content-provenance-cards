@@ -9,6 +9,7 @@
 // No dependencies. Frontmatter supports scalars, quoted strings and inline [a, b] lists.
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, copyFileSync, rmSync, statSync } from "node:fs";
 import { join, basename, resolve, dirname } from "node:path";
+import { execSync } from "node:child_process";
 
 const root = import.meta.dirname;
 const isPublic = process.argv.includes("--public");
@@ -712,11 +713,16 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
 
   // The plugin: both skills and the MCP endpoint in one directory, in the Agent Plugins layout (plugin.json, mcp.json, skills/).
   // Claude Code reads .claude-plugin/plugin.json and .mcp.json, so the package carries those as well.
-  // The version is the newest date in the cards or the changelog, as major.minor.patch, so each publish with a changelog entry moves it forward.
+  // The version is the newest date in the cards or the changelog, then the number of commits on the branch: 2026.11.17+19.
+  // Codex and Claude Code keep an installed copy until the version string changes, and two publishes can share a date.
   const newest = [asOf, ...[...changelogSrc.matchAll(/^## (\d{4}-\d{2}-\d{2})$/gm)].map((m) => m[1])].sort().pop();
+  let commits = "";
+  try {
+    commits = "+" + execSync("git rev-list --count HEAD", { cwd: root, stdio: ["ignore", "pipe", "ignore"] }).toString().trim();
+  } catch {}
   const about = {
     name: READER,
-    version: newest.split("-").map(Number).join("."),
+    version: newest.split("-").map(Number).join(".") + commits,
     description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Two skills and a read-only MCP server.",
     author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
     homepage: SITE,
