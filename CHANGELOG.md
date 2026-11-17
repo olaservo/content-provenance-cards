@@ -2,8 +2,18 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-17
+
+- Topic tags now have definitions and their own lists. `topics/skills.md` and `topics/discovery.md` list the cards with each tag, and the reader skill carries both. The explorer has a Topic filter row, and its front page defines the two topics. [[project-nanda]] gains the `topic/discovery` tag.
+
 ## 2026-11-16
 
+- Added nine cards on how an agent finds a server and who may reach it. Three are MCP work: [[mcp-registry]], [[mcp-server-cards]] and [[mcp-enterprise-managed-authorization]]. [[ard]] is the federated search layer built on AI Catalog entries. [[niso]], [[kbart]], [[getftr]] and [[trace]] come from scholarly publishing, where libraries already keep holdings feeds and entitlement checks. [[dataspace-protocol]] negotiates ODRL terms before data moves. They carry a new `topic/discovery` tag.
+- [[ai-catalog]]: new topics on the split between a catalog's operator and an artifact's publisher, and on the Policy URLs extension. It links [[mcp-server-cards]], [[ard]] and [[agent-skills]], and its status notes ADR-0028.
+- None of the registry `server.json`, the Server Card, the AI Catalog entry or the ARD entry has a field for usage terms or for the entitlements a server covers. Each card says so with the date read. `matches.md` lists 59 pairs.
+- [[mcp]] gains an In use section with Silverchair's Research Bridge and the [[getftr]] MCP service. [[counter]] notes its [[trace]] funding.
+- [[otel-mcp]]: SEP-2448 closed on 2026-09-22. The card said March 2026.
+- [[skills-marketplace]]: notes the Book-to-skill pipeline and its benchmark.
 - Added three music cards: [[stim]], [[socan]] and [[rights-and-ai]]. STIM offers a license for AI services that requires attribution technology. SOCAN registers works made with AI tools, has named an attribution partner and is suing Suno. Rights & AI is the music publishers' declaration reserving rights against AI training, with a file of the companies behind it.
 - [[cisac]]: the STIM license and its attribution requirement moved to [[stim]]. [[gema]]: notes Koda's case against Suno and its referral to the Eastern High Court.
 - Checked the findings the link audit left open. [[mcp-security-ig]]: the restructure is dated 2026-08-26 in the charter changelog and was merged on 2026-10-31. [[mpp]]: the current draft is `draft-httpauth-payment`, which is active, and the earlier `draft-ryan-httpauth-payment` expired. [[counter]] published phase two on 2026-10-23. [[creative-commons]]: the AIPREF exclusions draft expired on 2026-10-24. [[rsl]]: the SPUR binding links its source.

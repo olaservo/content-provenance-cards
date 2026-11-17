@@ -16,7 +16,7 @@ The guide is one person's working notes. Status lines carry the dates the source
 Read as little as the question needs.
 
 1. Start with `references/index.md`. It has one line per card: name, type, layers and current status. Most "what is X" and "who is working on Y" questions can be narrowed from this file alone.
-2. For a question about one layer, read `references/layers/<layer>.md`. The layers are provenance, access, licensing, attribution, payments, identity and governance. `references/vocabulary.md` defines the layers and the stage tags.
+2. For a question about one layer, read `references/layers/<layer>.md`. The layers are provenance, access, licensing, attribution, payments, identity and governance. For a subject that runs across layers, read `references/topics/<topic>.md`. The topics are skills and discovery. `references/vocabulary.md` defines the layers, the stage tags and the topic tags.
 3. Open `references/cards/<id>.md` for each card the question needs. Links between cards are relative, so follow them to related efforts. "Linked from" at the end of a card lists the cards that point at it.
 4. For "what changed" or "what happened since a date", read `references/updates.md`. It lists dated events from every card, newest first. `references/changelog.md` lists edits to the guide itself.
 

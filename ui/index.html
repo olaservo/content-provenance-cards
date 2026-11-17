@@ -153,11 +153,12 @@ const store = {
 const AS_OF = cards.map(c => c.updated).filter(Boolean).sort().pop() || "";
 const SITE = "https://www.olahungerford.com/";
 
-const VOCAB = window.VOCAB || { layers: {}, stages: {}, media: {}, labels: {} };
+const VOCAB = window.VOCAB || { layers: {}, stages: {}, media: {}, topics: {}, labels: {} };
 const LAYER_TEXT = VOCAB.layers, STAGE_TEXT = VOCAB.stages, LABELS = VOCAB.labels;
 const LAYERS = Object.keys(LAYER_TEXT), STAGES = Object.keys(STAGE_TEXT);
 const MEDIA_TEXT = VOCAB.media || {}, MEDIA = Object.keys(MEDIA_TEXT);
-const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["medium", "Medium", MEDIA], ["type", "Type", null], ["", "Other", null]];
+const TOPIC_TEXT = VOCAB.topics || {}, TOPICS = Object.keys(TOPIC_TEXT);
+const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["medium", "Medium", MEDIA], ["topic", "Topic", TOPICS], ["type", "Type", null], ["", "Other", null]];
 
 function human(t) {
   if (LABELS[t]) return LABELS[t];
@@ -168,7 +169,8 @@ function human(t) {
 function chip(t) {
   const dot = t.startsWith("layer/") ? `<i style="background:var(--l-${t.slice(6)})"></i>` : "";
   const medium = t.startsWith("medium/") && MEDIA_TEXT[t.slice(7)];
-  const tip = medium ? `${t.slice(7)}: ${medium}. A card with no medium tag is media-neutral.` : t;
+  const topic = t.startsWith("topic/") && TOPIC_TEXT[t.slice(6)];
+  const tip = medium ? `${t.slice(7)}: ${medium}. A card with no medium tag is media-neutral.` : topic ? `${t.slice(6)}: ${topic}.` : t;
   return `<span class="chip${active.has(t) ? " on" : ""}" data-t="${esc(t)}" title="${esc(tip)}">${dot}${esc(human(t))}</span>`;
 }
 
@@ -247,6 +249,9 @@ function intro() {
 <h3>Media</h3>
 <p>The kind of content an effort is about, where its own material names one. A card with no medium tag is media-neutral.</p>
 <ul>${MEDIA.map(m => `<li><strong>${m}</strong>: ${MEDIA_TEXT[m]}.</li>`).join("")}</ul>
+<h3>Topic tags</h3>
+<p>Subjects that cards on different layers share. Each has a list of its cards.</p>
+<ul>${TOPICS.map(t => `<li><strong><a href="topics/${t}.md">${t}</a></strong>: ${TOPIC_TEXT[t]}.</li>`).join("")}</ul>
 ${foot()}</div>`;
 }
 
