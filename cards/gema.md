@@ -2,6 +2,7 @@
 name: GEMA
 type: organization
 website: https://www.gema.de
+news: https://www.gema.de/en/news
 status: Won at Munich Regional Court against OpenAI (2025-11-11, under appeal) and Suno (2026-07-31, not final)
 tags: [type/organization, layer/licensing, layer/payments, medium/audio]
 updated: 2026-11-16

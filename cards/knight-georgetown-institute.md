@@ -3,6 +3,7 @@ name: Knight-Georgetown Institute
 aliases: [KGI]
 type: organization
 website: https://kgi.georgetown.edu
+news: https://kgi.georgetown.edu/news/
 tags: [type/organization, layer/governance, layer/access]
 updated: 2026-11-03
 ---

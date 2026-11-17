@@ -2,6 +2,7 @@
 name: SOCAN
 type: organization
 website: https://www.socan.com
+news: https://www.socan.com/media-centre/
 status: Sued Suno on 2026-09-02, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-16)
 tags: [type/organization, layer/licensing, layer/payments, layer/attribution, medium/audio]
 updated: 2026-11-16

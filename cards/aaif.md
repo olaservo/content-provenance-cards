@@ -3,6 +3,7 @@ name: Agentic AI Foundation
 aliases: [AAIF]
 type: organization
 website: https://aaif.io
+news: [https://aaif.io/news, https://aaif.io/blog]
 status: Linux Foundation; ten hosted projects in its first year
 tags: [type/organization, layer/governance]
 participate: "[working group repos on GitHub](https://github.com/aaif)"

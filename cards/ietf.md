@@ -3,6 +3,8 @@ name: IETF
 aliases: [Internet Engineering Task Force]
 type: organization
 website: https://www.ietf.org
+news: https://www.ietf.org/blog/
+feed: https://www.ietf.org/blog/feed/
 status: IETF 127 San Francisco, November 2026
 tags: [type/organization, layer/access, layer/identity]
 participate: "[how to participate](https://www.ietf.org/participate/)"

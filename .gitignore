@@ -14,5 +14,7 @@ worker/worker-configuration.d.ts
 ui/updates.md
 ui/matches.md
 ui/updates.json
+ui/watch.md
+ui/watch.json
 ui/topics/
 plugin/

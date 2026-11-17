@@ -3,6 +3,8 @@ name: IAB Tech Lab Content Monetization Protocols
 aliases: [CoMP]
 type: specification
 website: https://github.com/IABTechLab/CoMP
+news: https://github.com/IABTechLab/CoMP/releases
+feed: https://github.com/IABTechLab/CoMP/releases.atom
 status: 1.0, public comment from 2026-03-10
 tags: [type/specification, layer/licensing, layer/payments]
 participate: "[GitHub issues](https://github.com/IABTechLab/CoMP/issues)"

@@ -3,6 +3,8 @@ name: Encypher
 aliases: [Encypher Corporation, EncypherAI, c2pa-text]
 type: organization
 website: https://encypher.com
+news: https://encypher.com/blog
+feed: https://encypher.com/feed.xml
 status: The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date
 tags: [type/organization, layer/provenance, layer/licensing, stage/at-rest, medium/text, medium/image, medium/audio, medium/video]
 participate: "[c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)"

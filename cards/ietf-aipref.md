@@ -3,6 +3,8 @@ name: IETF AI Preferences Working Group
 aliases: [AIPREF]
 type: working-group
 website: https://datatracker.ietf.org/wg/aipref/about/
+news: https://datatracker.ietf.org/wg/aipref/history/
+feed: https://datatracker.ietf.org/feed/group-changes/aipref/
 part_of: "[[ietf]]"
 status: vocab-08 (2026-09-13) without consensus; attach-05 (2026-08-18); IETF 127 sessions 2026-11-16 and 11-19
 tags: [type/working-group, layer/access, stage/after-delivery]

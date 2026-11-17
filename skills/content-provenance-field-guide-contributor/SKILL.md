@@ -38,7 +38,7 @@ Say what you noticed, which card it affects, and the source. Ask whether they wa
 
 Work in a fork of {{repo}}. The README there has the full card format.
 
-- A card is `cards/<id>.md`: YAML frontmatter (`name`, `type`, `tags` required; `aliases`, `website`, `part_of`, `status`, `participate`, `updated` optional), a one-paragraph summary, a `## Topics` list, and optional `## Related`, `## Compare`, `## In use` and `## History` sections. Links to other cards are `[[id]]`.
+- A card is `cards/<id>.md`: YAML frontmatter (`name`, `type`, `tags` required; `aliases`, `website`, `news`, `feed`, `part_of`, `status`, `participate`, `updated` optional), a one-paragraph summary, a `## Topics` list, and optional `## Related`, `## Compare`, `## In use` and `## History` sections. Links to other cards are `[[id]]`.
 - A `[[link]]` to another card needs a primary source that connects the two. A comparison no source makes goes under `## Compare`, with what was searched and when.
 - `## In use` lists released implementations and live uses, each with a date and a link. Commitments, pilots and open pull requests go in `status`.
 - For a new card, copy an existing card of the same type and fill it in.
@@ -46,7 +46,7 @@ Work in a fork of {{repo}}. The README there has the full card format.
 - Add a line to `CHANGELOG.md` under today's date.
 - Run `node build.mjs` and fix any warning about a link that points at no card.
 
-Write one fact per sentence. Give dates as the source gave them. Attribute counts and estimates to whoever made them. Link to the effort's own page where there is one. `participate` is a public venue such as an issue tracker or mailing list, never a person. Leave out contact details and anything from a private channel.
+Write one fact per sentence. Give dates as the source gave them. Attribute counts and estimates to whoever made them. Link to the effort's own page where there is one. `participate` is a public venue such as an issue tracker or mailing list, never a person. `news` is the effort's own blog or announcements page and `feed` is its RSS or Atom feed, never a social media account. Leave out contact details and anything from a private channel.
 
 ## Open the pull request
 

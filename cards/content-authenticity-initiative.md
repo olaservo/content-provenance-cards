@@ -3,6 +3,7 @@ name: Content Authenticity Initiative
 aliases: [CAI, contentauth]
 type: project
 website: https://contentauthenticity.org
+news: https://contentauthenticity.org/blog
 status: Maintains c2pa-rs, c2pa-python, c2pa-js and c2patool
 tags: [type/project, layer/provenance]
 participate: "[join CAI](https://contentauthenticity.org/join), [GitHub](https://github.com/contentauth)"

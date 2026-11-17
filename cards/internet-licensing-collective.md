@@ -3,6 +3,7 @@ name: Internet Licensing Collective
 aliases: [ILC, RSL Collective]
 type: organization
 website: https://internetcollective.org
+news: https://internetcollective.org/press
 status: Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 tags: [type/organization, layer/licensing, layer/payments]
 participate: "[publishers](https://internetcollective.org/publishers), [AI companies](https://internetcollective.org/ai-companies)"

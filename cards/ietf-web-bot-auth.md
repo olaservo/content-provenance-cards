@@ -3,6 +3,8 @@ name: IETF Web Bot Auth Working Group
 aliases: [webbotauth]
 type: working-group
 website: https://datatracker.ietf.org/wg/webbotauth/about/
+news: https://datatracker.ietf.org/wg/webbotauth/history/
+feed: https://datatracker.ietf.org/feed/group-changes/webbotauth/
 part_of: "[[ietf]]"
 status: httpsig-protocol draft; Cloudflare libraries
 tags: [type/working-group, layer/identity, layer/access]

@@ -2,6 +2,8 @@
 name: Croissant
 type: specification
 website: https://github.com/mlcommons/croissant
+news: https://mlcommons.org/tag/croissant/
+feed: https://mlcommons.org/tag/croissant/feed/
 status: 1.1 (February 2026); required for NeurIPS 2026 dataset submissions
 tags: [type/specification, layer/provenance, layer/licensing, medium/data]
 participate: "[GitHub issues](https://github.com/mlcommons/croissant/issues)"

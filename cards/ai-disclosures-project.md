@@ -2,6 +2,8 @@
 name: AI Disclosures Project
 type: organization
 website: https://ai-disclosures.org
+news: https://ai-disclosures.org/blog
+feed: https://asimovaddendum.substack.com/feed
 status: Convenings at Bellagio (April 2026), Foo Camp (June and October 2026), Microsoft Research New York (September 2026)
 tags: [type/organization, layer/governance, layer/attribution, layer/payments]
 updated: 2026-11-08

@@ -3,6 +3,8 @@ name: Wikimedia
 aliases: [Wikimedia Foundation, Wikimedia Enterprise, WikiCite]
 type: organization
 website: https://wikimediafoundation.org
+news: https://wikimediafoundation.org/news/
+feed: https://wikimediafoundation.org/news/feed/
 status: Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08
 tags: [type/organization, layer/attribution, layer/identity]
 updated: 2026-11-15
