@@ -9,6 +9,7 @@
  { "id": "agent-payment", "kind": "lookup", "question": "How could an agent pay for a page it reads?", "cards": ["x402", "mpp"] },
  { "id": "blanket-licence", "kind": "lookup", "question": "Who sells one licence for AI use of many publishers' content?", "cards": ["internet-licensing-collective"] },
  { "id": "usage-reporting", "kind": "lookup", "question": "How does a publisher find out that an AI answer used its article?", "cards": ["content-telemetry", "spur-coalition"] },
+ { "id": "library-ai-usage", "kind": "lookup", "question": "How does AI use of an article show up in a library's usage report?", "cards": ["counter", "google-scholar-mediated-reading", "content-telemetry"] },
  { "id": "mcp-citations", "kind": "status", "question": "What happened to the MCP citations proposal?", "cards": ["mcp-sep-3094-citations"], "say": "closed without merging on 2026-11-08" },
  { "id": "gone-quiet", "kind": "status", "question": "Which efforts in the guide have gone quiet?", "cards": ["spawning", "fairly-trained", "data-provenance-initiative"] },
  { "id": "take-part", "kind": "lookup", "question": "Where do I go to take part in the IETF AI preferences work?", "cards": ["ietf-aipref"] },

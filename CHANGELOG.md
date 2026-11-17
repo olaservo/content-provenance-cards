@@ -5,6 +5,10 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 ## 2026-11-17
 
 - Topic tags now have definitions and their own lists. `topics/skills.md` and `topics/discovery.md` list the cards with each tag, and the reader skill carries both. The explorer has a Topic filter row, and its front page defines the two topics. [[project-nanda]] gains the `topic/discovery` tag.
+- Added [[google-scholar-mediated-reading]]: Google Scholar's Mediated Reading program and its MERU usage protocol, which [[counter]] reports as `SYNDICATED:Google_MERU`. Google's page gives policies and no message format.
+- [[counter]]: new topics on retrieval metrics and the Agent access method, how [[content-telemetry]] events map to metrics, third-party reporting, and the absence of a denial metric for AI access. It notes that the AI metrics are optional and not audited.
+- [[content-telemetry]]: new topics on coverage declarations and on reporting for an institution. v1.0 has no event for a refused retrieval.
+- [[niso]]: Journal Article Versions RP-8-2026, published 2026-10-05.
 
 ## 2026-11-16
 
