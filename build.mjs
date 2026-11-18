@@ -297,22 +297,26 @@ const llmsHead = `# ${TITLE}
 
 ${caveat} ${licence} Each card has a name, type, status, website, tags (layer, stage, medium, topic, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
 `;
+// The per-card files come first. An agent that starts with cards.md reads every card to answer about one.
 const llms = `${llmsHead}
-## Cards
-
-- [All cards as Markdown](${SITE}cards.md): one file, one section per card, with the layer and stage definitions first
-- [All cards as JSON](${SITE}cards.json): the same cards as structured data, with the vocabularies under "vocab"
-- [Updates](${SITE}updates.md): dated events from every card's history, newest first, also as [JSON](${SITE}updates.json)
-${topics.map((t) => `- [Topic: ${t}](${SITE}topics/${t}.md): the cards tagged topic/${t}`).join("\n")}
-
 ## One card at a time
 
-The Markdown file above holds every card. A prototype at ${WORKER} serves the same cards as one file each. It is experimental and its address may move.
+A prototype at ${WORKER} serves each card as its own file. It is experimental and its address may move.
 
 - [Guide index](${WORKER}index.md): the layer and stage definitions and one line per card. One card is at ${WORKER}cards/<id>.md
 - [Field guide skill](${WORKER}skills/${READER}/SKILL.md): how to answer questions from the guide, loading only the cards a question needs
 - [More for agents](${WORKER}llms.txt): the cards by layer, the contributor skill and an MCP server
 - [Plugin](${REPO}#start-here): both skills and the MCP server for Codex and Claude Code
+
+## Updates and topics
+
+- [Updates](${SITE}updates.md): dated events from every card's history, newest first, also as [JSON](${SITE}updates.json)
+${topics.map((t) => `- [Topic: ${t}](${SITE}topics/${t}.md): the cards tagged topic/${t}`).join("\n")}
+
+## All cards in one file
+
+- [All cards as Markdown](${SITE}cards.md): every card in one file of about ${Math.round(Buffer.byteLength(cardsMd) / 1000)} KB, one section per card, with the layer and stage definitions first
+- [All cards as JSON](${SITE}cards.json): the same cards as structured data, with the vocabularies under "vocab"
 
 ## Optional
 
