@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-17
 
+- `llms.txt` on olahungerford.com now lists the per-card files first and gives the size of `cards.md`, about 160 KB. In a test on 2026-11-17, five of six Claude Code sessions that started from `llms.txt` read `cards.md`, in two fetches each.
 - The Worker's `robots.txt` no longer asks crawlers not to train on the cards. The cards are under CC BY 4.0, which allows any use with credit. It still says yes to search and to answer-time use. olahungerford.com's own `robots.txt` is unchanged.
 - `llms.txt` on olahungerford.com now points at the prototype that serves one file per card, with its index, the reader skill and the plugin. It listed only `cards.md`, which holds every card in one file.
 - [[agent-skills-signing]]: discussion 651's mechanism, its example repository, and topics on covering the whole folder and on a removed credential. [[c2pa]]: a topic on YAML front matter, where the spec's own example does not parse in PyYAML. [[content-authenticity-initiative]] notes the open c2pa-rs pull request the example depends on.

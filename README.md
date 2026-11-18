@@ -90,7 +90,7 @@ Take them from the plugin, the MCP endpoint or `skills/<name>/` on the Worker. T
 
 ### Plain files
 
-The same cards are at [cards.md](https://www.olahungerford.com/content-provenance/cards.md) and [cards.json](https://www.olahungerford.com/content-provenance/cards.json). `cards.md` is one Markdown file with the vocabularies first and a section per card, wikilinks resolved to links within the file. `cards.json` is the same cards as structured data under `cards`, each with its `links` and the subset that are `compares`, with the vocabularies under `vocab`. `llms.txt` describes both for an agent that lands on the section, and points at the Worker for one file per card.
+The same cards are at [cards.md](https://www.olahungerford.com/content-provenance/cards.md) and [cards.json](https://www.olahungerford.com/content-provenance/cards.json). `cards.md` is one Markdown file with the vocabularies first and a section per card, wikilinks resolved to links within the file. `cards.json` is the same cards as structured data under `cards`, each with its `links` and the subset that are `compares`, with the vocabularies under `vocab`. `llms.txt` is for an agent that lands on the section. It lists the Worker's per-card files first, then these two files with the size of `cards.md`.
 
 The Worker serves those and also:
 
