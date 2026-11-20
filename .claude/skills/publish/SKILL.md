@@ -6,14 +6,14 @@ disable-model-invocation: true
 
 # Publish the field guide
 
-A change goes to four places, in this order:
+A change goes to four places, in this order, and an MCP smoke test runs after the last:
 
 1. `main` in this repo.
 2. The Jekyll copy in `olaservo/olaservo.github.io` under `content-provenance/`, served at https://www.olahungerford.com/content-provenance/.
 3. The Worker at https://content-provenance-field-guide.olahungerford.workers.dev.
 4. The `plugin` branch in this repo, which `.claude-plugin/marketplace.json` points at.
 
-Running this skill is the request to open and merge both PRs, deploy the Worker and push the plugin branch. If the request names a narrower scope, such as "open the PR" or "site only", do that part and stop. Stop and report when a check fails. Do not work around it.
+Running this skill is the request to open and merge both PRs, deploy the Worker, push the plugin branch and run the MCP smoke test. If the request names a narrower scope, such as "open the PR" or "site only", do that part and stop. Stop and report when a check fails. Do not work around it.
 
 ## 1. Cards repo
 
@@ -47,10 +47,15 @@ Running this skill is the request to open and merge both PRs, deploy the Worker 
 
 The version in `plugin/plugin.json` is the newest date in the cards or the changelog, then `+` and the number of commits on the branch it was built from. Codex and Claude Code keep an installed copy until that string changes, so build from `main` after the merge.
 
-## 5. Afterwards
+## 5. MCP smoke test
+
+1. Run `gh workflow run mcp-smoke.lock.yml --ref main`. It is the agentic workflow in `.github/workflows/mcp-smoke.md`. A Copilot agent answers `smoke/questions.json` through the Worker's MCP endpoint, and `smoke/grade.mjs` scores the answers.
+2. Find the run with `gh run list --workflow mcp-smoke.lock.yml --limit 1` and wait for it with `gh run watch <id> --exit-status`. A failure is reported, not fixed, because the publish is already live. The run summary lists each question and what it missed.
+
+## 6. Afterwards
 
 - Run `node build.mjs` in this repo so the local explorer has the private notes again.
-- Report the two PR links, the merge commits, the Worker version, the plugin version and branch commit, what was verified and what was not.
+- Report the two PR links, the merge commits, the Worker version, the plugin version and branch commit, the MCP smoke test result, what was verified and what was not.
 
 ## The private-notes check
 

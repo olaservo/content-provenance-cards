@@ -114,6 +114,7 @@ The copy on olahungerford.com gets the flat files only. Jekyll renders any Markd
 | `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
 | `smoke/questions.json` | Questions the guide should be able to answer, each with the cards or unconnected pairs a good answer names. The build checks that the cards exist and that each pair is still unconnected. |
+| `.github/workflows/mcp-smoke.md` | An agentic workflow ([gh-aw](https://github.com/github/gh-aw)) run after each publish. A Copilot agent answers the smoke questions using only the Worker's MCP tools, and `smoke/grade.mjs` scores the answers without AI. It fails when an answer names fewer than half its expected cards, or when an `updated` date the agent reports does not match the card. `mcp-smoke.lock.yml` is compiled from it with `gh aw compile`. |
 | `skills/<name>/SKILL.md` | The two agent skills, written by hand, see [Skills](#skills). |
 | `worker/` | A Cloudflare Worker that serves the guide to agents, see [For agents](#for-agents). |
 | `.claude-plugin/marketplace.json` | Lists the plugin for Codex and Claude Code, see [As a plugin](#as-a-plugin). |
