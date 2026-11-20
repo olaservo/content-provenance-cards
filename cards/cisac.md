@@ -6,9 +6,9 @@ website: https://www.cisac.org
 news: https://www.cisac.org/newsroom
 status: Asks policymakers for licensing, transparency and an effective opt-out from data mining exceptions (AI page read 2026-11-15)
 tags: [type/organization, layer/licensing, layer/payments, layer/governance, medium/audio, medium/video]
-updated: 2026-11-16
+updated: 2026-11-20
 ---
-Network of authors' collecting societies, founded in 1926 and based in France. Its About page counts over 225 member societies in more than 110 countries, representing more than 5 million creators in music, audiovisual, drama, literature and visual arts. [[gema]] is a member, and the CEO of [[socan]] is a Vice-Chair of [its board](https://www.cisac.org/Newsroom/news-releases/cisac-announces-new-board-directors). It lists the ISWC work identifier, IPI and CIS-Net as its standards and tools.
+Network of authors' collecting societies, founded in 1926 and based in France. Its About page counts over 225 member societies in more than 110 countries, representing more than 5 million creators in music, audiovisual, drama, literature and visual arts. [[gema]] is a member, and the CEO of [[socan]] is a Vice-Chair of [its board](https://www.cisac.org/Newsroom/news-releases/cisac-announces-new-board-directors). It lists ISWC, ida, CIS-Net, ISAN, DDEX and IPI as its standards and tools.
 
 ## Topics
 - **Licensing AI use**: getting AI services to take licenses for the works they train on. Director General Gadi Oron [said on 2025-01-21](https://www.cisac.org/Newsroom/articles/cisac-dg-gadi-oron-opens-music-ally-connect-impact-ai), "We want to license all of these AI platforms for the inputs", and that none of the authors' societies had licensed a music AI service at that point. The Swedish society [[stim]] launched one as a pilot on 2025-09-08, and CISAC [carried the announcement](https://www.cisac.org/Newsroom/society-news/stim-launches-worlds-first-collective-ai-music-licence) in its society news.

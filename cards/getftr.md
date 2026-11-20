@@ -8,7 +8,7 @@ feed: https://www.getfulltextresearch.com/feed
 status: MCP service available to partners and developers since January 2026
 tags: [type/project, layer/access, medium/text]
 participate: "[integrator documentation](https://docs.getfulltextresearch.com/latest/integrators/mcp-service), [publishers](https://www.getfulltextresearch.com/why-publishers-should-join)"
-updated: 2026-11-16
+updated: 2026-11-20
 ---
 A service that asks the publisher whether a given user is entitled to a given article and returns a link to the right version. It is funded by participating publishers and free for discovery tools to integrate. Since January 2026 AI tools can call it over [[mcp]].
 
@@ -18,7 +18,7 @@ A service that asks the publisher whether a given user is entitled to a given ar
 - **Which entitlements a shared connector recognises**: in a [comment](https://scholarlykitchen.sspnet.org/2026/10/27/mcp-discovery/) of 2026-10-28, GetFTR's product director said it wants to help libraries confirm this and invited AI tools and publishers to pilot it.
 
 ## Related
-- Its FAQ recommends that service providers use it alongside [[kbart]] "to increase the number of links available through real-time, DOI level checks."
+- Its FAQ recommends that service providers use it alongside [[kbart]] or Subscriber Links "to increase the number of links available through real-time, DOI level checks."
 
 ## In use
 - The [MCP service](https://docs.getfulltextresearch.com/latest/integrators/mcp-service) is at `https://mcp.prod.getft.io/mcp` and needs a GetFTR API key. Both tools are marked Available (docs read 2026-11-16).

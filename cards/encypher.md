@@ -8,9 +8,9 @@ feed: https://encypher.com/feed.xml
 status: The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date
 tags: [type/organization, layer/provenance, layer/licensing, stage/at-rest, medium/text, medium/image, medium/audio, medium/video]
 participate: "[c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)"
-updated: 2026-11-15
+updated: 2026-11-20
 ---
-Company that sells text provenance built on [[c2pa]]. Signing is free for publishers, and AI companies pay for verification and usage reporting. It says it wrote the C2PA text appendix (A.8) and co-chairs the Text Provenance Task Force. The spec names no authors.
+Company that sells text provenance built on [[c2pa]]. Signing is free for publishers and checking is free for anyone. Plans for marking AI output start at $99 a month, and its Meter usage reports are offered as a pilot with no listed price (read 2026-11-20). It says it wrote the C2PA text appendix (A.8) and co-chairs the Text Provenance Task Force. The spec names no authors.
 
 ## Topics
 - **Text embedding**: carrying a signed manifest inside text that has no metadata slot, as invisible Unicode variation selectors. This part is the C2PA appendix, and its [c2pa-text](https://github.com/encypherai/c2pa-text) library is MIT-licensed.
@@ -18,7 +18,7 @@ Company that sells text provenance built on [[c2pa]]. Signing is free for publis
 - **Identity and terms**: tying the record to a publisher and to stated reuse terms. Its posts cite the [[cawg]] identity and metadata assertions and the [[iptc]] verified publishers list, and its site refers to [[rsl]] and [[w3c-odrl]] for terms.
 
 ## Related
-- Its 2026-11-11 post carries one C2PA manifest and 66 sentence markers. Seven of the manifest's eleven assertions are in Encypher's namespace, and none is a CAWG identity assertion or a licensing assertion (decoded 2026-11-15, signature not checked).
+- Its 2026-11-11 post carries one C2PA manifest and 67 sentence markers (counted 2026-11-20). Seven of the manifest's eleven assertions are in Encypher's namespace, and none is a CAWG identity assertion or a licensing assertion (decoded 2026-11-15, signature not checked).
 - [WritersLogic](https://github.com/writerslogic/c2pa-unstructured-text) publishes a separate implementation of the same appendix.
 
 ## In use

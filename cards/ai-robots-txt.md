@@ -6,9 +6,15 @@ news: https://github.com/ai-robots-txt/ai.robots.txt/releases
 feed: https://github.com/ai-robots-txt/ai.robots.txt/releases.atom
 tags: [type/project, layer/access]
 participate: "[GitHub issues](https://github.com/ai-robots-txt/ai.robots.txt/issues)"
-updated: 2026-11-03
+updated: 2026-11-20
 ---
-Community list of AI crawlers with generated robots.txt, nginx, Caddy, HAProxy and lighttpd blocks.
+Community list of AI crawlers with generated robots.txt, Apache .htaccess, nginx, Caddy, HAProxy and lighttpd blocks.
 
 ## Topics
 - **Crawler blocking today**: giving site operators ready-made blocks, and a record of what they deploy compared with what [[ietf-aipref]] specifies.
+
+## In use
+- v2.2 (2026-11-16) adds the [[aipref-training-token]] group `User-agent: __usage_ai-training` to its robots.txt.
+
+## History
+- 2026-11-16: [v2.2](https://github.com/ai-robots-txt/ai.robots.txt/releases/tag/v2.2) released with the `__usage_ai-training` token.

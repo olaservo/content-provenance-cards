@@ -3,21 +3,20 @@ name: DDEX
 aliases: [Digital Data Exchange]
 type: organization
 website: https://ddex.net
-news: https://ddex.net/press/
 feed: https://ddex.net/feed/
-status: Generative AI Declaration Standard (GAI-D) in peer review, with publication expected in early 2027 (announced 2026-11-05)
+status: Generative AI Declaration Standard (GAI-D) committee draft finished member comments and goes to peer review next, with publication expected in early 2027 (announced 2026-11-05)
 tags: [type/organization, layer/provenance, layer/attribution, layer/licensing, medium/audio]
 participate: "[working groups](https://ddex.net/about-ddex/working-groups/), for Charter and Full Members"
-updated: 2026-11-15
+updated: 2026-11-20
 ---
 Not-for-profit membership organisation, set up in 2006, that writes the message standards labels, distributors and streaming services use to exchange release data, credits and sales reports. It says the standards are free to implement and that implementers do not need to be members.
 
 ## Topics
 - **Release metadata**: telling a streaming service what a release is and who is credited on it, in one message format, the Electronic Release Notification (ERN).
 - **AI disclosure**: saying that a recording, or one contributor's part in it, was made with generative AI. The [ERN release notes](https://ern.ddex.net/electronic-release-notification-message-suite-part-1-definitions-of-messages/annex-a-(informative)-release-notes/) list both under version 4.3.1. A sound recording, image, text, video or release can carry [`ContainsAI`](https://service.ddex.net/dd/DD-ERN-432/dd/ddex_ContainsAI.html), and a contributor can carry [`AiContribution`](https://service.ddex.net/dd/DD-ERN-432/dd/ddex_AiContribution.html). The data dictionary's rules use the values All, Partly and None.
-- **Declared, not checked**: the disclosure is what the sender of the message declares. Spotify says it depends on artist disclosure and that "the absence of a credit doesn't mean AI wasn't used".
+- **Declared, not checked**: the disclosure is what the sender of the message declares. Spotify's [help page](https://support.spotify.com/us/article/ai-credits/) says "AI credits are optional for artists to share" and "The absence of AI credits doesn't mean AI wasn't used on a song."
 - **AI as a use type**: naming AI training among the uses a message can refer to. The [allowed value sets](https://kb.ddex.net/reference-material/current-allowed-value-sets/) include `UseForGenerativeAI`, `UseForTrainingGenerativeAI` and `UseForTrainingNonGenerativeAI`.
-- **A standard for AI declarations**: its Artificial Intelligence group is set up "to investigate the metadata requirements for the communication of AI-generated music", including musical works. The group's Generative AI Declaration Standard has finished member comments on its committee draft.
+- **A standard for AI declarations**: its Artificial Intelligence group is set up "to investigate the metadata requirements for the communication of AI-generated music", including musical works. The group's Generative AI Declaration Standard (GAI-D) has finished member comments on its committee draft and goes to peer review next, with publication expected in early 2027.
 
 ## Compare
 - [[c2pa]] records how an asset was made in a signed manifest bound to the file. No DDEX page refers to it, and no C2PA page refers to DDEX (searched 2026-11-15).

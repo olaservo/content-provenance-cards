@@ -3,9 +3,9 @@ name: Google Scholar Mediated Reading
 aliases: [MERU, MEdiated Reading Usage protocol]
 type: project
 website: https://scholar.google.com/intl/en/scholar/publishers.html
-status: Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23
+status: Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics by 2026-09-18 and published the guidance on 2026-10-23
 tags: [type/project, layer/attribution, layer/access, stage/after-delivery, medium/text]
-updated: 2026-11-17
+updated: 2026-11-20
 ---
 A Google Scholar program that publishers opt journals or collections into, with a usage protocol, MERU, for the publishers that take part. Google's publisher page gives it six sentences of policy. It does not say what a reader sees, how a publisher joins, or what a MERU message contains (read 2026-11-17). [[counter]] calls it "an example of a third party AI system which delivers usage information to participating publishers".
 

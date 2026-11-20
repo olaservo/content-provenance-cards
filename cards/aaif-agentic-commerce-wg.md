@@ -6,7 +6,7 @@ part_of: "[[aaif]]"
 status: Chartered 2026-05-15; catalogs specs rather than authoring one
 tags: [type/working-group, layer/payments]
 participate: "[GitHub issues](https://github.com/aaif/wg-agentic-commerce/issues)"
-updated: 2026-11-03
+updated: 2026-11-15
 ---
 Discovery and negotiation, checkout, delegated authority, agentic payments, fraud signals, post-purchase.
 

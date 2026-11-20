@@ -2,6 +2,13 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-20
+
+- Every card was checked claim by claim against primary sources, and each correction was checked again by a second pass. `updated` now moves with any edit to a card, frontmatter included.
+- Corrections: [[ietf-aipref]] draft dates (vocab-08 2026-09-14, attach-05 2026-08-19). [[microsoft-grounding-preference]] is not the first vendor grounding signal, and vocab-08 has an `ai-use` category. [[w3c-tdmrep]] is a Final Community Group Report. [[content-telemetry]] and [[spur-coalition]]: v1.0 makes per-event signing optional and defers manifest signing. [[eu-ai-act-gpai-code]]: signatories "identify and comply with" other protocols, not "best efforts". [[c2pa]] soft-binding and conformance counts. [[encypher]] pricing. [[agent-skills-signing]]: discussions 252 and 393 already propose a signer and revocation. [[agent-plugins]] and [[skills-marketplace]]: Agent Skills has a `license` field. [[mcp]] and [[mcp-c2pa-in-meta]]: the Financial Services IG charter covers provenance for its sector. [[cloudflare-content-signals]]: policycheck reads robots.txt only. [[ai-disclosures-project]]: the Open Memory Protocol Initiative. [[okfn]]: an unsourced plan removed. [[microsoft-publisher-content-marketplace]] and [[rsl]]: only a vendor blog links the two. [[ai-catalog]] trust manifests and [[ard]] entries reworded to match the specs.
+- New events: [[iab-comp]] 1.0 final, [[acp]] adds Meta, [[ucp]] council and release, [[x402]] executive director and repository move, [[agent-plugins]] approved by the AAIF Technical Committee, [[aipref-training-token]] -01 and its use in [[ai-robots-txt]] v2.2, [[ietf-aipref]] design team call, [[socan]] amended claim, [[cc-signals]] and [[creative-commons]] alpha plans, the [[rsl]] `<reporting>` element, new [[spur-coalition]] members, [[eu-ai-act-gpai-code]] Article 50 dates, [[mcp-registry]] v1.8.10, [[mcp-server-cards]] classed Beta, the [[niso]] pilot timeline and [[croissant]] 1.1 dates.
+- Links fixed on [[x402]], [[cawg]], [[counter]], [[creative-commons]], [[w3c]], [[project-nanda]] and [[aaif-observability-traceability-wg]]. [[ddex]] drops a stale news page.
+
 ## 2026-11-17
 
 - `llms.txt` on olahungerford.com now lists the per-card files first and gives the size of `cards.md`, about 160 KB. In a test on 2026-11-17, five of six Claude Code sessions that started from `llms.txt` read `cards.md`, in two fetches each.

@@ -5,10 +5,10 @@ type: community-group
 website: https://www.w3.org/community/odrl/
 feed: https://www.w3.org/community/odrl/feed/
 part_of: "[[w3c]]"
-status: 2.2 is a W3C Recommendation; a W3C WG for 3.0 is being chartered; ai-vocab draft
+status: 2.2 is a W3C Recommendation; a draft Digital Policy WG charter covers ODRL 3.0; ai-vocab draft
 tags: [type/community-group, layer/licensing]
 participate: "[join the community group](https://www.w3.org/community/odrl/join)"
-updated: 2026-11-15
+updated: 2026-11-20
 ---
 Policy language for permissions, prohibitions and duties on content.
 
