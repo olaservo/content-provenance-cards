@@ -4,7 +4,7 @@ id: "mcp-skills-extension"
 type: "specification"
 status: "Final 2026-09-13; Beta under SEP-3392"
 tags: ["type/specification", "venue/mcp", "stage/at-rest", "topic/skills", "medium/code"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-skills-extension"
 ---
 # SEP-2640 Skills Extension
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Model Context Protocol](mcp.md)
 - Take part: [SEP-2640 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2640), [MCP community channels](https://modelcontextprotocol.io/community/communication)
 - Tags: type/specification, venue/mcp, stage/at-rest, topic/skills, medium/code
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-skills-extension
 
 Serves [Agent Skills](agent-skills.md) over MCP, with digests and a `_meta` slot for intermediaries.

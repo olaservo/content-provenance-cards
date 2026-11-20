@@ -4,7 +4,7 @@ id: "aims"
 type: "specification"
 status: "v0.1 draft"
 tags: ["type/specification", "layer/identity"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aims"
 ---
 # Agent Identity and Manifest Standard
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [OpenAttribution.org](openattribution.md)
 - Take part: [GitHub issues](https://github.com/openattribution-org/aims/issues)
 - Tags: type/specification, layer/identity
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aims
 
 DID-based agent identity, proof of what content the agent is licensed to access, and a link from identity to the telemetry endpoint.

@@ -5,45 +5,45 @@ One line per card: name, type and layers, then the current status.
 - [AAIF Agentic Commerce WG](cards/aaif-agentic-commerce-wg.md) (working-group, payments): Chartered 2026-05-15; catalogs specs rather than authoring one
 - [AAIF Governance, Risk and Regulatory WG](cards/aaif-grr-wg.md) (working-group, governance)
 - [AAIF Identity and Trust WG](cards/aaif-identity-trust-wg.md) (working-group, identity): Chartered 2026-05-12
-- [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md) (working-group, provenance, attribution): Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; OTel cross-domain provenance proposal 2026-10-28
+- [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md) (working-group, provenance, attribution): Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; proposal joining OTel GenAI telemetry to signed evidence records opened 2026-10-28; trace model proposal well received at the OTel GenAI SIG 2026-11-11
 - [AAIF Security and Privacy WG](cards/aaif-security-privacy-wg.md) (working-group, governance)
 - [Agent Identity and Manifest Standard](cards/aims.md) (specification, identity): v0.1 draft
 - [Agent Payments Protocol](cards/ap2.md) (specification, payments, identity): Donated by Google to the FIDO Alliance
-- [Agent Plugins](cards/agent-plugins.md) (specification, provenance, licensing): 1.0.0 published 2026-08-06; 1.1.0 is a working draft; steering committee from Amazon, Cursor, Microsoft, OpenAI and Vercel
+- [Agent Plugins](cards/agent-plugins.md) (specification, provenance, licensing): 1.0.0 published 2026-08-06; 1.1.0 is a working draft; AAIF Technical Committee approved it as a Growth-stage project 2026-10-27, Governing Board vote pending; steering committee from Amazon, Cursor, Microsoft, OpenAI and Vercel
 - [Agent Skills](cards/agent-skills.md) (specification): Joined AAIF 2026-10-22
-- [Agent Skills at-rest signing threads](cards/agent-skills-signing.md) (proposal, provenance): Seven open discussions in Ideas, one maintainer, no convergence
+- [Agent Skills at-rest signing threads](cards/agent-skills-signing.md) (proposal, provenance): Seven open discussions in Ideas, none answered by a listed maintainer, no convergence
 - [Agentic AI Foundation](cards/aaif.md) (organization, governance): Linux Foundation; ten hosted projects in its first year
-- [Agentic Commerce Protocol](cards/acp.md) (specification, payments): Published by OpenAI and Stripe
+- [Agentic Commerce Protocol](cards/acp.md) (specification, payments): Beta; maintained by OpenAI, Stripe and Meta (Meta since 2026-04-24); latest spec 2026-04-17
 - [Agentic Resource Discovery](cards/ard.md) (specification, identity): v0.91 dated 2026-08-26, marked Proposal
-- [AI Catalog](cards/ai-catalog.md) (specification, provenance, identity): ADR-0028 accepted on the 2026-11-05 TSC call, opening catalog and entry objects to unrecognized members; identity-keyed trust manifests merged 2026-10-28
+- [AI Catalog](cards/ai-catalog.md) (specification, provenance, identity): ADR-0028 (open catalog and entry objects) accepted on the 2026-11-05 AI Catalog call and merged into the spec 2026-11-11; independently signed trust manifest contributions merged 2026-10-28
 - [AI Disclosures Project](cards/ai-disclosures-project.md) (organization, governance, attribution, payments): Convenings at Bellagio (April 2026), Foo Camp (June and October 2026), Microsoft Research New York (September 2026)
 - [ai.robots.txt](cards/ai-robots-txt.md) (project, access)
 - [C2PA](cards/c2pa.md) (organization, provenance): Spec 2.5 published October 2026
-- [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md) (proposal, provenance): Discussion closed 2026-09-25 with all spec-repo discussions; no SEP filed yet
-- [CC Signals](cards/cc-signals.md) (proposal, access, attribution): GitHub draft unchanged since 2025-12; v2 to make attribution a requirement
+- [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md) (proposal, provenance): Discussion closed 2026-09-25 when the spec repo limited Discussions to meeting notes; no SEP filed yet
+- [CC Signals](cards/cc-signals.md) (proposal, access, attribution): Public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16); the GitHub draft is unchanged since 2025-12-04
 - [CISAC](cards/cisac.md) (organization, licensing, payments, governance): Asks policymakers for licensing, transparency and an effective opt-out from data mining exceptions (AI page read 2026-11-15)
 - [Cloudflare Content Signals](cards/cloudflare-content-signals.md) (proposal, access): Individual AIPREF draft, shown as expired on Datatracker (read 2026-11-15); parsed by policycheck
 - [Content Authenticity Initiative](cards/content-authenticity-initiative.md) (project, provenance): Maintains c2pa-rs, c2pa-python, c2pa-js and c2patool
-- [Content Telemetry](cards/content-telemetry.md) (specification, attribution): v1.0 published 2026-09-02; signed events deferred (section 8.9)
+- [Content Telemetry](cards/content-telemetry.md) (specification, attribution): v1.0 published 2026-09-02; per-event signing is informational (section 8.4) and manifest signing is deferred (section 8.9)
 - [COUNTER Metrics](cards/counter.md) (organization, attribution): Phase two of its AI best practice published 2026-10-23; it says the guidelines are aligned with the SPUR telemetry framework
-- [Creative Commons](cards/creative-commons.md) (organization, licensing, access, attribution): Attribution to become a requirement in the next CC Signals iteration; RAG attribution best practices planned
-- [Creator Assertions Working Group](cards/cawg.md) (working-group, provenance, identity, access): Moved under DIF; consent assertion added 2026-07
-- [Croissant](cards/croissant.md) (specification, provenance, licensing): 1.1 (February 2026); required for NeurIPS 2026 dataset submissions
+- [Creative Commons](cards/creative-commons.md) (organization, licensing, access, attribution): CC Signals public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16)
+- [Creator Assertions Working Group](cards/cawg.md) (working-group, provenance, identity, access): Moved under DIF; consent assertion started as a placeholder draft 2026-07-12
+- [Croissant](cards/croissant.md) (specification, provenance, licensing): 1.1 published 2026-01-29 and announced 2026-02-12; required for NeurIPS 2026 dataset submissions
 - [Data Provenance Initiative](cards/data-provenance-initiative.md) (project, provenance, licensing): Last code push 2025-03
 - [Dataspace Protocol](cards/dataspace-protocol.md) (specification, licensing, access): 2025-1 released 2025-08-29 and considered stable; second errata tagged 2026-09-11
-- [DDEX](cards/ddex.md) (organization, provenance, attribution, licensing): Generative AI Declaration Standard (GAI-D) in peer review, with publication expected in early 2027 (announced 2026-11-05)
+- [DDEX](cards/ddex.md) (organization, provenance, attribution, licensing): Generative AI Declaration Standard (GAI-D) committee draft finished member comments and goes to peer review next, with publication expected in early 2027 (announced 2026-11-05)
 - [Decentralized Identity Foundation](cards/dif.md) (organization, identity): Hosts CAWG
 - [Encypher](cards/encypher.md) (organization, provenance, licensing): The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date
 - [Enterprise-Managed Authorization](cards/mcp-enterprise-managed-authorization.md) (specification, identity, access): Stable since 2026-06-18; its interest group was folded into the Authorization IG on 2026-08-17
-- [EU AI Act and GPAI Code of Practice](cards/eu-ai-act-gpai-code.md) (regulation, access, governance, provenance): Commission compiling a list of recognized machine-readable opt-out mechanisms
+- [EU AI Act and GPAI Code of Practice](cards/eu-ai-act-gpai-code.md) (regulation, access, governance, provenance): Opt-out protocol consultation closed 2026-01-23; the Commission has not published its list of generally agreed protocols (searched 2026-11-20); Article 50 applies from 2026-08-02
 - [Fairly Trained](cards/fairly-trained.md) (organization, licensing): Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)
 - [GEMA](cards/gema.md) (organization, licensing, payments): Won at Munich Regional Court against OpenAI (2025-11-11, under appeal) and Suno (2026-07-31, not final)
 - [GetFTR](cards/getftr.md) (project, access): MCP service available to partners and developers since January 2026
-- [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23
-- [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md) (specification, licensing, payments): 1.0, public comment from 2026-03-10
+- [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics by 2026-09-18 and published the guidance on 2026-10-23
+- [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md) (specification, licensing, payments): 1.0 final 2026-04-28
 - [IETF](cards/ietf.md) (organization, access, identity): IETF 127 San Francisco, November 2026
-- [IETF AI Preferences Working Group](cards/ietf-aipref.md) (working-group, access): vocab-08 (2026-09-13) without consensus; attach-05 (2026-08-18); IETF 127 sessions 2026-11-16 and 11-19
-- [IETF Web Bot Auth Working Group](cards/ietf-web-bot-auth.md) (working-group, identity, access): httpsig-protocol draft; Cloudflare libraries
+- [IETF AI Preferences Working Group](cards/ietf-aipref.md) (working-group, access): vocab-08 (2026-09-14) without consensus; attach-05 (2026-08-19); IETF 127 sessions 2026-11-16 and 11-19; issues 245 and 246 closed 2026-11-19
+- [IETF Web Bot Auth Working Group](cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); Cloudflare libraries
 - [Internet Licensing Collective](cards/internet-licensing-collective.md) (organization, licensing, payments): Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 - [IPTC](cards/iptc.md) (organization, licensing, access, provenance): RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 - [KBART](cards/kbart.md) (specification, access): Phase III (NISO RP-9-2026) published 2026-08-26
@@ -51,12 +51,12 @@ One line per card: name, type and layers, then the current status.
 - [Machine Payments Protocol](cards/mpp.md) (specification, payments): Individual IETF draft, draft-httpauth-payment-01 (2026-09-09), active on Datatracker; the earlier draft-ryan-httpauth-payment expired 2026-09-19 (read 2026-11-16); not a WG item
 - [MCP Financial Services Interest Group](cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter has a data lineage and citation pillar
 - [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md) (working-group): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
-- [MCP Registry](cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.9 dated 2026-11-10
+- [MCP Registry](cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20
 - [MCP Security Interest Group](cards/mcp-security-ig.md) (interest-group, governance): Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call
 - [Microsoft Publisher Content Marketplace](cards/microsoft-publisher-content-marketplace.md) (project, licensing, payments): Pilot announced 2026-02-03, with Copilot grounding answers in licensed content; no public spec
-- [Microsoft training and grounding preferences](cards/microsoft-grounding-preference.md) (proposal, access): Effective 2027-02-01
-- [Model Context Protocol](cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); WG-first rule for SEPs
-- [NISO](cards/niso.md) (organization, provenance, attribution, governance): Twelve-month provenance and attribution pilot announced October 2026; KBART Phase III published 2026-08-26
+- [Microsoft training and grounding preferences](cards/microsoft-grounding-preference.md) (proposal, access): Announced 2026-10-30; effective 2027-02-01; NoArchive and NoCache stop being read as preferences after 2027-03-01
+- [Model Context Protocol](cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
+- [NISO](cards/niso.md) (organization, provenance, attribution, governance): Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 - [Open Future](cards/open-future.md) (organization, governance, access)
 - [Open Knowledge Foundation](cards/okfn.md) (organization, attribution): MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources
 - [OpenAttribution.org](cards/openattribution.md) (organization, attribution, identity, payments): policycheck, commerce profile, AIMS draft
@@ -65,19 +65,19 @@ One line per card: name, type and layers, then the current status.
 - [Project NANDA](cards/project-nanda.md) (project, identity)
 - [Really Simple Licensing](cards/rsl.md) (specification, licensing, payments): RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - [Rights & AI](cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
-- [SEP-2127 Server Cards](cards/mcp-server-cards.md) (specification, identity): SEP-2127 is Final and its PR merged 2026-10-06; the extension repository README still says Experimental
+- [SEP-2127 Server Cards](cards/mcp-server-cards.md) (specification, identity): SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
 - [SEP-2640 Skills Extension](cards/mcp-skills-extension.md) (specification): Final 2026-09-13; Beta under SEP-3392
 - [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md) (proposal, attribution): Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
-- [Shared AI training robots.txt token](cards/aipref-training-token.md) (proposal, access): Individual draft posted 2026-10-30; Google, OpenAI, Microsoft and Anthropic committed to honor it
+- [Shared AI training robots.txt token](cards/aipref-training-token.md) (proposal, access): Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027
 - [Skills Marketplace](cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
-- [SOCAN](cards/socan.md) (organization, licensing, payments, attribution): Sued Suno on 2026-09-02, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-16)
-- [Spawning](cards/spawning.md) (organization, access): datadiligence dormant since 2024-10
-- [SPUR Coalition](cards/spur-coalition.md) (organization, attribution): Content Telemetry v1.0 published 2026-09-02
+- [SOCAN](cards/socan.md) (organization, licensing, payments, attribution): Sued Suno on 2026-09-02 and amended the claim on 2026-11-18, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-20)
+- [Spawning](cards/spawning.md) (organization, access): datadiligence dormant since 2024-10; spawning.ai shows a maintenance page (read 2026-11-20)
+- [SPUR Coalition](cards/spur-coalition.md) (organization, attribution): Content Telemetry v1.0 published 2026-09-02; The New York Times, AFP, The Economist and The Atlantic joined 2026-10-13
 - [STIM](cards/stim.md) (organization, licensing, payments, attribution): Offers a license for AI services, launched as a pilot on 2025-09-08. AI has been a separate rights category since 2026-06-01, and members approve works one by one (read 2026-11-16)
 - [TRACE](cards/trace.md) (project, provenance, attribution, access): Launched 2026-10-06 with funding for three projects
-- [Universal Commerce Protocol](cards/ucp.md) (specification, payments): Google-led consortium, no foundation home
+- [Universal Commerce Protocol](cards/ucp.md) (specification, payments): Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25
 - [W3C](cards/w3c.md) (organization, licensing, access)
-- [W3C ODRL](cards/w3c-odrl.md) (community-group, licensing): 2.2 is a W3C Recommendation; a W3C WG for 3.0 is being chartered; ai-vocab draft
-- [W3C TDM Reservation Protocol Community Group](cards/w3c-tdmrep.md) (community-group, access, licensing): CG draft; last push 2026-09
+- [W3C ODRL](cards/w3c-odrl.md) (community-group, licensing): 2.2 is a W3C Recommendation; a draft Digital Policy WG charter covers ODRL 3.0; ai-vocab draft
+- [W3C TDM Reservation Protocol Community Group](cards/w3c-tdmrep.md) (community-group, access, licensing): CG Final Report version 3 (2024-05-10); last push 2026-09
 - [Wikimedia](cards/wikimedia.md) (organization, attribution, identity): Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08
-- [x402](cards/x402.md) (specification, payments): x402 Foundation (Linux Foundation) operational 2026-07-14; v2 spec
+- [x402](cards/x402.md) (specification, payments): x402 Foundation (Linux Foundation) operational 2026-07-14; Executive Director appointed 2026-10-01; v2 spec

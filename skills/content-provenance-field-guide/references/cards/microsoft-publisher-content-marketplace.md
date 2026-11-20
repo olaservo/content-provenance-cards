@@ -4,7 +4,7 @@ id: "microsoft-publisher-content-marketplace"
 type: "project"
 status: "Pilot announced 2026-02-03, with Copilot grounding answers in licensed content; no public spec"
 tags: ["type/project", "layer/licensing", "layer/payments"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/microsoft-publisher-content-marketplace"
 ---
 # Microsoft Publisher Content Marketplace
@@ -13,10 +13,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: project
 - Status: Pilot announced 2026-02-03, with Copilot grounding answers in licensed content; no public spec
 - Tags: type/project, layer/licensing, layer/payments
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#microsoft-publisher-content-marketplace
 
-Voluntary marketplace with publisher-set terms and pricing and usage reporting.
+Voluntary marketplace where publishers define licensing and usage terms, with usage-based reporting.
 
 ## Topics
 
@@ -24,7 +24,7 @@ Voluntary marketplace with publisher-set terms and pricing and usage reporting.
 
 ## Compare
 
-- News reports say it supports [Really Simple Licensing](rsl.md). Microsoft's announcement does not mention RSL, and RSL's pages do not mention Microsoft (searched 2026-11-15).
+- Microsoft's announcement does not mention [Really Simple Licensing](rsl.md). A vendor blog calls the marketplace "inspired by" RSL. Microsoft's announcement does not mention RSL, and RSL's pages do not mention Microsoft (searched 2026-11-15).
 
 ## History
 

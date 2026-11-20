@@ -4,7 +4,7 @@ id: "mcp-fsig"
 type: "interest-group"
 status: "Charter has a data lineage and citation pillar"
 tags: ["type/interest-group", "venue/mcp", "layer/provenance", "layer/attribution"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-fsig"
 ---
 # MCP Financial Services Interest Group
@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Model Context Protocol](mcp.md)
 - Take part: [MCP community channels](https://modelcontextprotocol.io/community/communication)
 - Tags: type/interest-group, venue/mcp, layer/provenance, layer/attribution
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-fsig
 
 Financial-services interest group. Its charter also has an audit and attestation pillar, which these cards do not cover.
@@ -27,6 +27,6 @@ Financial-services interest group. Its charter also has an audit and attestation
 
 ## Related
 
-- [SEP-3094 Granular Citations](mcp-sep-3094-citations.md) was on the agenda of the 2026-09-24 meeting. The notes have no section on it.
+- [SEP-3094 Granular Citations](mcp-sep-3094-citations.md) was item 9 on the agenda of the 2026-09-24 meeting. The notes record no discussion of it. "Granular Citations" is listed as a topic for the lineage RFC.
 
-Linked from: [Model Context Protocol](mcp.md), [OpenLineage](openlineage.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md)
+Linked from: [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [Model Context Protocol](mcp.md), [OpenLineage](openlineage.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md)

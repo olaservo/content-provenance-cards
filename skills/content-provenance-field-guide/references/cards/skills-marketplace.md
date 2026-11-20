@@ -4,7 +4,7 @@ id: "skills-marketplace"
 type: "project"
 status: "Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors"
 tags: ["type/project", "layer/licensing", "layer/attribution", "layer/payments", "topic/skills", "medium/code"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/skills-marketplace"
 ---
 # Skills Marketplace
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [AI Disclosures Project](ai-disclosures-project.md)
 - Take part: [Skill Cards issues](https://github.com/SrulyRosenblat/skill-cards/issues), [SkillProof issues](https://github.com/SrulyRosenblat/skillproof/issues)
 - Tags: type/project, layer/licensing, layer/attribution, layer/payments, topic/skills, medium/code
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#skills-marketplace
 
 A marketplace for modular, interoperable, rights-protected skills with monetization for their authors, built with O'Reilly Media and Miso.ai. Two public tools so far: [Skill Cards](https://github.com/SrulyRosenblat/skill-cards) measures how well a skill covers its source documentation, and [SkillProof](https://srulyrosenblat.github.io/skillproof/) benchmarks the uplift a skill gives an agent.
@@ -26,7 +26,7 @@ A marketplace for modular, interoperable, rights-protected skills with monetizat
 
 - **Paying skill authors**: choosing a payout basis for skills, measured contribution or invocation count.
 - **Multi-source skills**: crediting every source behind a skill.
-- **Missing metadata**: no skill registry frontmatter carries author, license or source.
+- **Missing metadata**: [Agent Skills](agent-skills.md) frontmatter has an optional `license` field and a free-form `metadata` map, with no defined author or source field.
 
 ## Related
 

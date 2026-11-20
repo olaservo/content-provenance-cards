@@ -4,7 +4,7 @@ id: "dataspace-protocol"
 type: "specification"
 status: "2025-1 released 2025-08-29 and considered stable; second errata tagged 2026-09-11"
 tags: ["type/specification", "layer/licensing", "layer/access", "medium/data"]
-updated: "2026-11-16"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/dataspace-protocol"
 ---
 # Dataspace Protocol
@@ -18,7 +18,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases.atom
 - Take part: [GitHub issues](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/issues)
 - Tags: type/specification, layer/licensing, layer/access, medium/data
-- Updated: 2026-11-16
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#dataspace-protocol
 
 Eclipse Dataspace Working Group specification for sharing data between organizations under usage control. A provider publishes a catalog, the two sides negotiate an agreement, and then the data transfers. The International Data Spaces Association governed it up to version 2024-1.

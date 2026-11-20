@@ -4,7 +4,7 @@ id: "ap2"
 type: "specification"
 status: "Donated by Google to the FIDO Alliance"
 tags: ["type/specification", "layer/payments", "layer/identity"]
-updated: "2026-11-03"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ap2"
 ---
 # Agent Payments Protocol
@@ -18,7 +18,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://github.com/google-agentic-commerce/AP2/releases.atom
 - Take part: [GitHub](https://github.com/google-agentic-commerce/AP2)
 - Tags: type/specification, layer/payments, layer/identity
-- Updated: 2026-11-03
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ap2
 
 Mandates that prove a human authorized an agent purchase.

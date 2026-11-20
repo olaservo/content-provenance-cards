@@ -4,7 +4,7 @@ id: "aaif-agentic-commerce-wg"
 type: "working-group"
 status: "Chartered 2026-05-15; catalogs specs rather than authoring one"
 tags: ["type/working-group", "layer/payments"]
-updated: "2026-11-03"
+updated: "2026-11-15"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif-agentic-commerce-wg"
 ---
 # AAIF Agentic Commerce WG
@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [GitHub issues](https://github.com/aaif/wg-agentic-commerce/issues)
 - Tags: type/working-group, layer/payments
-- Updated: 2026-11-03
+- Updated: 2026-11-15
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif-agentic-commerce-wg
 
 Discovery and negotiation, checkout, delegated authority, agentic payments, fraud signals, post-purchase.

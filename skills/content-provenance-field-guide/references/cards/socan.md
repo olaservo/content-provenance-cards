@@ -2,20 +2,20 @@
 title: "SOCAN"
 id: "socan"
 type: "organization"
-status: "Sued Suno on 2026-09-02, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-16)"
+status: "Sued Suno on 2026-09-02 and amended the claim on 2026-11-18, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-20)"
 tags: ["type/organization", "layer/licensing", "layer/payments", "layer/attribution", "medium/audio"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/socan"
 ---
 # SOCAN
 
 - Id: socan
 - Type: organization
-- Status: Sued Suno on 2026-09-02, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-16)
+- Status: Sued Suno on 2026-09-02 and amended the claim on 2026-11-18, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-20)
 - Website: https://www.socan.com
 - News: https://www.socan.com/media-centre/
 - Tags: type/organization, layer/licensing, layer/payments, layer/attribution, medium/audio
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#socan
 
 The Society of Composers, Authors and Music Publishers of Canada, a rights society that collects license fees for the public performance and reproduction of music. Its CEO is a Vice-Chair of the [CISAC](cisac.md) board ([CISAC](https://www.cisac.org/Newsroom/news-releases/cisac-announces-new-board-directors), 2025-05-28). It registers works made with AI tools, has named an attribution technology partner, and is suing Suno over generated songs.
@@ -31,14 +31,14 @@ The Society of Composers, Authors and Music Publishers of Canada, a rights socie
 
 ## Related
 
-- The account of the lawsuit here comes from SOCAN's release and lawsuit page. The [statement of claim](https://www.socan.com/wp-content/uploads/2026/09/ISSUED-Statement-of-Claim-SOCAN-v-Suno-September-2-2026-2.pdf) was not read.
+- The account of the lawsuit here comes from SOCAN's release and lawsuit page. The original [statement of claim](https://www.socan.com/wp-content/uploads/2026/09/ISSUED-Statement-of-Claim-SOCAN-v-Suno-September-2-2026-2.pdf) is a scan with no text layer and was not read. The [amended statement of claim](https://www.socan.com/wp-content/uploads/2026/11/ISSUED-Amended-Statement-of-Claim-SOCAN-v-Suno-November-18-2026.pdf) was read on 2026-11-20.
 - The lawsuit page says "SOCAN has neither issued a licence nor received any royalty payments from Suno."
 - In the joint release, SOCAN, ASCAP and BMI each define a partially AI-generated work as one that "combines elements of AI-generated musical content with elements of human authorship". ASCAP's and BMI's own policy pages were not read.
 
 ## Compare
 
 - [DDEX](ddex.md) messages carry a declaration that a recording was made with AI. SOCAN asks for none at registration. The guidelines do not mention DDEX (read 2026-11-16).
-- [GEMA](gema.md) won at first instance against Suno on 2026-07-31, in a case about works stored in the model. SOCAN's claim is about outputs. SOCAN's release and lawsuit page do not mention GEMA (read 2026-11-16).
+- [GEMA](gema.md) won at first instance against Suno on 2026-07-31, in a case about works stored in the model. SOCAN's claim is for infringement of the performing right through outputs. It also alleges that the Suno model has memorized many of the works it was trained on. SOCAN's release and lawsuit page do not mention GEMA (read 2026-11-16).
 
 ## In use
 
@@ -46,6 +46,7 @@ The Society of Composers, Authors and Music Publishers of Canada, a rights socie
 
 ## History
 
+- 2026-11-18: Filed an amended statement of claim (Federal Court T-3803-26) that adds outputs made with Suno's v6 models, which Suno released on 2026-09-09.
 - 2026-09-02: [Sued](https://www.socan.com/socan-is-standing-up-for-music-creators-and-publishers-with-legal-action-against-suno-inc-for-unauthorized-use-of-music-in-generative-ai-platform/) Suno Inc. over outputs that replicate songs in its repertoire.
 - 2026-07-20: Named Musical AI an approved technology partner for attribution services.
 - 2025-10-28: Published its AI registration guidelines, alongside aligned policies from ASCAP and BMI.

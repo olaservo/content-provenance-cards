@@ -2,9 +2,9 @@
 title: "W3C TDM Reservation Protocol Community Group"
 id: "w3c-tdmrep"
 type: "community-group"
-status: "CG draft; last push 2026-09"
+status: "CG Final Report version 3 (2024-05-10); last push 2026-09"
 tags: ["type/community-group", "layer/access", "layer/licensing"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/w3c-tdmrep"
 ---
 # W3C TDM Reservation Protocol Community Group
@@ -12,13 +12,13 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: w3c-tdmrep
 - Also known as: TDMRep
 - Type: community-group
-- Status: CG draft; last push 2026-09
+- Status: CG Final Report version 3 (2024-05-10); last push 2026-09
 - Website: https://www.w3.org/community/tdmrep/
 - Feed: https://www.w3.org/community/tdmrep/feed/
 - Part of: [W3C](w3c.md)
 - Take part: [join the community group](https://www.w3.org/community/tdmrep/join)
 - Tags: type/community-group, layer/access, layer/licensing
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#w3c-tdmrep
 
 The EU DSM Article 4 text and data mining opt-out: `tdm-reservation` and `tdm-policy` by HTTP header, HTML meta or `/.well-known/tdmrep.json`.

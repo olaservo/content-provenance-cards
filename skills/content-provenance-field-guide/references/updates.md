@@ -2,22 +2,37 @@
 
 Dated events from the History section of each card, newest first. These are things that happened to the efforts the cards describe. Edits to the guide itself are in the changelog.
 
+- 2026-11-19 [IETF AI Preferences Working Group](cards/ietf-aipref.md): Issues 245 and 246 on downstream survival closed.
+- 2026-11-18 [SOCAN](cards/socan.md): Filed an amended statement of claim (Federal Court T-3803-26) that adds outputs made with Suno's v6 models, which Suno released on 2026-09-09.
+- 2026-11-17 [IETF AI Preferences Working Group](cards/ietf-aipref.md): Kevin Kelley [asked for volunteers](https://mailarchive.ietf.org/arch/msg/ai-control/mLGJnETEzXfUug-xJfjRnY27LvY/) for an attachment design team, at the chairs' request, to report before the next interim.
+- 2026-11-16 [ai.robots.txt](cards/ai-robots-txt.md): [v2.2](https://github.com/ai-robots-txt/ai.robots.txt/releases/tag/v2.2) released with the `__usage_ai-training` token.
+- 2026-11-16 [CC Signals](cards/cc-signals.md): CC [said](https://creativecommons.org/2026/11/16/advancing-cc-signals-preparing-for-public-alpha-testing-in-2027/) a public alpha is planned for early 2027 and will first focus on SourceConnection.
+- 2026-11-16 [Shared AI training robots.txt token](cards/aipref-training-token.md): -01 posted.
 - 2026-11-12 [Internet Licensing Collective](cards/internet-licensing-collective.md): Launched under this name, formerly the RSL Collective, with Yahoo Scout as first commercial licensee.
 - 2026-11-12 [Really Simple Licensing](cards/rsl.md): The RSL Collective relaunched as [Internet Licensing Collective](cards/internet-licensing-collective.md).
+- 2026-11-11 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): Minutes record a positive reception of the Agent Behavior Trace Model proposal at the OTel GenAI SIG.
+- 2026-11-11 [AI Catalog](cards/ai-catalog.md): Spec aligned with ADR-0028 ([PR 131](https://github.com/Agent-Card/ai-catalog/pull/131)).
 - 2026-11-11 [Encypher](cards/encypher.md): Announced that The Atlantic plans to implement its provenance technology.
 - 2026-11-08 [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md): Closed without merging.
 - 2026-11-05 [Agent Skills at-rest signing threads](cards/agent-skills-signing.md): Discussion 651 proposed C2PA content credentials for skills, with an example repository the same day.
 - 2026-11-05 [AI Catalog](cards/ai-catalog.md): ADR-0028 accepted, opening catalog and entry objects to unrecognized members.
 - 2026-11-05 [DDEX](cards/ddex.md): [Announced](https://ddex.net/ddex-announces-elevenlabs-as-first-ai-company-to-join-membership/) ElevenLabs as the first AI company among its members, and said GAI-D would go through peer review before publication in early 2027.
+- 2026-11-04 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): Liaison roster published.
+- 2026-11 [NISO](cards/niso.md): The executive director's letter says the pilot may finish sooner than twelve months.
 - 2026-10-31 [MCP Security Interest Group](cards/mcp-security-ig.md): The restructure was merged into the charter ([#3331](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3331)).
-- 2026-10-31 [OpenTelemetry for MCP](cards/otel-mcp.md): Conventions merged for the TypeScript SDK, not yet released.
+- 2026-10-31 [OpenTelemetry for MCP](cards/otel-mcp.md): Built-in OpenTelemetry tracing and metrics merged for the TypeScript SDK, not yet released.
+- 2026-10-30 [Microsoft training and grounding preferences](cards/microsoft-grounding-preference.md): Microsoft [announced](https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/) the training and grounding preferences. Grounding settings in Bing Webmaster Tools open 2026-12-15, and the temporary grounding preferences expire 2027-09-30.
 - 2026-10-30 [Shared AI training robots.txt token](cards/aipref-training-token.md): Individual draft posted.
-- 2026-10-28 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): OTel cross-domain provenance proposal.
-- 2026-10-28 [AI Catalog](cards/ai-catalog.md): Identity-keyed trust manifests merged.
+- 2026-10-29 [SEP-2127 Server Cards](cards/mcp-server-cards.md): SEP-3392 merged, classifying ext-server-card as Beta.
+- 2026-10-28 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): [PR 67](https://github.com/aaif/wg-observability-and-traceability/pull/67) proposes joining OTel GenAI telemetry to signed action and evidence records. The meeting set an action to draft a cross-domain tracing and provenance proposal for OTel.
+- 2026-10-28 [AI Catalog](cards/ai-catalog.md): Independently signed trust manifest contributions merged.
+- 2026-10-27 [Agent Plugins](cards/agent-plugins.md): AAIF staff reported Technical Committee approval as a Growth-stage project. A Governing Board vote is pending.
 - 2026-10-27 [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md): Chain concept removed from the SEP.
 - 2026-10-23 [COUNTER Metrics](cards/counter.md): [Phase two](https://www.countermetrics.org/ai-phase-two/) of the AI best practice published.
 - 2026-10-23 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [phase two](https://www.countermetrics.org/ai-phase-two/) announcement says "We've also mapped Google Scholar's new MERU tool to our metrics."
 - 2026-10-22 [Agent Skills](cards/agent-skills.md): Joined AAIF.
+- 2026-10-13 [SPUR Coalition](cards/spur-coalition.md): The New York Times, Agence France-Presse, The Economist and The Atlantic joined.
+- 2026-10-12 [Agent Plugins](cards/agent-plugins.md): Proposed to [Agentic AI Foundation](cards/aaif.md).
 - 2026-10-08 [OpenLineage](cards/openlineage.md): BearingNode filed the `_meta` lineage key proposal as FSIG issue 16.
 - 2026-10-07 [OpenLineage](cards/openlineage.md): RFC 4484 updated.
 - 2026-10-06 [COUNTER Metrics](cards/counter.md): TRACE funding announced.
@@ -25,13 +40,14 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-10-06 [TRACE](cards/trace.md): Launched at the STM conference in Frankfurt.
 - 2026-10-05 [NISO](cards/niso.md): Journal Article Versions RP-8-2026 published.
 - 2026-10-05 [Wikimedia](cards/wikimedia.md): Published its investigation of OpenAI-run agents.
+- 2026-10-01 [x402](cards/x402.md): The Linux Foundation appointed Michael Hursta as Executive Director of the x402 Foundation.
 - 2026-10 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Foo Camp.
 - 2026-10 [C2PA](cards/c2pa.md): Spec 2.5 published.
 - 2026-10 [NISO](cards/niso.md): [Provenance and attribution pilot](https://www.niso.org/niso-io/2026/10/niso-develop-metadata-model-provenance-and-attribution-ai-systems) announced.
-- 2026-09-25 [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md): Discussion closed along with all spec-repo discussions.
+- 2026-09-25 [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md): Discussion closed when the spec repo limited Discussions to meeting notes.
 - 2026-09-24 [OpenLineage](cards/openlineage.md): Presented to the MCP Financial Services Interest Group.
 - 2026-09-18 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [update](https://www.countermetrics.org/ai-update-sept26/) on phase two calls MERU "a form of syndicated usage" and says it has mapped how MERU messages should be reported.
-- 2026-09-13 [IETF AI Preferences Working Group](cards/ietf-aipref.md): vocab-08 posted, without consensus.
+- 2026-09-14 [IETF AI Preferences Working Group](cards/ietf-aipref.md): vocab-08 posted, without consensus.
 - 2026-09-13 [SEP-2640 Skills Extension](cards/mcp-skills-extension.md): SEP-2640 marked Final.
 - 2026-09-11 [Dataspace Protocol](cards/dataspace-protocol.md): Second errata to 2025-1 tagged.
 - 2026-09-04 [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md): Revised.
@@ -44,33 +60,49 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-08-26 [KBART](cards/kbart.md): [Phase III](https://www.niso.org/publications/rp-9-2026-kbart) published.
 - 2026-08-26 [MCP Security Interest Group](cards/mcp-security-ig.md): Restructured as a routing group at a core maintainer meeting ([discussion 3316](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3316)), the date the charter changelog gives.
 - 2026-08-26 [NISO](cards/niso.md): KBART Phase III published.
-- 2026-08-18 [IETF AI Preferences Working Group](cards/ietf-aipref.md): attach-05 posted.
+- 2026-08-25 [Universal Commerce Protocol](cards/ucp.md): Release v2026-08-25.
+- 2026-08-19 [IETF AI Preferences Working Group](cards/ietf-aipref.md): attach-05 posted.
 - 2026-08-17 [Enterprise-Managed Authorization](cards/mcp-enterprise-managed-authorization.md): Interest group folded into the Authorization IG.
 - 2026-08-06 [Agent Plugins](cards/agent-plugins.md): 1.0.0 published.
+- 2026-08-02 [EU AI Act and GPAI Code of Practice](cards/eu-ai-act-gpai-code.md): Article 50 transparency rules apply.
 - 2026-07-31 [GEMA](cards/gema.md): Munich Regional Court [largely granted](https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2026/16.php) GEMA's claims against Suno for an injunction, information and damages (42 O 763/25). The court's press release says the judgment is not final.
+- 2026-07-27 [EU AI Act and GPAI Code of Practice](cards/eu-ai-act-gpai-code.md): AI Omnibus (Regulation (EU) 2026/1744) entered into force.
 - 2026-07-23 [GEMA](cards/gema.md): Launched PLAI by GEMA with Klangio as first customer.
 - 2026-07-20 [SOCAN](cards/socan.md): Named Musical AI an approved technology partner for attribution services.
 - 2026-07-14 [x402](cards/x402.md): x402 Foundation (Linux Foundation) operational.
+- 2026-07-12 [Creator Assertions Working Group](cards/cawg.md): Consent assertion repository created with a placeholder 1.0 draft.
 - 2026-07-09 [Agentic Resource Discovery](cards/ard.md): Loose coupling with AI Catalog agreed.
 - 2026-07-09 [AI Catalog](cards/ai-catalog.md): Loose coupling with ARD agreed.
-- 2026-07 [Creator Assertions Working Group](cards/cawg.md): Consent assertion added.
+- 2026-07-09 [SPUR Coalition](cards/spur-coalition.md): The Associated Press joined as the first US-based founding member.
 - 2026-06-18 [Enterprise-Managed Authorization](cards/mcp-enterprise-managed-authorization.md): Extension announced as stable.
 - 2026-06-17 [Agentic Resource Discovery](cards/ard.md): Announced by Google.
+- 2026-06-16 [Agentic Resource Discovery](cards/ard.md): v0.9 (Draft).
+- 2026-06-12 [Really Simple Licensing](cards/rsl.md): Section 3.12 `<reporting>` [added](https://rslstandard.org/rsl/errata), for machine-readable reporting requirements on licensed activity.
+- 2026-06-10 [EU AI Act and GPAI Code of Practice](cards/eu-ai-act-gpai-code.md): Final Code of Practice on Transparency of AI-generated Content published.
 - 2026-06-01 [STIM](cards/stim.md): The AI rights category took effect.
 - 2026-06 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Foo Camp.
 - 2026-05-31 [STIM](cards/stim.md): Announced that its members had voted for a separate rights category for AI.
 - 2026-05-28 [Agentic Resource Discovery](cards/ard.md): v0.5.
 - 2026-05-26 [Encypher](cards/encypher.md): Listed by C2PA as a conformant generator product.
 - 2026-05-15 [AAIF Agentic Commerce WG](cards/aaif-agentic-commerce-wg.md): Chartered.
+- 2026-05-13 [CC Signals](cards/cc-signals.md): CC [said](https://creativecommons.org/2026/05/13/from-signals-to-infrastructure-strengthening-the-commons-for-the-ai-era/) attribution must be a requirement in the next iteration.
 - 2026-05-12 [AAIF Identity and Trust WG](cards/aaif-identity-trust-wg.md): Chartered.
+- 2026-05-11 [SPUR Coalition](cards/spur-coalition.md): Mediahuis joined as a founding member.
+- 2026-04-28 [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md): 1.0 finalized ([release CoMP v1.0-202604](https://github.com/IABTechLab/CoMP/releases/tag/1.0-202604)).
+- 2026-04-28 [Universal Commerce Protocol](cards/ucp.md): Stripe joined Google and Shopify on the Governing Council.
+- 2026-04-24 [Agentic Commerce Protocol](cards/acp.md): Meta joined OpenAI and Stripe as a lead maintainer ([PR 236](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/pull/236)).
+- 2026-04-23 [CC Signals](cards/cc-signals.md): CC [said](https://creativecommons.org/2026/04/23/update-on-cc-signals-what-changed-and-why/) CC Signals is no longer limited to signaling preferences.
+- 2026-04-09 [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md): Public comment on 1.0 closed.
 - 2026-04 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Bellagio.
 - 2026-03-10 [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md): 1.0 opened for public comment.
+- 2026-02-12 [Croissant](cards/croissant.md): MLCommons announced 1.1.
 - 2026-02-03 [Microsoft Publisher Content Marketplace](cards/microsoft-publisher-content-marketplace.md): Microsoft [announced the pilot](https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web), with Copilot grounding answers in licensed content and Yahoo starting to onboard as a buyer.
-- 2026-02 [Croissant](cards/croissant.md): 1.1 released.
+- 2026-01-29 [Croissant](cards/croissant.md): 1.1 specification published.
+- 2026-01-23 [EU AI Act and GPAI Code of Practice](cards/eu-ai-act-gpai-code.md): Consultation on opt-out protocols closed.
 - 2026-01-21 [SEP-2127 Server Cards](cards/mcp-server-cards.md): SEP-2127 created.
 - 2026-01 [GetFTR](cards/getftr.md): [MCP capability](https://www.getfulltextresearch.com/getftr-enables-ai-tools-to-check-access-rights-for-academic-content) announced for AI tools.
 - 2025-12-10 [Really Simple Licensing](cards/rsl.md): RSL 1.0 published.
-- 2025-11-11 [GEMA](cards/gema.md): Munich Regional Court [largely granted](https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2025/11.php) GEMA's claims against OpenAI over song lyrics in ChatGPT (42 O 14139/24). GEMA says OpenAI has appealed to the Munich Higher Regional Court.
+- 2025-11-11 [GEMA](cards/gema.md): Munich Regional Court [largely granted](https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2025/11.php) GEMA's claims against OpenAI over song lyrics in ChatGPT (42 O 14139/24). GEMA [says](https://www.gema.de/en/w/suno-entscheidung-2026) OpenAI has appealed to the Munich Higher Regional Court.
 - 2025-10-28 [SOCAN](cards/socan.md): Published its AI registration guidelines, alongside aligned policies from ASCAP and BMI.
 - 2025-09-25 [DDEX](cards/ddex.md): Spotify [said](https://newsroom.spotify.com/2025-09-25/spotify-strengthens-ai-protections/) it would support "the new industry standard for AI disclosures in music credits, developed through DDEX", and named 19 labels and distributors working on it.
 - 2025-09-08 [CISAC](cards/cisac.md): [STIM](cards/stim.md) launched a collective AI license for music as a pilot.

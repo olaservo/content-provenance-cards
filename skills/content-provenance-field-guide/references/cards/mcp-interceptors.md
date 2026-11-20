@@ -4,7 +4,7 @@ id: "mcp-interceptors"
 type: "working-group"
 status: "SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved"
 tags: ["type/working-group", "venue/mcp", "stage/boundary"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-interceptors"
 ---
 # MCP Interceptors WG and SEP-2624
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Model Context Protocol](mcp.md)
 - Take part: [SEP-2624 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2624), [MCP community channels](https://modelcontextprotocol.io/community/communication)
 - Tags: type/working-group, venue/mcp, stage/boundary
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-interceptors
 
 Context middleware for clients, servers and gateways: deterministic code that sees each request and result on the way through. The place a seal or citation validator can run without a core spec change.

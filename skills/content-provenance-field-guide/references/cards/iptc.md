@@ -4,7 +4,7 @@ id: "iptc"
 type: "organization"
 status: "RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation"
 tags: ["type/organization", "layer/licensing", "layer/access", "layer/provenance", "stage/trust", "medium/image", "medium/video"]
-updated: "2026-11-15"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/iptc"
 ---
 # IPTC
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://iptc.org/news/
 - Feed: https://iptc.org/feed/
 - Tags: type/organization, layer/licensing, layer/access, layer/provenance, stage/trust, medium/image, medium/video
-- Updated: 2026-11-15
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#iptc
 
 News-media standards body. RightsML is a profile of [W3C ODRL](w3c-odrl.md). Its photo metadata standard has a Data Mining property. [Creator Assertions Working Group](cawg.md)'s metadata assertion can bind IPTC metadata to a C2PA manifest. With Project Origin it runs the Origin Verified News Publishers List for [C2PA](c2pa.md) signing.

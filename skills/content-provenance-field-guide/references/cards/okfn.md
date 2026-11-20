@@ -4,7 +4,7 @@ id: "okfn"
 type: "organization"
 status: "MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources"
 tags: ["type/organization", "layer/attribution", "stage/in-transit", "venue/mcp"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/okfn"
 ---
 # Open Knowledge Foundation
@@ -18,7 +18,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://blog.okfn.org/feed/
 - Take part: [okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)
 - Tags: type/organization, layer/attribution, stage/in-transit, venue/mcp
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#okfn
 
 CKAN maintainers. MCP Labs runs chat over official datasets with every answer linked to its source.
@@ -26,17 +26,13 @@ CKAN maintainers. MCP Labs runs chat over official datasets with every answer li
 ## Topics
 
 - **Attributable open-data answers**: linking every answer to its dataset, which open licenses can make a legal requirement.
-- **Interim convention to standard**: moving its required `structuredContent.sources` list onto a standard citation format.
-
-## Related
-
-- Plans to move charts to MCP Apps and citations to SEP-3094.
+- **Interim convention to standard**: its required `structuredContent.sources` list has no standard citation format to map onto.
 
 ## Compare
 
-- Its `sources` list could map onto [SEP-3094 Granular Citations](mcp-sep-3094-citations.md). An OKFN developer reviewed the SEP, and no OKFN page names it (searched 2026-11-15).
+- Its `sources` list could map onto [SEP-3094 Granular Citations](mcp-sep-3094-citations.md), which closed unmerged on 2026-11-08. An OKFN developer reviewed the SEP, and no OKFN page names it (searched 2026-11-15).
 - A [Wikimedia](wikimedia.md) contributor reviewed the same SEP. No source connects the two organisations (searched 2026-11-15).
-- A natural pilot for the [Creative Commons](creative-commons.md) RAG attribution best practices. Neither names the other (searched 2026-11-15).
+- A natural early adopter for the [Creative Commons](creative-commons.md) SourceConnection component of CC Signals. Neither names the other (searched 2026-11-15).
 
 ## In use
 

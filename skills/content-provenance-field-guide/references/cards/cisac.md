@@ -4,7 +4,7 @@ id: "cisac"
 type: "organization"
 status: "Asks policymakers for licensing, transparency and an effective opt-out from data mining exceptions (AI page read 2026-11-15)"
 tags: ["type/organization", "layer/licensing", "layer/payments", "layer/governance", "medium/audio", "medium/video"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/cisac"
 ---
 # CISAC
@@ -16,10 +16,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://www.cisac.org
 - News: https://www.cisac.org/newsroom
 - Tags: type/organization, layer/licensing, layer/payments, layer/governance, medium/audio, medium/video
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#cisac
 
-Network of authors' collecting societies, founded in 1926 and based in France. Its About page counts over 225 member societies in more than 110 countries, representing more than 5 million creators in music, audiovisual, drama, literature and visual arts. [GEMA](gema.md) is a member, and the CEO of [SOCAN](socan.md) is a Vice-Chair of [its board](https://www.cisac.org/Newsroom/news-releases/cisac-announces-new-board-directors). It lists the ISWC work identifier, IPI and CIS-Net as its standards and tools.
+Network of authors' collecting societies, founded in 1926 and based in France. Its About page counts over 225 member societies in more than 110 countries, representing more than 5 million creators in music, audiovisual, drama, literature and visual arts. [GEMA](gema.md) is a member, and the CEO of [SOCAN](socan.md) is a Vice-Chair of [its board](https://www.cisac.org/Newsroom/news-releases/cisac-announces-new-board-directors). It lists ISWC, ida, CIS-Net, ISAN, DDEX and IPI as its standards and tools.
 
 ## Topics
 

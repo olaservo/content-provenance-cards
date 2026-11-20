@@ -4,7 +4,7 @@ id: "aaif-identity-trust-wg"
 type: "working-group"
 status: "Chartered 2026-05-12"
 tags: ["type/working-group", "layer/identity", "stage/trust"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif-identity-trust-wg"
 ---
 # AAIF Identity and Trust WG
@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [GitHub issues](https://github.com/aaif/wg-identity-and-trust/issues)
 - Tags: type/working-group, layer/identity, stage/trust
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif-identity-trust-wg
 
 Charter: agent identity, authentication and provenance, delegation chains, consent, cross-organization trust, discovery metadata.

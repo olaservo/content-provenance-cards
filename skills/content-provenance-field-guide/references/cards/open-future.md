@@ -3,7 +3,7 @@ title: "Open Future"
 id: "open-future"
 type: "organization"
 tags: ["type/organization", "layer/governance", "layer/access"]
-updated: "2026-11-03"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/open-future"
 ---
 # Open Future
@@ -14,7 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://openfuture.eu/blog/
 - Feed: https://openfuture.eu/feed/
 - Tags: type/organization, layer/governance, layer/access
-- Updated: 2026-11-03
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#open-future
 
 European think tank on the digital commons.

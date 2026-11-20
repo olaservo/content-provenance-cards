@@ -2,21 +2,21 @@
 title: "AAIF Observability and Traceability WG"
 id: "aaif-observability-traceability-wg"
 type: "working-group"
-status: "Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; OTel cross-domain provenance proposal 2026-10-28"
+status: "Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; proposal joining OTel GenAI telemetry to signed evidence records opened 2026-10-28; trace model proposal well received at the OTel GenAI SIG 2026-11-11"
 tags: ["type/working-group", "layer/provenance", "layer/attribution"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif-observability-traceability-wg"
 ---
 # AAIF Observability and Traceability WG
 
 - Id: aaif-observability-traceability-wg
 - Type: working-group
-- Status: Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; OTel cross-domain provenance proposal 2026-10-28
+- Status: Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; proposal joining OTel GenAI telemetry to signed evidence records opened 2026-10-28; trace model proposal well received at the OTel GenAI SIG 2026-11-11
 - Website: https://github.com/aaif/wg-observability-and-traceability
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [GitHub issues](https://github.com/aaif/wg-observability-and-traceability/issues)
 - Tags: type/working-group, layer/provenance, layer/attribution
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif-observability-traceability-wg
 
 Working group on agent-level observability, above the OpenTelemetry GenAI telemetry conventions.
@@ -25,7 +25,7 @@ Working group on agent-level observability, above the OpenTelemetry GenAI teleme
 
 - **Evidence records**: tamper-evident records of agent behavior ([Evidence Record Spec proposal](https://github.com/aaif/wg-observability-and-traceability/issues/37)).
 - **Responsibility chains**: attributing which agent or human initiated, delegated or approved an action.
-- **Liaisons**: the [liaison roster](https://github.com/aaif/wg-observability-and-traceability/issues/11) has no content-side member.
+- **Liaisons**: the [liaison roster](https://github.com/aaif/wg-observability-and-traceability/blob/main/LIAISONS.md) has no content-side member.
 
 ## Related
 
@@ -37,7 +37,9 @@ Working group on agent-level observability, above the OpenTelemetry GenAI teleme
 
 ## History
 
-- 2026-10-28: OTel cross-domain provenance proposal.
+- 2026-11-11: Minutes record a positive reception of the Agent Behavior Trace Model proposal at the OTel GenAI SIG.
+- 2026-11-04: Liaison roster published.
+- 2026-10-28: [PR 67](https://github.com/aaif/wg-observability-and-traceability/pull/67) proposes joining OTel GenAI telemetry to signed action and evidence records. The meeting set an action to draft a cross-domain tracing and provenance proposal for OTel.
 - 2026-09-02: Provenance initiative lead named.
 
 Linked from: [Agentic AI Foundation](aaif.md), [OpenTelemetry for MCP](otel-mcp.md)

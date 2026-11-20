@@ -4,7 +4,7 @@ id: "dif"
 type: "organization"
 status: "Hosts CAWG"
 tags: ["type/organization", "layer/identity"]
-updated: "2026-11-15"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/dif"
 ---
 # Decentralized Identity Foundation
@@ -18,7 +18,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://blog.identity.foundation/rss/
 - Take part: [join DIF](https://identity.foundation/join/)
 - Tags: type/organization, layer/identity
-- Updated: 2026-11-15
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#dif
 
 Standards body for decentralized identifiers and verifiable credentials. Hosts [Creator Assertions Working Group](cawg.md).

@@ -2,9 +2,9 @@
 title: "Google Scholar Mediated Reading"
 id: "google-scholar-mediated-reading"
 type: "project"
-status: "Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23"
+status: "Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics by 2026-09-18 and published the guidance on 2026-10-23"
 tags: ["type/project", "layer/attribution", "layer/access", "stage/after-delivery", "medium/text"]
-updated: "2026-11-17"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/google-scholar-mediated-reading"
 ---
 # Google Scholar Mediated Reading
@@ -12,10 +12,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: google-scholar-mediated-reading
 - Also known as: MERU, MEdiated Reading Usage protocol
 - Type: project
-- Status: Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics on 2026-10-23
+- Status: Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics by 2026-09-18 and published the guidance on 2026-10-23
 - Website: https://scholar.google.com/intl/en/scholar/publishers.html
 - Tags: type/project, layer/attribution, layer/access, stage/after-delivery, medium/text
-- Updated: 2026-11-17
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#google-scholar-mediated-reading
 
 A Google Scholar program that publishers opt journals or collections into, with a usage protocol, MERU, for the publishers that take part. Google's publisher page gives it six sentences of policy. It does not say what a reader sees, how a publisher joins, or what a MERU message contains (read 2026-11-17). [COUNTER Metrics](counter.md) calls it "an example of a third party AI system which delivers usage information to participating publishers".

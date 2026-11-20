@@ -2,9 +2,9 @@
 title: "W3C ODRL"
 id: "w3c-odrl"
 type: "community-group"
-status: "2.2 is a W3C Recommendation; a W3C WG for 3.0 is being chartered; ai-vocab draft"
+status: "2.2 is a W3C Recommendation; a draft Digital Policy WG charter covers ODRL 3.0; ai-vocab draft"
 tags: ["type/community-group", "layer/licensing"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/w3c-odrl"
 ---
 # W3C ODRL
@@ -12,13 +12,13 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: w3c-odrl
 - Also known as: Open Digital Rights Language
 - Type: community-group
-- Status: 2.2 is a W3C Recommendation; a W3C WG for 3.0 is being chartered; ai-vocab draft
+- Status: 2.2 is a W3C Recommendation; a draft Digital Policy WG charter covers ODRL 3.0; ai-vocab draft
 - Website: https://www.w3.org/community/odrl/
 - Feed: https://www.w3.org/community/odrl/feed/
 - Part of: [W3C](w3c.md)
 - Take part: [join the community group](https://www.w3.org/community/odrl/join)
 - Tags: type/community-group, layer/licensing
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#w3c-odrl
 
 Policy language for permissions, prohibitions and duties on content.

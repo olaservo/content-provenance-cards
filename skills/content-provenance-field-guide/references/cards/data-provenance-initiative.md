@@ -4,7 +4,7 @@ id: "data-provenance-initiative"
 type: "project"
 status: "Last code push 2025-03"
 tags: ["type/project", "layer/provenance", "layer/licensing", "medium/data"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/data-provenance-initiative"
 ---
 # Data Provenance Initiative
@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://www.dataprovenance.org
 - Take part: [GitHub](https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection)
 - Tags: type/project, layer/provenance, layer/licensing, medium/data
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#data-provenance-initiative
 
 MIT-led audits of training-corpus licenses, with datasets on Hugging Face.

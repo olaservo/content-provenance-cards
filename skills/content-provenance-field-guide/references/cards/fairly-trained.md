@@ -4,7 +4,7 @@ id: "fairly-trained"
 type: "organization"
 status: "Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)"
 tags: ["type/organization", "layer/licensing"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/fairly-trained"
 ---
 # Fairly Trained
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://www.fairlytrained.org/blog?format=rss
 - Take part: [apply for certification](https://www.fairlytrained.org/apply)
 - Tags: type/organization, layer/licensing
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#fairly-trained
 
 Non-profit that certifies generative AI companies, products and models whose training data was licensed for training, openly licensed, in the public domain or owned by the developer. Ed Newton-Rex is its CEO.
@@ -25,7 +25,7 @@ Non-profit that certifies generative AI companies, products and models whose tra
 ## Topics
 
 - **Licensed training data**: telling apart the generative AI models that were trained without unlicensed copyrighted work. Its [launch post](https://www.fairlytrained.org/blog/fairly-trained-launches-certification-for-generative-ai-models-that-respect-creators-rights) says the Licensed Model certification "will not be awarded to models that rely on a 'fair use' copyright exception or similar".
-- **Checking the claim**: an applicant [makes a written submission](https://www.fairlytrained.org/certifications), and Fairly Trained reviews it and may ask for more. The applicant must have processes for due diligence on training data and for keeping records of the data used in each training. The certifications page describes no inspection of the data itself. Certification is reevaluated each year, for an annual fee of $250 to $6,000 depending on revenue and scope.
+- **Checking the claim**: an applicant [makes a written submission](https://www.fairlytrained.org/certifications), and Fairly Trained reviews it and may ask for more. The applicant must have processes for due diligence on training data and for keeping records of the data used in each training. The certifications page describes no inspection of the data itself. Certification is reevaluated each year. An applicant pays a submission fee of $100 to $500, and if certified an annual fee of $250 to $6,000, depending on revenue and scope.
 - **Partly certified products**: saying which parts of a product the certificate covers. An applicant certifying a single model must state publicly which of the models it uses are certified and which are not.
 
 ## Related

@@ -4,7 +4,7 @@ id: "agent-skills"
 type: "specification"
 status: "Joined AAIF 2026-10-22"
 tags: ["type/specification", "topic/skills", "stage/at-rest", "medium/code"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/agent-skills"
 ---
 # Agent Skills
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [GitHub discussions](https://github.com/agentskills/agentskills/discussions)
 - Tags: type/specification, topic/skills, stage/at-rest, medium/code
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#agent-skills
 
 The SKILL.md format for packaging instructions and files for agents.
@@ -35,4 +35,4 @@ The SKILL.md format for packaging instructions and files for agents.
 
 - 2026-10-22: Joined AAIF.
 
-Linked from: [Agent Plugins](agent-plugins.md), [Agent Skills at-rest signing threads](agent-skills-signing.md), [Agentic AI Foundation](aaif.md), [AI Catalog](ai-catalog.md), [SEP-2640 Skills Extension](mcp-skills-extension.md)
+Linked from: [Agent Plugins](agent-plugins.md), [Agent Skills at-rest signing threads](agent-skills-signing.md), [Agentic AI Foundation](aaif.md), [AI Catalog](ai-catalog.md), [SEP-2640 Skills Extension](mcp-skills-extension.md), [Skills Marketplace](skills-marketplace.md)

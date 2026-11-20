@@ -4,7 +4,7 @@ id: "kbart"
 type: "specification"
 status: "Phase III (NISO RP-9-2026) published 2026-08-26"
 tags: ["type/specification", "layer/access", "medium/text"]
-updated: "2026-11-16"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/kbart"
 ---
 # KBART
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [NISO](niso.md)
 - Take part: [KBART Standing Committee](https://www.niso.org/standards-committees/kbart)
 - Tags: type/specification, layer/access, medium/text
-- Updated: 2026-11-16
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#kbart
 
 NISO recommended practice for sending title lists and coverage data from content providers to knowledge bases and libraries. KBART Automation (NISO RP-26-2019) adds library-specific holdings reports, exchanged by API.

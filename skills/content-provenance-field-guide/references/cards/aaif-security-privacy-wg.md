@@ -3,7 +3,7 @@ title: "AAIF Security and Privacy WG"
 id: "aaif-security-privacy-wg"
 type: "working-group"
 tags: ["type/working-group", "layer/governance", "stage/trust", "topic/skills"]
-updated: "2026-11-15"
+updated: "2026-11-16"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif-security-privacy-wg"
 ---
 # AAIF Security and Privacy WG
@@ -14,7 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [GitHub issues](https://github.com/aaif/wg-security-and-privacy/issues)
 - Tags: type/working-group, layer/governance, stage/trust, topic/skills
-- Updated: 2026-11-15
+- Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif-security-privacy-wg
 
 Working group drafting a security and privacy best-practices guide for agents.

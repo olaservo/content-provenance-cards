@@ -4,7 +4,7 @@ id: "rights-and-ai"
 type: "project"
 status: "Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)"
 tags: ["type/project", "layer/access", "layer/licensing", "medium/audio"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/rights-and-ai"
 ---
 # Rights & AI
@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://www.rightsandai.com
 - Take part: [add a company to the declaration](https://www.rightsandai.com)
 - Tags: type/project, layer/access, layer/licensing, medium/audio
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#rights-and-ai
 
 Public declaration in which music publishers and collecting societies reserve their rights against AI training without a license, with a downloadable file of the companies behind it. The International Confederation of Music Publishers (ICMP) announced it in a [release](https://icmpmusic.com/wp-content/uploads/2024/04/PRESS-RELEASE-International-music-sector-and-AI-www.RightsAndAI.com-03-04-2024.pdf) for 2024-04-04.
@@ -32,7 +32,7 @@ Public declaration in which music publishers and collecting societies reserve th
 
 - The site shows 16 rightsholders, among them Universal Music Publishing Group, Sony Music Publishing, Warner Chappell Music, Kobalt, Concord, BMG, peermusic, Deezer and the societies PRS for Music, MCPS and APRA AMCOS. It shows 16 endorsing trade bodies, among them the National Music Publishers Association and ICMP (read 2026-11-16).
 - The site itself does not name its operator. The release is ICMP's.
-- The release says the site is available in seven languages.
+- The release says the site will be available in seven languages, including Japanese. The site offers English, Arabic, Chinese, French, German, Italian and Spanish (read 2026-11-20).
 - Record companies reserve the same rights in separate declarations, which IFPI [lists](https://www.ifpi.org/ifpi-priorities/reservations-of-rights/). WIN, the network of independent music trade associations, publishes its own [notice](https://winformusic.org/ai-rights-reservation).
 
 ## Compare

@@ -4,7 +4,7 @@ id: "openattribution"
 type: "organization"
 status: "policycheck, commerce profile, AIMS draft"
 tags: ["type/organization", "layer/attribution", "layer/identity", "layer/payments"]
-updated: "2026-11-16"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/openattribution"
 ---
 # OpenAttribution.org
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://openattribution.org/feed.xml
 - Take part: [GitHub](https://github.com/openattribution-org)
 - Tags: type/organization, layer/attribution, layer/identity, layer/payments
-- Updated: 2026-11-16
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#openattribution
 
 Not-for-profit that originally developed the [Content Telemetry](content-telemetry.md) SDKs, which [SPUR Coalition](spur-coalition.md) now maintains. Its [Cloudflare edge worker](https://github.com/SPUR-Coalition/cloudflare-worker) is in SPUR's GitHub organization too (checked 2026-11-16). It maintains the policycheck scanner, the commerce profile and [Agent Identity and Manifest Standard](aims.md).

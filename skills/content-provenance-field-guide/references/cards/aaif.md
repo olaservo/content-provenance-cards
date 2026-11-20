@@ -4,7 +4,7 @@ id: "aaif"
 type: "organization"
 status: "Linux Foundation; ten hosted projects in its first year"
 tags: ["type/organization", "layer/governance"]
-updated: "2026-11-03"
+updated: "2026-11-17"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif"
 ---
 # Agentic AI Foundation
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://aaif.io/news, https://aaif.io/blog
 - Take part: [working group repos on GitHub](https://github.com/aaif)
 - Tags: type/organization, layer/governance
-- Updated: 2026-11-03
+- Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif
 
 Hosts [Model Context Protocol](mcp.md), goose, AGENTS.md, agentgateway, A2A, [Agent Skills](agent-skills.md) and others.

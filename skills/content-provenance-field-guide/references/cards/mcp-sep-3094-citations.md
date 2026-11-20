@@ -4,7 +4,7 @@ id: "mcp-sep-3094-citations"
 type: "proposal"
 status: "Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23"
 tags: ["type/proposal", "venue/mcp", "layer/attribution", "stage/in-transit", "stage/after-delivery"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-sep-3094-citations"
 ---
 # SEP-3094 Granular Citations
@@ -17,7 +17,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Model Context Protocol](mcp.md)
 - Take part: [SEP-3094 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094), [MCP community channels](https://modelcontextprotocol.io/community/communication)
 - Tags: type/proposal, venue/mcp, layer/attribution, stage/in-transit, stage/after-delivery
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-sep-3094-citations
 
 Citations on tool results bound by CommonMark links in the text, each a flat schema.org CreativeWork, granularity via URL fragments, integrity deferred. A `citations.render` client capability.
@@ -25,7 +25,7 @@ Citations on tool results bound by CommonMark links in the text, each a flat sch
 ## Topics
 
 - **Citations in transit**: keeping sources attached from tool result to the answer a user sees.
-- **Sponsorship and venue**: finding a sponsor and a WG or IG discussion. A maintainer said on 2026-11-06 that SEPs now go through working groups, and suggested the Core Primitives WG or a new interest group on citations.
+- **Sponsorship and venue**: finding a sponsor and a WG or IG discussion. A maintainer wrote on 2026-11-06 that "we now encourage people to go through working groups to create SEPs", and suggested the Core Primitives WG or a new interest group on citations.
 - **Field placement**: choosing a top-level field or `_meta` processed by [MCP Interceptors WG and SEP-2624](mcp-interceptors.md).
 
 ## Related

@@ -4,7 +4,7 @@ id: "encypher"
 type: "organization"
 status: "The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date"
 tags: ["type/organization", "layer/provenance", "layer/licensing", "stage/at-rest", "medium/text", "medium/image", "medium/audio", "medium/video"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/encypher"
 ---
 # Encypher
@@ -18,10 +18,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Feed: https://encypher.com/feed.xml
 - Take part: [c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)
 - Tags: type/organization, layer/provenance, layer/licensing, stage/at-rest, medium/text, medium/image, medium/audio, medium/video
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#encypher
 
-Company that sells text provenance built on [C2PA](c2pa.md). Signing is free for publishers, and AI companies pay for verification and usage reporting. It says it wrote the C2PA text appendix (A.8) and co-chairs the Text Provenance Task Force. The spec names no authors.
+Company that sells text provenance built on [C2PA](c2pa.md). Signing is free for publishers and checking is free for anyone. Plans for marking AI output start at $99 a month, and its Meter usage reports are offered as a pilot with no listed price (read 2026-11-20). It says it wrote the C2PA text appendix (A.8) and co-chairs the Text Provenance Task Force. The spec names no authors.
 
 ## Topics
 
@@ -31,7 +31,7 @@ Company that sells text provenance built on [C2PA](c2pa.md). Signing is free for
 
 ## Related
 
-- Its 2026-11-11 post carries one C2PA manifest and 66 sentence markers. Seven of the manifest's eleven assertions are in Encypher's namespace, and none is a CAWG identity assertion or a licensing assertion (decoded 2026-11-15, signature not checked).
+- Its 2026-11-11 post carries one C2PA manifest and 67 sentence markers (counted 2026-11-20). Seven of the manifest's eleven assertions are in Encypher's namespace, and none is a CAWG identity assertion or a licensing assertion (decoded 2026-11-15, signature not checked).
 - [WritersLogic](https://github.com/writerslogic/c2pa-unstructured-text) publishes a separate implementation of the same appendix.
 
 ## In use

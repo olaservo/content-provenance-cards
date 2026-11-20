@@ -4,7 +4,7 @@ id: "ard"
 type: "specification"
 status: "v0.91 dated 2026-08-26, marked Proposal"
 tags: ["type/specification", "layer/identity", "topic/discovery"]
-updated: "2026-11-16"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ard"
 ---
 # Agentic Resource Discovery
@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://agenticresourcediscovery.org/spec/
 - Take part: [GitHub issues](https://github.com/ards-project/ard-spec/issues)
 - Tags: type/specification, layer/identity, topic/discovery
-- Updated: 2026-11-16
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ard
 
 A federated search layer for agentic resources: MCP servers, A2A agents, skills and APIs. Publishers list entries on their own domain, registries index them and answer `POST /search`, and a registry can refer a query to other registries. Google announced it on 2026-06-17 under Apache 2.0. The v0.91 authors are from Google and Hugging Face, with R.V. Guha.
@@ -30,7 +30,7 @@ A federated search layer for agentic resources: MCP servers, A2A agents, skills 
 
 ## Related
 
-- Built on the [AI Catalog](ai-catalog.md) entry. The two groups agreed on 2026-07-09 to stay loosely coupled (ADR-0010 here, ADR-0017 there): the catalog entry stays thin, and ARD adds namespaced terms.
+- v0.91 defines its own ARD entry, and "every ARD entry is a well-formed catalog entry" ([AI Catalog](ai-catalog.md)). The two groups agreed on 2026-07-09 to stay loosely coupled (ADR-0010 here, ADR-0017 there): the catalog entry stays thin, and ARD adds namespaced terms.
 - v0.91 has publishers serve entries at `/.well-known/ard.json` and says a publisher on `/.well-known/ai-catalog.json` should move.
 
 ## In use
@@ -42,6 +42,7 @@ A federated search layer for agentic resources: MCP servers, A2A agents, skills 
 - 2026-08-26: v0.91.
 - 2026-07-09: Loose coupling with AI Catalog agreed.
 - 2026-06-17: Announced by Google.
+- 2026-06-16: v0.9 (Draft).
 - 2026-05-28: v0.5.
 
 Linked from: [AI Catalog](ai-catalog.md)

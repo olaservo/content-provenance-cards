@@ -4,7 +4,7 @@ id: "internet-licensing-collective"
 type: "organization"
 status: "Launched 2026-11-12 with Yahoo Scout as first commercial licensee"
 tags: ["type/organization", "layer/licensing", "layer/payments"]
-updated: "2026-11-15"
+updated: "2026-11-20"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/internet-licensing-collective"
 ---
 # Internet Licensing Collective
@@ -17,17 +17,17 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://internetcollective.org/press
 - Take part: [publishers](https://internetcollective.org/publishers), [AI companies](https://internetcollective.org/ai-companies)
 - Tags: type/organization, layer/licensing, layer/payments
-- Updated: 2026-11-15
+- Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#internet-licensing-collective
 
 Nonprofit, publisher-led collecting society for AI use of web content, formerly the RSL Collective. Sells AI companies one blanket license to its members' content and pays the revenue out to publishers after costs it projects at 10% or less. Co-authored [Really Simple Licensing](rsl.md) and says it supports any standard a publisher wishes to use.
 
 ## Topics
 
-- **Blanket licensing**: replacing a separate deal between every publisher and every AI company with one agreement per side. Fees scale with the AI product's revenue, and the licensee picks the uses it needs (training, RAG, grounding, agentic use, AI overviews).
+- **Blanket licensing**: replacing a separate deal between every publisher and every AI company with one agreement per side. AI companies pay based on the value content brings to their products, with costs that scale with their business, and the licensee picks the uses it needs (training, RAG, grounding, agentic use, AI overviews).
 - **Publisher control**: letting a publisher choose which content it offers, to which licensees and for which uses. Joining is free and non-exclusive, and terms are declared with [Really Simple Licensing](rsl.md) on the publisher's own site.
 - **Royalty allocation**: dividing revenue by what each work contributed to AI outputs, how often it is relied on and the value of the AI product.
-- **Usage reporting**: paying out on usage that licensees report. ILC is not in the content path, and its site does not say how reports are checked.
+- **Usage reporting**: paying out on usage that licensees report. ILC is not in the content path. Its publishers page says it "supports auditing of license compliance" and does not say how reports are checked.
 
 ## Related
 
