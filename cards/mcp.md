@@ -6,15 +6,15 @@ website: https://modelcontextprotocol.io
 news: https://blog.modelcontextprotocol.io/
 feed: https://blog.modelcontextprotocol.io/index.xml
 part_of: "[[aaif]]"
-status: Next spec release moved to 2027-03-30 (SEP-3398); WG-first rule for SEPs
+status: Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
 tags: [type/specification, venue/mcp, layer/provenance, layer/attribution]
 participate: "[MCP community channels](https://modelcontextprotocol.io/community/communication), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)"
-updated: 2026-11-16
+updated: 2026-11-20
 ---
 The protocol between agents and the tools, resources, prompts and skills they read. MCP is the hop where content provenance can be carried or lost.
 
 ## Topics
-- **Content provenance ownership**: no WG or IG owns content provenance or attribution.
+- **Content provenance ownership**: no WG owns content provenance or attribution. The [[mcp-fsig]] charter covers "source attribution, citation, and consent metadata" for data surfaced through MCP. The Scientific Computing IG charter covers reproducibility and provenance of computed results.
 - **Usage declarations**: no field lets a server declare how its content may be used for training or grounding.
 - **Credit reporting**: nothing reports display or credit past the last hop ([[content-telemetry]]).
 

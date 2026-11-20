@@ -5,10 +5,10 @@ website: https://github.com/SPUR-Coalition/telemetry
 news: https://github.com/SPUR-Coalition/telemetry/releases
 feed: https://github.com/SPUR-Coalition/telemetry/releases.atom
 part_of: "[[spur-coalition]]"
-status: v1.0 published 2026-09-02; signed events deferred (section 8.9)
+status: v1.0 published 2026-09-02; per-event signing is informational (section 8.4) and manifest signing is deferred (section 8.9)
 tags: [type/specification, layer/attribution, stage/after-delivery]
 participate: "[GitHub issues](https://github.com/SPUR-Coalition/telemetry/issues)"
-updated: 2026-11-17
+updated: 2026-11-20
 ---
 Five reportable stages: `content_retrieved`, `content_grounded`, `content_cited`, `content_presented`, `content_engaged`. Manifest discovery at `/.well-known/content-telemetry.json`. `license_ref` joins it to the licensing layer ([[rsl]], [[iab-comp]]).
 
@@ -17,7 +17,7 @@ Five reportable stages: `content_retrieved`, `content_grounded`, `content_cited`
 - **Demanding conformance**: a manifest cannot require a conformance level from an agent (section 8.5).
 - **Declaring coverage**: a report does not show whether every event was reported. Section 5.7.6 has an emitter declare one of four coverage modes (complete, sampled, aggregated, selected) and the scope it applies over, and says a consumer must not read a missing event as proof that nothing happened unless coverage is complete.
 - **Reporting for an institution**: `access_context` names the institution a session's access rights derive from, as a claim by the emitter (section 5.1.3). `content_depth` records whether a retrieval reached metadata, an abstract or the full record (section 6.1).
-- **MCP binding**: emitting `content_cited` and `content_presented` from MCP clients.
+- **MCP binding**: the specification defines none and lists MCP tool calls as one delivery pattern (section 7.1). telemetry-js's `MCPSessionTracker` emits retrieved, cited and presented events from MCP tool and response hooks.
 
 ## Related
 - [[counter]] says phase two of its AI guidelines is aligned with it. It maps retrieved, cited and presented events to its metrics and counts nothing for a grounded event.
@@ -28,7 +28,7 @@ Five reportable stages: `content_retrieved`, `content_grounded`, `content_cited`
 - Execution traces, which stop at the tool call: [[otel-mcp]]. Neither names the other (searched 2026-11-15).
 
 ## In use
-- [telemetry-js](https://github.com/SPUR-Coalition/telemetry-js) is on npm as `@openattribution/telemetry` 0.1.3 (2026-06-12) and includes an `MCPSessionTracker`. Its 1.0.0, which implements v1.0 of the standard, is unreleased.
+- [telemetry-js](https://github.com/SPUR-Coalition/telemetry-js) is on npm as `@openattribution/telemetry` and includes an `MCPSessionTracker`. Its `latest` tag is 0.1.3 (2026-06-12), and versions 0.2.0 to 0.4.0 (2026-03-03 to 2026-05-28) are also published. Its 1.0.0, which implements v1.0 of the standard, is unreleased.
 
 ## History
 - 2026-09-02: v1.0 published.

@@ -8,7 +8,7 @@ feed: https://www.ietf.org/blog/feed/
 status: IETF 127 San Francisco, November 2026
 tags: [type/organization, layer/access, layer/identity]
 participate: "[how to participate](https://www.ietf.org/participate/)"
-updated: 2026-11-03
+updated: 2026-11-17
 ---
 Internet standards body. Hosts [[ietf-aipref]] and [[ietf-web-bot-auth]], and individual drafts such as [[mpp]].
 

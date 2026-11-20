@@ -4,10 +4,10 @@ aliases: [SEP-2127, MCP Server Card, ext-server-card]
 type: specification
 website: https://github.com/modelcontextprotocol/ext-server-card
 part_of: "[[mcp]]"
-status: SEP-2127 is Final and its PR merged 2026-10-06; the extension repository README still says Experimental
+status: SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
 tags: [type/specification, venue/mcp, layer/identity, topic/discovery]
 participate: "[ext-server-card issues](https://github.com/modelcontextprotocol/ext-server-card/issues), [Server Card WG charter](https://modelcontextprotocol.io/community/working-groups/server-card)"
-updated: 2026-11-16
+updated: 2026-11-20
 ---
 A static JSON document that describes a remote MCP server before a client connects: its name, version, transport endpoints and supported protocol versions. The extension identifier is `io.modelcontextprotocol/server-card`. A domain advertises its cards through an [[ai-catalog]] entry of type `application/mcp-server-card+json`.
 
@@ -21,5 +21,6 @@ A static JSON document that describes a remote MCP server before a client connec
 - The Authorization IG charter places "Server identity, provenance, and trust signalling" with the Server Card and Registry efforts.
 
 ## History
+- 2026-10-29: SEP-3392 merged, classifying ext-server-card as Beta.
 - 2026-10-06: SEP-2127 PR merged.
 - 2026-01-21: SEP-2127 created.

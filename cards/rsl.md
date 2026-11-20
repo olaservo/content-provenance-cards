@@ -7,7 +7,7 @@ news: https://rslstandard.org/press
 status: RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 tags: [type/specification, layer/licensing, layer/payments]
 participate: "[GitHub](https://github.com/rslstandard)"
-updated: 2026-11-16
+updated: 2026-11-20
 ---
 XML vocabulary for usage and compensation terms (per-crawl, per-inference, subscription, attribution-only), discovered from robots.txt, RSS, HTTP headers or HTML. Includes a Crawler Authorization Protocol and an Open License Protocol on OAuth 2.0. [[internet-licensing-collective]], formerly the RSL Collective, is the collecting society behind it.
 
@@ -15,10 +15,10 @@ XML vocabulary for usage and compensation terms (per-crawl, per-inference, subsc
 - **Machine-readable terms**: publishing usage terms and prices that crawlers and AI systems can read and accept.
 - **Training opt-out**: saying whether AI may train on content. The [usage vocabulary](https://rslstandard.org/rsl#_3-4-1-1-usage-vocabulary) (section 3.4.1.1) has `ai-train`, `ai-input`, `ai-index` and `ai-all` tokens for `<permits>` and `<prohibits>`. The spec says it includes the [[cloudflare-content-signals]] vocabulary and may add terms from [[ietf-aipref]].
 - **Adoption**: getting model developers to honor it on the open web. None has committed.
-- **Enforcement**: supplying the lever [[content-telemetry]] manifests lack, through a [SPUR profile binding](https://github.com/SPUR-Coalition/telemetry-profile/tree/main/bindings), a v0.1 draft marked for discussion with the RSL working group (read 2026-11-16).
+- **Enforcement**: supplying the lever [[content-telemetry]] manifests lack, through a [SPUR profile binding](https://github.com/SPUR-Coalition/telemetry-profile/tree/main/bindings) that declares reporting in RSL's `<reporting>` element, a v0.1 draft marked for discussion with the RSL working group (read 2026-11-20).
 
 ## Compare
-- The [[microsoft-publisher-content-marketplace]] is reported to support RSL. Neither side's pages say so (searched 2026-11-15).
+- [[microsoft-publisher-content-marketplace]]: Microsoft's announcement does not mention RSL, and RSL's pages do not mention Microsoft (searched 2026-11-20).
 
 ## In use
 - Yahoo Scout licenses content through [[internet-licensing-collective]], whose members declare their terms in RSL ([launch release](https://internetcollective.org/press/ilc-launch-2026), 2026-11-12).
@@ -26,4 +26,5 @@ XML vocabulary for usage and compensation terms (per-crawl, per-inference, subsc
 
 ## History
 - 2026-11-12: The RSL Collective relaunched as [[internet-licensing-collective]].
+- 2026-06-12: Section 3.12 `<reporting>` [added](https://rslstandard.org/rsl/errata), for machine-readable reporting requirements on licensed activity.
 - 2025-12-10: RSL 1.0 published.

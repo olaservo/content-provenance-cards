@@ -8,7 +8,7 @@ feed: https://github.com/google-agentic-commerce/AP2/releases.atom
 status: Donated by Google to the FIDO Alliance
 tags: [type/specification, layer/payments, layer/identity]
 participate: "[GitHub](https://github.com/google-agentic-commerce/AP2)"
-updated: 2026-11-03
+updated: 2026-11-17
 ---
 Mandates that prove a human authorized an agent purchase.
 

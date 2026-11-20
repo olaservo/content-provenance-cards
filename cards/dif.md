@@ -8,7 +8,7 @@ feed: https://blog.identity.foundation/rss/
 status: Hosts CAWG
 tags: [type/organization, layer/identity]
 participate: "[join DIF](https://identity.foundation/join/)"
-updated: 2026-11-15
+updated: 2026-11-17
 ---
 Standards body for decentralized identifiers and verifiable credentials. Hosts [[cawg]].
 

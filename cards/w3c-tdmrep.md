@@ -5,10 +5,10 @@ type: community-group
 website: https://www.w3.org/community/tdmrep/
 feed: https://www.w3.org/community/tdmrep/feed/
 part_of: "[[w3c]]"
-status: CG draft; last push 2026-09
+status: CG Final Report version 3 (2024-05-10); last push 2026-09
 tags: [type/community-group, layer/access, layer/licensing]
 participate: "[join the community group](https://www.w3.org/community/tdmrep/join)"
-updated: 2026-11-15
+updated: 2026-11-20
 ---
 The EU DSM Article 4 text and data mining opt-out: `tdm-reservation` and `tdm-policy` by HTTP header, HTML meta or `/.well-known/tdmrep.json`.
 
