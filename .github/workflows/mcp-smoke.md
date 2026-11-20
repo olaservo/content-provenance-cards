@@ -20,7 +20,10 @@ tools:
   edit:
   bash: ["cat"]
 safe-outputs:
+  create-issue: false
   noop:
+    report-as-issue: false
+  report-failure-as-issue: false
 timeout-minutes: 20
 max-ai-credits: 500
 steps:
@@ -58,4 +61,4 @@ When all questions are answered, use the edit tool to write `smoke-answers.json`
 ]
 ```
 
-Use the question ids from `questions.json`. For a question no card covers, give an answer saying so and an empty `cards` list. A later step scores the file, so write valid JSON and nothing else in it. Then call `noop` with a one-line summary. Do not create issues or any other output.
+Use the question ids from `questions.json`. For a question no card covers, give an answer saying so and an empty `cards` list. A later step scores the file, so write valid JSON and nothing else in it. Then call `noop` with a one-line summary. Do not produce any other output.
