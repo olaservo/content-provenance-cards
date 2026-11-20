@@ -40,5 +40,19 @@
   "news": "https://internet.exchangepoint.tech/",
   "feed": "https://internet.exchangepoint.tech/rss/",
   "note": "A weekly newsletter on Internet governance, digital rights and technology and society"
+ },
+ {
+  "id": "google-search-central-blog",
+  "name": "Google Search Central Blog",
+  "news": "https://developers.google.com/search/blog",
+  "feed": "https://developers.google.com/search/blog/feed.xml",
+  "note": "Google's blog for site owners, including its crawlers and AI training controls"
+ },
+ {
+  "id": "openai-news",
+  "name": "OpenAI News",
+  "news": "https://openai.com/news/",
+  "feed": "https://openai.com/news/rss.xml",
+  "note": "Includes OpenAI's publisher partnerships and content provenance posts. The feed covers all of its announcements"
  }
 ]
