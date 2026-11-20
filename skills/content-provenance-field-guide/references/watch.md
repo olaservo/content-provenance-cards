@@ -139,3 +139,9 @@ Sources that have no card and are worth following.
 - Internet Exchange: A weekly newsletter on Internet governance, digital rights and technology and society
   - News: https://internet.exchangepoint.tech/
   - Feed: https://internet.exchangepoint.tech/rss/
+- Google Search Central Blog: Google's blog for site owners, including its crawlers and AI training controls
+  - News: https://developers.google.com/search/blog
+  - Feed: https://developers.google.com/search/blog/feed.xml
+- OpenAI News: Includes OpenAI's publisher partnerships and content provenance posts. The feed covers all of its announcements
+  - News: https://openai.com/news/
+  - Feed: https://openai.com/news/rss.xml
