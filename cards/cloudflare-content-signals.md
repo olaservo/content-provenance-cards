@@ -5,7 +5,7 @@ type: proposal
 website: https://contentsignals.org
 status: Individual AIPREF draft, shown as expired on Datatracker (read 2026-11-15); parsed by policycheck
 tags: [type/proposal, layer/access]
-participate: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)"
+contribute: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)"
 updated: 2026-11-20
 ---
 Three robots.txt categories, `search`, `ai-input` and `ai-train`, proposed as [[ietf-aipref]] vocabulary.

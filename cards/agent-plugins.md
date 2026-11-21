@@ -4,7 +4,7 @@ aliases: [agent-plugins-spec, plugin.json]
 type: specification
 website: https://agent-plugins.org/
 status: 1.0.0 published 2026-08-06; 1.1.0 is a working draft; AAIF Technical Committee approved it as a Growth-stage project 2026-10-27, Governing Board vote pending; steering committee from Amazon, Cursor, Microsoft, OpenAI and Vercel
-participate: "[GitHub issues](https://github.com/agentplugins/agent-plugins-spec/issues), [GitHub discussions](https://github.com/agentplugins/agent-plugins-spec/discussions)"
+contribute: "[GitHub issues](https://github.com/agentplugins/agent-plugins-spec/issues), [GitHub discussions](https://github.com/agentplugins/agent-plugins-spec/discussions)"
 tags: [type/specification, layer/provenance, layer/licensing, topic/skills, stage/at-rest, medium/code]
 updated: 2026-11-20
 ---

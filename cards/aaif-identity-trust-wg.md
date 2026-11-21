@@ -5,7 +5,7 @@ website: https://github.com/aaif/wg-identity-and-trust
 part_of: "[[aaif]]"
 status: Chartered 2026-05-12
 tags: [type/working-group, layer/identity, stage/trust]
-participate: "[GitHub issues](https://github.com/aaif/wg-identity-and-trust/issues)"
+contribute: "[GitHub issues](https://github.com/aaif/wg-identity-and-trust/issues)"
 updated: 2026-11-16
 ---
 Charter: agent identity, authentication and provenance, delegation chains, consent, cross-organization trust, discovery metadata.

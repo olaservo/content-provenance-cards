@@ -5,7 +5,7 @@ type: interest-group
 part_of: "[[mcp]]"
 status: Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
 tags: [type/interest-group, venue/mcp, layer/provenance, layer/attribution]
-participate: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
+contribute: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
 updated: 2026-11-21
 ---
 Financial-services interest group. Its charter also covers auditability and operational control, which these cards do not cover.

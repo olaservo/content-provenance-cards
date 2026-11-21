@@ -4,7 +4,7 @@ aliases: [MCP semantic conventions, SEP-414]
 type: specification
 website: https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/mcp.md
 status: Conventions in Development; built into the Python SDK since v2.0.0; merged for the TypeScript SDK 2026-10-31, not yet released
-participate: "[semantic-conventions-genai issues](https://github.com/open-telemetry/semantic-conventions-genai/issues), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
+contribute: "[semantic-conventions-genai issues](https://github.com/open-telemetry/semantic-conventions-genai/issues), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
 tags: [type/specification, venue/mcp, layer/provenance, stage/in-transit]
 updated: 2026-11-20
 ---

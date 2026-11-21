@@ -7,7 +7,7 @@ feed: https://github.com/SPUR-Coalition/telemetry/releases.atom
 part_of: "[[spur-coalition]]"
 status: v1.0 published 2026-09-02; per-event signing is informational (section 8.4) and manifest signing is deferred (section 8.9)
 tags: [type/specification, layer/attribution, stage/after-delivery]
-participate: "[GitHub issues](https://github.com/SPUR-Coalition/telemetry/issues)"
+contribute: "[GitHub issues](https://github.com/SPUR-Coalition/telemetry/issues)"
 updated: 2026-11-20
 ---
 Five reportable stages: `content_retrieved`, `content_grounded`, `content_cited`, `content_presented`, `content_engaged`. Manifest discovery at `/.well-known/content-telemetry.json`. `license_ref` joins it to the licensing layer ([[rsl]], [[iab-comp]]).

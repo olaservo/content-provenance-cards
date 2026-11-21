@@ -109,7 +109,7 @@ The copy on olahungerford.com gets the flat files only. Jekyll renders any Markd
 |---|---|
 | `cards/<id>.md` | One card per org, group, spec or proposal. The filename is the id used in `[[links]]`. |
 | `watchlist.json` | Blogs and other sources worth following that have no card, each with an `id`, a `name`, a `news` page, a `feed` and a `note`. |
-| `vocab.json` | The layer, stage and medium definitions shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
+| `vocab.json` | The layer, stage, medium and topic definitions and the ways to take part (contribute, discussion, meetings), shown in the explorer intro and in the agent files, plus display labels for tags whose id does not read well. |
 | `build.mjs` | Reads the cards and `vocab.json`, writes `ui/data.js` for the explorer and `ui/cards.md`, `ui/cards.json`, `ui/updates.md`, `ui/updates.json`, `ui/matches.md`, `ui/watch.md`, `ui/watch.json`, `ui/topics/<topic>.md` and `ui/llms.txt` for agents and scripts. With `--worker` it also writes the Worker's site and the plugin. No dependencies. |
 | `CHANGELOG.md` | Cards added and changed, by date, newest first. The build copies it to `ui/changelog.md` with its `[[links]]` pointing at the explorer. |
 | `ui/index.html` | The explorer. List and graph views, search, tag filters, wikilinks, backlinks. |
@@ -136,7 +136,9 @@ news: https://c2pa.org/news/
 feed: https://c2pa.org/feed/
 part_of: "[[some-parent]]"
 status: Spec 2.5 published October 2026
-participate: "[membership](https://c2pa.org/membership/)"
+contribute: "[membership](https://c2pa.org/membership/), [spec issues](https://github.com/c2pa-org/specifications/issues)"
+discussion: "[mailing list](https://example.org/list)"
+meetings: "[meeting calendar](https://example.org/calendar)"
 tags: [type/organization, layer/provenance, stage/at-rest]
 updated: 2026-11-03
 ---
@@ -165,7 +167,7 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Everything else is 
 - Compare: a comparison that only this guide makes goes here, and the explorer draws it as a dotted line.
 - In use: each bullet names something a reader can use or observe today, such as a released version, a live service, or a license or requirement in effect. It gives the date of the release or of the last check, and a link. A registry kept by the effort is a better link than a list of names. Commitments, pilots and open pull requests belong in `status`. Remove a bullet when it stops being true.
 - History: each bullet starts with the date the event happened, as `YYYY`, `YYYY-MM` or `YYYY-MM-DD`, then a colon. The build collects these from every card into `updates.md` and `updates.json`, and warns about a bullet with no date.
-- `participate`: where a reader can take part, as one or more markdown links in a quoted string. Use the effort's own public venue (issue tracker, mailing list, join page), not a contact person. Leave it out when there is no public venue.
+- `contribute`, `discussion` and `meetings`: the public places to take part, each as one or more markdown links in a quoted string. `contribute` is how to work on the effort itself: its issue tracker or specification repository, or the membership, join page or committee you have to be part of before you can contribute. `discussion` is where people talk about the effort in public: a chat space such as Zulip, Discord or Slack, a forum, a mailing list or GitHub Discussions. `meetings` is a public calendar of the effort's meetings, or its own page that lists open calls and how to join them. Use only venues the effort or its parent names on its own pages, never a contact person or a social media account. A page about adopting, licensing or signing on to an effort belongs in `## In use` or `status`. Leave a field out when there is no public venue. The definitions are under `participation` in `vocab.json`, and the explorer and agent files show them. The build still reads the old name `participate` as `contribute` and warns about it.
 - `news` and `feed`: `news` is the page where the effort posts its blog or announcements, and `feed` is that page's RSS, Atom or JSON feed. Each takes one URL or an inline list. Use the effort's own page, not a social media account. For a specification that lives in a repository, the releases page and its `releases.atom` count. A card whose news appears only on its parent's blog leaves both out, and the parent's card carries them. See [Watch list](#watch-list).
 
 `type` is one of `organization`, `working-group`, `interest-group`, `community-group`, `specification`, `proposal`, `project`, `regulation`. Tags are nested Obsidian tags:

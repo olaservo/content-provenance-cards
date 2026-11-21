@@ -105,7 +105,10 @@ const cards = parsed
       feed: urls(meta.feed),
       part_of: meta.part_of ? links(meta.part_of)[0] : "",
       status: meta.status || "",
-      participate: meta.participate || "",
+      // `participate` is the old name for `contribute`. Forks and open pull requests may still use it.
+      contribute: meta.contribute || meta.participate || "",
+      discussion: meta.discussion || "",
+      meetings: meta.meetings || "",
       updated: meta.updated || "",
       tags,
       ...sec,
@@ -114,6 +117,7 @@ const cards = parsed
     };
   })
   .sort((a, b) => a.name.localeCompare(b.name));
+for (const p of parsed) if (p.meta.participate) console.warn(`${p.id}: rename participate to contribute`);
 
 const ids = new Set(cards.map((c) => c.id));
 for (const c of cards) {
@@ -200,6 +204,16 @@ const line = (c, href) => `- [${c.name}](${href(c.id)}) (${[c.type, ...layersOf(
 const topicFile = (t, href) =>
   [`# Topic: ${t}`, "", `${t[0].toUpperCase() + t.slice(1)}: ${vocab.topics[t]}.`, "", ...cards.filter((c) => topicsOf(c).includes(t)).map((c) => line(c, href)), ""].join("\n");
 const topicDefs = ["## Topic tags", "", "Subjects that cards on different layers share.", "", ...Object.entries(vocab.topics).map(([k, v]) => `- ${k}: ${v}.`)];
+// Contribute, Discussion and Meetings: the public places to take part that a card lists.
+const PART = Object.keys(vocab.participation);
+const partLabel = (k) => k[0].toUpperCase() + k.slice(1);
+const partDefs = [
+  "## Ways to take part",
+  "",
+  "A card lists the public places the effort itself names. A line is left out when none was found.",
+  "",
+  ...Object.entries(vocab.participation).map(([k, v]) => `- ${partLabel(k)}: ${v}.`),
+];
 const blurb = `${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.`;
 const caveat = "One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.";
 // The cards and everything built from them are CC BY 4.0. The code is MIT. See the README.
@@ -217,7 +231,7 @@ function cardMd(c, href = inFile, level = 3) {
     c.news.length ? `- News: ${c.news.join(", ")}` : "",
     c.feed.length ? `- Feed: ${c.feed.join(", ")}` : "",
     c.part_of ? `- Part of: [${nameOf(c.part_of)}](${href(c.part_of)})` : "",
-    c.participate ? `- Take part: ${c.participate}` : "",
+    ...PART.map((k) => (c[k] ? `- ${partLabel(k)}: ${c[k]}` : "")),
     `- Tags: ${c.tags.join(", ")}`,
     c.updated ? `- Updated: ${c.updated}` : "",
     `- Explorer: ${SITE}#${c.id}`,
@@ -286,6 +300,8 @@ const cardsMd = [
   "",
   ...topicDefs,
   "",
+  ...partDefs,
+  "",
   "## Cards",
   "",
   ...cards.map((c) => cardMd(c)),
@@ -295,7 +311,7 @@ const llmsHead = `# ${TITLE}
 
 > ${blurb} Compiled by Ola Hungerford${asOf ? ", as of " + asOf : ""}.
 
-${caveat} ${licence} Each card has a name, type, status, website, tags (layer, stage, medium, topic, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where there is one, a public place to take part. A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
+${caveat} ${licence} Each card has a name, type, status, website, tags (layer, stage, medium, topic, type), a short summary, topic sections, a dated history where one is known, links to related cards and, where the effort names them, public places to take part: Contribute (issue tracker, repository or join page), Discussion (chat, forum or mailing list) and Meetings (public calendar or list of open calls). A link under a card's Compare heading is a comparison made by this guide. Every other link is a connection that a primary source states.
 `;
 // The per-card files come first. An agent that starts with cards.md reads every card to answer about one.
 const llms = `${llmsHead}
@@ -467,6 +483,8 @@ if (workerMode) {
     "",
     ...topicDefs,
     "",
+    ...partDefs,
+    "",
   ].join("\n");
   const cardIndex = ["# Cards", "", "One line per card: name, type and layers, then the current status.", "", ...cards.map((c) => line(c, fromRoot)), ""].join("\n");
   const layerFile = (l) =>
@@ -510,6 +528,8 @@ if (workerMode) {
       ...Object.entries(vocab.media).map(([k, v]) => `- ${k}: ${v}.`),
       "",
       ...topicDefs,
+      "",
+      ...partDefs,
       "",
       "## Cards",
       "",
@@ -645,7 +665,7 @@ ${body}
       esc(c.type) + (c.part_of ? ` · part of <a href="${c.part_of}">${esc(nameOf(c.part_of))}</a>` : "") + (c.website ? ` · <a href="${esc(c.website)}">${esc(c.website.replace(/^https?:\/\//, ""))}</a>` : ""),
       c.aliases.length ? `Also: ${esc(c.aliases.join(", "))}` : "",
       c.status ? `Status: ${inline(c.status, toCard)}${c.updated ? ` (as of ${c.updated})` : ""}` : "",
-      c.participate ? `Take part: ${inline(c.participate, toCard)}` : "",
+      ...PART.map((k) => (c[k] ? `<span title="${esc(vocab.participation[k])}">${partLabel(k)}</span>: ${inline(c[k], toCard)}` : "")),
       c.news.length || c.feed.length ? `News: ${[...c.news, ...c.feed].map((u) => `<a href="${esc(u)}">${esc(u.replace(/^https?:\/\//, ""))}</a>`).join(", ")}` : "",
       `Tags: ${esc(c.tags.join(", "))}`,
     ].filter(Boolean);

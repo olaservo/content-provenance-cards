@@ -6,7 +6,7 @@ website: https://agentskills.io
 part_of: "[[aaif]]"
 status: Joined AAIF 2026-10-22
 tags: [type/specification, topic/skills, stage/at-rest, medium/code]
-participate: "[GitHub discussions](https://github.com/agentskills/agentskills/discussions)"
+contribute: "[GitHub discussions](https://github.com/agentskills/agentskills/discussions)"
 updated: 2026-11-16
 ---
 The SKILL.md format for packaging instructions and files for agents.

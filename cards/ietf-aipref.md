@@ -8,7 +8,7 @@ feed: https://datatracker.ietf.org/feed/group-changes/aipref/
 part_of: "[[ietf]]"
 status: vocab-08 (2026-09-14) without consensus; attach-05 (2026-08-19); IETF 127 sessions 2026-11-16 and 11-19; issues 245 and 246 closed 2026-11-19
 tags: [type/working-group, layer/access, stage/after-delivery]
-participate: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/), [GitHub issues](https://github.com/ietf-wg-aipref/drafts/issues)"
+contribute: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/), [GitHub issues](https://github.com/ietf-wg-aipref/drafts/issues)"
 updated: 2026-11-20
 ---
 Vocabulary for AI usage preferences and how they attach to content (`Content-Usage` header and robots.txt directive).

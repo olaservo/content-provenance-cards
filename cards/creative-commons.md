@@ -7,7 +7,7 @@ news: https://creativecommons.org/blog/
 feed: https://creativecommons.org/feed/
 status: CC Signals public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16)
 tags: [type/organization, layer/licensing, layer/access, layer/attribution]
-participate: "[contact](https://creativecommons.org/mission/contact/)"
+contribute: "[contact](https://creativecommons.org/mission/contact/)"
 updated: 2026-11-20
 ---
 Steward of the CC licenses and CC REL machine-readable license metadata. Proposes [[cc-signals]] and filed AIPREF drafts on exclusions and parameters ([[ietf-aipref]]). The exclusions draft expired on 2026-10-24.

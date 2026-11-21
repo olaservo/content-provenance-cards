@@ -8,7 +8,7 @@ feed: https://blog.modelcontextprotocol.io/index.xml
 part_of: "[[aaif]]"
 status: Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
 tags: [type/specification, venue/mcp, layer/provenance, layer/attribution]
-participate: "[MCP community channels](https://modelcontextprotocol.io/community/communication), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)"
+contribute: "[MCP community channels](https://modelcontextprotocol.io/community/communication), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)"
 updated: 2026-11-21
 ---
 The protocol between agents and the tools, resources, prompts and skills they read. MCP is the hop where content provenance can be carried or lost.

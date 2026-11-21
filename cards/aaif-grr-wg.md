@@ -5,7 +5,7 @@ type: working-group
 website: https://github.com/aaif/wg-governance-risk-and-regulatory
 part_of: "[[aaif]]"
 tags: [type/working-group, layer/governance]
-participate: "[GitHub issues](https://github.com/aaif/wg-governance-risk-and-regulatory/issues)"
+contribute: "[GitHub issues](https://github.com/aaif/wg-governance-risk-and-regulatory/issues)"
 updated: 2026-11-20
 ---
 Working group bridging AI policy and the foundation's technical projects.

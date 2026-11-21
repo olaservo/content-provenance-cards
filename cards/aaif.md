@@ -6,7 +6,7 @@ website: https://aaif.io
 news: [https://aaif.io/news, https://aaif.io/blog]
 status: Linux Foundation; ten hosted projects in its first year
 tags: [type/organization, layer/governance]
-participate: "[working group repos on GitHub](https://github.com/aaif)"
+contribute: "[working group repos on GitHub](https://github.com/aaif)"
 updated: 2026-11-17
 ---
 Hosts [[mcp]], goose, AGENTS.md, agentgateway, A2A, [[agent-skills]] and others.

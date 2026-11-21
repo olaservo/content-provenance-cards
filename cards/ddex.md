@@ -6,7 +6,7 @@ website: https://ddex.net
 feed: https://ddex.net/feed/
 status: Generative AI Declaration Standard (GAI-D) committee draft finished member comments and goes to peer review next, with publication expected in early 2027 (announced 2026-11-05)
 tags: [type/organization, layer/provenance, layer/attribution, layer/licensing, medium/audio]
-participate: "[working groups](https://ddex.net/about-ddex/working-groups/), for Charter and Full Members"
+contribute: "[working groups](https://ddex.net/about-ddex/working-groups/), for Charter and Full Members"
 updated: 2026-11-20
 ---
 Not-for-profit membership organisation, set up in 2006, that writes the message standards labels, distributors and streaming services use to exchange release data, credits and sales reports. It says the standards are free to implement and that implementers do not need to be members.

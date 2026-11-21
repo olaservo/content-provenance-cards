@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-21
 
+- Cards list three ways to take part: Contribute (issue tracker, repository or join page), Discussion (chat, forum or mailing list) and Meetings (public calendar or list of open calls). `participate` is renamed `contribute`. The definitions are in `vocab.json` and appear in the explorer intro, `cards.md`, the guide index and the skill's vocabulary file.
 - [[mcp-fsig]]: the charter was amended on 2026-11-21. The group now collects problems and routes gaps to Working Groups, and does not sponsor SEPs. "Data lineage and citation" and "Data handling" stay in scope. [[mcp]] and [[mcp-c2pa-in-meta]] quoted the earlier charter text and now quote the current one.
 - [[c2pa]]: the JSON guidance in Appendix A.9.3 now links the section and quotes it.
 - [[mcp-c2pa-in-meta]]: the 2026-09-25 closure links the maintainer comment that gives the reason.

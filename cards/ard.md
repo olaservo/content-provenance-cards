@@ -5,7 +5,7 @@ type: specification
 website: https://agenticresourcediscovery.org/spec/
 status: v0.91 dated 2026-08-26, marked Proposal
 tags: [type/specification, layer/identity, topic/discovery]
-participate: "[GitHub issues](https://github.com/ards-project/ard-spec/issues)"
+contribute: "[GitHub issues](https://github.com/ards-project/ard-spec/issues)"
 updated: 2026-11-20
 ---
 A federated search layer for agentic resources: MCP servers, A2A agents, skills and APIs. Publishers list entries on their own domain, registries index them and answer `POST /search`, and a registry can refer a query to other registries. Google announced it on 2026-06-17 under Apache 2.0. The v0.91 authors are from Google and Hugging Face, with R.V. Guha.

@@ -6,7 +6,7 @@ website: https://cawg.io
 part_of: "[[dif]]"
 status: Moved under DIF; consent assertion started as a placeholder draft 2026-07-12
 tags: [type/working-group, layer/provenance, layer/identity, layer/access]
-participate: "[spec repositories](https://github.com/orgs/decentralized-identity/repositories?q=cawg), via DIF membership"
+contribute: "[spec repositories](https://github.com/orgs/decentralized-identity/repositories?q=cawg), via DIF membership"
 updated: 2026-11-20
 ---
 Assertion specs that ride inside [[c2pa]] manifests: identity, training and data mining, consent, metadata, endorsement, certificate policy.

@@ -8,7 +8,7 @@ feed: https://datatracker.ietf.org/feed/group-changes/webbotauth/
 part_of: "[[ietf]]"
 status: WG draft httpsig-protocol-01 (2026-10-29); Cloudflare libraries
 tags: [type/working-group, layer/identity, layer/access]
-participate: "[web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/)"
+contribute: "[web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/)"
 updated: 2026-11-20
 ---
 Signed bot traffic with RFC 9421 HTTP message signatures and a key directory at `/.well-known/http-message-signatures-directory`.

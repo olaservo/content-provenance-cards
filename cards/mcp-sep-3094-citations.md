@@ -6,7 +6,7 @@ website: https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094
 part_of: "[[mcp]]"
 status: Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
 tags: [type/proposal, venue/mcp, layer/attribution, stage/in-transit, stage/after-delivery]
-participate: "[SEP-3094 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
+contribute: "[SEP-3094 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
 updated: 2026-11-20
 ---
 Citations on tool results bound by CommonMark links in the text, each a flat schema.org CreativeWork, granularity via URL fragments, integrity deferred. A `citations.render` client capability.

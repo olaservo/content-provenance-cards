@@ -6,7 +6,7 @@ website: https://github.com/modelcontextprotocol/modelcontextprotocol/discussion
 part_of: "[[mcp]]"
 status: Discussion closed 2026-09-25 when the spec repo limited Discussions to meeting notes; no SEP filed yet
 tags: [type/proposal, layer/provenance, stage/in-transit, venue/mcp]
-participate: "[the discussion thread](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3225), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
+contribute: "[the discussion thread](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3225), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
 updated: 2026-11-21
 ---
 Carry a [[c2pa]] credential for tool results and resources in MCP `_meta` under `org.c2pa/credential`.

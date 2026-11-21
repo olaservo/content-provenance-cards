@@ -5,7 +5,7 @@ website: https://www.countermetrics.org
 news: https://www.countermetrics.org/news/
 status: Phase two of its AI best practice published 2026-10-23; it says the guidelines are aligned with the SPUR telemetry framework
 tags: [type/organization, layer/attribution]
-participate: "[membership](https://www.countermetrics.org/members/)"
+contribute: "[membership](https://www.countermetrics.org/members/)"
 updated: 2026-11-20
 ---
 Usage-metrics standard for scholarly publishers and libraries.
