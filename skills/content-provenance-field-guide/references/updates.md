@@ -2,6 +2,7 @@
 
 Dated events from the History section of each card, newest first. These are things that happened to the efforts the cards describe. Edits to the guide itself are in the changelog.
 
+- 2026-11-21 [MCP Financial Services Interest Group](cards/mcp-fsig.md): Charter amended to problem-first scope and Working Group referrals ([#3572](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3572)). The earlier text listed "source attribution, citation, and consent metadata" and finance-specific extensions.
 - 2026-11-19 [IETF AI Preferences Working Group](cards/ietf-aipref.md): Issues 245 and 246 on downstream survival closed.
 - 2026-11-18 [SOCAN](cards/socan.md): Filed an amended statement of claim (Federal Court T-3803-26) that adds outputs made with Suno's v6 models, which Suno released on 2026-09-09.
 - 2026-11-17 [IETF AI Preferences Working Group](cards/ietf-aipref.md): Kevin Kelley [asked for volunteers](https://mailarchive.ietf.org/arch/msg/ai-control/mLGJnETEzXfUug-xJfjRnY27LvY/) for an attachment design team, at the chairs' request, to report before the next interim.
@@ -44,7 +45,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-10 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Foo Camp.
 - 2026-10 [C2PA](cards/c2pa.md): Spec 2.5 published.
 - 2026-10 [NISO](cards/niso.md): [Provenance and attribution pilot](https://www.niso.org/niso-io/2026/10/niso-develop-metadata-model-provenance-and-attribution-ai-systems) announced.
-- 2026-09-25 [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md): Discussion closed when the spec repo limited Discussions to meeting notes.
+- 2026-09-25 [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md): Discussion closed when the spec repo limited Discussions to meeting notes ([closing comment](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3225#discussioncomment-18603053)).
 - 2026-09-24 [OpenLineage](cards/openlineage.md): Presented to the MCP Financial Services Interest Group.
 - 2026-09-18 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [update](https://www.countermetrics.org/ai-update-sept26/) on phase two calls MERU "a form of syndicated usage" and says it has mapped how MERU messages should be reported.
 - 2026-09-14 [IETF AI Preferences Working Group](cards/ietf-aipref.md): vocab-08 posted, without consensus.
@@ -74,6 +75,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-07-09 [Agentic Resource Discovery](cards/ard.md): Loose coupling with AI Catalog agreed.
 - 2026-07-09 [AI Catalog](cards/ai-catalog.md): Loose coupling with ARD agreed.
 - 2026-07-09 [SPUR Coalition](cards/spur-coalition.md): The Associated Press joined as the first US-based founding member.
+- 2026-06-25 [MCP Financial Services Interest Group](cards/mcp-fsig.md): Charter merged ([#2979](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2979)).
 - 2026-06-18 [Enterprise-Managed Authorization](cards/mcp-enterprise-managed-authorization.md): Extension announced as stable.
 - 2026-06-17 [Agentic Resource Discovery](cards/ard.md): Announced by Google.
 - 2026-06-16 [Agentic Resource Discovery](cards/ard.md): v0.9 (Draft).

@@ -4,7 +4,7 @@ id: "mcp"
 type: "specification"
 status: "Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship"
 tags: ["type/specification", "venue/mcp", "layer/provenance", "layer/attribution"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp"
 ---
 # Model Context Protocol
@@ -19,14 +19,14 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Part of: [Agentic AI Foundation](aaif.md)
 - Take part: [MCP community channels](https://modelcontextprotocol.io/community/communication), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)
 - Tags: type/specification, venue/mcp, layer/provenance, layer/attribution
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp
 
 The protocol between agents and the tools, resources, prompts and skills they read. MCP is the hop where content provenance can be carried or lost.
 
 ## Topics
 
-- **Content provenance ownership**: no WG owns content provenance or attribution. The [MCP Financial Services Interest Group](mcp-fsig.md) charter covers "source attribution, citation, and consent metadata" for data surfaced through MCP. The Scientific Computing IG charter covers reproducibility and provenance of computed results.
+- **Content provenance ownership**: no WG owns content provenance or attribution. The [MCP Financial Services Interest Group](mcp-fsig.md) charter covers "Data lineage and citation" for financial data returned through MCP. The Scientific Computing IG charter covers reproducibility and provenance of computed results.
 - **Usage declarations**: no field lets a server declare how its content may be used for training or grounding.
 - **Credit reporting**: nothing reports display or credit past the last hop ([Content Telemetry](content-telemetry.md)).
 

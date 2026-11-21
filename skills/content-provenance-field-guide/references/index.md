@@ -49,7 +49,7 @@ One line per card: name, type and layers, then the current status.
 - [KBART](cards/kbart.md) (specification, access): Phase III (NISO RP-9-2026) published 2026-08-26
 - [Knight-Georgetown Institute](cards/knight-georgetown-institute.md) (organization, governance, access)
 - [Machine Payments Protocol](cards/mpp.md) (specification, payments): Individual IETF draft, draft-httpauth-payment-01 (2026-09-09), active on Datatracker; the earlier draft-ryan-httpauth-payment expired 2026-09-19 (read 2026-11-16); not a WG item
-- [MCP Financial Services Interest Group](cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter has a data lineage and citation pillar
+- [MCP Financial Services Interest Group](cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
 - [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md) (working-group): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
 - [MCP Registry](cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20
 - [MCP Security Interest Group](cards/mcp-security-ig.md) (interest-group, governance): Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call

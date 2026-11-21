@@ -16,7 +16,7 @@ Provenance: where content came from and what was done to it, carried as signed r
 - [Encypher](../cards/encypher.md) (organization, provenance, licensing): The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date
 - [EU AI Act and GPAI Code of Practice](../cards/eu-ai-act-gpai-code.md) (regulation, access, governance, provenance): Opt-out protocol consultation closed 2026-01-23; the Commission has not published its list of generally agreed protocols (searched 2026-11-20); Article 50 applies from 2026-08-02
 - [IPTC](../cards/iptc.md) (organization, licensing, access, provenance): RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
-- [MCP Financial Services Interest Group](../cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter has a data lineage and citation pillar
+- [MCP Financial Services Interest Group](../cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
 - [Model Context Protocol](../cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
 - [NISO](../cards/niso.md) (organization, provenance, attribution, governance): Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 - [OpenLineage](../cards/openlineage.md) (project, provenance): RFC 4484 open (updated 2026-10-07); BearingNode proposed an MCP `_meta` lineage key to the FSIG 2026-10-08
