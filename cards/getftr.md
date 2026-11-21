@@ -7,8 +7,7 @@ news: https://www.getfulltextresearch.com/blog
 feed: https://www.getfulltextresearch.com/feed
 status: MCP service available to partners and developers since January 2026
 tags: [type/project, layer/access, medium/text]
-contribute: "[integrator documentation](https://docs.getfulltextresearch.com/latest/integrators/mcp-service), [publishers](https://www.getfulltextresearch.com/why-publishers-should-join)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 A service that asks the publisher whether a given user is entitled to a given article and returns a link to the right version. It is funded by participating publishers and free for discovery tools to integrate. Since January 2026 AI tools can call it over [[mcp]].
 

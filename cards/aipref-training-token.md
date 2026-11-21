@@ -5,9 +5,9 @@ type: proposal
 website: https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/
 part_of: "[[ietf-aipref]]"
 status: Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027
+discussion: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)"
 tags: [type/proposal, layer/access]
-contribute: "[ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 A robots.txt group whose `User-Agent` is the cross-vendor token `__usage_ai-training`, using ordinary `Allow` and `Disallow` rules. No new syntax. "AI Training" takes its definition from the [[ietf-aipref]] vocab draft.
 

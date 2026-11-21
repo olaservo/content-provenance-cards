@@ -4,8 +4,10 @@ aliases: [FSIG]
 type: interest-group
 part_of: "[[mcp]]"
 status: Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
+contribute: "[FSIG charter](https://modelcontextprotocol.io/community/interest-groups/financial-services), [FSIG issues](https://github.com/modelcontextprotocol/financial-services-interest-group/issues)"
+discussion: "[Discord #financial-services-ig](https://discord.gg/6CSzBmMkjX)"
+meetings: "[community calendar: finance](https://meet.modelcontextprotocol.io/tag/finance)"
 tags: [type/interest-group, venue/mcp, layer/provenance, layer/attribution]
-contribute: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
 updated: 2026-11-21
 ---
 Financial-services interest group. Its charter also covers auditability and operational control, which these cards do not cover.

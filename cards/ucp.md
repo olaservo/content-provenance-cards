@@ -6,9 +6,10 @@ website: https://github.com/Universal-Commerce-Protocol/ucp
 news: https://ucp.dev/documentation/announcements/
 feed: https://github.com/Universal-Commerce-Protocol/ucp/releases.atom
 status: Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25
-tags: [type/specification, layer/payments]
 contribute: "[GitHub issues](https://github.com/Universal-Commerce-Protocol/ucp/issues)"
-updated: 2026-11-20
+discussion: "[GitHub discussions](https://github.com/Universal-Commerce-Protocol/ucp/discussions)"
+tags: [type/specification, layer/payments]
+updated: 2026-11-21
 ---
 Merchant commerce protocol. [[openattribution]] has an `org.openattribution.telemetry` vendor extension for it.
 

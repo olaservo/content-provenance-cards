@@ -6,9 +6,11 @@ website: https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/202
 news: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases
 feed: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/releases.atom
 status: 2025-1 released 2025-08-29 and considered stable; second errata tagged 2026-09-11
-tags: [type/specification, layer/licensing, layer/access, medium/data]
 contribute: "[GitHub issues](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/issues)"
-updated: 2026-11-17
+discussion: "[GitHub Discussions](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/discussions), [mailing list](https://accounts.eclipse.org/mailing-list/dataspace-protocol-base-dev)"
+meetings: "[community meetings](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/discussions/11)"
+tags: [type/specification, layer/licensing, layer/access, medium/data]
+updated: 2026-11-21
 ---
 Eclipse Dataspace Working Group specification for sharing data between organizations under usage control. A provider publishes a catalog, the two sides negotiate an agreement, and then the data transfers. The International Data Spaces Association governed it up to version 2024-1.
 

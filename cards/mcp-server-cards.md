@@ -5,9 +5,11 @@ type: specification
 website: https://github.com/modelcontextprotocol/ext-server-card
 part_of: "[[mcp]]"
 status: SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
-tags: [type/specification, venue/mcp, layer/identity, topic/discovery]
 contribute: "[ext-server-card issues](https://github.com/modelcontextprotocol/ext-server-card/issues), [Server Card WG charter](https://modelcontextprotocol.io/community/working-groups/server-card)"
-updated: 2026-11-20
+discussion: "[Discord #server-card-wg](https://discord.com/channels/1358869848138059966/1399986204405141534)"
+meetings: "[community calendar: server-card-wg](https://meet.modelcontextprotocol.io/tag/server-card-wg)"
+tags: [type/specification, venue/mcp, layer/identity, topic/discovery]
+updated: 2026-11-21
 ---
 A static JSON document that describes a remote MCP server before a client connects: its name, version, transport endpoints and supported protocol versions. The extension identifier is `io.modelcontextprotocol/server-card`. A domain advertises its cards through an [[ai-catalog]] entry of type `application/mcp-server-card+json`.
 

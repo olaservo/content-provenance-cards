@@ -5,9 +5,9 @@ type: proposal
 website: https://github.com/agentskills/agentskills/discussions/393
 part_of: "[[agent-skills]]"
 status: Seven open discussions in Ideas, none answered by a listed maintainer, no convergence
+discussion: "[GitHub discussions](https://github.com/agentskills/agentskills/discussions)"
 tags: [type/proposal, layer/provenance, stage/at-rest, topic/skills, medium/code]
-contribute: "[GitHub discussions](https://github.com/agentskills/agentskills/discussions)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 Proposals for signing, lockfiles and lineage of SKILL.md folders: signature in frontmatter ([#252](https://github.com/agentskills/agentskills/discussions/252)), SKILL.sig sidecar ([#393](https://github.com/agentskills/agentskills/discussions/393)), skills-lock.json ([#588](https://github.com/agentskills/agentskills/discussions/588)), `metadata.source` ([#564](https://github.com/agentskills/agentskills/discussions/564)), `metadata.derived-from` ([#620](https://github.com/agentskills/agentskills/discussions/620)), skill-evidence documents keyed by digest ([#643](https://github.com/agentskills/agentskills/discussions/643)), a [[c2pa]] manifest reference in a frontmatter comment with a digest of the other files in `metadata` ([#651](https://github.com/agentskills/agentskills/discussions/651)).
 

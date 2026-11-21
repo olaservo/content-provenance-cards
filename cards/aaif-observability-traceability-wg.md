@@ -4,9 +4,11 @@ type: working-group
 website: https://github.com/aaif/wg-observability-and-traceability
 part_of: "[[aaif]]"
 status: Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; proposal joining OTel GenAI telemetry to signed evidence records opened 2026-10-28; trace model proposal well received at the OTel GenAI SIG 2026-11-11
-tags: [type/working-group, layer/provenance, layer/attribution]
 contribute: "[GitHub issues](https://github.com/aaif/wg-observability-and-traceability/issues)"
-updated: 2026-11-20
+discussion: "[Discord channel](https://discord.com/channels/1461090924791595243/1464020789350240266), [mailing list](https://lists.aaif.io/g/wg-observability-traceability)"
+meetings: "[meeting schedule](https://github.com/aaif/wg-observability-and-traceability#meetings), [working group calendar](https://aaif.io/working-groups/calendar)"
+tags: [type/working-group, layer/provenance, layer/attribution]
+updated: 2026-11-21
 ---
 Working group on agent-level observability, above the OpenTelemetry GenAI telemetry conventions.
 

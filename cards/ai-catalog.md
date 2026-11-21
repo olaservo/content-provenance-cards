@@ -4,9 +4,11 @@ aliases: [Agent-Card, ai-catalog.json]
 type: specification
 website: https://github.com/Agent-Card/ai-catalog
 status: ADR-0028 (open catalog and entry objects) accepted on the 2026-11-05 AI Catalog call and merged into the spec 2026-11-11; independently signed trust manifest contributions merged 2026-10-28
-tags: [type/specification, layer/provenance, layer/identity, stage/at-rest, topic/discovery]
 contribute: "[GitHub issues](https://github.com/Agent-Card/ai-catalog/issues)"
-updated: 2026-11-20
+discussion: "[GitHub discussions](https://github.com/Agent-Card/ai-catalog/discussions)"
+meetings: "[TSC meetings](https://zoom-lfx.platform.linuxfoundation.org/meetings/aicatalog)"
+tags: [type/specification, layer/provenance, layer/identity, stage/at-rest, topic/discovery]
+updated: 2026-11-21
 ---
 Catalog format for discovering agents, MCP servers and skills. A catalog is a JSON list of typed entries that a domain can serve at `/.well-known/ai-catalog.json`, and an entry can be another catalog. A four-seat Technical Steering Committee governs it, with two seats nominated by the [[mcp]] core maintainers and two by the A2A steering committee.
 

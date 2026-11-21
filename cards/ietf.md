@@ -6,9 +6,11 @@ website: https://www.ietf.org
 news: https://www.ietf.org/blog/
 feed: https://www.ietf.org/blog/feed/
 status: IETF 127 San Francisco, November 2026
-tags: [type/organization, layer/access, layer/identity]
 contribute: "[how to participate](https://www.ietf.org/participate/)"
-updated: 2026-11-17
+discussion: "[mailing lists](https://www.ietf.org/participate/lists/), [ietf mailing list](https://mailarchive.ietf.org/arch/browse/ietf/)"
+meetings: "[upcoming meetings](https://datatracker.ietf.org/meeting/upcoming)"
+tags: [type/organization, layer/access, layer/identity]
+updated: 2026-11-21
 ---
 Internet standards body. Hosts [[ietf-aipref]] and [[ietf-web-bot-auth]], and individual drafts such as [[mpp]].
 

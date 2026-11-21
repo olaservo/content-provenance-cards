@@ -4,9 +4,10 @@ type: proposal
 website: https://github.com/creativecommons/cc-signals
 part_of: "[[creative-commons]]"
 status: Public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16); the GitHub draft is unchanged since 2025-12-04
-tags: [type/proposal, layer/access, layer/attribution]
 contribute: "[GitHub issues](https://github.com/creativecommons/cc-signals/issues)"
-updated: 2026-11-20
+discussion: "[GitHub discussions](https://github.com/creativecommons/cc-signals/discussions), [CC community Zulip](https://creativecommons.org/community/)"
+tags: [type/proposal, layer/access, layer/attribution]
+updated: 2026-11-21
 ---
 Preference signals for AI reuse with terms attached: Credit, Credit + Direct Contribution, Credit + Ecosystem Contribution, Credit + Open. Layered on [[ietf-aipref]] vocabulary. That is the 2025 GitHub draft. CC's [page](https://creativecommons.org/ai-and-the-commons/cc-signals/) now describes a framework of legal tools and norms with two components, SourceConnection and ShareBack.
 
