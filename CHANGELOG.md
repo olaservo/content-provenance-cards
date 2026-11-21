@@ -10,6 +10,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 - New events: [[iab-comp]] 1.0 final, [[acp]] adds Meta, [[ucp]] council and release, [[x402]] executive director and repository move, [[agent-plugins]] approved by the AAIF Technical Committee, [[aipref-training-token]] -01 and its use in [[ai-robots-txt]] v2.2, [[ietf-aipref]] design team call, [[socan]] amended claim, [[cc-signals]] and [[creative-commons]] alpha plans, the [[rsl]] `<reporting>` element, new [[spur-coalition]] members, [[eu-ai-act-gpai-code]] Article 50 dates, [[mcp-registry]] v1.8.10, [[mcp-server-cards]] classed Beta, the [[niso]] pilot timeline and [[croissant]] 1.1 dates.
 - Links fixed on [[x402]], [[cawg]], [[counter]], [[creative-commons]], [[w3c]], [[project-nanda]] and [[aaif-observability-traceability-wg]]. [[ddex]] drops a stale news page.
 - The watch list gains the Google Search Central Blog and OpenAI News. Neither has a card. OpenAI's feed covers all of its announcements. Anthropic has no feed, and Perplexity's pages refused scripted requests, so neither is listed.
+- A `Build` workflow runs `node build.mjs` on every pull request. It fails on a warning or a smoke problem.
 
 ## 2026-11-17
 
