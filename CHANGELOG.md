@@ -2,6 +2,12 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-21
+
+- [[mcp-fsig]]: the charter was amended on 2026-11-21. The group now collects problems and routes gaps to Working Groups, and does not sponsor SEPs. "Data lineage and citation" and "Data handling" stay in scope. [[mcp]] and [[mcp-c2pa-in-meta]] quoted the earlier charter text and now quote the current one.
+- [[c2pa]]: the JSON guidance in Appendix A.9.3 now links the section and quotes it.
+- [[mcp-c2pa-in-meta]]: the 2026-09-25 closure links the maintainer comment that gives the reason.
+
 ## 2026-11-20
 
 - A GitHub agentic workflow, `mcp-smoke`, tests the Worker's MCP endpoint after each publish. A Copilot agent answers the 24 smoke questions with only the four MCP tools, and a script scores which cards each answer names and checks the `updated` dates it read.
