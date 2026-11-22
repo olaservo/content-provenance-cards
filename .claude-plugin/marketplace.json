@@ -5,7 +5,7 @@
   "plugins": [
     {
       "name": "content-provenance-field-guide",
-      "description": "Two skills and a read-only MCP server for the Content Provenance, Access and Attribution field guide.",
+      "description": "Skills and a read-only MCP server for the Content Provenance, Access and Attribution field guide.",
       "source": { "source": "url", "url": "https://github.com/olaservo/content-provenance-cards.git", "ref": "plugin" }
     }
   ]
