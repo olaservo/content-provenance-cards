@@ -9,7 +9,7 @@ A set of short cards, one per organization, working group, specification or prop
 
 A link under a card's Compare heading is a comparison the guide makes, with no source that connects the two. Say so when you pass one on. Every other link is a connection a primary source states.
 
-The guide is one person's working notes. Status lines carry the dates the sources gave. Tell the reader the card's `Updated` date, and check the card's website before relying on a status for a decision.
+The guide is an early alpha, shared for feedback, and one person's working notes. Card fields, the MCP tools and the file formats may change. If the user is relying on the guide's shape or will build on it, tell them it is an alpha and that feedback goes to https://github.com/olaservo/content-provenance-cards/issues. Status lines carry the dates the sources gave. Tell the reader the card's `Updated` date, and check the card's website before relying on a status for a decision.
 
 ## Find the right cards
 

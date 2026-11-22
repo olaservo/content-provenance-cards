@@ -4,7 +4,7 @@ id: "ai-disclosures-project"
 type: "organization"
 status: "Convenings at Bellagio (April 2026), Foo Camp (June and October 2026), Microsoft Research New York (September 2026)"
 tags: ["type/organization", "layer/governance", "layer/attribution", "layer/payments"]
-updated: "2026-11-20"
+updated: "2026-11-22"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ai-disclosures-project"
 ---
 # AI Disclosures Project
@@ -16,10 +16,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://ai-disclosures.org/blog
 - Feed: https://asimovaddendum.substack.com/feed
 - Tags: type/organization, layer/governance, layer/attribution, layer/payments
-- Updated: 2026-11-20
+- Updated: 2026-11-22
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ai-disclosures-project
 
-Project hosted at Code for Science & Society. It works on the protocols that would make Human+AI markets participatory and decentralized. Prototypes include [Skills Marketplace](skills-marketplace.md), the Open Memory Protocol Initiative (OMPI) and the Open Alpha Registry.
+Project hosted at Code for Science & Society. It works on the protocols that would make Human+AI markets participatory and decentralized. Prototypes include [Skills Marketplace](skills-marketplace.md), the [Open Memory Protocol Initiative (OMPI)](https://ai-disclosures.org/ompi) and the [Open Alpha Registry](https://ai-disclosures.org/assets/prototypes/Searching_for_Alpha.pdf), so far a concept note.
 
 ## Topics
 

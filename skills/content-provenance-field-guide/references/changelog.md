@@ -4,9 +4,11 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-22
 
+- The guide now says it is an early alpha, shared for feedback, in the README, the explorer intro, `cards.md`, `cards.json`, `llms.txt`, the guide index, the reader skill and the MCP server instructions. Card fields, the MCP tools, the plugin layout and the published file formats may change.
 - New card: [Podcast Namespace](https://content-provenance-field-guide.olahungerford.workers.dev/#podcast-namespace), the Podcasting 2.0 RSS namespace. It is the guide's first card on paying a creator directly: `<podcast:funding>` carries a donation or membership link. It also has tags for a licence, credits, platform blocking and an `ai-content` disclosure.
 - New topic: `topic/lineage`, for how a work or dataset records what it was made from. It is on [C2PA](https://content-provenance-field-guide.olahungerford.workers.dev/#c2pa), [Agent Skills at-rest signing threads](https://content-provenance-field-guide.olahungerford.workers.dev/#agent-skills-signing), [OpenLineage](https://content-provenance-field-guide.olahungerford.workers.dev/#openlineage) and [MCP Financial Services Interest Group](https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-fsig).
 - [C2PA](https://content-provenance-field-guide.olahungerford.workers.dev/#c2pa): new topic on derived works and packages, with the three ingredient relationships (`parentOf`, `componentOf`, `inputTo`) and the appendices for ZIP-based files and HTML.
+- [AI Disclosures Project](https://content-provenance-field-guide.olahungerford.workers.dev/#ai-disclosures-project): the Open Memory Protocol Initiative and the Open Alpha Registry link to their pages.
 
 ## 2026-11-21
 
