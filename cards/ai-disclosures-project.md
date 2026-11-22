@@ -6,9 +6,9 @@ news: https://ai-disclosures.org/blog
 feed: https://asimovaddendum.substack.com/feed
 status: Convenings at Bellagio (April 2026), Foo Camp (June and October 2026), Microsoft Research New York (September 2026)
 tags: [type/organization, layer/governance, layer/attribution, layer/payments]
-updated: 2026-11-20
+updated: 2026-11-22
 ---
-Project hosted at Code for Science & Society. It works on the protocols that would make Human+AI markets participatory and decentralized. Prototypes include [[skills-marketplace]], the Open Memory Protocol Initiative (OMPI) and the Open Alpha Registry.
+Project hosted at Code for Science & Society. It works on the protocols that would make Human+AI markets participatory and decentralized. Prototypes include [[skills-marketplace]], the [Open Memory Protocol Initiative (OMPI)](https://ai-disclosures.org/ompi) and the [Open Alpha Registry](https://ai-disclosures.org/assets/prototypes/Searching_for_Alpha.pdf), so far a concept note.
 
 ## Topics
 - **Value distribution**: the missing mechanisms for attribution and compensation in AI markets.
