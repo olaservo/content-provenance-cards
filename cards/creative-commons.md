@@ -8,7 +8,7 @@ feed: https://creativecommons.org/feed/
 status: CC Signals public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16)
 discussion: "[community Zulip](https://creativecommons.org/community/)"
 tags: [type/organization, layer/licensing, layer/access, layer/attribution]
-updated: 2026-11-21
+updated: 2026-11-22
 ---
 Steward of the CC licenses and CC REL machine-readable license metadata. Proposes [[cc-signals]] and filed AIPREF drafts on exclusions and parameters ([[ietf-aipref]]). The exclusions draft expired on 2026-10-24.
 
@@ -18,4 +18,7 @@ Steward of the CC licenses and CC REL machine-readable license metadata. Propose
 - **Source references in answers**: finding early adopters for the CC Signals alpha in 2027. Its SourceConnection component would require AI developers to "provide references to sources when AI systems use outside sources to help answer questions".
 
 ## Compare
-- [[okfn]], whose MCP server already returns a list of sources, is a candidate early adopter for SourceConnection. Neither names the other (searched 2026-11-15).
+- [[okfn]], whose MCP server already returns a list of sources, is a candidate early adopter for SourceConnection. No CC page names OKFN's MCP server, and no OKFN page names SourceConnection (searched 2026-11-22).
+
+## Related
+- CC joined [[okfn]], [[open-future]], the Open Source Initiative and the Digital Public Goods Alliance in a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).

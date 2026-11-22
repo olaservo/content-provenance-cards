@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-22
 
+- [[okfn]], [[creative-commons]] and [[open-future]]: Related links for their joint session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris. [[okfn]] gains The Sharing Shift, which lists [[cc-signals]] and Open Future's Public Digital Infrastructure as connected efforts, and a History section.
 - New card: [[podcast-namespace]], the Podcasting 2.0 RSS namespace. It is the guide's first card on paying a creator directly: `<podcast:funding>` carries a donation or membership link. It also has tags for a licence, credits, platform blocking and an `ai-content` disclosure.
 - New topic: `topic/lineage`, for how a work or dataset records what it was made from. It is on [[c2pa]], [[agent-skills-signing]], [[openlineage]] and [[mcp-fsig]].
 - [[c2pa]]: new topic on derived works and packages, with the three ingredient relationships (`parentOf`, `componentOf`, `inputTo`) and the appendices for ZIP-based files and HTML.
