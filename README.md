@@ -86,7 +86,7 @@ Checked as of 2026-11-16: requests on protocol versions 2026-07-28 and 2025-11-2
 
 ### Skills
 
-`content-provenance-field-guide` tells an agent how to answer from the cards. It carries the index, the layer and topic lists, every card, the updates, the watch list and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs. `content-provenance-field-guide-contributor` tells an agent when and how to suggest a pull request here.
+`content-provenance-field-guide` tells an agent how to answer from the cards. It carries the index, the layer and topic lists, every card, the updates, the watch list and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs. `content-provenance-field-guide-contributor` tells an agent when and how to suggest a pull request here. `content-provenance-field-guide-reviewer` checks a card change against the rules under [Card format](#card-format) and [Adding a card](#adding-a-card). The `pr-review` workflow (`.github/workflows/pr-review.md`) runs it as a Copilot agent through gh-aw on pull requests from branches in this repo and posts a comment-only review. A step before the agent runs `review/fetch-sources.mjs`, which saves the text of each page the pull request links to, so the agent can check sources without network access.
 
 Take them from the plugin, the MCP endpoint or `skills/<name>/` on the Worker. The files under `skills/` in this repo contain `{{site}}` and `{{repo}}`, which the `--worker` build replaces with the site and repository URLs.
 
