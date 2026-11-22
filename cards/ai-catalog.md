@@ -6,7 +6,7 @@ website: https://github.com/Agent-Card/ai-catalog
 status: ADR-0028 (open catalog and entry objects) accepted on the 2026-11-05 AI Catalog call and merged into the spec 2026-11-11; independently signed trust manifest contributions merged 2026-10-28
 contribute: "[GitHub issues](https://github.com/Agent-Card/ai-catalog/issues)"
 discussion: "[GitHub discussions](https://github.com/Agent-Card/ai-catalog/discussions)"
-meetings: "[TSC meetings](https://zoom-lfx.platform.linuxfoundation.org/meetings/aicatalog)"
+meetings: "[TSC meetings](https://github.com/Agent-Card/ai-catalog/blob/main/GOVERNANCE.md#tsc-meetings)"
 tags: [type/specification, layer/provenance, layer/identity, stage/at-rest, topic/discovery]
 updated: 2026-11-21
 ---

@@ -8,7 +8,7 @@ feed: https://blog.modelcontextprotocol.io/index.xml
 part_of: "[[aaif]]"
 status: Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
 contribute: "[contributing guide](https://modelcontextprotocol.io/community/contributing), [SEP guidelines](https://modelcontextprotocol.io/community/sep-guidelines)"
-discussion: "[MCP community channels](https://modelcontextprotocol.io/community/communication), [MCP Contributor Discord](https://discord.gg/6CSzBmMkjX), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)"
+discussion: "[MCP community channels](https://modelcontextprotocol.io/community/communication), [MCP Contributor Discord](https://discord.gg/modelcontextprotocol)"
 meetings: "[meeting calendar](https://meet.modelcontextprotocol.io/)"
 tags: [type/specification, venue/mcp, layer/provenance, layer/attribution]
 updated: 2026-11-21

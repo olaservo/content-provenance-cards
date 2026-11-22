@@ -5,7 +5,7 @@ type: interest-group
 part_of: "[[mcp]]"
 status: Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
 contribute: "[FSIG charter](https://modelcontextprotocol.io/community/interest-groups/financial-services), [FSIG issues](https://github.com/modelcontextprotocol/financial-services-interest-group/issues)"
-discussion: "[Discord #financial-services-ig](https://discord.gg/6CSzBmMkjX)"
+discussion: "[Discord #financial-services-ig](https://discord.gg/modelcontextprotocol)"
 meetings: "[community calendar: finance](https://meet.modelcontextprotocol.io/tag/finance)"
 tags: [type/interest-group, venue/mcp, layer/provenance, layer/attribution]
 updated: 2026-11-21

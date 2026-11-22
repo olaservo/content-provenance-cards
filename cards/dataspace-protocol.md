@@ -8,7 +8,6 @@ feed: https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/relea
 status: 2025-1 released 2025-08-29 and considered stable; second errata tagged 2026-09-11
 contribute: "[GitHub issues](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/issues)"
 discussion: "[GitHub Discussions](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/discussions), [mailing list](https://accounts.eclipse.org/mailing-list/dataspace-protocol-base-dev)"
-meetings: "[community meetings](https://github.com/eclipse-dataspace-protocol-base/DataspaceProtocol/discussions/11)"
 tags: [type/specification, layer/licensing, layer/access, medium/data]
 updated: 2026-11-21
 ---

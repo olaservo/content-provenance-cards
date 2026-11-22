@@ -5,7 +5,7 @@ type: specification
 website: https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2640
 part_of: "[[mcp]]"
 status: Final 2026-09-13; Beta under SEP-3392
-contribute: "[SEP-2640 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2640), [ext-skills issues](https://github.com/modelcontextprotocol/ext-skills/issues)"
+contribute: "[ext-skills issues](https://github.com/modelcontextprotocol/ext-skills/issues)"
 discussion: "[Discord #skills-over-mcp-wg](https://discord.com/channels/1358869848138059966/1464745826629976084)"
 meetings: "[community calendar: skills-over-mcp-wg](https://meet.modelcontextprotocol.io/tag/skills-over-mcp-wg)"
 tags: [type/specification, venue/mcp, stage/at-rest, topic/skills, medium/code]

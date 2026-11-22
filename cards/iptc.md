@@ -8,7 +8,6 @@ feed: https://iptc.org/feed/
 status: RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 contribute: "[membership](https://iptc.org/participate/membership/)"
 discussion: "[public discussion forums](https://iptc.org/about-iptc/working-groups/), [RightsML forum](https://groups.io/g/iptc-rightsml)"
-meetings: "[working group meetings](https://iptc.org/participate/)"
 tags: [type/organization, layer/licensing, layer/access, layer/provenance, stage/trust, medium/image, medium/video]
 updated: 2026-11-21
 ---
