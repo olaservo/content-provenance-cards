@@ -37,6 +37,7 @@ Subjects that cards on different layers share.
 
 - skills: agent skills and plugins, and how they are packaged, signed, listed and credited.
 - discovery: how an agent finds a server, an agent or a skill, through registries, catalogs and well-known files.
+- lineage: how a work or a dataset records what it was made from, such as a parent it was derived from, the parts it is composed of and the inputs to the process that produced it.
 
 ## Ways to take part
 

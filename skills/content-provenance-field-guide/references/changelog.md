@@ -2,6 +2,12 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-22
+
+- New card: [Podcast Namespace](https://content-provenance-field-guide.olahungerford.workers.dev/#podcast-namespace), the Podcasting 2.0 RSS namespace. It is the guide's first card on paying a creator directly: `<podcast:funding>` carries a donation or membership link. It also has tags for a licence, credits, platform blocking and an `ai-content` disclosure.
+- New topic: `topic/lineage`, for how a work or dataset records what it was made from. It is on [C2PA](https://content-provenance-field-guide.olahungerford.workers.dev/#c2pa), [Agent Skills at-rest signing threads](https://content-provenance-field-guide.olahungerford.workers.dev/#agent-skills-signing), [OpenLineage](https://content-provenance-field-guide.olahungerford.workers.dev/#openlineage) and [MCP Financial Services Interest Group](https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-fsig).
+- [C2PA](https://content-provenance-field-guide.olahungerford.workers.dev/#c2pa): new topic on derived works and packages, with the three ingredient relationships (`parentOf`, `componentOf`, `inputTo`) and the appendices for ZIP-based files and HTML.
+
 ## 2026-11-21
 
 - New card: [MCP Progressive Disclosure WG](https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-progressive-disclosure-wg), the MCP working group exploring how a server's primitives can load progressively, the way [Agent Skills](https://content-provenance-field-guide.olahungerford.workers.dev/#agent-skills) load. Its charter names [SEP-2640 Skills Extension](https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-skills-extension) as related.

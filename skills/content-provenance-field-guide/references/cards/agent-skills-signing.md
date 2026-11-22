@@ -3,8 +3,8 @@ title: "Agent Skills at-rest signing threads"
 id: "agent-skills-signing"
 type: "proposal"
 status: "Seven open discussions in Ideas, none answered by a listed maintainer, no convergence"
-tags: ["type/proposal", "layer/provenance", "stage/at-rest", "topic/skills", "medium/code"]
-updated: "2026-11-21"
+tags: ["type/proposal", "layer/provenance", "stage/at-rest", "topic/skills", "medium/code", "topic/lineage"]
+updated: "2026-11-22"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/agent-skills-signing"
 ---
 # Agent Skills at-rest signing threads
@@ -16,8 +16,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://github.com/agentskills/agentskills/discussions/393
 - Part of: [Agent Skills](agent-skills.md)
 - Discussion: [GitHub discussions](https://github.com/agentskills/agentskills/discussions)
-- Tags: type/proposal, layer/provenance, stage/at-rest, topic/skills, medium/code
-- Updated: 2026-11-21
+- Tags: type/proposal, layer/provenance, stage/at-rest, topic/skills, medium/code, topic/lineage
+- Updated: 2026-11-22
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#agent-skills-signing
 
 Proposals for signing, lockfiles and lineage of SKILL.md folders: signature in frontmatter ([#252](https://github.com/agentskills/agentskills/discussions/252)), SKILL.sig sidecar ([#393](https://github.com/agentskills/agentskills/discussions/393)), skills-lock.json ([#588](https://github.com/agentskills/agentskills/discussions/588)), `metadata.source` ([#564](https://github.com/agentskills/agentskills/discussions/564)), `metadata.derived-from` ([#620](https://github.com/agentskills/agentskills/discussions/620)), skill-evidence documents keyed by digest ([#643](https://github.com/agentskills/agentskills/discussions/643)), a [C2PA](c2pa.md) manifest reference in a frontmatter comment with a digest of the other files in `metadata` ([#651](https://github.com/agentskills/agentskills/discussions/651)).

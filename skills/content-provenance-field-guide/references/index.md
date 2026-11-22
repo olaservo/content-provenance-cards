@@ -63,6 +63,7 @@ One line per card: name, type and layers, then the current status.
 - [OpenAttribution.org](cards/openattribution.md) (organization, attribution, identity, payments): policycheck, commerce profile, AIMS draft
 - [OpenLineage](cards/openlineage.md) (project, provenance): RFC 4484 open (updated 2026-10-07); BearingNode proposed an MCP `_meta` lineage key to the FSIG 2026-10-08
 - [OpenTelemetry for MCP](cards/otel-mcp.md) (specification, provenance): Conventions in Development; built into the Python SDK since v2.0.0; merged for the TypeScript SDK 2026-10-31, not yet released
+- [Podcast Namespace](cards/podcast-namespace.md) (specification, payments, licensing, attribution, access): 27 tags formalized in seven phases from 2020 to 2024; Phase 8 open
 - [Project NANDA](cards/project-nanda.md) (project, identity)
 - [Really Simple Licensing](cards/rsl.md) (specification, licensing, payments): RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - [Rights & AI](cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)

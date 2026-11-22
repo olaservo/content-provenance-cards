@@ -33,4 +33,4 @@ Steward of the CC licenses and CC REL machine-readable license metadata. Propose
 
 - [Open Knowledge Foundation](okfn.md), whose MCP server already returns a list of sources, is a candidate early adopter for SourceConnection. Neither names the other (searched 2026-11-15).
 
-Linked from: [CC Signals](cc-signals.md), [IETF AI Preferences Working Group](ietf-aipref.md), [Open Knowledge Foundation](okfn.md)
+Linked from: [CC Signals](cc-signals.md), [IETF AI Preferences Working Group](ietf-aipref.md), [Open Knowledge Foundation](okfn.md), [Podcast Namespace](podcast-namespace.md)

@@ -16,6 +16,7 @@ Licensing: the terms and prices for use, in a form machines can read.
 - [Internet Licensing Collective](../cards/internet-licensing-collective.md) (organization, licensing, payments): Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 - [IPTC](../cards/iptc.md) (organization, licensing, access, provenance): RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 - [Microsoft Publisher Content Marketplace](../cards/microsoft-publisher-content-marketplace.md) (project, licensing, payments): Pilot announced 2026-02-03, with Copilot grounding answers in licensed content; no public spec
+- [Podcast Namespace](../cards/podcast-namespace.md) (specification, payments, licensing, attribution, access): 27 tags formalized in seven phases from 2020 to 2024; Phase 8 open
 - [Really Simple Licensing](../cards/rsl.md) (specification, licensing, payments): RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - [Rights & AI](../cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
 - [Skills Marketplace](../cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors

@@ -102,6 +102,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-04-09 [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md): Public comment on 1.0 closed.
 - 2026-04 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Bellagio.
 - 2026-03-10 [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md): 1.0 opened for public comment.
+- 2026-03-05 [Podcast Namespace](cards/podcast-namespace.md): `ai-content` added to the known purposes of `<podcast:txt>` ([PR 757](https://github.com/Podcastindex-org/podcast-namespace/pull/757)).
 - 2026-02-12 [Croissant](cards/croissant.md): MLCommons announced 1.1.
 - 2026-02-03 [Microsoft Publisher Content Marketplace](cards/microsoft-publisher-content-marketplace.md): Microsoft [announced the pilot](https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web), with Copilot grounding answers in licensed content and Yahoo starting to onboard as a buyer.
 - 2026-01-29 [Croissant](cards/croissant.md): 1.1 specification published.
@@ -124,10 +125,16 @@ Dated events from the History section of each card, newest first. These are thin
 - 2024-09 [GEMA](cards/gema.md): Presented its licensing model for generative AI.
 - 2024-08-09 [DDEX](cards/ddex.md): Date of the ERN 4.3.1 data dictionary, which includes `ContainsAI` and `AiContribution`.
 - 2024-08-01 [Fairly Trained](cards/fairly-trained.md): Updated its individual model certification.
+- 2024-07-01 [Podcast Namespace](cards/podcast-namespace.md): Phase 7 comment period closed.
 - 2024-04-04 [Rights & AI](cards/rights-and-ai.md): ICMP announced the site. The release was issued the day before, and says the site had already launched.
 - 2024-03-20 [Fairly Trained](cards/fairly-trained.md): Announced newly certified models, including its first language and speech models.
 - 2024-01-17 [Fairly Trained](cards/fairly-trained.md): Launched with nine certified companies.
 - 2023-07 [CISAC](cards/cisac.md): Published seven principles for policymakers on AI.
+- 2023-06-01 [Podcast Namespace](cards/podcast-namespace.md): Phase 6 closed. `<podcast:txt>` was among the six tags formalized.
+- 2022-07-15 [Podcast Namespace](cards/podcast-namespace.md): Phase 5 closed. `<podcast:block>` formalized.
+- 2021-06-01 [Podcast Namespace](cards/podcast-namespace.md): Phase 3 closed. `<podcast:license>` and `<podcast:integrity>` formalized.
+- 2021-01-31 [Podcast Namespace](cards/podcast-namespace.md): Phase 2 closed. `<podcast:person>` formalized.
+- 2020-11-15 [Podcast Namespace](cards/podcast-namespace.md): Phase 1 closed. `<podcast:funding>` and `<podcast:locked>` were among the five tags formalized.
 - 2019-06-18 [KBART](cards/kbart.md): KBART Automation published.
 - 2014-03-27 [KBART](cards/kbart.md): Phase II (NISO RP-9-2014) published.
 - 2006 [DDEX](cards/ddex.md): Founded.

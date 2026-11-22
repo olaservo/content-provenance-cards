@@ -20,6 +20,7 @@ Access: whether a crawler or agent may read or use content, and how that prefere
 - [Knight-Georgetown Institute](../cards/knight-georgetown-institute.md) (organization, governance, access)
 - [Microsoft training and grounding preferences](../cards/microsoft-grounding-preference.md) (proposal, access): Announced 2026-10-30; effective 2027-02-01; NoArchive and NoCache stop being read as preferences after 2027-03-01
 - [Open Future](../cards/open-future.md) (organization, governance, access)
+- [Podcast Namespace](../cards/podcast-namespace.md) (specification, payments, licensing, attribution, access): 27 tags formalized in seven phases from 2020 to 2024; Phase 8 open
 - [Rights & AI](../cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
 - [Shared AI training robots.txt token](../cards/aipref-training-token.md) (proposal, access): Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027
 - [Spawning](../cards/spawning.md) (organization, access): datadiligence dormant since 2024-10; spawning.ai shows a maintenance page (read 2026-11-20)

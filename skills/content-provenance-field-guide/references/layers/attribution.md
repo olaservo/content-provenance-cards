@@ -15,6 +15,7 @@ Attribution: whether the source is named and credited where the content ends up.
 - [NISO](../cards/niso.md) (organization, provenance, attribution, governance): Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 - [Open Knowledge Foundation](../cards/okfn.md) (organization, attribution): MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources
 - [OpenAttribution.org](../cards/openattribution.md) (organization, attribution, identity, payments): policycheck, commerce profile, AIMS draft
+- [Podcast Namespace](../cards/podcast-namespace.md) (specification, payments, licensing, attribution, access): 27 tags formalized in seven phases from 2020 to 2024; Phase 8 open
 - [SEP-3094 Granular Citations](../cards/mcp-sep-3094-citations.md) (proposal, attribution): Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
 - [Skills Marketplace](../cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
 - [SOCAN](../cards/socan.md) (organization, licensing, payments, attribution): Sued Suno on 2026-09-02 and amended the claim on 2026-11-18, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-20)
