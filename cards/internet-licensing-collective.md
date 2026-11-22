@@ -6,8 +6,7 @@ website: https://internetcollective.org
 news: https://internetcollective.org/press
 status: Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 tags: [type/organization, layer/licensing, layer/payments]
-participate: "[publishers](https://internetcollective.org/publishers), [AI companies](https://internetcollective.org/ai-companies)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 Nonprofit, publisher-led collecting society for AI use of web content, formerly the RSL Collective. Sells AI companies one blanket license to its members' content and pays the revenue out to publishers after costs it projects at 10% or less. Co-authored [[rsl]] and says it supports any standard a publisher wishes to use.
 

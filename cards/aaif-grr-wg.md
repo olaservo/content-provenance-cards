@@ -4,9 +4,11 @@ aliases: [GRR, GRRA WG, "Governance, Risk & Regulatory Alignment"]
 type: working-group
 website: https://github.com/aaif/wg-governance-risk-and-regulatory
 part_of: "[[aaif]]"
+contribute: "[GitHub issues](https://github.com/aaif/wg-governance-risk-and-regulatory/issues)"
+discussion: "[Discord channel](https://discord.com/channels/1461090924791595243/1464021069840122006), [mailing list](https://lists.aaif.io/g/wg-governance-risk-regulatory)"
+meetings: "[meeting schedule](https://github.com/aaif/wg-governance-risk-and-regulatory#meetings), [working group calendar](https://aaif.io/working-groups/calendar)"
 tags: [type/working-group, layer/governance]
-participate: "[GitHub issues](https://github.com/aaif/wg-governance-risk-and-regulatory/issues)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 Working group bridging AI policy and the foundation's technical projects.
 

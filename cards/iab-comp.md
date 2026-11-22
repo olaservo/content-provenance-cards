@@ -6,9 +6,9 @@ website: https://github.com/IABTechLab/CoMP
 news: https://github.com/IABTechLab/CoMP/releases
 feed: https://github.com/IABTechLab/CoMP/releases.atom
 status: 1.0 final 2026-04-28
+contribute: "[GitHub issues](https://github.com/IABTechLab/CoMP/issues), [CoMP working group](https://iabtechlab.com/working-groups/content-monetization-protocols-comp-for-ai-working-group/)"
 tags: [type/specification, layer/licensing, layer/payments]
-participate: "[GitHub issues](https://github.com/IABTechLab/CoMP/issues)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 An AI system describes itself and its intended use; a content owner or marketplace answers with a package scoped by content type, function and retrieval method. Grew out of the LLM Content Ingest API initiative.
 

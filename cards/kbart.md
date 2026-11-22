@@ -5,9 +5,10 @@ type: specification
 website: https://www.niso.org/standards-committees/kbart
 part_of: "[[niso]]"
 status: Phase III (NISO RP-9-2026) published 2026-08-26
+contribute: "[KBART Standing Committee](https://www.niso.org/standards-committees/kbart)"
+discussion: "[KBART Interest Group](https://groups.google.com/a/niso.org/g/kbart-interest/about)"
 tags: [type/specification, layer/access, medium/text]
-participate: "[KBART Standing Committee](https://www.niso.org/standards-committees/kbart)"
-updated: 2026-11-17
+updated: 2026-11-21
 ---
 NISO recommended practice for sending title lists and coverage data from content providers to knowledge bases and libraries. KBART Automation (NISO RP-26-2019) adds library-specific holdings reports, exchanged by API.
 

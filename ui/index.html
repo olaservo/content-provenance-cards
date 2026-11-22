@@ -158,6 +158,8 @@ const LAYER_TEXT = VOCAB.layers, STAGE_TEXT = VOCAB.stages, LABELS = VOCAB.label
 const LAYERS = Object.keys(LAYER_TEXT), STAGES = Object.keys(STAGE_TEXT);
 const MEDIA_TEXT = VOCAB.media || {}, MEDIA = Object.keys(MEDIA_TEXT);
 const TOPIC_TEXT = VOCAB.topics || {}, TOPICS = Object.keys(TOPIC_TEXT);
+const PART_TEXT = VOCAB.participation || {}, PART = Object.keys(PART_TEXT);
+const partLabel = k => k[0].toUpperCase() + k.slice(1);
 const GROUPS = [["layer", "Layer", LAYERS], ["stage", "Stage", STAGES], ["medium", "Medium", MEDIA], ["topic", "Topic", TOPICS], ["type", "Type", null], ["", "Other", null]];
 
 function human(t) {
@@ -240,7 +242,7 @@ function intro() {
   return `<div class="intro">
 <p>This field guide has ${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.</p>
 <p>This page is maintained by <a href="${SITE}about/">Ola Hungerford</a>. I keep these cards to follow related standards efforts as part of my interests in content provenance and attribution in MCP. Corrections and collaboration are welcome through the contact details on my About page.</p>
-<p>Pick a card from the list, search, or filter by the tags above. Links inside a card open other cards, and "Linked from" lists the reverse. Where an effort has a public place to take part, the card says so under its name. Agents and scripts can read the same cards as <a href="cards.md">Markdown</a> or <a href="cards.json">JSON</a>, described in <a href="llms.txt">llms.txt</a>.</p>
+<p>Pick a card from the list, search, or filter by the tags above. Links inside a card open other cards, and "Linked from" lists the reverse. Where an effort names public places to take part, the card lists them under its name, as described in Ways to take part below. Agents and scripts can read the same cards as <a href="cards.md">Markdown</a> or <a href="cards.json">JSON</a>, described in <a href="llms.txt">llms.txt</a>.</p>
 <h3>Layers</h3>
 <ul>${LAYERS.map(l => `<li><span class="lay" style="background:var(--l-${l})"></span><strong>${l}</strong>: ${LAYER_TEXT[l]}.</li>`).join("")}</ul>
 <h3>Stages</h3>
@@ -252,6 +254,9 @@ function intro() {
 <h3>Topic tags</h3>
 <p>Subjects that cards on different layers share. Each has a list of its cards.</p>
 <ul>${TOPICS.map(t => `<li><strong><a href="topics/${t}.md">${t}</a></strong>: ${TOPIC_TEXT[t]}.</li>`).join("")}</ul>
+<h3>Ways to take part</h3>
+<p>A card lists the public places the effort itself names. A line is left out when none was found.</p>
+<ul>${PART.map(k => `<li><strong>${partLabel(k)}</strong>: ${PART_TEXT[k]}.</li>`).join("")}</ul>
 ${foot()}</div>`;
 }
 
@@ -265,7 +270,7 @@ function renderDetail() {
   if (aliases.length) h += `<br>Also: ${esc(aliases.join(", "))}`;
   if (c.status) h += `<br>Status: ${esc(c.status)}`;
   if (c.updated) h += ` (as of ${esc(c.updated)})`;
-  if (c.participate) h += `<br>Take part: ${inline(c.participate)}`;
+  for (const k of PART) if (c[k]) h += `<br><span title="${esc(PART_TEXT[k])}">${partLabel(k)}</span>: ${inline(c[k])}`;
   const news = [...c.news, ...c.feed];
   if (news.length) h += `<br>News: ${news.map(u => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\//, ""))}</a>`).join(", ")}`;
   h += `<div class="tags">${c.tags.map(chip).join("")}</div></div>`;

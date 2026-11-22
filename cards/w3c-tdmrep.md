@@ -6,9 +6,10 @@ website: https://www.w3.org/community/tdmrep/
 feed: https://www.w3.org/community/tdmrep/feed/
 part_of: "[[w3c]]"
 status: CG Final Report version 3 (2024-05-10); last push 2026-09
+contribute: "[join the community group](https://www.w3.org/community/tdmrep/join), [GitHub issues](https://github.com/w3c-cg/tdm-reservation-protocol/issues)"
+discussion: "[public-tdmrep mailing list](https://lists.w3.org/Archives/Public/public-tdmrep/)"
 tags: [type/community-group, layer/access, layer/licensing]
-participate: "[join the community group](https://www.w3.org/community/tdmrep/join)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 The EU DSM Article 4 text and data mining opt-out: `tdm-reservation` and `tdm-policy` by HTTP header, HTML meta or `/.well-known/tdmrep.json`.
 

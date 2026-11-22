@@ -4,9 +4,10 @@ type: project
 website: https://github.com/ai-robots-txt/ai.robots.txt
 news: https://github.com/ai-robots-txt/ai.robots.txt/releases
 feed: https://github.com/ai-robots-txt/ai.robots.txt/releases.atom
+contribute: "[GitHub issues](https://github.com/ai-robots-txt/ai.robots.txt/issues)"
+discussion: "[GitHub discussions](https://github.com/ai-robots-txt/ai.robots.txt/discussions)"
 tags: [type/project, layer/access]
-participate: "[GitHub issues](https://github.com/ai-robots-txt/ai.robots.txt/issues)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 Community list of AI crawlers with generated robots.txt, Apache .htaccess, nginx, Caddy, HAProxy and lighttpd blocks.
 

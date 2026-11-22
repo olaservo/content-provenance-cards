@@ -5,9 +5,11 @@ website: https://github.com/mlcommons/croissant
 news: https://mlcommons.org/tag/croissant/
 feed: https://mlcommons.org/tag/croissant/feed/
 status: 1.1 published 2026-01-29 and announced 2026-02-12; required for NeurIPS 2026 dataset submissions
+contribute: "[GitHub issues](https://github.com/mlcommons/croissant/issues), [join the working group](https://mlcommons.org/community/subscribe/)"
+discussion: "[Discord](https://discord.gg/59UkrvQAbh), [users forum](https://groups.google.com/a/mlcommons.org/g/croissant-users)"
+meetings: "[working group meetings](https://mlcommons.org/working-groups/data/croissant/)"
 tags: [type/specification, layer/provenance, layer/licensing, medium/data]
-participate: "[GitHub issues](https://github.com/mlcommons/croissant/issues)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 MLCommons dataset metadata format. 1.1 added machine-actionable provenance, consent and licensing fields.
 

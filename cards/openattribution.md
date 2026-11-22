@@ -6,7 +6,7 @@ news: https://openattribution.org/blog
 feed: https://openattribution.org/feed.xml
 status: policycheck, commerce profile, AIMS draft
 tags: [type/organization, layer/attribution, layer/identity, layer/payments]
-participate: "[GitHub](https://github.com/openattribution-org)"
+contribute: "[GitHub](https://github.com/openattribution-org)"
 updated: 2026-11-17
 ---
 Not-for-profit that originally developed the [[content-telemetry]] SDKs, which [[spur-coalition]] now maintains. Its [Cloudflare edge worker](https://github.com/SPUR-Coalition/cloudflare-worker) is in SPUR's GitHub organization too (checked 2026-11-16). It maintains the policycheck scanner, the commerce profile and [[aims]].

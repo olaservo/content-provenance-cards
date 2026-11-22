@@ -3,9 +3,11 @@ name: AAIF Security and Privacy WG
 type: working-group
 website: https://github.com/aaif/wg-security-and-privacy
 part_of: "[[aaif]]"
+contribute: "[GitHub issues](https://github.com/aaif/wg-security-and-privacy/issues)"
+discussion: "[Discord channel](https://discord.com/channels/1461090924791595243/1463637113831686154), [mailing list](https://lists.aaif.io/g/wg-security-privacy)"
+meetings: "[meeting schedule](https://github.com/aaif/wg-security-and-privacy#meetings), [working group calendar](https://aaif.io/working-groups/calendar)"
 tags: [type/working-group, layer/governance, stage/trust, topic/skills]
-participate: "[GitHub issues](https://github.com/aaif/wg-security-and-privacy/issues)"
-updated: 2026-11-16
+updated: 2026-11-21
 ---
 Working group drafting a security and privacy best-practices guide for agents.
 

@@ -6,7 +6,7 @@ website: https://github.com/openattribution-org/aims
 part_of: "[[openattribution]]"
 status: v0.1 draft
 tags: [type/specification, layer/identity]
-participate: "[GitHub issues](https://github.com/openattribution-org/aims/issues)"
+contribute: "[GitHub issues](https://github.com/openattribution-org/aims/issues)"
 updated: 2026-11-16
 ---
 DID-based agent identity, proof of what content the agent is licensed to access, and a link from identity to the telemetry endpoint.

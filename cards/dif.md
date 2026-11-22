@@ -6,9 +6,11 @@ website: https://identity.foundation
 news: https://blog.identity.foundation/
 feed: https://blog.identity.foundation/rss/
 status: Hosts CAWG
+contribute: "[join DIF](https://identity.foundation/join/)"
+discussion: "[mailing lists](https://lists.identity.foundation/)"
+meetings: "[DIF calendar](https://calendar.google.com/calendar/u/0/embed?src=decentralized.identity@gmail.com)"
 tags: [type/organization, layer/identity]
-participate: "[join DIF](https://identity.foundation/join/)"
-updated: 2026-11-17
+updated: 2026-11-21
 ---
 Standards body for decentralized identifiers and verifiable credentials. Hosts [[cawg]].
 

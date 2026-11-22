@@ -7,7 +7,7 @@ news: https://encypher.com/blog
 feed: https://encypher.com/feed.xml
 status: The Atlantic plans to implement its text marking, announced 2026-11-11 with no rollout date
 tags: [type/organization, layer/provenance, layer/licensing, stage/at-rest, medium/text, medium/image, medium/audio, medium/video]
-participate: "[c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)"
+contribute: "[c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)"
 updated: 2026-11-20
 ---
 Company that sells text provenance built on [[c2pa]]. Signing is free for publishers and checking is free for anyone. Plans for marking AI output start at $99 a month, and its Meter usage reports are offered as a pilot with no listed price (read 2026-11-20). It says it wrote the C2PA text appendix (A.8) and co-chairs the Text Provenance Task Force. The spec names no authors.

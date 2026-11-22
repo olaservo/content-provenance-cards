@@ -5,9 +5,11 @@ type: working-group
 website: https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2624
 part_of: "[[mcp]]"
 status: SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
+contribute: "[SEP-2624 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2624), [experimental-ext-interceptors](https://github.com/modelcontextprotocol/experimental-ext-interceptors)"
+discussion: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
+meetings: "[community calendar: interceptors-wg](https://meet.modelcontextprotocol.io/tag/interceptors-wg)"
 tags: [type/working-group, venue/mcp, stage/boundary]
-participate: "[SEP-2624 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2624), [MCP community channels](https://modelcontextprotocol.io/community/communication)"
-updated: 2026-11-16
+updated: 2026-11-21
 ---
 Context middleware for clients, servers and gateways: deterministic code that sees each request and result on the way through. The place a seal or citation validator can run without a core spec change.
 

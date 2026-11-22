@@ -5,7 +5,7 @@ description: Answer questions about who is working on content provenance, access
 
 # Content provenance field guide
 
-A set of short cards, one per organization, working group, specification or proposal. Each card has a type, a status line, tags, a summary, topics, links to related cards and, where known, what is in use, a dated history and a public place to take part.
+A set of short cards, one per organization, working group, specification or proposal. Each card has a type, a status line, tags, a summary, topics, links to related cards and, where known, what is in use, a dated history and the public places to take part: Contribute (issue tracker, repository or join page), Discussion (chat, forum or mailing list) and Meetings (public calendar or list of open calls).
 
 A link under a card's Compare heading is a comparison the guide makes, with no source that connects the two. Say so when you pass one on. Every other link is a connection a primary source states.
 
@@ -16,10 +16,11 @@ The guide is one person's working notes. Status lines carry the dates the source
 Read as little as the question needs.
 
 1. Start with `references/index.md`. It has one line per card: name, type, layers and current status. Most "what is X" and "who is working on Y" questions can be narrowed from this file alone.
-2. For a question about one layer, read `references/layers/<layer>.md`. The layers are provenance, access, licensing, attribution, payments, identity and governance. For a subject that runs across layers, read `references/topics/<topic>.md`. The topics are skills and discovery. `references/vocabulary.md` defines the layers, the stage tags and the topic tags.
+2. For a question about one layer, read `references/layers/<layer>.md`. The layers are provenance, access, licensing, attribution, payments, identity and governance. For a subject that runs across layers, read `references/topics/<topic>.md`. The topics are skills and discovery. `references/vocabulary.md` defines the layers, the stage tags, the topic tags and the three ways to take part.
 3. Open `references/cards/<id>.md` for each card the question needs. Links between cards are relative, so follow them to related efforts. "Linked from" at the end of a card lists the cards that point at it.
 4. For "what changed" or "what happened since a date", read `references/updates.md`. It lists dated events from every card, newest first. `references/changelog.md` lists edits to the guide itself.
 5. For where an effort posts its own news, read the `News` and `Feed` lines on its card. `references/watch.md` lists them for every card, with a few sources that have no card.
+6. For "how do I take part", read the `Contribute`, `Discussion` and `Meetings` lines on the card. A missing line means the guide found no public venue of that kind. Say so and do not guess one.
 
 ## Answer
 

@@ -3,9 +3,11 @@ name: MCP Security Interest Group
 type: interest-group
 part_of: "[[mcp]]"
 status: Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call
+contribute: "[Security IG charter](https://modelcontextprotocol.io/community/interest-groups/security)"
+discussion: "[Discord #security-ig](https://discord.com/channels/1358869848138059966/1379811011669921883)"
+meetings: "[meeting schedule](https://modelcontextprotocol.io/community/interest-groups/security#operations)"
 tags: [type/interest-group, venue/mcp, layer/governance]
-participate: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
-updated: 2026-11-16
+updated: 2026-11-21
 ---
 First stop for security topics. Routes validated work to the owning group.
 

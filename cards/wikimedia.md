@@ -6,8 +6,10 @@ website: https://wikimediafoundation.org
 news: https://wikimediafoundation.org/news/
 feed: https://wikimediafoundation.org/news/feed/
 status: Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08
+contribute: "[Phabricator (WikiCite)](https://phabricator.wikimedia.org/tag/wikicite/)"
+discussion: "[wikimedia-l](https://lists.wikimedia.org/postorius/lists/wikimedia-l.lists.wikimedia.org/), [WikiCite group](https://groups.google.com/a/wikimedia.org/g/wikicite-discuss)"
 tags: [type/organization, layer/attribution, layer/identity]
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 Movement behind Wikipedia and Wikidata. Wikimedia Enterprise sells companies API access to the projects. A WikiCite contributor reviewed an MCP citation proposal.
 

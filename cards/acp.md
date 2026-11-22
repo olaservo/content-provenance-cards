@@ -4,9 +4,10 @@ aliases: [ACP]
 type: specification
 website: https://github.com/agentic-commerce-protocol/agentic-commerce-protocol
 status: Beta; maintained by OpenAI, Stripe and Meta (Meta since 2026-04-24); latest spec 2026-04-17
+contribute: "[GitHub issues](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues)"
+discussion: "[GitHub discussions](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/discussions)"
 tags: [type/specification, layer/payments]
-participate: "[GitHub issues](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 Merchant checkout for agents. [[openattribution]] has a `content_attribution` extension for it.
 

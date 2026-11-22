@@ -5,9 +5,11 @@ type: project
 website: https://modelcontextprotocol.io/registry/about
 part_of: "[[mcp]]"
 status: In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20
+contribute: "[registry issues](https://github.com/modelcontextprotocol/registry/issues), [Registry WG charter](https://modelcontextprotocol.io/community/working-groups/registry)"
+discussion: "[Discord #registry-dev](https://discord.gg/modelcontextprotocol), [registry discussions](https://github.com/modelcontextprotocol/registry/discussions)"
+meetings: "[community calendar: registry-dev](https://meet.modelcontextprotocol.io/tag/registry-dev)"
 tags: [type/project, venue/mcp, layer/identity, topic/discovery]
-participate: "[registry issues](https://github.com/modelcontextprotocol/registry/issues), [Registry WG charter](https://modelcontextprotocol.io/community/working-groups/registry)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 The official metadata catalog for publicly accessible MCP servers, run by the MCP Registry Working Group. Each entry is a `server.json` with the server's name, where to find it and how to run it.
 

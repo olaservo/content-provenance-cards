@@ -6,9 +6,10 @@ website: https://okfn.org
 news: https://blog.okfn.org/
 feed: https://blog.okfn.org/feed/
 status: MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources
+contribute: "[okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)"
+discussion: "[forum](https://discuss.okfn.org/)"
 tags: [type/organization, layer/attribution, stage/in-transit, venue/mcp]
-participate: "[okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)"
-updated: 2026-11-20
+updated: 2026-11-21
 ---
 CKAN maintainers. MCP Labs runs chat over official datasets with every answer linked to its source.
 

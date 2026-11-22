@@ -6,7 +6,7 @@ news: https://www.spurcoalition.org/updates
 feed: https://www.spurcoalition.org/updates?format=rss
 status: Content Telemetry v1.0 published 2026-09-02; The New York Times, AFP, The Economist and The Atlantic joined 2026-10-13
 tags: [type/organization, layer/attribution, stage/after-delivery, stage/trust]
-participate: "[GitHub](https://github.com/SPUR-Coalition)"
+contribute: "[GitHub](https://github.com/SPUR-Coalition)"
 updated: 2026-11-20
 ---
 Publisher coalition whose founding members are the BBC, Financial Times, Guardian Media Group, Mediahuis, Sky News, Telegraph Media Group, the Associated Press and CMA Media. The AP is the first US-based founding member. Stewards [[content-telemetry]] and the publisher accreditation profile and conformance mark. Sister body [[openattribution]] originally developed the SDKs, which SPUR now maintains.

@@ -6,7 +6,7 @@ website: https://www.niso.org
 news: https://www.niso.org/press-releases
 status: Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 tags: [type/organization, layer/provenance, layer/attribution, layer/governance, medium/text]
-participate: "[NISO standards committees](https://www.niso.org/standards-committees)"
+contribute: "[NISO standards committees](https://www.niso.org/standards-committees)"
 updated: 2026-11-20
 ---
 US standards body for libraries, publishers and the vendors between them. Publishes [[kbart]] and is a partner in [[trace]].

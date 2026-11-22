@@ -4,6 +4,9 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-21
 
+- New card: [[mcp-progressive-disclosure-wg]], the MCP working group exploring how a server's primitives can load progressively, the way [[agent-skills]] load. Its charter names [[mcp-skills-extension]] as related.
+- Cards list three ways to take part: Contribute (issue tracker, repository or join page), Discussion (chat, forum or mailing list) and Meetings (public calendar or list of open calls). `participate` is renamed `contribute`. The definitions are in `vocab.json` and appear in the explorer intro, `cards.md`, the guide index and the skill's vocabulary file.
+- Every card was checked for public venues on 2026-11-21. 51 cards now list a discussion venue and 24 a meeting calendar or schedule, among them the IETF Zulip streams, the AAIF and MCP group Discord channels and calendars, the [[creative-commons]] Zulip, and the [[openlineage]] and [[croissant]] community calls. Links for adopting or signing on to an effort were removed from [[stim]], [[getftr]], [[fairly-trained]], [[rights-and-ai]], [[internet-licensing-collective]] and [[content-authenticity-initiative]]. Meeting calendars that were empty, cancelled or for members only were left out, and so were closed threads and merged PRs.
 - [[mcp-fsig]]: the charter was amended on 2026-11-21. The group now collects problems and routes gaps to Working Groups, and does not sponsor SEPs. "Data lineage and citation" and "Data handling" stay in scope. [[mcp]] and [[mcp-c2pa-in-meta]] quoted the earlier charter text and now quote the current one.
 - [[c2pa]]: the JSON guidance in Appendix A.9.3 now links the section and quotes it.
 - [[mcp-c2pa-in-meta]]: the 2026-09-25 closure links the maintainer comment that gives the reason.

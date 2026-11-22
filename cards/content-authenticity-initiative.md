@@ -5,9 +5,10 @@ type: project
 website: https://contentauthenticity.org
 news: https://contentauthenticity.org/blog
 status: Maintains c2pa-rs, c2pa-python, c2pa-js and c2patool
+contribute: "[GitHub](https://github.com/contentauth)"
+discussion: "[Discord](https://opensource.contentauthenticity.org/docs/community-resources#discussions-on-discord)"
 tags: [type/project, layer/provenance]
-participate: "[join CAI](https://contentauthenticity.org/join), [GitHub](https://github.com/contentauth)"
-updated: 2026-11-17
+updated: 2026-11-21
 ---
 Adobe-led initiative that maintains the open-source reference implementations of [[c2pa]]. It is a separate body, and C2PA lists it among its partner organizations.
 
