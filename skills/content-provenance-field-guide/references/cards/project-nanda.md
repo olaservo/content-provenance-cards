@@ -3,7 +3,7 @@ title: "Project NANDA"
 id: "project-nanda"
 type: "project"
 tags: ["type/project", "layer/identity", "topic/discovery"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/project-nanda"
 ---
 # Project NANDA
@@ -11,9 +11,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: project-nanda
 - Type: project
 - Website: https://projectnanda.org
-- Take part: [GitHub](https://github.com/projnanda)
+- Contribute: [GitHub](https://github.com/projnanda)
+- Discussion: [Discord](https://discord.gg/BxnPBEqd88)
 - Tags: type/project, layer/identity, topic/discovery
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#project-nanda
 
 MIT-originated agent registry and trust-manifest work, discussed in [AAIF Security and Privacy WG](aaif-security-privacy-wg.md).

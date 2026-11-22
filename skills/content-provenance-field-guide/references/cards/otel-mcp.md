@@ -4,7 +4,7 @@ id: "otel-mcp"
 type: "specification"
 status: "Conventions in Development; built into the Python SDK since v2.0.0; merged for the TypeScript SDK 2026-10-31, not yet released"
 tags: ["type/specification", "venue/mcp", "layer/provenance", "stage/in-transit"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/otel-mcp"
 ---
 # OpenTelemetry for MCP
@@ -14,9 +14,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: Conventions in Development; built into the Python SDK since v2.0.0; merged for the TypeScript SDK 2026-10-31, not yet released
 - Website: https://github.com/open-telemetry/semantic-conventions-genai/blob/main/docs/gen-ai/mcp.md
-- Take part: [semantic-conventions-genai issues](https://github.com/open-telemetry/semantic-conventions-genai/issues), [MCP community channels](https://modelcontextprotocol.io/community/communication)
+- Contribute: [semantic-conventions-genai issues](https://github.com/open-telemetry/semantic-conventions-genai/issues)
+- Discussion: [Slack #otel-genai-instrumentation](https://cloud-native.slack.com/archives/C06KR7ARS3X)
+- Meetings: [GenAI SIG meetings](https://github.com/open-telemetry/community/blob/main/sigs.md#semantic-conventions-and-instrumentation-genai), [community calendar](https://calendar.google.com/calendar/embed?src=c_2bf73e3b6b530da4babd444e72b76a6ad893a5c3f43cf40467abc7a9a897f977%40group.calendar.google.com)
 - Tags: type/specification, venue/mcp, layer/provenance, stage/in-transit
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#otel-mcp
 
 OpenTelemetry semantic conventions for MCP spans and metrics, and the SDKs that emit them. Spans are named `{mcp.method.name} {target}`, for example `tools/call get-weather`, with `mcp.session.id`, `mcp.protocol.version` and `jsonrpc.request.id`. Trace context travels in `params._meta` under three keys that [SEP-414](https://modelcontextprotocol.io/seps/414-request-meta) proposed in April 2025 and the [2026-07-28 spec reserves](https://modelcontextprotocol.io/specification/2026-07-28/basic/index#_meta): `traceparent`, `tracestate` and `baggage`.

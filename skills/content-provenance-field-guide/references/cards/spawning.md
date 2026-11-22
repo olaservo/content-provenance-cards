@@ -14,7 +14,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: organization
 - Status: datadiligence dormant since 2024-10; spawning.ai shows a maintenance page (read 2026-11-20)
 - Website: https://spawning.ai
-- Take part: [GitHub](https://github.com/Spawning-Inc/datadiligence)
+- Contribute: [GitHub](https://github.com/Spawning-Inc/datadiligence)
 - Tags: type/organization, layer/access
 - Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#spawning

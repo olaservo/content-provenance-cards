@@ -4,7 +4,7 @@ id: "cc-signals"
 type: "proposal"
 status: "Public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16); the GitHub draft is unchanged since 2025-12-04"
 tags: ["type/proposal", "layer/access", "layer/attribution"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/cc-signals"
 ---
 # CC Signals
@@ -14,9 +14,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16); the GitHub draft is unchanged since 2025-12-04
 - Website: https://github.com/creativecommons/cc-signals
 - Part of: [Creative Commons](creative-commons.md)
-- Take part: [GitHub issues](https://github.com/creativecommons/cc-signals/issues)
+- Contribute: [GitHub issues](https://github.com/creativecommons/cc-signals/issues)
+- Discussion: [GitHub discussions](https://github.com/creativecommons/cc-signals/discussions), [CC community Zulip](https://creativecommons.org/community/)
 - Tags: type/proposal, layer/access, layer/attribution
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#cc-signals
 
 Preference signals for AI reuse with terms attached: Credit, Credit + Direct Contribution, Credit + Ecosystem Contribution, Credit + Open. Layered on [IETF AI Preferences Working Group](ietf-aipref.md) vocabulary. That is the 2025 GitHub draft. CC's [page](https://creativecommons.org/ai-and-the-commons/cc-signals/) now describes a framework of legal tools and norms with two components, SourceConnection and ShareBack.

@@ -4,7 +4,7 @@ id: "ietf-aipref"
 type: "working-group"
 status: "vocab-08 (2026-09-14) without consensus; attach-05 (2026-08-19); IETF 127 sessions 2026-11-16 and 11-19; issues 245 and 246 closed 2026-11-19"
 tags: ["type/working-group", "layer/access", "stage/after-delivery"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ietf-aipref"
 ---
 # IETF AI Preferences Working Group
@@ -17,9 +17,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://datatracker.ietf.org/wg/aipref/history/
 - Feed: https://datatracker.ietf.org/feed/group-changes/aipref/
 - Part of: [IETF](ietf.md)
-- Take part: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/), [GitHub issues](https://github.com/ietf-wg-aipref/drafts/issues)
+- Contribute: [GitHub issues](https://github.com/ietf-wg-aipref/drafts/issues)
+- Discussion: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/), [Zulip](https://zulip.ietf.org/#narrow/stream/aipref)
+- Meetings: [meetings](https://datatracker.ietf.org/wg/aipref/meetings/)
 - Tags: type/working-group, layer/access, stage/after-delivery
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ietf-aipref
 
 Vocabulary for AI usage preferences and how they attach to content (`Content-Usage` header and robots.txt directive).

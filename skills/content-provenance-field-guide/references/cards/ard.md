@@ -4,7 +4,7 @@ id: "ard"
 type: "specification"
 status: "v0.91 dated 2026-08-26, marked Proposal"
 tags: ["type/specification", "layer/identity", "topic/discovery"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ard"
 ---
 # Agentic Resource Discovery
@@ -14,9 +14,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: v0.91 dated 2026-08-26, marked Proposal
 - Website: https://agenticresourcediscovery.org/spec/
-- Take part: [GitHub issues](https://github.com/ards-project/ard-spec/issues)
+- Contribute: [GitHub issues](https://github.com/ards-project/ard-spec/issues)
+- Discussion: [Discord](https://discord.gg/2TK3Tnn27R)
 - Tags: type/specification, layer/identity, topic/discovery
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ard
 
 A federated search layer for agentic resources: MCP servers, A2A agents, skills and APIs. Publishers list entries on their own domain, registries index them and answer `POST /search`, and a registry can refer a query to other registries. Google announced it on 2026-06-17 under Apache 2.0. The v0.91 authors are from Google and Hugging Face, with R.V. Guha.

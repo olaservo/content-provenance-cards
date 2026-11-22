@@ -4,7 +4,7 @@ id: "creative-commons"
 type: "organization"
 status: "CC Signals public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16)"
 tags: ["type/organization", "layer/licensing", "layer/access", "layer/attribution"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/creative-commons"
 ---
 # Creative Commons
@@ -16,9 +16,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://creativecommons.org
 - News: https://creativecommons.org/blog/
 - Feed: https://creativecommons.org/feed/
-- Take part: [contact](https://creativecommons.org/mission/contact/)
+- Discussion: [community Zulip](https://creativecommons.org/community/)
 - Tags: type/organization, layer/licensing, layer/access, layer/attribution
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#creative-commons
 
 Steward of the CC licenses and CC REL machine-readable license metadata. Proposes [CC Signals](cc-signals.md) and filed AIPREF drafts on exclusions and parameters ([IETF AI Preferences Working Group](ietf-aipref.md)). The exclusions draft expired on 2026-10-24.

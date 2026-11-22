@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 - Website: https://www.niso.org
 - News: https://www.niso.org/press-releases
-- Take part: [NISO standards committees](https://www.niso.org/standards-committees)
+- Contribute: [NISO standards committees](https://www.niso.org/standards-committees)
 - Tags: type/organization, layer/provenance, layer/attribution, layer/governance, medium/text
 - Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#niso

@@ -14,7 +14,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: interest-group
 - Status: Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
 - Part of: [Model Context Protocol](mcp.md)
-- Take part: [MCP community channels](https://modelcontextprotocol.io/community/communication)
+- Contribute: [FSIG charter](https://modelcontextprotocol.io/community/interest-groups/financial-services), [FSIG issues](https://github.com/modelcontextprotocol/financial-services-interest-group/issues)
+- Discussion: [Discord #financial-services-ig](https://discord.gg/modelcontextprotocol)
+- Meetings: [community calendar: finance](https://meet.modelcontextprotocol.io/tag/finance)
 - Tags: type/interest-group, venue/mcp, layer/provenance, layer/attribution
 - Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-fsig

@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://encypher.com
 - News: https://encypher.com/blog
 - Feed: https://encypher.com/feed.xml
-- Take part: [c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)
+- Contribute: [c2pa-text issues](https://github.com/encypherai/c2pa-text/issues)
 - Tags: type/organization, layer/provenance, layer/licensing, stage/at-rest, medium/text, medium/image, medium/audio, medium/video
 - Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#encypher

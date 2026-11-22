@@ -4,7 +4,7 @@ id: "mcp-security-ig"
 type: "interest-group"
 status: "Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call"
 tags: ["type/interest-group", "venue/mcp", "layer/governance"]
-updated: "2026-11-16"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-security-ig"
 ---
 # MCP Security Interest Group
@@ -13,9 +13,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: interest-group
 - Status: Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call
 - Part of: [Model Context Protocol](mcp.md)
-- Take part: [MCP community channels](https://modelcontextprotocol.io/community/communication)
+- Contribute: [Security IG charter](https://modelcontextprotocol.io/community/interest-groups/security)
+- Discussion: [Discord #security-ig](https://discord.com/channels/1358869848138059966/1379811011669921883)
+- Meetings: [meeting schedule](https://modelcontextprotocol.io/community/interest-groups/security#operations)
 - Tags: type/interest-group, venue/mcp, layer/governance
-- Updated: 2026-11-16
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-security-ig
 
 First stop for security topics. Routes validated work to the owning group.

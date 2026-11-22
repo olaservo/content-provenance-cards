@@ -3,7 +3,7 @@ title: "ai.robots.txt"
 id: "ai-robots-txt"
 type: "project"
 tags: ["type/project", "layer/access"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ai-robots-txt"
 ---
 # ai.robots.txt
@@ -13,9 +13,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://github.com/ai-robots-txt/ai.robots.txt
 - News: https://github.com/ai-robots-txt/ai.robots.txt/releases
 - Feed: https://github.com/ai-robots-txt/ai.robots.txt/releases.atom
-- Take part: [GitHub issues](https://github.com/ai-robots-txt/ai.robots.txt/issues)
+- Contribute: [GitHub issues](https://github.com/ai-robots-txt/ai.robots.txt/issues)
+- Discussion: [GitHub discussions](https://github.com/ai-robots-txt/ai.robots.txt/discussions)
 - Tags: type/project, layer/access
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ai-robots-txt
 
 Community list of AI crawlers with generated robots.txt, Apache .htaccess, nginx, Caddy, HAProxy and lighttpd blocks.

@@ -3,7 +3,7 @@ title: "AAIF Governance, Risk and Regulatory WG"
 id: "aaif-grr-wg"
 type: "working-group"
 tags: ["type/working-group", "layer/governance"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aaif-grr-wg"
 ---
 # AAIF Governance, Risk and Regulatory WG
@@ -13,9 +13,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: working-group
 - Website: https://github.com/aaif/wg-governance-risk-and-regulatory
 - Part of: [Agentic AI Foundation](aaif.md)
-- Take part: [GitHub issues](https://github.com/aaif/wg-governance-risk-and-regulatory/issues)
+- Contribute: [GitHub issues](https://github.com/aaif/wg-governance-risk-and-regulatory/issues)
+- Discussion: [Discord channel](https://discord.com/channels/1461090924791595243/1464021069840122006), [mailing list](https://lists.aaif.io/g/wg-governance-risk-regulatory)
+- Meetings: [meeting schedule](https://github.com/aaif/wg-governance-risk-and-regulatory#meetings), [working group calendar](https://aaif.io/working-groups/calendar)
 - Tags: type/working-group, layer/governance
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aaif-grr-wg
 
 Working group bridging AI policy and the foundation's technical projects.

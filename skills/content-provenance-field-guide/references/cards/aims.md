@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: v0.1 draft
 - Website: https://github.com/openattribution-org/aims
 - Part of: [OpenAttribution.org](openattribution.md)
-- Take part: [GitHub issues](https://github.com/openattribution-org/aims/issues)
+- Contribute: [GitHub issues](https://github.com/openattribution-org/aims/issues)
 - Tags: type/specification, layer/identity
 - Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aims

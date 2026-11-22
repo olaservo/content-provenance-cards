@@ -4,7 +4,7 @@ id: "okfn"
 type: "organization"
 status: "MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources"
 tags: ["type/organization", "layer/attribution", "stage/in-transit", "venue/mcp"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/okfn"
 ---
 # Open Knowledge Foundation
@@ -16,9 +16,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://okfn.org
 - News: https://blog.okfn.org/
 - Feed: https://blog.okfn.org/feed/
-- Take part: [okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)
+- Contribute: [okfn/mcp-server on GitHub](https://github.com/okfn/mcp-server)
+- Discussion: [forum](https://discuss.okfn.org/)
 - Tags: type/organization, layer/attribution, stage/in-transit, venue/mcp
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#okfn
 
 CKAN maintainers. MCP Labs runs chat over official datasets with every answer linked to its source.

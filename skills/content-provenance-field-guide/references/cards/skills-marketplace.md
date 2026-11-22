@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
 - Website: https://ai-disclosures.org/prototypes.html
 - Part of: [AI Disclosures Project](ai-disclosures-project.md)
-- Take part: [Skill Cards issues](https://github.com/SrulyRosenblat/skill-cards/issues), [SkillProof issues](https://github.com/SrulyRosenblat/skillproof/issues)
+- Contribute: [Skill Cards issues](https://github.com/SrulyRosenblat/skill-cards/issues), [SkillProof issues](https://github.com/SrulyRosenblat/skillproof/issues)
 - Tags: type/project, layer/licensing, layer/attribution, layer/payments, topic/skills, medium/code
 - Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#skills-marketplace

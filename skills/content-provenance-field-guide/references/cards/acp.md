@@ -4,7 +4,7 @@ id: "acp"
 type: "specification"
 status: "Beta; maintained by OpenAI, Stripe and Meta (Meta since 2026-04-24); latest spec 2026-04-17"
 tags: ["type/specification", "layer/payments"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/acp"
 ---
 # Agentic Commerce Protocol
@@ -14,9 +14,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: Beta; maintained by OpenAI, Stripe and Meta (Meta since 2026-04-24); latest spec 2026-04-17
 - Website: https://github.com/agentic-commerce-protocol/agentic-commerce-protocol
-- Take part: [GitHub issues](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues)
+- Contribute: [GitHub issues](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/issues)
+- Discussion: [GitHub discussions](https://github.com/agentic-commerce-protocol/agentic-commerce-protocol/discussions)
 - Tags: type/specification, layer/payments
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#acp
 
 Merchant checkout for agents. [OpenAttribution.org](openattribution.md) has a `content_attribution` extension for it.

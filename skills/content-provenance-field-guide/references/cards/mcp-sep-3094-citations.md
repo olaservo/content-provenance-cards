@@ -4,7 +4,7 @@ id: "mcp-sep-3094-citations"
 type: "proposal"
 status: "Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23"
 tags: ["type/proposal", "venue/mcp", "layer/attribution", "stage/in-transit", "stage/after-delivery"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-sep-3094-citations"
 ---
 # SEP-3094 Granular Citations
@@ -15,9 +15,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
 - Website: https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094
 - Part of: [Model Context Protocol](mcp.md)
-- Take part: [SEP-3094 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094), [MCP community channels](https://modelcontextprotocol.io/community/communication)
+- Contribute: [Core Primitives WG repository](https://github.com/modelcontextprotocol/core-primitives-wg)
+- Discussion: [Discord #core-primitives-wg](https://discord.gg/modelcontextprotocol)
+- Meetings: [community calendar: core-primitives-wg](https://meet.modelcontextprotocol.io/tag/core-primitives-wg)
 - Tags: type/proposal, venue/mcp, layer/attribution, stage/in-transit, stage/after-delivery
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-sep-3094-citations
 
 Citations on tool results bound by CommonMark links in the text, each a flat schema.org CreativeWork, granularity via URL fragments, integrity deferred. A `citations.render` client capability.

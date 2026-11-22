@@ -4,7 +4,7 @@ id: "cawg"
 type: "working-group"
 status: "Moved under DIF; consent assertion started as a placeholder draft 2026-07-12"
 tags: ["type/working-group", "layer/provenance", "layer/identity", "layer/access"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/cawg"
 ---
 # Creator Assertions Working Group
@@ -15,9 +15,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Moved under DIF; consent assertion started as a placeholder draft 2026-07-12
 - Website: https://cawg.io
 - Part of: [Decentralized Identity Foundation](dif.md)
-- Take part: [spec repositories](https://github.com/orgs/decentralized-identity/repositories?q=cawg), via DIF membership
+- Contribute: [spec repositories](https://github.com/orgs/decentralized-identity/repositories?q=cawg), [membership](https://cawg.io/membership/)
+- Discussion: [cawg mailing list](https://lists.identity.foundation/g/cawg)
 - Tags: type/working-group, layer/provenance, layer/identity, layer/access
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#cawg
 
 Assertion specs that ride inside [C2PA](c2pa.md) manifests: identity, training and data mining, consent, metadata, endorsement, certificate policy.

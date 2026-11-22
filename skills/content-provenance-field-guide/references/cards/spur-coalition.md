@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://www.spurcoalition.org
 - News: https://www.spurcoalition.org/updates
 - Feed: https://www.spurcoalition.org/updates?format=rss
-- Take part: [GitHub](https://github.com/SPUR-Coalition)
+- Contribute: [GitHub](https://github.com/SPUR-Coalition)
 - Tags: type/organization, layer/attribution, stage/after-delivery, stage/trust
 - Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#spur-coalition

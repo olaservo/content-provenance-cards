@@ -4,7 +4,7 @@ id: "ai-catalog"
 type: "specification"
 status: "ADR-0028 (open catalog and entry objects) accepted on the 2026-11-05 AI Catalog call and merged into the spec 2026-11-11; independently signed trust manifest contributions merged 2026-10-28"
 tags: ["type/specification", "layer/provenance", "layer/identity", "stage/at-rest", "topic/discovery"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ai-catalog"
 ---
 # AI Catalog
@@ -14,9 +14,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: ADR-0028 (open catalog and entry objects) accepted on the 2026-11-05 AI Catalog call and merged into the spec 2026-11-11; independently signed trust manifest contributions merged 2026-10-28
 - Website: https://github.com/Agent-Card/ai-catalog
-- Take part: [GitHub issues](https://github.com/Agent-Card/ai-catalog/issues)
+- Contribute: [GitHub issues](https://github.com/Agent-Card/ai-catalog/issues)
+- Discussion: [GitHub discussions](https://github.com/Agent-Card/ai-catalog/discussions)
+- Meetings: [TSC meetings](https://github.com/Agent-Card/ai-catalog/blob/main/GOVERNANCE.md#tsc-meetings)
 - Tags: type/specification, layer/provenance, layer/identity, stage/at-rest, topic/discovery
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ai-catalog
 
 Catalog format for discovering agents, MCP servers and skills. A catalog is a JSON list of typed entries that a domain can serve at `/.well-known/ai-catalog.json`, and an entry can be another catalog. A four-seat Technical Steering Committee governs it, with two seats nominated by the [Model Context Protocol](mcp.md) core maintainers and two by the A2A steering committee.

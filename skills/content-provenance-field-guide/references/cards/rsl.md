@@ -4,7 +4,7 @@ id: "rsl"
 type: "specification"
 status: "RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12"
 tags: ["type/specification", "layer/licensing", "layer/payments"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/rsl"
 ---
 # Really Simple Licensing
@@ -15,9 +15,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - Website: https://rslstandard.org
 - News: https://rslstandard.org/press
-- Take part: [GitHub](https://github.com/rslstandard)
+- Contribute: [GitHub](https://github.com/rslstandard)
+- Discussion: [GitHub discussions](https://github.com/rslstandard/rsl/discussions)
 - Tags: type/specification, layer/licensing, layer/payments
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#rsl
 
 XML vocabulary for usage and compensation terms (per-crawl, per-inference, subscription, attribution-only), discovered from robots.txt, RSS, HTTP headers or HTML. Includes a Crawler Authorization Protocol and an Open License Protocol on OAuth 2.0. [Internet Licensing Collective](internet-licensing-collective.md), formerly the RSL Collective, is the collecting society behind it.

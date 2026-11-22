@@ -4,7 +4,7 @@ id: "mpp"
 type: "specification"
 status: "Individual IETF draft, draft-httpauth-payment-01 (2026-09-09), active on Datatracker; the earlier draft-ryan-httpauth-payment expired 2026-09-19 (read 2026-11-16); not a WG item"
 tags: ["type/specification", "layer/payments"]
-updated: "2026-11-16"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mpp"
 ---
 # Machine Payments Protocol
@@ -14,8 +14,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: specification
 - Status: Individual IETF draft, draft-httpauth-payment-01 (2026-09-09), active on Datatracker; the earlier draft-ryan-httpauth-payment expired 2026-09-19 (read 2026-11-16); not a WG item
 - Website: https://paymentauth.org
+- Contribute: [GitHub issues](https://github.com/tempoxyz/mpp-specs/issues)
 - Tags: type/specification, layer/payments
-- Updated: 2026-11-16
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mpp
 
 Stripe and Tempo protocol: HTTP 402 with a `Payment` authentication scheme, payment-method agnostic, with an MCP transport. Filed at the [IETF](ietf.md).

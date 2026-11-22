@@ -4,7 +4,7 @@ id: "openlineage"
 type: "project"
 status: "RFC 4484 open (updated 2026-10-07); BearingNode proposed an MCP `_meta` lineage key to the FSIG 2026-10-08"
 tags: ["type/project", "layer/provenance", "stage/in-transit", "medium/data"]
-updated: "2026-11-17"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/openlineage"
 ---
 # OpenLineage
@@ -15,9 +15,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://openlineage.io
 - News: https://openlineage.io/blog/
 - Feed: https://openlineage.io/blog/feed.json
-- Take part: [GitHub issues](https://github.com/OpenLineage/OpenLineage/issues)
+- Contribute: [GitHub issues](https://github.com/OpenLineage/OpenLineage/issues)
+- Discussion: [Slack](https://openlineage.io/community/), [mailing list](https://lists.lfaidata.foundation/g/openlineage-tsc), [GitHub Discussions](https://github.com/OpenLineage/OpenLineage/discussions)
+- Meetings: [TSC meetings](https://openlineage.io/meetings/), [community calendar](https://zoom-lfx.platform.linuxfoundation.org/meetings/open-lineage?view=week)
 - Tags: type/project, layer/provenance, stage/in-transit, medium/data
-- Updated: 2026-11-17
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#openlineage
 
 Open standard for data lineage events. [RFC 4484](https://github.com/OpenLineage/OpenLineage/issues/4484) and BearingNode's proposed MCP `_meta` lineage key ([FSIG issue 16](https://github.com/modelcontextprotocol/financial-services-interest-group/issues/16)) carry lineage identity across the tool-call boundary.

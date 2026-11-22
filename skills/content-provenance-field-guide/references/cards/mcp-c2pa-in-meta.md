@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Discussion closed 2026-09-25 when the spec repo limited Discussions to meeting notes; no SEP filed yet
 - Website: https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3225
 - Part of: [Model Context Protocol](mcp.md)
-- Take part: [the discussion thread](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3225), [MCP community channels](https://modelcontextprotocol.io/community/communication)
+- Discussion: [MCP community channels](https://modelcontextprotocol.io/community/communication)
 - Tags: type/proposal, layer/provenance, stage/in-transit, venue/mcp
 - Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-c2pa-in-meta

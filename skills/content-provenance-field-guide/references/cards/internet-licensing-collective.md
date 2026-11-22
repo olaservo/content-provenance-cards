@@ -4,7 +4,7 @@ id: "internet-licensing-collective"
 type: "organization"
 status: "Launched 2026-11-12 with Yahoo Scout as first commercial licensee"
 tags: ["type/organization", "layer/licensing", "layer/payments"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/internet-licensing-collective"
 ---
 # Internet Licensing Collective
@@ -15,9 +15,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 - Website: https://internetcollective.org
 - News: https://internetcollective.org/press
-- Take part: [publishers](https://internetcollective.org/publishers), [AI companies](https://internetcollective.org/ai-companies)
 - Tags: type/organization, layer/licensing, layer/payments
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#internet-licensing-collective
 
 Nonprofit, publisher-led collecting society for AI use of web content, formerly the RSL Collective. Sells AI companies one blanket license to its members' content and pays the revenue out to publishers after costs it projects at 10% or less. Co-authored [Really Simple Licensing](rsl.md) and says it supports any standard a publisher wishes to use.

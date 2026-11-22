@@ -4,7 +4,7 @@ id: "wikimedia"
 type: "organization"
 status: "Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08"
 tags: ["type/organization", "layer/attribution", "layer/identity"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/wikimedia"
 ---
 # Wikimedia
@@ -16,8 +16,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://wikimediafoundation.org
 - News: https://wikimediafoundation.org/news/
 - Feed: https://wikimediafoundation.org/news/feed/
+- Contribute: [Phabricator (WikiCite)](https://phabricator.wikimedia.org/tag/wikicite/)
+- Discussion: [wikimedia-l](https://lists.wikimedia.org/postorius/lists/wikimedia-l.lists.wikimedia.org/), [WikiCite group](https://groups.google.com/a/wikimedia.org/g/wikicite-discuss)
 - Tags: type/organization, layer/attribution, layer/identity
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#wikimedia
 
 Movement behind Wikipedia and Wikidata. Wikimedia Enterprise sells companies API access to the projects. A WikiCite contributor reviewed an MCP citation proposal.

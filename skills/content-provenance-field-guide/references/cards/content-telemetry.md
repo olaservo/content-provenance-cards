@@ -16,7 +16,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://github.com/SPUR-Coalition/telemetry/releases
 - Feed: https://github.com/SPUR-Coalition/telemetry/releases.atom
 - Part of: [SPUR Coalition](spur-coalition.md)
-- Take part: [GitHub issues](https://github.com/SPUR-Coalition/telemetry/issues)
+- Contribute: [GitHub issues](https://github.com/SPUR-Coalition/telemetry/issues)
 - Tags: type/specification, layer/attribution, stage/after-delivery
 - Updated: 2026-11-20
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#content-telemetry

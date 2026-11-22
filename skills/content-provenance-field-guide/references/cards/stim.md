@@ -4,7 +4,7 @@ id: "stim"
 type: "organization"
 status: "Offers a license for AI services, launched as a pilot on 2025-09-08. AI has been a separate rights category since 2026-06-01, and members approve works one by one (read 2026-11-16)"
 tags: ["type/organization", "layer/licensing", "layer/payments", "layer/attribution", "medium/audio"]
-updated: "2026-11-17"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/stim"
 ---
 # STIM
@@ -15,9 +15,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Offers a license for AI services, launched as a pilot on 2025-09-08. AI has been a separate rights category since 2026-06-01, and members approve works one by one (read 2026-11-16)
 - Website: https://www.stim.se/en
 - News: https://www.stim.se/en/news
-- Take part: [license for AI services](https://www.stim.se/en/license-for-ai-services)
 - Tags: type/organization, layer/licensing, layer/payments, layer/attribution, medium/audio
-- Updated: 2026-11-17
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#stim
 
 Swedish collecting society for songwriters and music publishers, founded in 1923. It offers AI services a license that covers training and generation and requires attribution technology. [CISAC](cisac.md) carried the [launch announcement](https://www.cisac.org/Newsroom/society-news/stim-launches-worlds-first-collective-ai-music-licence) in its society news.

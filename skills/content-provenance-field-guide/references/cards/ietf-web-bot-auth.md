@@ -4,7 +4,7 @@ id: "ietf-web-bot-auth"
 type: "working-group"
 status: "WG draft httpsig-protocol-01 (2026-10-29); Cloudflare libraries"
 tags: ["type/working-group", "layer/identity", "layer/access"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ietf-web-bot-auth"
 ---
 # IETF Web Bot Auth Working Group
@@ -17,9 +17,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://datatracker.ietf.org/wg/webbotauth/history/
 - Feed: https://datatracker.ietf.org/feed/group-changes/webbotauth/
 - Part of: [IETF](ietf.md)
-- Take part: [web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/)
+- Contribute: [GitHub issues](https://github.com/webbotauth/draft-ietf-webbotauth-httpsig-protocol/issues)
+- Discussion: [web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/), [Zulip](https://zulip.ietf.org/#narrow/stream/webbotauth)
+- Meetings: [meetings](https://datatracker.ietf.org/wg/webbotauth/meetings/)
 - Tags: type/working-group, layer/identity, layer/access
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ietf-web-bot-auth
 
 Signed bot traffic with RFC 9421 HTTP message signatures and a key directory at `/.well-known/http-message-signatures-directory`.

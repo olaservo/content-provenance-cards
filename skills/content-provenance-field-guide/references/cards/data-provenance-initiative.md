@@ -13,7 +13,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: project
 - Status: Last code push 2025-03
 - Website: https://www.dataprovenance.org
-- Take part: [GitHub](https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection)
+- Contribute: [GitHub](https://github.com/Data-Provenance-Initiative/Data-Provenance-Collection)
 - Tags: type/project, layer/provenance, layer/licensing, medium/data
 - Updated: 2026-11-16
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#data-provenance-initiative

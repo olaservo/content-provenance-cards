@@ -4,7 +4,7 @@ id: "counter"
 type: "organization"
 status: "Phase two of its AI best practice published 2026-10-23; it says the guidelines are aligned with the SPUR telemetry framework"
 tags: ["type/organization", "layer/attribution"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/counter"
 ---
 # COUNTER Metrics
@@ -14,9 +14,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Phase two of its AI best practice published 2026-10-23; it says the guidelines are aligned with the SPUR telemetry framework
 - Website: https://www.countermetrics.org
 - News: https://www.countermetrics.org/news/
-- Take part: [membership](https://www.countermetrics.org/members/)
+- Contribute: [membership](https://www.countermetrics.org/members/)
+- Discussion: [Community listserv](https://groups.google.com/a/countermetrics.org/g/Community/)
 - Tags: type/organization, layer/attribution
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#counter
 
 Usage-metrics standard for scholarly publishers and libraries.

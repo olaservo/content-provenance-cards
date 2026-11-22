@@ -4,7 +4,7 @@ id: "ucp"
 type: "specification"
 status: "Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25"
 tags: ["type/specification", "layer/payments"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/ucp"
 ---
 # Universal Commerce Protocol
@@ -16,9 +16,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://github.com/Universal-Commerce-Protocol/ucp
 - News: https://ucp.dev/documentation/announcements/
 - Feed: https://github.com/Universal-Commerce-Protocol/ucp/releases.atom
-- Take part: [GitHub issues](https://github.com/Universal-Commerce-Protocol/ucp/issues)
+- Contribute: [GitHub issues](https://github.com/Universal-Commerce-Protocol/ucp/issues)
+- Discussion: [GitHub discussions](https://github.com/Universal-Commerce-Protocol/ucp/discussions)
 - Tags: type/specification, layer/payments
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#ucp
 
 Merchant commerce protocol. [OpenAttribution.org](openattribution.md) has an `org.openattribution.telemetry` vendor extension for it.

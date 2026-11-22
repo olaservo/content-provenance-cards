@@ -17,7 +17,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - News: https://blog.modelcontextprotocol.io/
 - Feed: https://blog.modelcontextprotocol.io/index.xml
 - Part of: [Agentic AI Foundation](aaif.md)
-- Take part: [MCP community channels](https://modelcontextprotocol.io/community/communication), [GitHub discussions](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions)
+- Contribute: [contributing guide](https://modelcontextprotocol.io/community/contributing), [SEP guidelines](https://modelcontextprotocol.io/community/sep-guidelines)
+- Discussion: [MCP community channels](https://modelcontextprotocol.io/community/communication), [MCP Contributor Discord](https://discord.gg/modelcontextprotocol)
+- Meetings: [meeting calendar](https://meet.modelcontextprotocol.io/)
 - Tags: type/specification, venue/mcp, layer/provenance, layer/attribution
 - Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp
@@ -46,4 +48,4 @@ The protocol between agents and the tools, resources, prompts and skills they re
 - Silverchair's [Research Bridge](https://www.silverchair.com/news/silverchair-launches-multi-publisher-mcp-pilot/) is a shared MCP channel for seven scholarly publishers, in a six-month pilot announced 2026-10-05.
 - [GetFTR](getftr.md) runs an MCP service that tells an AI tool whether a user is entitled to an article (docs read 2026-11-16).
 
-Linked from: [Agentic AI Foundation](aaif.md), [AI Catalog](ai-catalog.md), [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [Dataspace Protocol](dataspace-protocol.md), [Enterprise-Managed Authorization](mcp-enterprise-managed-authorization.md), [GetFTR](getftr.md), [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Registry](mcp-registry.md), [MCP Security Interest Group](mcp-security-ig.md), [OpenTelemetry for MCP](otel-mcp.md), [SEP-2127 Server Cards](mcp-server-cards.md), [SEP-2640 Skills Extension](mcp-skills-extension.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md)
+Linked from: [Agentic AI Foundation](aaif.md), [AI Catalog](ai-catalog.md), [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [Dataspace Protocol](dataspace-protocol.md), [Enterprise-Managed Authorization](mcp-enterprise-managed-authorization.md), [GetFTR](getftr.md), [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Progressive Disclosure WG](mcp-progressive-disclosure-wg.md), [MCP Registry](mcp-registry.md), [MCP Security Interest Group](mcp-security-ig.md), [OpenTelemetry for MCP](otel-mcp.md), [SEP-2127 Server Cards](mcp-server-cards.md), [SEP-2640 Skills Extension](mcp-skills-extension.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md)

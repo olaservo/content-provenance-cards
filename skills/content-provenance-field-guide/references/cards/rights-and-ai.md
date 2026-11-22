@@ -4,7 +4,7 @@ id: "rights-and-ai"
 type: "project"
 status: "Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)"
 tags: ["type/project", "layer/access", "layer/licensing", "medium/audio"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/rights-and-ai"
 ---
 # Rights & AI
@@ -14,9 +14,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: project
 - Status: Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
 - Website: https://www.rightsandai.com
-- Take part: [add a company to the declaration](https://www.rightsandai.com)
 - Tags: type/project, layer/access, layer/licensing, medium/audio
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#rights-and-ai
 
 Public declaration in which music publishers and collecting societies reserve their rights against AI training without a license, with a downloadable file of the companies behind it. The International Confederation of Music Publishers (ICMP) announced it in a [release](https://icmpmusic.com/wp-content/uploads/2024/04/PRESS-RELEASE-International-music-sector-and-AI-www.RightsAndAI.com-03-04-2024.pdf) for 2024-04-04.

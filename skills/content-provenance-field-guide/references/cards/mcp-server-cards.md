@@ -4,7 +4,7 @@ id: "mcp-server-cards"
 type: "specification"
 status: "SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental"
 tags: ["type/specification", "venue/mcp", "layer/identity", "topic/discovery"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-server-cards"
 ---
 # SEP-2127 Server Cards
@@ -15,9 +15,10 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
 - Website: https://github.com/modelcontextprotocol/ext-server-card
 - Part of: [Model Context Protocol](mcp.md)
-- Take part: [ext-server-card issues](https://github.com/modelcontextprotocol/ext-server-card/issues), [Server Card WG charter](https://modelcontextprotocol.io/community/working-groups/server-card)
+- Contribute: [ext-server-card issues](https://github.com/modelcontextprotocol/ext-server-card/issues), [Server Card WG charter](https://modelcontextprotocol.io/community/working-groups/server-card)
+- Discussion: [Discord #server-card-wg](https://discord.com/channels/1358869848138059966/1399986204405141534)
 - Tags: type/specification, venue/mcp, layer/identity, topic/discovery
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-server-cards
 
 A static JSON document that describes a remote MCP server before a client connects: its name, version, transport endpoints and supported protocol versions. The extension identifier is `io.modelcontextprotocol/server-card`. A domain advertises its cards through an [AI Catalog](ai-catalog.md) entry of type `application/mcp-server-card+json`.

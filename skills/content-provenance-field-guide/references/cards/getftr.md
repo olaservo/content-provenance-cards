@@ -4,7 +4,7 @@ id: "getftr"
 type: "project"
 status: "MCP service available to partners and developers since January 2026"
 tags: ["type/project", "layer/access", "medium/text"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/getftr"
 ---
 # GetFTR
@@ -16,9 +16,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://www.getfulltextresearch.com
 - News: https://www.getfulltextresearch.com/blog
 - Feed: https://www.getfulltextresearch.com/feed
-- Take part: [integrator documentation](https://docs.getfulltextresearch.com/latest/integrators/mcp-service), [publishers](https://www.getfulltextresearch.com/why-publishers-should-join)
 - Tags: type/project, layer/access, medium/text
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#getftr
 
 A service that asks the publisher whether a given user is entitled to a given article and returns a link to the right version. It is funded by participating publishers and free for discovery tools to integrate. Since January 2026 AI tools can call it over [Model Context Protocol](mcp.md).

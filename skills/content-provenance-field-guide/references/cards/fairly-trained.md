@@ -4,7 +4,7 @@ id: "fairly-trained"
 type: "organization"
 status: "Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)"
 tags: ["type/organization", "layer/licensing"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/fairly-trained"
 ---
 # Fairly Trained
@@ -15,9 +15,8 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://www.fairlytrained.org
 - News: https://www.fairlytrained.org/blog
 - Feed: https://www.fairlytrained.org/blog?format=rss
-- Take part: [apply for certification](https://www.fairlytrained.org/apply)
 - Tags: type/organization, layer/licensing
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#fairly-trained
 
 Non-profit that certifies generative AI companies, products and models whose training data was licensed for training, openly licensed, in the public domain or owned by the developer. Ed Newton-Rex is its CEO.

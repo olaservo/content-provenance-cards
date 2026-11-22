@@ -4,7 +4,7 @@ id: "mcp-enterprise-managed-authorization"
 type: "specification"
 status: "Stable since 2026-06-18; its interest group was folded into the Authorization IG on 2026-08-17"
 tags: ["type/specification", "venue/mcp", "layer/identity", "layer/access"]
-updated: "2026-11-17"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-enterprise-managed-authorization"
 ---
 # Enterprise-Managed Authorization
@@ -15,9 +15,11 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Stable since 2026-06-18; its interest group was folded into the Authorization IG on 2026-08-17
 - Website: https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization
 - Part of: [Model Context Protocol](mcp.md)
-- Take part: [ext-auth issues](https://github.com/modelcontextprotocol/ext-auth/issues), [Authorization IG charter](https://modelcontextprotocol.io/community/interest-groups/auth)
+- Contribute: [ext-auth issues](https://github.com/modelcontextprotocol/ext-auth/issues), [Authorization IG charter](https://modelcontextprotocol.io/community/interest-groups/auth)
+- Discussion: [Discord #auth-ig](https://discord.com/channels/1358869848138059966/1360835991749001368)
+- Meetings: [community calendar: auth-ig](https://meet.modelcontextprotocol.io/tag/auth-ig)
 - Tags: type/specification, venue/mcp, layer/identity, layer/access
-- Updated: 2026-11-17
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-enterprise-managed-authorization
 
 An MCP authorization extension (`io.modelcontextprotocol/enterprise-managed-authorization`) that lets an organization's identity provider decide which MCP servers its users can reach. The user signs in once. The client exchanges that sign-in at the identity provider for an Identity Assertion JWT Authorization Grant (ID-JAG), and the MCP server's authorization server exchanges the grant for an access token.

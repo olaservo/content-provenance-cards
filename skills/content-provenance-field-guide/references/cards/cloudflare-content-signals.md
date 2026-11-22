@@ -4,7 +4,7 @@ id: "cloudflare-content-signals"
 type: "proposal"
 status: "Individual AIPREF draft, shown as expired on Datatracker (read 2026-11-15); parsed by policycheck"
 tags: ["type/proposal", "layer/access"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/cloudflare-content-signals"
 ---
 # Cloudflare Content Signals
@@ -14,9 +14,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Type: proposal
 - Status: Individual AIPREF draft, shown as expired on Datatracker (read 2026-11-15); parsed by policycheck
 - Website: https://contentsignals.org
-- Take part: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)
+- Discussion: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)
 - Tags: type/proposal, layer/access
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#cloudflare-content-signals
 
 Three robots.txt categories, `search`, `ai-input` and `ai-train`, proposed as [IETF AI Preferences Working Group](ietf-aipref.md) vocabulary.

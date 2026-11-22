@@ -15,7 +15,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://openattribution.org
 - News: https://openattribution.org/blog
 - Feed: https://openattribution.org/feed.xml
-- Take part: [GitHub](https://github.com/openattribution-org)
+- Contribute: [GitHub](https://github.com/openattribution-org)
 - Tags: type/organization, layer/attribution, layer/identity, layer/payments
 - Updated: 2026-11-17
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#openattribution

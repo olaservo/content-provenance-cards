@@ -4,7 +4,7 @@ id: "aipref-training-token"
 type: "proposal"
 status: "Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027"
 tags: ["type/proposal", "layer/access"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/aipref-training-token"
 ---
 # Shared AI training robots.txt token
@@ -15,9 +15,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Status: Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027
 - Website: https://datatracker.ietf.org/doc/draft-kelley-aipref-training-preference-signal/
 - Part of: [IETF AI Preferences Working Group](ietf-aipref.md)
-- Take part: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)
+- Discussion: [ai-control mailing list](https://mailarchive.ietf.org/arch/browse/ai-control/)
 - Tags: type/proposal, layer/access
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#aipref-training-token
 
 A robots.txt group whose `User-Agent` is the cross-vendor token `__usage_ai-training`, using ordinary `Allow` and `Disallow` rules. No new syntax. "AI Training" takes its definition from the [IETF AI Preferences Working Group](ietf-aipref.md) vocab draft.

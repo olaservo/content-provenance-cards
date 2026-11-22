@@ -37,3 +37,11 @@ Subjects that cards on different layers share.
 
 - skills: agent skills and plugins, and how they are packaged, signed, listed and credited.
 - discovery: how an agent finds a server, an agent or a skill, through registries, catalogs and well-known files.
+
+## Ways to take part
+
+A card lists the public places the effort itself names. A line is left out when none was found.
+
+- Contribute: how to work on the effort itself: its issue tracker or specification repository, or the membership, join page or committee you have to be part of before you can contribute.
+- Discussion: where people talk about the effort in public: a chat space such as Zulip, Discord or Slack, a forum, a mailing list or GitHub Discussions.
+- Meetings: a public calendar of the effort's meetings, or its own page that lists open calls and how to join them.

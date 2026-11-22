@@ -4,7 +4,7 @@ id: "iab-comp"
 type: "specification"
 status: "1.0 final 2026-04-28"
 tags: ["type/specification", "layer/licensing", "layer/payments"]
-updated: "2026-11-20"
+updated: "2026-11-21"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/iab-comp"
 ---
 # IAB Tech Lab Content Monetization Protocols
@@ -16,9 +16,9 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Website: https://github.com/IABTechLab/CoMP
 - News: https://github.com/IABTechLab/CoMP/releases
 - Feed: https://github.com/IABTechLab/CoMP/releases.atom
-- Take part: [GitHub issues](https://github.com/IABTechLab/CoMP/issues)
+- Contribute: [GitHub issues](https://github.com/IABTechLab/CoMP/issues), [CoMP working group](https://iabtechlab.com/working-groups/content-monetization-protocols-comp-for-ai-working-group/)
 - Tags: type/specification, layer/licensing, layer/payments
-- Updated: 2026-11-20
+- Updated: 2026-11-21
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#iab-comp
 
 An AI system describes itself and its intended use; a content owner or marketplace answers with a package scoped by content type, function and retrieval method. Grew out of the LLM Content Ingest API initiative.
