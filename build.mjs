@@ -594,7 +594,7 @@ One card is at ${SITE}cards/<id>.md and ${SITE}cards/<id>.json. The ids are in t
 
 An MCP server at ${SITE}mcp serves the skills with the Skills extension (io.modelcontextprotocol/skills), plus tools to search cards and list updates.
 
-Both skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
+The skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
 
 ## Optional
 
@@ -764,7 +764,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   const about = {
     name: READER,
     version: newest.split("-").map(Number).join(".") + commits,
-    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Two skills and a read-only MCP server.",
+    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Skills for reading, contributing, reviewing and feedback, and a read-only MCP server.",
     author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
     homepage: SITE,
     repository: REPO,
