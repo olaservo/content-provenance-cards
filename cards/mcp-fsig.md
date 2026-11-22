@@ -7,8 +7,8 @@ status: Charter amended 2026-11-21 to a problem-first forum that routes gaps to 
 contribute: "[FSIG charter](https://modelcontextprotocol.io/community/interest-groups/financial-services), [FSIG issues](https://github.com/modelcontextprotocol/financial-services-interest-group/issues)"
 discussion: "[Discord #financial-services-ig](https://discord.gg/modelcontextprotocol)"
 meetings: "[community calendar: finance](https://meet.modelcontextprotocol.io/tag/finance)"
-tags: [type/interest-group, venue/mcp, layer/provenance, layer/attribution]
-updated: 2026-11-21
+tags: [type/interest-group, venue/mcp, layer/provenance, layer/attribution, topic/lineage]
+updated: 2026-11-22
 ---
 Financial-services interest group. Its charter also covers auditability and operational control, which these cards do not cover.
 
