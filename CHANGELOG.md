@@ -2,6 +2,10 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-22
+
+- [[ai-disclosures-project]]: the Open Memory Protocol Initiative and the Open Alpha Registry link to their pages.
+
 ## 2026-11-21
 
 - New card: [[mcp-progressive-disclosure-wg]], the MCP working group exploring how a server's primitives can load progressively, the way [[agent-skills]] load. Its charter names [[mcp-skills-extension]] as related.
