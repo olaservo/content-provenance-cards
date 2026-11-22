@@ -47,6 +47,8 @@ const instructions = `A field guide to the organizations, working groups, specif
 
 To answer questions from it, load the skill at skill://${READER}/SKILL.md. It reads the cards a few at a time. The tools search_cards, get_card, list_updates and list_unconnected return the same content for clients without skill support.
 
+The guide is an early alpha, shared for feedback. Card fields, these tools and the file formats may change. Tell the user this when it bears on their question.
+
 To suggest a new card or a correction, see skill://${CONTRIBUTOR}/SKILL.md.`;
 
 // The catalog is the same for every request, so it is built once per isolate.
