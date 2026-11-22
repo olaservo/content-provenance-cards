@@ -37,4 +37,4 @@ Preference signals for AI reuse with terms attached: Credit, Credit + Direct Con
 - 2026-05-13: CC [said](https://creativecommons.org/2026/05/13/from-signals-to-infrastructure-strengthening-the-commons-for-the-ai-era/) attribution must be a requirement in the next iteration.
 - 2026-04-23: CC [said](https://creativecommons.org/2026/04/23/update-on-cc-signals-what-changed-and-why/) CC Signals is no longer limited to signaling preferences.
 
-Linked from: [Creative Commons](creative-commons.md), [IETF AI Preferences Working Group](ietf-aipref.md), [NISO](niso.md)
+Linked from: [Creative Commons](creative-commons.md), [IETF AI Preferences Working Group](ietf-aipref.md), [NISO](niso.md), [Open Knowledge Foundation](okfn.md)

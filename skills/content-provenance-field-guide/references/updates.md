@@ -10,10 +10,12 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-11-16 [CC Signals](cards/cc-signals.md): CC [said](https://creativecommons.org/2026/11/16/advancing-cc-signals-preparing-for-public-alpha-testing-in-2027/) a public alpha is planned for early 2027 and will first focus on SourceConnection.
 - 2026-11-16 [Shared AI training robots.txt token](cards/aipref-training-token.md): -01 posted.
 - 2026-11-12 [Internet Licensing Collective](cards/internet-licensing-collective.md): Launched under this name, formerly the RSL Collective, with Yahoo Scout as first commercial licensee.
+- 2026-11-12 [Open Knowledge Foundation](cards/okfn.md): OKFN [announced](https://www.linkedin.com/pulse/shift-how-knowledge-shared-okfn-mhfof/) the launch of The Sharing Shift website and its white paper, [Envisioning Digital Public Infrastructures as Commons](https://doi.org/10.5281/zenodo.23033612).
 - 2026-11-12 [Really Simple Licensing](cards/rsl.md): The RSL Collective relaunched as [Internet Licensing Collective](cards/internet-licensing-collective.md).
 - 2026-11-11 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): Minutes record a positive reception of the Agent Behavior Trace Model proposal at the OTel GenAI SIG.
 - 2026-11-11 [AI Catalog](cards/ai-catalog.md): Spec aligned with ADR-0028 ([PR 131](https://github.com/Agent-Card/ai-catalog/pull/131)).
 - 2026-11-11 [Encypher](cards/encypher.md): Announced that The Atlantic plans to implement its provenance technology.
+- 2026-11-11 [Open Knowledge Foundation](cards/okfn.md): OKFN [said](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/) it would join Creative Commons, Open Future, the Open Source Initiative and the DPGA in a session at the DPGA Annual Members Meeting, "Enabling Attribution for AI Systems through DPGA Standard Indicators", and share lessons from its MCP pilot with Brazil and Uruguay.
 - 2026-11-08 [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md): Closed without merging.
 - 2026-11-05 [Agent Skills at-rest signing threads](cards/agent-skills-signing.md): Discussion 651 proposed C2PA content credentials for skills, with an example repository the same day.
 - 2026-11-05 [AI Catalog](cards/ai-catalog.md): ADR-0028 accepted, opening catalog and entry objects to unrecognized members.
