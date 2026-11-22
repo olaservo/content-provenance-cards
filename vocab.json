@@ -25,7 +25,8 @@
  },
  "topics": {
   "skills": "agent skills and plugins, and how they are packaged, signed, listed and credited",
-  "discovery": "how an agent finds a server, an agent or a skill, through registries, catalogs and well-known files"
+  "discovery": "how an agent finds a server, an agent or a skill, through registries, catalogs and well-known files",
+  "lineage": "how a work or a dataset records what it was made from, such as a parent it was derived from, the parts it is composed of and the inputs to the process that produced it"
  },
  "participation": {
   "contribute": "how to work on the effort itself: its issue tracker or specification repository, or the membership, join page or committee you have to be part of before you can contribute",
