@@ -185,6 +185,7 @@ const REPO = "https://github.com/olaservo/content-provenance-cards";
 const WORKER = "https://content-provenance-field-guide.olahungerford.workers.dev/";
 const READER = "content-provenance-field-guide";
 const CONTRIBUTOR = "content-provenance-field-guide-contributor";
+const FEEDBACK = "content-provenance-field-guide-feedback";
 const asOf = cards.map((c) => c.updated).filter(Boolean).sort().pop() || "";
 const byId = Object.fromEntries(cards.map((c) => [c.id, c]));
 const nameOf = (id) => (byId[id] ? byId[id].name : id);
@@ -215,7 +216,7 @@ const partDefs = [
   ...Object.entries(vocab.participation).map(([k, v]) => `- ${partLabel(k)}: ${v}.`),
 ];
 const blurb = `${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.`;
-const caveat = "One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.";
+const caveat = `This field guide is an early alpha, shared for feedback. Card fields, the MCP tools, the plugin layout and the published file formats may change. Send feedback as an issue or pull request at ${REPO}. One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.`;
 // The cards and everything built from them are CC BY 4.0. The code is MIT. See the README.
 const LICENCE = "https://creativecommons.org/licenses/by/4.0/";
 const licence = `The cards are licensed under CC BY 4.0 (${LICENCE}): reuse them with credit to Ola Hungerford and a link to the guide.`;
@@ -321,8 +322,8 @@ A prototype at ${WORKER} serves each card as its own file. It is experimental an
 
 - [Guide index](${WORKER}index.md): the layer and stage definitions and one line per card. One card is at ${WORKER}cards/<id>.md
 - [Field guide skill](${WORKER}skills/${READER}/SKILL.md): how to answer questions from the guide, loading only the cards a question needs
-- [More for agents](${WORKER}llms.txt): the cards by layer, the contributor skill and an MCP server
-- [Plugin](${REPO}#start-here): both skills and the MCP server for Codex and Claude Code
+- [More for agents](${WORKER}llms.txt): the cards by layer, the contributor and feedback skills and an MCP server
+- [Plugin](${REPO}#start-here): the skills and the MCP server for Codex and Claude Code
 
 ## Updates and topics
 
@@ -507,9 +508,9 @@ if (workerMode) {
       "- [Watch list](watch.md): where each effort posts its news, with feeds, plus sources that have no card. Also as [JSON](watch.json).",
       "- [Changelog](changelog.md): cards added and changed in the guide.",
       "- Everything in one file: [cards.md](cards.md) or [cards.json](cards.json).",
-      `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md).`,
-      `- Over MCP: ${SITE}mcp serves both skills with the Skills extension, plus tools to search cards and list updates.`,
-      `- As a plugin for Codex and Claude Code, with both skills and the MCP server: ${REPO}#start-here.`,
+      `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md). To report a problem: [${FEEDBACK}](skills/${FEEDBACK}/SKILL.md).`,
+      `- Over MCP: ${SITE}mcp serves the skills with the Skills extension, plus tools to search cards and list updates.`,
+      `- As a plugin for Codex and Claude Code, with the skills and the MCP server: ${REPO}#start-here.`,
       "",
       "## Layers",
       "",
@@ -589,10 +590,11 @@ One card is at ${SITE}cards/<id>.md and ${SITE}cards/<id>.json. The ids are in t
 
 - [Field guide skill](${SITE}skills/${READER}/SKILL.md): how to answer questions from the guide, loading only the cards a question needs
 - [Contributor skill](${SITE}skills/${CONTRIBUTOR}/SKILL.md): when and how to suggest a new card or a correction
+- [Feedback skill](${SITE}skills/${FEEDBACK}/SKILL.md): when and how to report a wrong, stale or missing card, or a problem with the tools, as a GitHub issue
 
-An MCP server at ${SITE}mcp serves both skills with the Skills extension (io.modelcontextprotocol/skills), plus tools to search cards and list updates.
+An MCP server at ${SITE}mcp serves the skills with the Skills extension (io.modelcontextprotocol/skills), plus tools to search cards and list updates.
 
-Both skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
+The skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
 
 ## Optional
 
@@ -750,7 +752,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   put(genDir, "data.json", JSON.stringify({ site: SITE, title: TITLE, as_of: asOf, vocab, cards, updates, matches: pairs }));
   console.log(`${Object.keys(site).length + 3} files -> worker/site, ${Object.keys(skills).length} skill files -> worker/generated`);
 
-  // The plugin: both skills and the MCP endpoint in one directory, in the Agent Plugins layout (plugin.json, mcp.json, skills/).
+  // The plugin: the skills and the MCP endpoint in one directory, in the Agent Plugins layout (plugin.json, mcp.json, skills/).
   // Claude Code reads .claude-plugin/plugin.json and .mcp.json, so the package carries those as well.
   // The version is the newest date in the cards or the changelog, then the number of commits on the branch: 2026.11.17+19.
   // Codex and Claude Code keep an installed copy until the version string changes, and two publishes can share a date.
@@ -762,7 +764,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   const about = {
     name: READER,
     version: newest.split("-").map(Number).join(".") + commits,
-    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Two skills and a read-only MCP server.",
+    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Skills for reading, contributing, reviewing and feedback, and a read-only MCP server.",
     author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
     homepage: SITE,
     repository: REPO,

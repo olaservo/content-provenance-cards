@@ -32,6 +32,7 @@ interface Match {
 
 const READER = "content-provenance-field-guide";
 const CONTRIBUTOR = "content-provenance-field-guide-contributor";
+const FEEDBACK = "content-provenance-field-guide-feedback";
 const files = skillFiles as Record<string, string>;
 const cards = data.cards as Card[];
 const updates = data.updates as Update[];
@@ -47,7 +48,9 @@ const instructions = `A field guide to the organizations, working groups, specif
 
 To answer questions from it, load the skill at skill://${READER}/SKILL.md. It reads the cards a few at a time. The tools search_cards, get_card, list_updates and list_unconnected return the same content for clients without skill support.
 
-To suggest a new card or a correction, see skill://${CONTRIBUTOR}/SKILL.md.`;
+The guide is an early alpha, shared for feedback. Card fields, these tools and the file formats may change. Tell the user this when it bears on their question.
+
+To report a wrong, stale or missing card, or a problem with these tools, load skill://${FEEDBACK}/SKILL.md. It files a GitHub issue with the user's own account. Clients without skill support can open an issue at https://github.com/olaservo/content-provenance-cards/issues. To suggest a new card or a correction as a pull request, see skill://${CONTRIBUTOR}/SKILL.md.`;
 
 // The catalog is the same for every request, so it is built once per isolate.
 let catalog: ReturnType<typeof SkillsExtension.load> | undefined;
