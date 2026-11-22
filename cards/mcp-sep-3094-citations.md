@@ -6,7 +6,7 @@ website: https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094
 part_of: "[[mcp]]"
 status: Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
 contribute: "[SEP-3094 PR](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3094)"
-discussion: "[MCP community channels](https://modelcontextprotocol.io/community/communication)"
+discussion: "[Discord #core-primitives-wg](https://discord.gg/6CSzBmMkjX)"
 tags: [type/proposal, venue/mcp, layer/attribution, stage/in-transit, stage/after-delivery]
 updated: 2026-11-21
 ---
