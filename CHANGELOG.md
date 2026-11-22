@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-22
 
+- New skill `content-provenance-field-guide-feedback`: an agent that finds a wrong, stale or missing card, or a failing tool, files a GitHub issue with the user's own account, using the new `agent-feedback` issue template. The MCP server instructions and the reader skill point to it.
 - The guide now says it is an early alpha, shared for feedback, in the README, the explorer intro, `cards.md`, `cards.json`, `llms.txt`, the guide index, the reader skill and the MCP server instructions. Card fields, the MCP tools, the plugin layout and the published file formats may change.
 - New card: [[podcast-namespace]], the Podcasting 2.0 RSS namespace. It is the guide's first card on paying a creator directly: `<podcast:funding>` carries a donation or membership link. It also has tags for a licence, credits, platform blocking and an `ai-content` disclosure.
 - New topic: `topic/lineage`, for how a work or dataset records what it was made from. It is on [[c2pa]], [[agent-skills-signing]], [[openlineage]] and [[mcp-fsig]].

@@ -10,7 +10,7 @@ These are one person's working notes. Status lines carry the dates the sources g
 
 To read the guide, browse https://www.olahungerford.com/content-provenance/.
 
-To ask an agent about it, install the plugin. It adds two skills and a read-only MCP server.
+To ask an agent about it, install the plugin. It adds the skills below and a read-only MCP server.
 
 In Claude Code:
 
@@ -44,7 +44,7 @@ A prototype for agents runs at https://content-provenance-field-guide.olahungerf
 
 The install commands are under [Start here](#start-here).
 
-The plugin holds the two skills and the MCP endpoint in the [Agent Plugins](https://agent-plugins.org/) 1.0.0 layout: a root `plugin.json`, an `mcp.json` and a `skills/` folder. The same folder carries `.claude-plugin/plugin.json` and `.mcp.json`, which Claude Code reads. The published copy is the `plugin` branch, and `.claude-plugin/marketplace.json` on `main` points at that branch.
+The plugin holds the skills and the MCP endpoint in the [Agent Plugins](https://agent-plugins.org/) 1.0.0 layout: a root `plugin.json`, an `mcp.json` and a `skills/` folder. The same folder carries `.claude-plugin/plugin.json` and `.mcp.json`, which Claude Code reads. The published copy is the `plugin` branch, and `.claude-plugin/marketplace.json` on `main` points at that branch.
 
 The reader skill in the plugin carries the cards as they were at the last publish. The MCP tools read the Worker's copy. The plugin's version is the newest date in the cards or the changelog, then the number of commits on `main`, written as `2026.11.17+19`. Codex and Claude Code keep an installed copy until that string changes.
 
@@ -72,7 +72,7 @@ Other clients take the same URL as a Streamable HTTP server.
 
 The server is built on the TypeScript SDK. What a client gets depends on what it supports:
 
-- A client with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640) lists two skills, `content-provenance-field-guide` and `content-provenance-field-guide-contributor`, and reads their files as it needs them. `resources/directory/read` is supported.
+- A client with the Skills extension (`io.modelcontextprotocol/skills`, SEP-2640) lists the skills under [Skills](#skills) and reads their files as it needs them. `resources/directory/read` is supported.
 - Any other client gets four read-only tools, and can read the same files as `skill://` resources.
 
 | Tool | Returns |
@@ -86,7 +86,7 @@ Checked as of 2026-11-16: requests on protocol versions 2026-07-28 and 2025-11-2
 
 ### Skills
 
-`content-provenance-field-guide` tells an agent how to answer from the cards. It carries the index, the layer and topic lists, every card, the updates, the watch list and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs. `content-provenance-field-guide-contributor` tells an agent when and how to suggest a pull request here. `content-provenance-field-guide-reviewer` checks a card change against the rules under [Card format](#card-format) and [Adding a card](#adding-a-card). The `pr-review` workflow (`.github/workflows/pr-review.md`) runs it as a Copilot agent through gh-aw on pull requests from branches in this repo and posts a comment-only review. A step before the agent runs `review/fetch-sources.mjs`, which saves the text of each page the pull request links to, so the agent can check sources without network access.
+`content-provenance-field-guide` tells an agent how to answer from the cards. It carries the index, the layer and topic lists, every card, the updates, the watch list and the changelog under `references/`, so an agent loads the index first and then only the cards a question needs. `content-provenance-field-guide-contributor` tells an agent when and how to suggest a pull request here. `content-provenance-field-guide-feedback` tells an agent when to report a wrong, stale or missing card, or a problem with the tools, and how to file it as an issue with the user's own GitHub account, using the `agent-feedback` issue template. The guide never posts anything itself. `content-provenance-field-guide-reviewer` checks a card change against the rules under [Card format](#card-format) and [Adding a card](#adding-a-card). The `pr-review` workflow (`.github/workflows/pr-review.md`) runs it as a Copilot agent through gh-aw on pull requests from branches in this repo and posts a comment-only review. A step before the agent runs `review/fetch-sources.mjs`, which saves the text of each page the pull request links to, so the agent can check sources without network access.
 
 Take them from the plugin, the MCP endpoint or `skills/<name>/` on the Worker. The files under `skills/` in this repo contain `{{site}}` and `{{repo}}`, which the `--worker` build replaces with the site and repository URLs.
 
@@ -100,7 +100,7 @@ The Worker serves those and also:
 - Markdown on request: `/` and `/cards/<id>` answer `Accept: text/markdown` with the Markdown file.
 - `updates.md` and `updates.json`, the dated events from every card's History.
 - `watch.md` and `watch.json`, the [watch list](#watch-list).
-- `skills/<name>/`, the two skills as plain files.
+- `skills/<name>/`, the skills as plain files.
 - `robots.txt` and `sitemap.xml` for its own origin.
 
 The copy on olahungerford.com gets the flat files only. Jekyll renders any Markdown file that starts with frontmatter and stops serving the raw file, so the per-card files live on the Worker.
@@ -226,6 +226,6 @@ npx wrangler deploy
 
 ## Licence
 
-The cards, the two skills, the data files (`vocab.json`, `watchlist.json`, `smoke/questions.json`), the changelog and this README are under [CC BY 4.0](LICENSE-CC-BY-4.0), and so is every file the build makes from them. Reuse them with credit to Ola Hungerford and a link to https://www.olahungerford.com/content-provenance/. `cards.json`, the plugin manifests and the Worker's pages name the licence.
+The cards, the skills, the data files (`vocab.json`, `watchlist.json`, `smoke/questions.json`), the changelog and this README are under [CC BY 4.0](LICENSE-CC-BY-4.0), and so is every file the build makes from them. Reuse them with credit to Ola Hungerford and a link to https://www.olahungerford.com/content-provenance/. `cards.json`, the plugin manifests and the Worker's pages name the licence.
 
 The code is under the [MIT licence](LICENSE): `build.mjs`, `worker/`, `ui/index.html` and the scripts under `.claude/skills/`.
