@@ -20,7 +20,7 @@ CKAN maintainers. MCP Labs runs chat over official datasets with every answer li
 
 ## Related
 - The Sharing Shift's [about page](https://sharingshift.okfn.org/about/) lists [[cc-signals]] and [[open-future]]'s Public Digital Infrastructure as connected efforts.
-- OKFN joined [[creative-commons]], [[open-future]], the Open Source Initiative and the DPGA in a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).
+- OKFN, [[creative-commons]], [[open-future]], the Open Source Initiative and the DPGA were announced for a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).
 
 ## Compare
 - Its `sources` list could map onto [[mcp-sep-3094-citations]], which closed unmerged on 2026-11-08. An OKFN developer reviewed the SEP, and no OKFN page names it (searched 2026-11-15).

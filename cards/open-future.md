@@ -14,5 +14,5 @@ European think tank on the digital commons.
 - **Commons in agent standards**: arguing for a [[wikimedia]] seat at [[aaif]].
 
 ## Related
-- Joined [[okfn]], [[creative-commons]], the Open Source Initiative and the Digital Public Goods Alliance in a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).
+- Open Future, [[okfn]], [[creative-commons]], the Open Source Initiative and the Digital Public Goods Alliance were announced for a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).
 - Its Public Digital Infrastructure work is listed as a connected effort on the [about page](https://sharingshift.okfn.org/about/) of [[okfn]]'s The Sharing Shift.

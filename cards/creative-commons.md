@@ -21,4 +21,4 @@ Steward of the CC licenses and CC REL machine-readable license metadata. Propose
 - [[okfn]], whose MCP server already returns a list of sources, is a candidate early adopter for SourceConnection. No CC page names OKFN's MCP server, and no OKFN page names SourceConnection (searched 2026-11-22).
 
 ## Related
-- CC joined [[okfn]], [[open-future]], the Open Source Initiative and the Digital Public Goods Alliance in a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).
+- CC, [[okfn]], [[open-future]], the Open Source Initiative and the Digital Public Goods Alliance were announced for a session on attribution through DPG Standard indicators at the DPGA Annual Members Meeting in Paris ([OKFN, 2026-11-11](https://blog.okfn.org/2026/11/11/attribution-commons-and-open-source-ai-okfn-in-paris-for-the-dpga-annual-members-meeting/)).
