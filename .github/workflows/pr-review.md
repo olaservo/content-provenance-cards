@@ -1,5 +1,5 @@
 ---
-description: Review a pull request against the card rules in the README, using the reviewer skill, and post the findings as a pull request review.
+description: Review a pull request against the card rules in CONTRIBUTING.md, using the reviewer skill, and post the findings as a pull request review.
 on:
   pull_request:
     types: [opened, synchronize, reopened, ready_for_review]
