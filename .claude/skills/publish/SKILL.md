@@ -21,7 +21,8 @@ Running this skill is the request to open and merge both PRs, deploy the Worker,
 2. Run `node build.mjs`. It must print no warnings and end the smoke line with `0 problems`. Note the card count from `node build.mjs --public`.
 3. `CHANGELOG.md` needs a bullet under today's date for each change a reader would want to know about.
 4. Commit, push the branch and open a PR. Follow the last merged PR for the body (`gh pr list --state merged --limit 1 --json body`): a one-line summary, then `## Cards` or `## Changes`, `## Checked`, `## Not done` and `## If asked`.
-5. Squash-merge, delete the branch, check out `main` and pull. Note the short hash of the merge commit.
+5. Wait for the `pr-review` workflow on the PR (`gh run list --workflow pr-review.lock.yml --branch <branch> --limit 1`, then `gh run watch <id>`). Read its review and inline comments with `gh api repos/{owner}/{repo}/pulls/<n>/reviews` and `.../pulls/<n>/comments`. Fix each finding on the branch, or tell the maintainer why it needs no change, and wait for the review of the new push. Show the maintainer the findings and what was done before merging.
+6. Squash-merge, delete the branch, check out `main` and pull. Note the short hash of the merge commit.
 
 ## 2. Site copy
 
