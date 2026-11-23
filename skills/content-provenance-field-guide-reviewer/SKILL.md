@@ -1,17 +1,17 @@
 ---
 name: content-provenance-field-guide-reviewer
-description: Review a pull request or a local change to the cards in the Content Provenance, Access and Attribution field guide (https://github.com/olaservo/content-provenance-cards) against the card rules in its README. Use when asked to review a field guide pull request, or to check a card edit before opening one.
+description: Review a pull request or a local change to the cards in the Content Provenance, Access and Attribution field guide (https://github.com/olaservo/content-provenance-cards) against the card rules in its CONTRIBUTING.md. Use when asked to review a field guide pull request, or to check a card edit before opening one.
 ---
 
 # Reviewing a change to the field guide
 
-The guide is a set of cards in `cards/<id>.md` in https://github.com/olaservo/content-provenance-cards. The README there has the card format and the rules. This skill checks a change against them. It does not judge whether an effort deserves attention, only whether the change follows the rules and its sources support it.
+The guide is a set of cards in `cards/<id>.md` in https://github.com/olaservo/content-provenance-cards. CONTRIBUTING.md there has the card format and the rules. This skill checks a change against them. It does not judge whether an effort deserves attention, only whether the change follows the rules and its sources support it.
 
 ## What to read
 
 1. The diff. Note each card added or changed, and any change to `CHANGELOG.md`, `vocab.json`, `watchlist.json` or `smoke/questions.json`.
 2. For each changed card, the whole card as it is after the change.
-3. The README sections Card format and Adding a card, if the rules below leave a question open.
+3. The CONTRIBUTING.md sections Card format and Adding a card, if the rules below leave a question open.
 
 ## Checks
 

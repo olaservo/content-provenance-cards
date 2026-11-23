@@ -36,7 +36,7 @@ Say what you noticed, which card it affects, and the source. Ask whether they wa
 
 ## Prepare the change
 
-Work in a fork of https://github.com/olaservo/content-provenance-cards. The README there has the full card format.
+Work in a fork of https://github.com/olaservo/content-provenance-cards. CONTRIBUTING.md there has the full card format.
 
 - A card is `cards/<id>.md`: YAML frontmatter (`name`, `type`, `tags` required; `aliases`, `website`, `news`, `feed`, `part_of`, `status`, `contribute`, `discussion`, `meetings`, `updated` optional), a one-paragraph summary, a `## Topics` list, and optional `## Related`, `## Compare`, `## In use` and `## History` sections. Links to other cards are `[[id]]`.
 - A `[[link]]` to another card needs a primary source that connects the two. A comparison no source makes goes under `## Compare`, with what was searched and when.
