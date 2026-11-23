@@ -242,8 +242,8 @@ function intro() {
   return `<div class="intro">
 <p>This field guide has ${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited (attribution), and where the Model Context Protocol fits among them.</p>
 <p><strong>Early alpha.</strong> This guide is shared for feedback. Card fields, the MCP tools, the plugin layout and the published file formats may change. Send feedback as an <a href="https://github.com/olaservo/content-provenance-cards/issues">issue</a> or pull request.</p>
-<p>This page is maintained by <a href="${SITE}about/">Ola Hungerford</a>. I keep these cards to follow related standards efforts as part of my interests in content provenance and attribution in MCP. Corrections and collaboration are welcome through the contact details on my About page.</p>
-<p>Pick a card from the list, search, or filter by the tags above. Links inside a card open other cards, and "Linked from" lists the reverse. Where an effort names public places to take part, the card lists them under its name, as described in Ways to take part below. Agents and scripts can read the same cards as <a href="cards.md">Markdown</a> or <a href="cards.json">JSON</a>, described in <a href="llms.txt">llms.txt</a>.</p>
+<p>This page is maintained by <a href="${SITE}about/">Ola Hungerford</a>. I keep these cards to follow related standards efforts as part of my interests in content provenance and attribution in MCP. To suggest a correction or a new card, <a href="https://github.com/olaservo/content-provenance-cards/issues">open an issue</a>, or fork the <a href="https://github.com/olaservo/content-provenance-cards">repo</a> and open a pull request.</p>
+<p>Pick a card from the list, search, or filter by the tags above. Links inside a card open other cards, and "Linked from" lists the reverse. Where an effort names public places to take part, the card lists them under its name, as described in Ways to take part below. To use the guide from an agent, see For agents below.</p>
 <h3>Layers</h3>
 <ul>${LAYERS.map(l => `<li><span class="lay" style="background:var(--l-${l})"></span><strong>${l}</strong>: ${LAYER_TEXT[l]}.</li>`).join("")}</ul>
 <h3>Stages</h3>
@@ -258,6 +258,15 @@ function intro() {
 <h3>Ways to take part</h3>
 <p>A card lists the public places the effort itself names. A line is left out when none was found.</p>
 <ul>${PART.map(k => `<li><strong>${partLabel(k)}</strong>: ${PART_TEXT[k]}.</li>`).join("")}</ul>
+<h3>For agents</h3>
+<p>The agent options are experimental and may change.</p>
+<ul>
+<li><strong>Plugin</strong>: the skills and the MCP server for Claude Code and Codex. In Claude Code, run <code>claude plugin marketplace add olaservo/content-provenance-cards</code>, then <code>claude plugin install content-provenance-field-guide@content-provenance-cards</code>. The Codex commands are in the <a href="https://github.com/olaservo/content-provenance-cards#start-here">README</a>.</li>
+<li><strong>MCP server</strong>: a read-only Streamable HTTP server at <code>https://content-provenance-field-guide.olahungerford.workers.dev/mcp</code>, with no sign-in. It serves the skills through the <a href="https://modelcontextprotocol.io/extensions/skills/overview">Skills over MCP extension</a>. A client that supports the extension (see the <a href="https://modelcontextprotocol.io/extensions/client-matrix">client matrix</a>) gets the skills from the server, so you only need to connect to this URL and don't need to install the skills locally. Other clients get four read-only tools.</li>
+<li><strong>Skills</strong>: the <a href="https://content-provenance-field-guide.olahungerford.workers.dev/skills/content-provenance-field-guide/SKILL.md">field guide skill</a> answers questions from the cards. The contributor, feedback and reviewer skills are described in the <a href="https://github.com/olaservo/content-provenance-cards#skills">README</a>.</li>
+<li><strong>Plain files</strong>: all cards as <a href="cards.md">Markdown</a> or <a href="cards.json">JSON</a>, one card per file on the <a href="https://content-provenance-field-guide.olahungerford.workers.dev/index.md">Worker</a>, and an index for agents in <a href="llms.txt">llms.txt</a>.</li>
+</ul>
+<p>More in the README's <a href="https://github.com/olaservo/content-provenance-cards#for-agents">For agents</a> section.</p>
 ${foot()}</div>`;
 }
 
