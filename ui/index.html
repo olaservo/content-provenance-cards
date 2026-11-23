@@ -247,13 +247,13 @@ function intro() {
 <h3>Layers</h3>
 <ul>${LAYERS.map(l => `<li><span class="lay" style="background:var(--l-${l})"></span><strong>${l}</strong>: ${LAYER_TEXT[l]}.</li>`).join("")}</ul>
 <h3>Stages</h3>
-<p>Where a card sits on the path content takes through an agent, from my Attribution by Design talk. Not every card has one.</p>
+<p>Stages help label where a card sits on the path content takes through an agent at inference time.  Ola made these up so they are subject to change.</p>
 <ul>${STAGES.map(s => `<li><strong>${human("stage/" + s)}</strong>: ${STAGE_TEXT[s]}.</li>`).join("")}</ul>
 <h3>Media</h3>
-<p>The kind of content an effort is about, where its own material names one. A card with no medium tag is media-neutral.</p>
+<p>The kind of content an effort is focused on, if that is specified. A card with no medium tag is considered media-neutral.</p>
 <ul>${MEDIA.map(m => `<li><strong>${m}</strong>: ${MEDIA_TEXT[m]}.</li>`).join("")}</ul>
 <h3>Topic tags</h3>
-<p>Subjects that cards on different layers share. Each has a list of its cards.</p>
+<p>Subjects that cards on different layers share.</p>
 <ul>${TOPICS.map(t => `<li><strong><a href="topics/${t}.md">${t}</a></strong>: ${TOPIC_TEXT[t]}.</li>`).join("")}</ul>
 <h3>Ways to take part</h3>
 <p>A card lists the public places the effort itself names. A line is left out when none was found.</p>
