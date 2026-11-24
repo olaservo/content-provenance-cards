@@ -12,7 +12,7 @@ discussion: "[charter review issue](https://github.com/w3c/strategy/issues/576)"
 tags: [type/working-group, layer/identity]
 updated: 2026-11-24
 ---
-Proposed W3C working group on how AI agents interact with the web. Its Agent Identity deliverable would tell a page that an agent is acting for a user, and where appropriate which agent and for whom, building on [[ietf-web-bot-auth]] and OAuth without duplicating them. Its first draft is WebMCP, a browser API (`navigator.modelContext`) that lets a page expose tools to agents, incubated in the Web Machine Learning Community Group. WebMCP is a W3C effort, separate from the [[mcp]] project. The draft charter names Heather Flanagan, Liad Yosef and Yoav Weiss as chairs.
+Proposed W3C working group on how AI agents interact with the web. Its Agent Identity deliverable would tell a page that an agent is acting for a user, and where appropriate which agent and for whom, building on [[ietf-web-bot-auth]] and OAuth without duplicating them. Its first draft is WebMCP, a browser API (`document.modelContext`) that lets a page expose tools to agents, incubated in the Web Machine Learning Community Group. WebMCP is a W3C effort, separate from the [[mcp]] project. The draft charter names Heather Flanagan, Liad Yosef and Yoav Weiss as chairs.
 
 ## Topics
 - **Telling a site an agent is acting**: conveying that an interaction comes from an agent on a user's behalf, so a site can decide which actions need the user directly. The draft puts detecting agents that do not disclose themselves, and cryptographic authentication, out of scope.
