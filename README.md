@@ -8,7 +8,7 @@ This field guide is an early alpha, shared for feedback, and these are one perso
 
 To read the guide, browse https://www.olahungerford.com/content-provenance/.
 
-To ask an agent about it, install the plugin. It adds the skills below and a read-only MCP server.
+To ask an agent about it, install the plugin locally from GitHub, in an agent that supports plugins. It adds the skills below and a read-only MCP server.
 
 In Claude Code:
 
@@ -38,7 +38,7 @@ A prototype at https://content-provenance-field-guide.olahungerford.workers.dev 
 claude mcp add --transport http field-guide https://content-provenance-field-guide.olahungerford.workers.dev/mcp
 ```
 
-Other clients take the same URL as a Streamable HTTP server. A client with the [Skills over MCP extension](https://modelcontextprotocol.io/extensions/skills/overview) (`io.modelcontextprotocol/skills`) can read the [skills](#skills) from the server, though none has been tried against it yet. Other clients get four read-only tools:
+Other clients take the same URL as a Streamable HTTP server. A client with the [Skills over MCP extension](https://modelcontextprotocol.io/extensions/skills/overview) (`io.modelcontextprotocol/skills`) reads the [skills](#skills) from the server and needs only this URL, with no local install. Clients that don't support the extension yet use the four read-only tools, which every client gets:
 
 | Tool | Returns |
 |---|---|
