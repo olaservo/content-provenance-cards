@@ -11,8 +11,8 @@ Identity: who the agent, crawler or signer is.
 - [Decentralized Identity Foundation](../cards/dif.md) (organization, identity): Hosts CAWG
 - [Enterprise-Managed Authorization](../cards/mcp-enterprise-managed-authorization.md) (specification, identity, access): Stable since 2026-06-18; its interest group was folded into the Authorization IG on 2026-08-17
 - [IETF](../cards/ietf.md) (organization, access, identity): IETF 127 San Francisco, November 2026
-- [IETF Web Bot Auth Working Group](../cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); Cloudflare libraries
-- [MCP Registry](../cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20
+- [IETF Web Bot Auth Working Group](../cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); met at IETF 127 on 2026-11-17; Cloudflare libraries
+- [MCP Registry](../cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.16 dated 2026-11-23
 - [OpenAttribution.org](../cards/openattribution.md) (organization, attribution, identity, payments): policycheck, commerce profile, AIMS draft
 - [Project NANDA](../cards/project-nanda.md) (project, identity)
 - [SEP-2127 Server Cards](../cards/mcp-server-cards.md) (specification, identity): SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental

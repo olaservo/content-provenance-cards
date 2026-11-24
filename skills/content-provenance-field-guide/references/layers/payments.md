@@ -18,5 +18,5 @@ Payments: how a use gets paid for, from HTTP 402 to agent checkout.
 - [Skills Marketplace](../cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
 - [SOCAN](../cards/socan.md) (organization, licensing, payments, attribution): Sued Suno on 2026-09-02 and amended the claim on 2026-11-18, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-20)
 - [STIM](../cards/stim.md) (organization, licensing, payments, attribution): Offers a license for AI services, launched as a pilot on 2025-09-08. AI has been a separate rights category since 2026-06-01, and members approve works one by one (read 2026-11-16)
-- [Universal Commerce Protocol](../cards/ucp.md) (specification, payments): Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25
-- [x402](../cards/x402.md) (specification, payments): x402 Foundation (Linux Foundation) operational 2026-07-14; Executive Director appointed 2026-10-01; v2 spec
+- [Universal Commerce Protocol](../cards/ucp.md) (specification, payments): Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25; nominations for the B2B Procurement and Local Services Tech Councils close 2026-11-27
+- [x402](../cards/x402.md) (specification, payments): x402 Foundation (Linux Foundation) operational 2026-07-14; Executive Director appointed 2026-10-01; v2 spec; USDC default on eight more EVM networks 2026-11-20

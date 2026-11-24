@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "content-provenance-field-guide",
-  "version": "2026.11.22+46",
+  "version": "2026.11.23+48",
   "description": "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Skills for reading, contributing, reviewing and feedback, and a read-only MCP server.",
   "author": {
     "name": "Ola Hungerford",

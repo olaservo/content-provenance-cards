@@ -14,7 +14,7 @@ Access: whether a crawler or agent may read or use content, and how that prefere
 - [Google Scholar Mediated Reading](../cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics by 2026-09-18 and published the guidance on 2026-10-23
 - [IETF](../cards/ietf.md) (organization, access, identity): IETF 127 San Francisco, November 2026
 - [IETF AI Preferences Working Group](../cards/ietf-aipref.md) (working-group, access): vocab-08 (2026-09-14) without consensus; attach-05 (2026-08-19); IETF 127 sessions 2026-11-16 and 11-19; issues 245 and 246 closed 2026-11-19
-- [IETF Web Bot Auth Working Group](../cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); Cloudflare libraries
+- [IETF Web Bot Auth Working Group](../cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); met at IETF 127 on 2026-11-17; Cloudflare libraries
 - [IPTC](../cards/iptc.md) (organization, licensing, access, provenance): RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 - [KBART](../cards/kbart.md) (specification, access): Phase III (NISO RP-9-2026) published 2026-08-26
 - [Knight-Georgetown Institute](../cards/knight-georgetown-institute.md) (organization, governance, access)

@@ -145,3 +145,6 @@ Sources that have no card and are worth following.
 - OpenAI News: Includes OpenAI's publisher partnerships and content provenance posts. The feed covers all of its announcements
   - News: https://openai.com/news/
   - Feed: https://openai.com/news/rss.xml
+- Agentic Standards Map: Francesco Marinoni Moretto's map of agentic commerce standards, with a new version each Monday
+  - News: https://frmoretto.github.io/agentic-standards-map/
+  - Feed: https://github.com/frmoretto/agentic-standards-map/releases.atom

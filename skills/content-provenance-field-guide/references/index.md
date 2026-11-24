@@ -43,7 +43,7 @@ One line per card: name, type and layers, then the current status.
 - [IAB Tech Lab Content Monetization Protocols](cards/iab-comp.md) (specification, licensing, payments): 1.0 final 2026-04-28
 - [IETF](cards/ietf.md) (organization, access, identity): IETF 127 San Francisco, November 2026
 - [IETF AI Preferences Working Group](cards/ietf-aipref.md) (working-group, access): vocab-08 (2026-09-14) without consensus; attach-05 (2026-08-19); IETF 127 sessions 2026-11-16 and 11-19; issues 245 and 246 closed 2026-11-19
-- [IETF Web Bot Auth Working Group](cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); Cloudflare libraries
+- [IETF Web Bot Auth Working Group](cards/ietf-web-bot-auth.md) (working-group, identity, access): WG draft httpsig-protocol-01 (2026-10-29); met at IETF 127 on 2026-11-17; Cloudflare libraries
 - [Internet Licensing Collective](cards/internet-licensing-collective.md) (organization, licensing, payments): Launched 2026-11-12 with Yahoo Scout as first commercial licensee
 - [IPTC](cards/iptc.md) (organization, licensing, access, provenance): RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 - [KBART](cards/kbart.md) (specification, access): Phase III (NISO RP-9-2026) published 2026-08-26
@@ -52,7 +52,7 @@ One line per card: name, type and layers, then the current status.
 - [MCP Financial Services Interest Group](cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
 - [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md) (working-group): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
 - [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md) (working-group): Draft SEP for an `io.modelcontextprotocol/groups` extension open as a PR in the WG repository since 2026-09-28; not yet filed in the specification repository. The Core Primitives WG charter, open since 2026-11-11 (PR 3545), hands progressive discovery to this WG
-- [MCP Registry](cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20
+- [MCP Registry](cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.16 dated 2026-11-23
 - [MCP Security Interest Group](cards/mcp-security-ig.md) (interest-group, governance): Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call
 - [Microsoft Publisher Content Marketplace](cards/microsoft-publisher-content-marketplace.md) (project, licensing, payments): Pilot announced 2026-02-03, with Copilot grounding answers in licensed content; no public spec
 - [Microsoft training and grounding preferences](cards/microsoft-grounding-preference.md) (proposal, access): Announced 2026-10-30; effective 2027-02-01; NoArchive and NoCache stop being read as preferences after 2027-03-01
@@ -68,7 +68,7 @@ One line per card: name, type and layers, then the current status.
 - [Really Simple Licensing](cards/rsl.md) (specification, licensing, payments): RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - [Rights & AI](cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
 - [SEP-2127 Server Cards](cards/mcp-server-cards.md) (specification, identity): SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
-- [SEP-2640 Skills Extension](cards/mcp-skills-extension.md) (specification): Final 2026-09-13; Beta under SEP-3392
+- [SEP-2640 Skills Extension](cards/mcp-skills-extension.md) (specification): Final 2026-09-13; Beta under SEP-3392; ext-skills v0.1.0 tagged 2026-11-20; agentgateway support merged 2026-11-20, not yet in a release
 - [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md) (proposal, attribution): Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
 - [Shared AI training robots.txt token](cards/aipref-training-token.md) (proposal, access): Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027
 - [Skills Marketplace](cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
@@ -77,9 +77,9 @@ One line per card: name, type and layers, then the current status.
 - [SPUR Coalition](cards/spur-coalition.md) (organization, attribution): Content Telemetry v1.0 published 2026-09-02; The New York Times, AFP, The Economist and The Atlantic joined 2026-10-13
 - [STIM](cards/stim.md) (organization, licensing, payments, attribution): Offers a license for AI services, launched as a pilot on 2025-09-08. AI has been a separate rights category since 2026-06-01, and members approve works one by one (read 2026-11-16)
 - [TRACE](cards/trace.md) (project, provenance, attribution, access): Launched 2026-10-06 with funding for three projects
-- [Universal Commerce Protocol](cards/ucp.md) (specification, payments): Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25
+- [Universal Commerce Protocol](cards/ucp.md) (specification, payments): Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25; nominations for the B2B Procurement and Local Services Tech Councils close 2026-11-27
 - [W3C](cards/w3c.md) (organization, licensing, access)
 - [W3C ODRL](cards/w3c-odrl.md) (community-group, licensing): 2.2 is a W3C Recommendation; a draft Digital Policy WG charter covers ODRL 3.0; ai-vocab draft
 - [W3C TDM Reservation Protocol Community Group](cards/w3c-tdmrep.md) (community-group, access, licensing): CG Final Report version 3 (2024-05-10); last push 2026-09
 - [Wikimedia](cards/wikimedia.md) (organization, attribution, identity): Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08
-- [x402](cards/x402.md) (specification, payments): x402 Foundation (Linux Foundation) operational 2026-07-14; Executive Director appointed 2026-10-01; v2 spec
+- [x402](cards/x402.md) (specification, payments): x402 Foundation (Linux Foundation) operational 2026-07-14; Executive Director appointed 2026-10-01; v2 spec; USDC default on eight more EVM networks 2026-11-20

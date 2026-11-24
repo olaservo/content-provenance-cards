@@ -2,6 +2,16 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-23
+
+Updates from a weekly newsletter, each checked against the primary source the card links.
+- [SEP-2640 Skills Extension](https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-skills-extension): ext-skills v0.1.0, the first tagged release, and agentgateway's merged initial support, both 2026-11-20.
+- [x402](https://content-provenance-field-guide.olahungerford.workers.dev/#x402): USDC as default stablecoin on eight more EVM networks, a moderate advisory on batch-settlement voucher signatures, and AWS Marketplace x402 purchases billed through AgentCore payments. Related now notes Mark Nottingham's 402 draft, whose IETF 127 slides list x402 and MPP among current uses of 402, and the HTTP WG's show of hands on adopting it. [Machine Payments Protocol](https://content-provenance-field-guide.olahungerford.workers.dev/#mpp) gets the same AgentCore In use bullet and a Related note on the slides.
+- [IETF Web Bot Auth Working Group](https://content-provenance-field-guide.olahungerford.workers.dev/#ietf-web-bot-auth): a History section, starting with the IETF 127 session, where tracking of sub-agents, sessions or end users was confirmed out of scope.
+- [Universal Commerce Protocol](https://content-provenance-field-guide.olahungerford.workers.dev/#ucp): the B2B Procurement and Local Services Tech Council charters and nominations, and Shopify moving its Storefront MCP policies tool to UCP's `ask_business`.
+- [MCP Registry](https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-registry): status now names release v1.8.16.
+- Watch list: the Agentic Standards Map, with its releases feed.
+
 ## 2026-11-22
 
 - The explorer intro has a For agents section with the plugin install commands, the MCP endpoint, the skills and the plain files. It says that under the [Skills over MCP extension](https://modelcontextprotocol.io/extensions/skills/overview) a client can read the skills from the endpoint without installing them, and that no such client has been tried yet. Corrections and new cards go to an issue or a pull request.

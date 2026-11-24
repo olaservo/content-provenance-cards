@@ -2,9 +2,9 @@
 title: "MCP Registry"
 id: "mcp-registry"
 type: "project"
-status: "In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20"
+status: "In preview since 2025-09-08; registry release v1.8.16 dated 2026-11-23"
 tags: ["type/project", "venue/mcp", "layer/identity", "topic/discovery"]
-updated: "2026-11-21"
+updated: "2026-11-23"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp-registry"
 ---
 # MCP Registry
@@ -12,14 +12,14 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Id: mcp-registry
 - Also known as: server.json, Registry WG
 - Type: project
-- Status: In preview since 2025-09-08; registry release v1.8.10 dated 2026-11-20
+- Status: In preview since 2025-09-08; registry release v1.8.16 dated 2026-11-23
 - Website: https://modelcontextprotocol.io/registry/about
 - Part of: [Model Context Protocol](mcp.md)
 - Contribute: [registry issues](https://github.com/modelcontextprotocol/registry/issues), [Registry WG charter](https://modelcontextprotocol.io/community/working-groups/registry)
 - Discussion: [Discord #registry-dev](https://discord.gg/modelcontextprotocol), [registry discussions](https://github.com/modelcontextprotocol/registry/discussions)
 - Meetings: [community calendar: registry-dev](https://meet.modelcontextprotocol.io/tag/registry-dev)
 - Tags: type/project, venue/mcp, layer/identity, topic/discovery
-- Updated: 2026-11-21
+- Updated: 2026-11-23
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp-registry
 
 The official metadata catalog for publicly accessible MCP servers, run by the MCP Registry Working Group. Each entry is a `server.json` with the server's name, where to find it and how to run it.
