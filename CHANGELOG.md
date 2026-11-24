@@ -4,7 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-23
 
-- For agents, in the explorer and the README: the plugin installs locally from GitHub in agents that support plugins, a client with the Skills over MCP extension needs only the endpoint URL, and every client gets the four read-only tools.
+- For agents, in the explorer and the README: the plugin installs locally from GitHub and comes in Claude Code's plugin format and the Agent Plugins format, with a link to the Agent Plugins compatible clients. A client with the Skills over MCP extension needs only the endpoint URL, and every client gets the four read-only tools.
 - Weekly alpha releases: each Monday, when `main` has changed, a workflow creates a GitHub pre-release tagged `vYYYY-MM-DD-alpha` with the week's changelog and `cards.json` and `cards.md` attached. Watch the repository's releases, or its `releases.atom` feed, to follow the guide.
 
 Updates from a weekly newsletter, each checked against the primary source the card links.

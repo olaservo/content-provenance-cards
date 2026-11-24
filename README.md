@@ -8,7 +8,7 @@ This field guide is an early alpha, shared for feedback, and these are one perso
 
 To read the guide, browse https://www.olahungerford.com/content-provenance/.
 
-To ask an agent about it, install the plugin locally from GitHub, in an agent that supports plugins. It adds the skills below and a read-only MCP server.
+To ask an agent about it, install the plugin locally from GitHub. It adds the skills below and a read-only MCP server. The plugin comes in Claude Code's plugin format and in the portable [Agent Plugins](https://agent-plugins.org/) format, which the [compatible clients](https://agent-plugins.org/compatible-clients) load.
 
 In Claude Code:
 
