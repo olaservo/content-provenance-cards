@@ -54,5 +54,12 @@
   "news": "https://openai.com/news/",
   "feed": "https://openai.com/news/rss.xml",
   "note": "Includes OpenAI's publisher partnerships and content provenance posts. The feed covers all of its announcements"
+ },
+ {
+  "id": "agentic-standards-map",
+  "name": "Agentic Standards Map",
+  "news": "https://frmoretto.github.io/agentic-standards-map/",
+  "feed": "https://github.com/frmoretto/agentic-standards-map/releases.atom",
+  "note": "Francesco Marinoni Moretto's map of agentic commerce standards, with a new version each Monday"
  }
 ]
