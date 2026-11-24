@@ -3,8 +3,6 @@ name: W3C Agentic Web Working Group (proposed)
 aliases: [Agentic Web WG, WebMCP]
 type: working-group
 website: https://w3c.github.io/charter-drafts/2026/agenticweb-wg.html
-news: https://github.com/webmachinelearning/webmcp
-feed: https://github.com/webmachinelearning/webmcp/commits/main.atom
 part_of: "[[w3c]]"
 status: Draft charter in charter refinement ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576), updated 2026-11-23); Agent Identity, Agent Delegation and Agent Interaction Measurement explainers assigned 2026-11-12 for the end of November; WebMCP in origin trials
 contribute: "[WebMCP issues](https://github.com/webmachinelearning/webmcp/issues), [Web Machine Learning Community Group](https://www.w3.org/community/webmachinelearning/)"
