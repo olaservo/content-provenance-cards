@@ -67,4 +67,4 @@ They come with the plugin, over the MCP endpoint, or as plain files at `skills/<
 
 The cards, the skills, the data files (`vocab.json`, `watchlist.json`, `smoke/questions.json`), the changelog and the docs are under [CC BY 4.0](LICENSE-CC-BY-4.0), and so is every file the build makes from them. Reuse them with credit to Ola Hungerford and a link to https://www.olahungerford.com/content-provenance/. `cards.json`, the plugin manifests and the Worker's pages name the licence.
 
-The code is under the [MIT licence](LICENSE): `build.mjs`, `worker/`, `ui/index.html` and the scripts under `.claude/skills/`.
+The code is under the [MIT licence](LICENSE): `build.mjs`, `worker/`, `ui/index.html`, `.github/release/notes.mjs` and the scripts under `.claude/skills/`.
