@@ -4,7 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-23
 
-From the AAIF newsletter of 2026-11-23, checked against each primary source.
+Updates from a weekly newsletter, each checked against the primary source the card links.
 - [[mcp-skills-extension]]: ext-skills v0.1.0, the first tagged release, and agentgateway's merged initial support, both 2026-11-20.
 - [[x402]]: USDC as default stablecoin on eight more EVM networks, a moderate advisory on batch-settlement voucher signatures, and AWS Marketplace x402 purchases billed through AgentCore payments. Related now notes Mark Nottingham's 402 draft, whose IETF 127 slides list x402 and MPP among current uses of 402, and the HTTP WG's show of hands on adopting it. [[mpp]] gets the same AgentCore In use bullet and a Related note on the slides.
 - [[ietf-web-bot-auth]]: a History section, starting with the IETF 127 session, where tracking of sub-agents, sessions or end users was confirmed out of scope.
