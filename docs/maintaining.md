@@ -64,6 +64,7 @@ The `weekly-release` workflow runs each Monday at 16:00 UTC and can be started b
 
 ## Client checks
 
+- 2026-11-23: from a script, the MCP endpoint listed the four skills as `skill://` resources and returned the reader skill's `SKILL.md`, and answered tool calls on protocol versions 2025-11-25 and 2026-07-28. Claude Code updated the installed plugin to 2026.11.23+48 and answered a question through the reader skill and its references.
 - 2026-11-17: Codex CLI 0.169.0 and Claude Code 2.1.326 each installed the plugin from GitHub and listed it at its version with its MCP server. Claude Code in headless mode answered one question from `smoke/questions.json` through the MCP tools and, with those tools blocked, a second through the reader skill and its references. Codex in `codex exec` answered one. It read the reader skill's `SKILL.md` and `references/index.md` from its installed copy and called three of the MCP tools.
 - 2026-11-16: the MCP endpoint answered requests on protocol versions 2026-07-28 and 2025-11-25 from a script, and Claude Code 2.1.325 in headless mode answered the questions in `smoke/questions.json` from the tools.
 - No client with the Skills extension has been tried against the endpoint yet.
