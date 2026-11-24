@@ -16,4 +16,5 @@ Identity: who the agent, crawler or signer is.
 - [OpenAttribution.org](../cards/openattribution.md) (organization, attribution, identity, payments): policycheck, commerce profile, AIMS draft
 - [Project NANDA](../cards/project-nanda.md) (project, identity)
 - [SEP-2127 Server Cards](../cards/mcp-server-cards.md) (specification, identity): SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
+- [W3C Agentic Web Working Group (proposed)](../cards/w3c-agentic-web-wg.md) (working-group, identity): Draft charter in charter refinement ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576), updated 2026-11-23); Agent Identity, Agent Delegation and Agent Interaction Measurement explainers assigned 2026-11-12 for the end of November; WebMCP in origin trials
 - [Wikimedia](../cards/wikimedia.md) (organization, attribution, identity): Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08

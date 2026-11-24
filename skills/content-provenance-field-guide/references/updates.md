@@ -7,6 +7,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-11-20 [SEP-2640 Skills Extension](cards/mcp-skills-extension.md): ext-skills v0.1.0, the first tagged release, at Beta stage.
 - 2026-11-20 [x402](cards/x402.md): USDC became the default stablecoin on eight more EVM networks in the TypeScript, Go and Python SDKs ([x402#4337](https://github.com/x402-foundation/x402/pull/4337)).
 - 2026-11-19 [IETF AI Preferences Working Group](cards/ietf-aipref.md): Issues 245 and 246 on downstream survival closed.
+- 2026-11-19 [W3C Agentic Web Working Group (proposed)](cards/w3c-agentic-web-wg.md): WebMCP replaced the `RegisteredTool` dictionary with a `Tool` interface keyed by a UUID, a breaking change ([webmcp#348](https://github.com/webmachinelearning/webmcp/pull/348)).
 - 2026-11-19 [x402](cards/x402.md): AWS added AWS Billing to AgentCore payments for x402 products on AWS Marketplace ([AWS](https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/)).
 - 2026-11-18 [SOCAN](cards/socan.md): Filed an amended statement of claim (Federal Court T-3803-26) that adds outputs made with Suno's v6 models, which Suno released on 2026-09-09.
 - 2026-11-18 [x402](cards/x402.md): Advisory [GHSA-5cgh-j82v-jvrj](https://github.com/x402-foundation/x402/security/advisories/GHSA-5cgh-j82v-jvrj) (moderate): the SDKs' batch-settlement voucher verifiers accepted signatures the settlement contract cannot recover, so a receiver could hold a voucher whose claim reverts. The advisory lists no patched version. The fixes merged in [x402#4316](https://github.com/x402-foundation/x402/pull/4316) and [x402#4319](https://github.com/x402-foundation/x402/pull/4319).
@@ -19,6 +20,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-11-12 [Internet Licensing Collective](cards/internet-licensing-collective.md): Launched under this name, formerly the RSL Collective, with Yahoo Scout as first commercial licensee.
 - 2026-11-12 [Open Knowledge Foundation](cards/okfn.md): OKFN [announced](https://www.linkedin.com/pulse/shift-how-knowledge-shared-okfn-mhfof/) the launch of The Sharing Shift website and its white paper, [Envisioning Digital Public Infrastructures as Commons](https://doi.org/10.5281/zenodo.23033612).
 - 2026-11-12 [Really Simple Licensing](cards/rsl.md): The RSL Collective relaunched as [Internet Licensing Collective](cards/internet-licensing-collective.md).
+- 2026-11-12 [W3C Agentic Web Working Group (proposed)](cards/w3c-agentic-web-wg.md): The Web Machine Learning Community Group assigned explainers for Agent Identity, Agent Delegation and Agent Interaction Measurement, due by the end of November so the charter can go to Advisory Committee review ([minutes](https://www.w3.org/2026/11/12-webmachinelearning-minutes.html)).
 - 2026-11-11 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): Minutes record a positive reception of the Agent Behavior Trace Model proposal at the OTel GenAI SIG.
 - 2026-11-11 [AI Catalog](cards/ai-catalog.md): Spec aligned with ADR-0028 ([PR 131](https://github.com/Agent-Card/ai-catalog/pull/131)).
 - 2026-11-11 [Encypher](cards/encypher.md): Announced that The Atlantic plans to implement its provenance technology.
@@ -32,9 +34,7 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-11-04 [AAIF Observability and Traceability WG](cards/aaif-observability-traceability-wg.md): Liaison roster published.
 - 2026-11-04 [Universal Commerce Protocol](cards/ucp.md): The Governing Council approved the Local Services Tech Council charter ([ucp#922](https://github.com/Universal-Commerce-Protocol/ucp/issues/922)).
 - 2026-11 [NISO](cards/niso.md): The executive director's letter says the pilot may finish sooner than twelve months.
-- 2026-10-31 [MCP Security Interest Group](cards/mcp-security-ig.md): The restructure was merged into the charter ([#3331](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/3331)).
 - 2026-10-31 [OpenTelemetry for MCP](cards/otel-mcp.md): Built-in OpenTelemetry tracing and metrics merged for the TypeScript SDK, not yet released.
-- 2026-10-30 [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md): Positioning draft on Groups and Skills over MCP opened as PR 22.
 - 2026-10-30 [Microsoft training and grounding preferences](cards/microsoft-grounding-preference.md): Microsoft [announced](https://blogs.bing.com/search/2026/10/your-content-your-choice-clearer-preferences-for-training-and-grounding/) the training and grounding preferences. Grounding settings in Bing Webmaster Tools open 2026-12-15, and the temporary grounding preferences expire 2027-09-30.
 - 2026-10-30 [Shared AI training robots.txt token](cards/aipref-training-token.md): Individual draft posted.
 - 2026-10-29 [SEP-2127 Server Cards](cards/mcp-server-cards.md): SEP-3392 merged, classifying ext-server-card as Beta.
@@ -42,7 +42,6 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-10-28 [AI Catalog](cards/ai-catalog.md): Independently signed trust manifest contributions merged.
 - 2026-10-27 [Agent Plugins](cards/agent-plugins.md): AAIF staff reported Technical Committee approval as a Growth-stage project. A Governing Board vote is pending.
 - 2026-10-27 [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md): Chain concept removed from the SEP.
-- 2026-10-26 [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md): The WG agreed to keep `group` as the primitive name, with stateless `groups/list` and `groups/get`, `description` as the "when to use" field and optional `instructions` ([meeting notes](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3458)). The decision log recorded these the next day.
 - 2026-10-23 [COUNTER Metrics](cards/counter.md): [Phase two](https://www.countermetrics.org/ai-phase-two/) of the AI best practice published.
 - 2026-10-23 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [phase two](https://www.countermetrics.org/ai-phase-two/) announcement says "We've also mapped Google Scholar's new MERU tool to our metrics."
 - 2026-10-22 [Agent Skills](cards/agent-skills.md): Joined AAIF.
@@ -59,10 +58,9 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-10 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Foo Camp.
 - 2026-10 [C2PA](cards/c2pa.md): Spec 2.5 published.
 - 2026-10 [NISO](cards/niso.md): [Provenance and attribution pilot](https://www.niso.org/niso-io/2026/10/niso-develop-metadata-model-provenance-and-attribution-ai-systems) announced.
-- 2026-09-28 [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md): Draft groups SEP opened as PR 19.
+- 2026-09-28 [W3C Agentic Web Working Group (proposed)](cards/w3c-agentic-web-wg.md): Charter review issue opened ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576)).
 - 2026-09-25 [C2PA content credentials in MCP _meta](cards/mcp-c2pa-in-meta.md): Discussion closed when the spec repo limited Discussions to meeting notes ([closing comment](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3225#discussioncomment-18603053)).
 - 2026-09-24 [OpenLineage](cards/openlineage.md): Presented to the MCP Financial Services Interest Group.
-- 2026-09-21 [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md): Renamed from the Primitive Grouping Interest Group and converted to a Working Group.
 - 2026-09-18 [Google Scholar Mediated Reading](cards/google-scholar-mediated-reading.md): COUNTER's [update](https://www.countermetrics.org/ai-update-sept26/) on phase two calls MERU "a form of syndicated usage" and says it has mapped how MERU messages should be reported.
 - 2026-09-14 [IETF AI Preferences Working Group](cards/ietf-aipref.md): vocab-08 posted, without consensus.
 - 2026-09-13 [SEP-2640 Skills Extension](cards/mcp-skills-extension.md): SEP-2640 marked Final.
@@ -75,7 +73,6 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-09 [AI Disclosures Project](cards/ai-disclosures-project.md): Convening at Microsoft Research New York.
 - 2026-08-26 [Agentic Resource Discovery](cards/ard.md): v0.91.
 - 2026-08-26 [KBART](cards/kbart.md): [Phase III](https://www.niso.org/publications/rp-9-2026-kbart) published.
-- 2026-08-26 [MCP Security Interest Group](cards/mcp-security-ig.md): Restructured as a routing group at a core maintainer meeting ([discussion 3316](https://github.com/modelcontextprotocol/modelcontextprotocol/discussions/3316)), the date the charter changelog gives.
 - 2026-08-26 [NISO](cards/niso.md): KBART Phase III published.
 - 2026-08-25 [Universal Commerce Protocol](cards/ucp.md): Release v2026-08-25.
 - 2026-08-19 [IETF AI Preferences Working Group](cards/ietf-aipref.md): attach-05 posted.
@@ -93,7 +90,6 @@ Dated events from the History section of each card, newest first. These are thin
 - 2026-07-09 [SPUR Coalition](cards/spur-coalition.md): The Associated Press joined as the first US-based founding member.
 - 2026-06-25 [MCP Financial Services Interest Group](cards/mcp-fsig.md): Charter merged ([#2979](https://github.com/modelcontextprotocol/modelcontextprotocol/pull/2979)).
 - 2026-06-18 [Enterprise-Managed Authorization](cards/mcp-enterprise-managed-authorization.md): Extension announced as stable.
-- 2026-06-18 [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md): Initial charter, as the Primitive Grouping Interest Group.
 - 2026-06-17 [Agentic Resource Discovery](cards/ard.md): Announced by Google.
 - 2026-06-16 [Agentic Resource Discovery](cards/ard.md): v0.9 (Draft).
 - 2026-06-12 [Really Simple Licensing](cards/rsl.md): Section 3.12 `<reporting>` [added](https://rslstandard.org/rsl/errata), for machine-readable reporting requirements on licensed activity.

@@ -148,3 +148,8 @@ Sources that have no card and are worth following.
 - Agentic Standards Map: Francesco Marinoni Moretto's map of agentic commerce standards, with a new version each Monday
   - News: https://frmoretto.github.io/agentic-standards-map/
   - Feed: https://github.com/frmoretto/agentic-standards-map/releases.atom
+- MCP Progressive Disclosure WG: How a server's tools, resources, prompts and tasks load progressively. A card until 2026-11-24, removed because no layer fits it yet. Its draft groups SEP borrows from Agent Skills
+  - News: https://github.com/modelcontextprotocol/progressive-disclosure-wg
+  - Feed: https://github.com/modelcontextprotocol/progressive-disclosure-wg/commits/main.atom
+- MCP Security Interest Group: First stop for MCP security topics, routing each to an owning group. A card until 2026-11-24, removed because it routes no provenance or attribution work yet
+  - News: https://modelcontextprotocol.io/community/interest-groups/security

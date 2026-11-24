@@ -1,6 +1,6 @@
 ---
 name: content-provenance-field-guide-feedback
-description: Report a problem with the Content Provenance, Access and Attribution field guide as a GitHub issue on https://github.com/olaservo/content-provenance-cards, filed under the user's own GitHub account with the gh CLI or a GitHub MCP server. Use when a card is out of date, wrong or confusing, a connection or an effort is missing, a field guide MCP tool fails or answers against its description, or the user asks to send feedback about the guide.
+description: Report a problem with the Provenance, Attribution, Rights and Payment for AI Content field guide as a GitHub issue on https://github.com/olaservo/content-provenance-cards, filed under the user's own GitHub account with the gh CLI or a GitHub MCP server. Use when a card is out of date, wrong or confusing, a connection or an effort is missing, a field guide MCP tool fails or answers against its description, or the user asks to send feedback about the guide.
 ---
 
 # Feedback on the field guide

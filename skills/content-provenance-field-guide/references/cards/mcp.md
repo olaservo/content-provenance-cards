@@ -4,7 +4,7 @@ id: "mcp"
 type: "specification"
 status: "Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship"
 tags: ["type/specification", "venue/mcp", "layer/provenance", "layer/attribution"]
-updated: "2026-11-21"
+updated: "2026-11-24"
 canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/cards/mcp"
 ---
 # Model Context Protocol
@@ -21,7 +21,7 @@ canonical: "https://content-provenance-field-guide.olahungerford.workers.dev/car
 - Discussion: [MCP community channels](https://modelcontextprotocol.io/community/communication), [MCP Contributor Discord](https://discord.gg/modelcontextprotocol)
 - Meetings: [meeting calendar](https://meet.modelcontextprotocol.io/)
 - Tags: type/specification, venue/mcp, layer/provenance, layer/attribution
-- Updated: 2026-11-21
+- Updated: 2026-11-24
 - Explorer: https://content-provenance-field-guide.olahungerford.workers.dev/#mcp
 
 The protocol between agents and the tools, resources, prompts and skills they read. MCP is the hop where content provenance can be carried or lost.
@@ -36,7 +36,7 @@ The protocol between agents and the tools, resources, prompts and skills they re
 
 - Built-in tracing and metrics in the SDKs: [OpenTelemetry for MCP](otel-mcp.md).
 - Threads: [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md), [SEP-2640 Skills Extension](mcp-skills-extension.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md).
-- Groups: [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Security Interest Group](mcp-security-ig.md).
+- Groups: [MCP Financial Services Interest Group](mcp-fsig.md).
 - Discovery and authorization: [MCP Registry](mcp-registry.md), [SEP-2127 Server Cards](mcp-server-cards.md), [Enterprise-Managed Authorization](mcp-enterprise-managed-authorization.md).
 
 ## Compare
@@ -48,4 +48,4 @@ The protocol between agents and the tools, resources, prompts and skills they re
 - Silverchair's [Research Bridge](https://www.silverchair.com/news/silverchair-launches-multi-publisher-mcp-pilot/) is a shared MCP channel for seven scholarly publishers, in a six-month pilot announced 2026-10-05.
 - [GetFTR](getftr.md) runs an MCP service that tells an AI tool whether a user is entitled to an article (docs read 2026-11-16).
 
-Linked from: [Agentic AI Foundation](aaif.md), [AI Catalog](ai-catalog.md), [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [Dataspace Protocol](dataspace-protocol.md), [Enterprise-Managed Authorization](mcp-enterprise-managed-authorization.md), [GetFTR](getftr.md), [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Progressive Disclosure WG](mcp-progressive-disclosure-wg.md), [MCP Registry](mcp-registry.md), [MCP Security Interest Group](mcp-security-ig.md), [OpenTelemetry for MCP](otel-mcp.md), [SEP-2127 Server Cards](mcp-server-cards.md), [SEP-2640 Skills Extension](mcp-skills-extension.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md)
+Linked from: [Agentic AI Foundation](aaif.md), [AI Catalog](ai-catalog.md), [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [Dataspace Protocol](dataspace-protocol.md), [Enterprise-Managed Authorization](mcp-enterprise-managed-authorization.md), [GetFTR](getftr.md), [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Registry](mcp-registry.md), [OpenTelemetry for MCP](otel-mcp.md), [SEP-2127 Server Cards](mcp-server-cards.md), [SEP-2640 Skills Extension](mcp-skills-extension.md), [SEP-3094 Granular Citations](mcp-sep-3094-citations.md), [W3C Agentic Web Working Group (proposed)](w3c-agentic-web-wg.md)

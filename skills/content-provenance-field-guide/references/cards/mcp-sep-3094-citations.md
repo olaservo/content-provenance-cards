@@ -45,4 +45,4 @@ Citations on tool results bound by CommonMark links in the text, each a flat sch
 - 2026-11-08: Closed without merging.
 - 2026-09-04: Revised.
 
-Linked from: [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [CC Signals](cc-signals.md), [Content Telemetry](content-telemetry.md), [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [MCP Security Interest Group](mcp-security-ig.md), [Model Context Protocol](mcp.md), [Open Knowledge Foundation](okfn.md), [Wikimedia](wikimedia.md)
+Linked from: [C2PA content credentials in MCP _meta](mcp-c2pa-in-meta.md), [CC Signals](cc-signals.md), [Content Telemetry](content-telemetry.md), [MCP Financial Services Interest Group](mcp-fsig.md), [MCP Interceptors WG and SEP-2624](mcp-interceptors.md), [Model Context Protocol](mcp.md), [Open Knowledge Foundation](okfn.md), [Wikimedia](wikimedia.md)

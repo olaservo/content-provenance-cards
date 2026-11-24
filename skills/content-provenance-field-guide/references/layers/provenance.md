@@ -17,8 +17,10 @@ Provenance: where content came from and what was done to it, carried as signed r
 - [EU AI Act and GPAI Code of Practice](../cards/eu-ai-act-gpai-code.md) (regulation, access, governance, provenance): Opt-out protocol consultation closed 2026-01-23; the Commission has not published its list of generally agreed protocols (searched 2026-11-20); Article 50 applies from 2026-08-02
 - [IPTC](../cards/iptc.md) (organization, licensing, access, provenance): RightsML and the Data Mining property; Verified News Publishers List; answered the EU opt-out consultation
 - [MCP Financial Services Interest Group](../cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
+- [MCP Interceptors WG and SEP-2624](../cards/mcp-interceptors.md) (working-group, provenance, attribution): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
 - [Model Context Protocol](../cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
 - [NISO](../cards/niso.md) (organization, provenance, attribution, governance): Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 - [OpenLineage](../cards/openlineage.md) (project, provenance): RFC 4484 open (updated 2026-10-07); BearingNode proposed an MCP `_meta` lineage key to the FSIG 2026-10-08
 - [OpenTelemetry for MCP](../cards/otel-mcp.md) (specification, provenance): Conventions in Development; built into the Python SDK since v2.0.0; merged for the TypeScript SDK 2026-10-31, not yet released
+- [SEP-2640 Skills Extension](../cards/mcp-skills-extension.md) (specification, provenance, licensing): Final 2026-09-13; Beta under SEP-3392; ext-skills v0.1.0 tagged 2026-11-20; agentgateway support merged 2026-11-20, not yet in a release
 - [TRACE](../cards/trace.md) (project, provenance, attribution, access): Launched 2026-10-06 with funding for three projects

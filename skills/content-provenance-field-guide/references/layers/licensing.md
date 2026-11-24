@@ -3,6 +3,7 @@
 Licensing: the terms and prices for use, in a form machines can read.
 
 - [Agent Plugins](../cards/agent-plugins.md) (specification, provenance, licensing): 1.0.0 published 2026-08-06; 1.1.0 is a working draft; AAIF Technical Committee approved it as a Growth-stage project 2026-10-27, Governing Board vote pending; steering committee from Amazon, Cursor, Microsoft, OpenAI and Vercel
+- [Agent Skills](../cards/agent-skills.md) (specification, licensing): Joined AAIF 2026-10-22
 - [CISAC](../cards/cisac.md) (organization, licensing, payments, governance): Asks policymakers for licensing, transparency and an effective opt-out from data mining exceptions (AI page read 2026-11-15)
 - [Creative Commons](../cards/creative-commons.md) (organization, licensing, access, attribution): CC Signals public alpha planned for early 2027, starting with SourceConnection (announced 2026-11-16)
 - [Croissant](../cards/croissant.md) (specification, provenance, licensing): 1.1 published 2026-01-29 and announced 2026-02-12; required for NeurIPS 2026 dataset submissions
@@ -19,6 +20,7 @@ Licensing: the terms and prices for use, in a form machines can read.
 - [Podcast Namespace](../cards/podcast-namespace.md) (specification, payments, licensing, attribution, access): 27 tags formalized in seven phases from 2020 to 2024; Phase 8 open
 - [Really Simple Licensing](../cards/rsl.md) (specification, licensing, payments): RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - [Rights & AI](../cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
+- [SEP-2640 Skills Extension](../cards/mcp-skills-extension.md) (specification, provenance, licensing): Final 2026-09-13; Beta under SEP-3392; ext-skills v0.1.0 tagged 2026-11-20; agentgateway support merged 2026-11-20, not yet in a release
 - [Skills Marketplace](../cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
 - [SOCAN](../cards/socan.md) (organization, licensing, payments, attribution): Sued Suno on 2026-09-02 and amended the claim on 2026-11-18, with no ruling yet. Named Musical AI an approved attribution partner on 2026-07-20 (read 2026-11-20)
 - [STIM](../cards/stim.md) (organization, licensing, payments, attribution): Offers a license for AI services, launched as a pilot on 2025-09-08. AI has been a separate rights category since 2026-06-01, and members approve works one by one (read 2026-11-16)

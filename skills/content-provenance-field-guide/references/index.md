@@ -10,7 +10,7 @@ One line per card: name, type and layers, then the current status.
 - [Agent Identity and Manifest Standard](cards/aims.md) (specification, identity): v0.1 draft
 - [Agent Payments Protocol](cards/ap2.md) (specification, payments, identity): Donated by Google to the FIDO Alliance
 - [Agent Plugins](cards/agent-plugins.md) (specification, provenance, licensing): 1.0.0 published 2026-08-06; 1.1.0 is a working draft; AAIF Technical Committee approved it as a Growth-stage project 2026-10-27, Governing Board vote pending; steering committee from Amazon, Cursor, Microsoft, OpenAI and Vercel
-- [Agent Skills](cards/agent-skills.md) (specification): Joined AAIF 2026-10-22
+- [Agent Skills](cards/agent-skills.md) (specification, licensing): Joined AAIF 2026-10-22
 - [Agent Skills at-rest signing threads](cards/agent-skills-signing.md) (proposal, provenance): Seven open discussions in Ideas, none answered by a listed maintainer, no convergence
 - [Agentic AI Foundation](cards/aaif.md) (organization, governance): Linux Foundation; ten hosted projects in its first year
 - [Agentic Commerce Protocol](cards/acp.md) (specification, payments): Beta; maintained by OpenAI, Stripe and Meta (Meta since 2026-04-24); latest spec 2026-04-17
@@ -50,10 +50,8 @@ One line per card: name, type and layers, then the current status.
 - [Knight-Georgetown Institute](cards/knight-georgetown-institute.md) (organization, governance, access)
 - [Machine Payments Protocol](cards/mpp.md) (specification, payments): Individual IETF draft, draft-httpauth-payment-01 (2026-09-09), active on Datatracker; the earlier draft-ryan-httpauth-payment expired 2026-09-19 (read 2026-11-16); not a WG item
 - [MCP Financial Services Interest Group](cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
-- [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md) (working-group): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
-- [MCP Progressive Disclosure WG](cards/mcp-progressive-disclosure-wg.md) (working-group): Draft SEP for an `io.modelcontextprotocol/groups` extension open as a PR in the WG repository since 2026-09-28; not yet filed in the specification repository. The Core Primitives WG charter, open since 2026-11-11 (PR 3545), hands progressive discovery to this WG
+- [MCP Interceptors WG and SEP-2624](cards/mcp-interceptors.md) (working-group, provenance, attribution): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
 - [MCP Registry](cards/mcp-registry.md) (project, identity): In preview since 2025-09-08; registry release v1.8.16 dated 2026-11-23
-- [MCP Security Interest Group](cards/mcp-security-ig.md) (interest-group, governance): Restructured as a routing group, decided 2026-08-26 and merged into the charter 2026-10-31; monthly agenda-driven call
 - [Microsoft Publisher Content Marketplace](cards/microsoft-publisher-content-marketplace.md) (project, licensing, payments): Pilot announced 2026-02-03, with Copilot grounding answers in licensed content; no public spec
 - [Microsoft training and grounding preferences](cards/microsoft-grounding-preference.md) (proposal, access): Announced 2026-10-30; effective 2027-02-01; NoArchive and NoCache stop being read as preferences after 2027-03-01
 - [Model Context Protocol](cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
@@ -68,7 +66,7 @@ One line per card: name, type and layers, then the current status.
 - [Really Simple Licensing](cards/rsl.md) (specification, licensing, payments): RSL 1.0 published 2025-12-10; the collective behind it relaunched as the Internet Licensing Collective 2026-11-12
 - [Rights & AI](cards/rights-and-ai.md) (project, access, licensing): Lists 16 reserving rightsholders, with its company file at version 31 (read 2026-11-16)
 - [SEP-2127 Server Cards](cards/mcp-server-cards.md) (specification, identity): SEP-2127 is Final and its PR merged 2026-10-06; SEP-3392 (merged 2026-10-29) classifies ext-server-card as Beta; the extension repository README still says Experimental
-- [SEP-2640 Skills Extension](cards/mcp-skills-extension.md) (specification): Final 2026-09-13; Beta under SEP-3392; ext-skills v0.1.0 tagged 2026-11-20; agentgateway support merged 2026-11-20, not yet in a release
+- [SEP-2640 Skills Extension](cards/mcp-skills-extension.md) (specification, provenance, licensing): Final 2026-09-13; Beta under SEP-3392; ext-skills v0.1.0 tagged 2026-11-20; agentgateway support merged 2026-11-20, not yet in a release
 - [SEP-3094 Granular Citations](cards/mcp-sep-3094-citations.md) (proposal, attribution): Closed without merging 2026-11-08; the author plans to take it to the Core Primitives WG on 2026-11-23
 - [Shared AI training robots.txt token](cards/aipref-training-token.md) (proposal, access): Individual draft -01 posted 2026-11-16; Google, OpenAI, Microsoft and Anthropic committed to honor it; Microsoft starts 2027-02-01 and Google plans early 2027
 - [Skills Marketplace](cards/skills-marketplace.md) (project, licensing, attribution, payments): Work in progress with O'Reilly Media and Miso.ai; initial testing with O'Reilly Media authors
@@ -79,6 +77,7 @@ One line per card: name, type and layers, then the current status.
 - [TRACE](cards/trace.md) (project, provenance, attribution, access): Launched 2026-10-06 with funding for three projects
 - [Universal Commerce Protocol](cards/ucp.md) (specification, payments): Governing Council of Google, Shopify and Stripe; no foundation home; latest release v2026-08-25; nominations for the B2B Procurement and Local Services Tech Councils close 2026-11-27
 - [W3C](cards/w3c.md) (organization, licensing, access)
+- [W3C Agentic Web Working Group (proposed)](cards/w3c-agentic-web-wg.md) (working-group, identity): Draft charter in charter refinement ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576), updated 2026-11-23); Agent Identity, Agent Delegation and Agent Interaction Measurement explainers assigned 2026-11-12 for the end of November; WebMCP in origin trials
 - [W3C ODRL](cards/w3c-odrl.md) (community-group, licensing): 2.2 is a W3C Recommendation; a draft Digital Policy WG charter covers ODRL 3.0; ai-vocab draft
 - [W3C TDM Reservation Protocol Community Group](cards/w3c-tdmrep.md) (community-group, access, licensing): CG Final Report version 3 (2024-05-10); last push 2026-09
 - [Wikimedia](cards/wikimedia.md) (organization, attribution, identity): Published investigation of OpenAI-run agents 2026-10-05; a WikiCite contributor reviewed SEP-3094, which closed 2026-11-08

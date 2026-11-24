@@ -1,6 +1,6 @@
 # Layer: attribution
 
-Attribution: whether the source is named and credited where the content ends up.
+Attribution: whether the source is credited where the content ends up, and how its contribution to an output is measured so it can be paid.
 
 - [AAIF Observability and Traceability WG](../cards/aaif-observability-traceability-wg.md) (working-group, provenance, attribution): Nine-task Agent Behavior Trace Model plan; provenance initiative lead named 2026-09-02; proposal joining OTel GenAI telemetry to signed evidence records opened 2026-10-28; trace model proposal well received at the OTel GenAI SIG 2026-11-11
 - [AI Disclosures Project](../cards/ai-disclosures-project.md) (organization, governance, attribution, payments): Convenings at Bellagio (April 2026), Foo Camp (June and October 2026), Microsoft Research New York (September 2026)
@@ -11,6 +11,7 @@ Attribution: whether the source is named and credited where the content ends up.
 - [DDEX](../cards/ddex.md) (organization, provenance, attribution, licensing): Generative AI Declaration Standard (GAI-D) committee draft finished member comments and goes to peer review next, with publication expected in early 2027 (announced 2026-11-05)
 - [Google Scholar Mediated Reading](../cards/google-scholar-mediated-reading.md) (project, attribution, access): Policies on Google's publisher page, with no public description of the MERU message format (read 2026-11-17); COUNTER mapped MERU to its AI metrics by 2026-09-18 and published the guidance on 2026-10-23
 - [MCP Financial Services Interest Group](../cards/mcp-fsig.md) (interest-group, provenance, attribution): Charter amended 2026-11-21 to a problem-first forum that routes gaps to Working Groups; data lineage and citation stays in scope
+- [MCP Interceptors WG and SEP-2624](../cards/mcp-interceptors.md) (working-group, provenance, attribution): SEP open; chain concept removed 2026-10-27; `signature` on ValidationResult reserved
 - [Model Context Protocol](../cards/mcp.md) (specification, provenance, attribution): Next spec release moved to 2027-03-30 (SEP-3398); SEPs need Working Group or Core Maintainer sponsorship
 - [NISO](../cards/niso.md) (organization, provenance, attribution, governance): Provenance and attribution pilot announced October 2026, first planned for twelve months and possibly shorter (2026-11 letter); KBART Phase III published 2026-08-26
 - [Open Knowledge Foundation](../cards/okfn.md) (organization, attribution): MCP Labs (mcp.okfn.org) live; okfn/mcp-server uses structuredContent.sources

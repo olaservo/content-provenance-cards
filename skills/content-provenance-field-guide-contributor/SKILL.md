@@ -1,6 +1,6 @@
 ---
 name: content-provenance-field-guide-contributor
-description: Suggest a pull request to the Content Provenance, Access and Attribution field guide when the user's current work relates to it. Use when the user is writing, speaking, building or taking part in standards work on content provenance, AI access preferences, content licensing, attribution or agent payments, and something public in that work is new, has changed, or is missing from the guide, such as a spec, draft, working group, release, charter, vote, launch or rename.
+description: Suggest a pull request to the Provenance, Attribution, Rights and Payment for AI Content field guide when the user's current work relates to it. Use when the user is writing, speaking, building or taking part in standards work on content provenance, AI access preferences, content licensing, attribution or agent payments, and something public in that work is new, has changed, or is missing from the guide, such as a spec, draft, working group, release, charter, vote, launch or rename.
 ---
 
 # Contributing to the content provenance field guide

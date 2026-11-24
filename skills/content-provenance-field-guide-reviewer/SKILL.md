@@ -1,6 +1,6 @@
 ---
 name: content-provenance-field-guide-reviewer
-description: Review a pull request or a local change to the cards in the Content Provenance, Access and Attribution field guide (https://github.com/olaservo/content-provenance-cards) against the card rules in its CONTRIBUTING.md. Use when asked to review a field guide pull request, or to check a card edit before opening one.
+description: Review a pull request or a local change to the cards in the Provenance, Attribution, Rights and Payment for AI Content field guide (https://github.com/olaservo/content-provenance-cards) against the card rules in its CONTRIBUTING.md. Use when asked to review a field guide pull request, or to check a card edit before opening one.
 ---
 
 # Reviewing a change to the field guide
