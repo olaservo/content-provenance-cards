@@ -11,12 +11,15 @@ contribute: "[GitHub issues](https://github.com/webbotauth/draft-ietf-webbotauth
 discussion: "[web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/), [Zulip](https://zulip.ietf.org/#narrow/stream/webbotauth)"
 meetings: "[meetings](https://datatracker.ietf.org/wg/webbotauth/meetings/)"
 tags: [type/working-group, layer/identity, layer/access]
-updated: 2026-11-23
+updated: 2026-11-24
 ---
 Signed bot traffic with RFC 9421 HTTP message signatures and a key directory at `/.well-known/http-message-signatures-directory`.
 
 ## Topics
 - **Bot identity**: proving who a crawler or agent is. The preference ([[ietf-aipref]]) says what is allowed, bot auth says who is asking.
+
+## Related
+- The draft charter for the [[w3c-agentic-web-wg]] says its Agent Identity work will build on this WG's mechanisms and coordinate on how HTTP-level agent identity relates to identity exposed to web pages ([draft charter](https://w3c.github.io/charter-drafts/2026/agenticweb-wg.html), checked 2026-11-24).
 
 ## Compare
 - Pairs with [[aims]] and with [[wikimedia]]'s ask that agents be easy to identify. Neither names Web Bot Auth (searched 2026-11-15).

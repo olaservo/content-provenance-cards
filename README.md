@@ -1,6 +1,6 @@
-# Content Provenance, Access and Attribution: A Field Guide
+# Provenance, Attribution, Rights and Payment for AI Content: A Field Guide from an MCP Point of View
 
-Cards for the standards orgs, working groups, specs and proposals that decide where content came from (provenance), what may be done with it (access, preferences, licensing, payment), and whether its source gets credited (attribution), and where the Model Context Protocol fits among them. One markdown file per card, Obsidian-compatible, with a small static explorer and plain Markdown and JSON copies for agents.
+Cards for the standards orgs, working groups, specs and proposals that decide where content came from (provenance), what may be done with it (access, preferences, licensing, payment), and whether its source gets credited and its contribution measured (attribution), plus who the agent or signer is (identity) and the bodies and law around them (governance). It is written from inside the Model Context Protocol (MCP) community, so MCP efforts get more cards and more detail than other venues. One markdown file per card, Obsidian-compatible, with a small static explorer and plain Markdown and JSON copies for agents.
 
 This field guide is an early alpha, shared for feedback, and these are one person's working notes. Card fields, the MCP tools, the plugin layout and the published file formats may change. Status lines carry the dates the sources gave, so check upstream before relying on one. Corrections and new cards are welcome as [issues](https://github.com/olaservo/content-provenance-cards/issues) or pull requests, see [CONTRIBUTING.md](CONTRIBUTING.md).
 

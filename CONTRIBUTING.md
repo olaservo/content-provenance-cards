@@ -4,7 +4,9 @@ Corrections and new cards are welcome as [issues](https://github.com/olaservo/co
 
 ## Adding a card
 
-A card is for something other people can adopt, join or must follow, such as a published spec or draft, a registry, a licence, a certification, a group that is writing one of these, or a law or ruling on provenance, access or attribution. A product feature that implements a standard goes under that standard's In use section. A company gets a card when it publishes a spec or an open implementation.
+A card is about content that AI systems read, train on, act on or pass along. Its tags name at least one layer (provenance, access, licensing, attribution, payments, identity or governance, defined under `layers` in `vocab.json`), and its summary says what the effort does on that layer. A card is for something other people can adopt, join or must follow, such as a published spec or draft, a registry, a licence, a certification, a group that is writing one of these, or a law or ruling. A product feature that implements a standard goes under that standard's In use section. A company gets a card when it publishes a spec or an open implementation.
+
+An effort in the MCP project qualifies the same way, or when it is the place in MCP where work on a layer happens, such as a group whose scope covers it or an extension point where a check can run. Its summary names the layer, and the card links or compares at least one card outside MCP on that layer. An effort named after MCP but outside the MCP project takes the same test as any other card. An effort that does not qualify yet goes on the [watch list](#watch-list).
 
 Copy an existing card, rename it to the new id, and fill in the fields. Run `node build.mjs`; it warns about `[[links]]` that point at no card. Add a line to `CHANGELOG.md` under the day's date for a new card or a change a reader would want to know about.
 
@@ -65,7 +67,7 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Everything else is 
 - `stage/at-rest`, `stage/in-transit`, `stage/boundary`, `stage/after-delivery`, `stage/trust`: where a card sits on the path content takes through an agent, from the Attribution by Design talk (which calls them stations), used only where a card clearly sits at one. Trust is the exception: it is the question of who may sign or report, which every other stage depends on.
 - `medium/text`, `medium/image`, `medium/audio`, `medium/video`, `medium/code`, `medium/data`: the kind of content an effort is about, used only where its own material names the medium. A card with no medium tag is media-neutral.
 - `venue/mcp` for MCP threads and groups.
-- `topic/skills`, `topic/discovery`, `topic/lineage`: a subject that cards on different layers share. Each topic has a definition under `topics` in `vocab.json`, and the build warns about a `topic/` tag that has none.
+- `topic/skills`, `topic/discovery`, `topic/lineage`, `topic/quality`: a subject that cards on different layers share. Each topic has a definition under `topics` in `vocab.json`, and the build warns about a `topic/` tag that has none.
 
 ## Watch list
 

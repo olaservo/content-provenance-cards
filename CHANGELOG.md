@@ -2,6 +2,16 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-24
+
+- New title: Provenance, Attribution, Rights and Payment for AI Content: A Field Guide from an MCP Point of View. The README and the explorer intro name all seven layers and say the guide is written from inside the MCP community.
+- CONTRIBUTING states the scope: a card is about content that AI systems read, train on, act on or pass along, its tags name at least one layer, and its summary says what the effort does there. An MCP effort also qualifies when it is the place in MCP where work on a layer happens, and then links or compares a card outside MCP on that layer. An effort named after MCP but outside the MCP project takes the same test as any other.
+- The attribution layer now covers measuring a source's contribution to an output so it can be paid, as well as crediting it.
+- New topic: `topic/quality`, for ratings, certifications and benchmarks. It is on [[fairly-trained]], [[skills-marketplace]] and [[mcp-registry]].
+- New card: [[w3c-agentic-web-wg]], the proposed W3C working group whose draft charter covers agent identity, agent interaction measurement and WebMCP. [[ietf-web-bot-auth]] and [[w3c]] link to it.
+- [[mcp-interceptors]], [[mcp-skills-extension]] and [[agent-skills]] now carry layer tags, and their summaries say what they do on those layers.
+- The MCP Progressive Disclosure WG and MCP Security IG cards moved to the watch list. The Progressive Disclosure WG touches no layer yet, and the Security IG links no card outside MCP.
+
 ## 2026-11-23
 
 - For agents, in the explorer and the README: the plugin installs locally from GitHub and comes in Claude Code's plugin format and the Agent Plugins format, with a link to the Agent Plugins compatible clients. A client with the Skills over MCP extension needs only the endpoint URL, and every client gets the four read-only tools.
@@ -28,7 +38,7 @@ Updates from a weekly newsletter, each checked against the primary source the ca
 
 ## 2026-11-21
 
-- New card: [[mcp-progressive-disclosure-wg]], the MCP working group exploring how a server's primitives can load progressively, the way [[agent-skills]] load. Its charter names [[mcp-skills-extension]] as related.
+- New card: the MCP Progressive Disclosure WG (moved to the watch list on 2026-11-24), the MCP working group exploring how a server's primitives can load progressively, the way [[agent-skills]] load. Its charter names [[mcp-skills-extension]] as related.
 - Cards list three ways to take part: Contribute (issue tracker, repository or join page), Discussion (chat, forum or mailing list) and Meetings (public calendar or list of open calls). `participate` is renamed `contribute`. The definitions are in `vocab.json` and appear in the explorer intro, `cards.md`, the guide index and the skill's vocabulary file.
 - Every card was checked for public venues on 2026-11-21. 51 cards now list a discussion venue and 24 a meeting calendar or schedule, among them the IETF Zulip streams, the AAIF and MCP group Discord channels and calendars, the [[creative-commons]] Zulip, and the [[openlineage]] and [[croissant]] community calls. Links for adopting or signing on to an effort were removed from [[stim]], [[getftr]], [[fairly-trained]], [[rights-and-ai]], [[internet-licensing-collective]] and [[content-authenticity-initiative]]. Meeting calendars that were empty, cancelled or for members only were left out, and so were closed threads and merged PRs.
 - [[mcp-fsig]]: the charter was amended on 2026-11-21. The group now collects problems and routes gaps to Working Groups, and does not sponsor SEPs. "Data lineage and citation" and "Data handling" stay in scope. [[mcp]] and [[mcp-c2pa-in-meta]] quoted the earlier charter text and now quote the current one.
@@ -72,7 +82,7 @@ Updates from a weekly newsletter, each checked against the primary source the ca
 - [[skills-marketplace]]: notes the Book-to-skill pipeline and its benchmark.
 - Added three music cards: [[stim]], [[socan]] and [[rights-and-ai]]. STIM offers a license for AI services that requires attribution technology. SOCAN registers works made with AI tools, has named an attribution partner and is suing Suno. Rights & AI is the music publishers' declaration reserving rights against AI training, with a file of the companies behind it.
 - [[cisac]]: the STIM license and its attribution requirement moved to [[stim]]. [[gema]]: notes Koda's case against Suno and its referral to the Eastern High Court.
-- Checked the findings the link audit left open. [[mcp-security-ig]]: the restructure is dated 2026-08-26 in the charter changelog and was merged on 2026-10-31. [[mpp]]: the current draft is `draft-httpauth-payment`, which is active, and the earlier `draft-ryan-httpauth-payment` expired. [[counter]] published phase two on 2026-10-23. [[creative-commons]]: the AIPREF exclusions draft expired on 2026-10-24. [[rsl]]: the SPUR binding links its source.
+- Checked the findings the link audit left open. MCP Security IG (moved to the watch list on 2026-11-24): the restructure is dated 2026-08-26 in the charter changelog and was merged on 2026-10-31. [[mpp]]: the current draft is `draft-httpauth-payment`, which is active, and the earlier `draft-ryan-httpauth-payment` expired. [[counter]] published phase two on 2026-10-23. [[creative-commons]]: the AIPREF exclusions draft expired on 2026-10-24. [[rsl]]: the SPUR binding links its source.
 - [[mcp-fsig]]: the 2026-09-24 meeting notes show the [[openlineage]] lineage key presented and [[mcp-sep-3094-citations]] on the agenda. That pair is now connected by a source, and `matches.md` lists 48 pairs. BearingNode filed the lineage key as FSIG issue 16 on 2026-10-08.
 - [[openattribution]]: the status no longer lists the SDKs and the edge worker, which are in the [[spur-coalition]] GitHub organization. [[agent-skills-signing]] counts seven discussions.
 - The MCP endpoint has a fourth tool, `list_unconnected`, which lists the pairs in `matches.md` and can filter by card or layer. A client that only uses tools had no way to reach that list.
