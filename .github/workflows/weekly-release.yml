@@ -1,0 +1,45 @@
+# Cuts an alpha pre-release each Monday when main has changed since the last one.
+name: Weekly alpha release
+
+on:
+  schedule:
+    - cron: '0 16 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '26'
+      - name: Build
+        run: node build.mjs --public
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git fetch origin plugin:refs/remotes/origin/plugin || true
+          last=$(git tag --list 'v*-alpha' --sort=-creatordate | head -n 1)
+          if [ -n "$last" ] && [ -z "$(git log --oneline "$last"..HEAD)" ]; then
+            echo "No changes since $last"
+            exit 0
+          fi
+          day=$(date -u +%F)
+          tag="v$day-alpha"
+          if git rev-parse -q --verify "refs/tags/$tag" > /dev/null; then
+            echo "$tag already exists"
+            exit 0
+          fi
+          node .github/release/notes.mjs "$last" > notes.md
+          gh release create "$tag" --prerelease --target "$GITHUB_SHA" \
+            --title "Alpha, $day" --notes-file notes.md ui/cards.json ui/cards.md
