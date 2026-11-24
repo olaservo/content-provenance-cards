@@ -6,7 +6,7 @@ website: https://w3c.github.io/charter-drafts/2026/agenticweb-wg.html
 news: https://github.com/webmachinelearning/webmcp
 feed: https://github.com/webmachinelearning/webmcp/commits/main.atom
 part_of: "[[w3c]]"
-status: Draft charter in charter refinement ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576), updated 2026-11-23); Agent Identity, Agent Delegation and Agent Interaction Measurement explainers assigned 2026-11-12 for the end of November; WebMCP in origin trials, with more breaking changes expected before a stable subset in early 2027
+status: Draft charter in charter refinement ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576), updated 2026-11-23); Agent Identity, Agent Delegation and Agent Interaction Measurement explainers assigned 2026-11-12 for the end of November; WebMCP in origin trials
 contribute: "[WebMCP issues](https://github.com/webmachinelearning/webmcp/issues), [Web Machine Learning Community Group](https://www.w3.org/community/webmachinelearning/)"
 discussion: "[charter review issue](https://github.com/w3c/strategy/issues/576)"
 tags: [type/working-group, layer/identity]
@@ -27,7 +27,6 @@ Proposed W3C working group on how AI agents interact with the web. Its Agent Ide
 - [@w3c/webmcp-polyfill](https://www.npmjs.com/package/@w3c/webmcp-polyfill) 0.2.0 on npm (checked 2026-11-24).
 
 ## History
-- 2026-11-23: Chrome's André Cipriani Bandarra told WebMCP developers to expect more breaking changes in the next few weeks, leading to a stabilized subset of the API in early 2027 ([PPC Land](https://ppc.land/googles-change-to-chromes-ai-agent-feature-breaks-early-testers-code/), quoting his LinkedIn post).
 - 2026-11-19: WebMCP replaced the `RegisteredTool` dictionary with a `Tool` interface keyed by a UUID, a breaking change ([webmcp#348](https://github.com/webmachinelearning/webmcp/pull/348)).
 - 2026-11-12: The Web Machine Learning Community Group assigned explainers for Agent Identity, Agent Delegation and Agent Interaction Measurement, due by the end of November so the charter can go to Advisory Committee review ([minutes](https://www.w3.org/2026/11/12-webmachinelearning-minutes.html)).
 - 2026-09-28: Charter review issue opened ([w3c/strategy#576](https://github.com/w3c/strategy/issues/576)).
