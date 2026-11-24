@@ -2,6 +2,16 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-23
+
+From the AAIF newsletter of 2026-11-23, checked against each primary source.
+- [[mcp-skills-extension]]: ext-skills v0.1.0, the first tagged release, and agentgateway's merged initial support, both 2026-11-20.
+- [[x402]]: USDC as default stablecoin on eight more EVM networks, a medium advisory on batch-settlement voucher signatures, and AWS Marketplace x402 purchases billed through AgentCore payments. Related now notes Mark Nottingham's 402 draft and the HTTP WG's show of hands on adopting it. [[mpp]] gets the same AgentCore In use bullet and a Compare note that the 402 draft does not mention MPP.
+- [[ietf-web-bot-auth]]: a History section, starting with the IETF 127 session, where tracking of sub-agents, sessions or end users was confirmed out of scope.
+- [[ucp]]: B2B Procurement and Local Services Tech Council nominations, and Shopify moving its Storefront MCP policies tool to UCP's `ask_business`.
+- [[mcp-registry]]: status now names release v1.8.11.
+- Watch list: the Agentic Standards Map, with its releases feed.
+
 ## 2026-11-22
 
 - The explorer intro has a For agents section with the plugin install commands, the MCP endpoint, the skills and the plain files. It says that under the [Skills over MCP extension](https://modelcontextprotocol.io/extensions/skills/overview) a client can read the skills from the endpoint without installing them, and that no such client has been tried yet. Corrections and new cards go to an issue or a pull request.
