@@ -8,10 +8,10 @@ status: Final 2026-09-13; Beta under SEP-3392; ext-skills v0.1.0 tagged 2026-11-
 contribute: "[ext-skills issues](https://github.com/modelcontextprotocol/ext-skills/issues)"
 discussion: "[Discord #skills-over-mcp-wg](https://discord.com/channels/1358869848138059966/1464745826629976084)"
 meetings: "[community calendar: skills-over-mcp-wg](https://meet.modelcontextprotocol.io/tag/skills-over-mcp-wg)"
-tags: [type/specification, venue/mcp, stage/at-rest, topic/skills, medium/code]
-updated: 2026-11-23
+tags: [type/specification, venue/mcp, layer/provenance, layer/licensing, stage/at-rest, topic/skills, medium/code]
+updated: 2026-11-24
 ---
-Serves [[agent-skills]] over MCP, with digests and a `_meta` slot for intermediaries.
+Serves [[agent-skills]] over MCP. Each skill entry carries its `SKILL.md` frontmatter verbatim, including any `license`, and a manifest of its files with SHA-256 digests that a client checks when it reads them ([spec](https://github.com/modelcontextprotocol/ext-skills/blob/main/specification/beta/skills.mdx)).
 
 ## Topics
 - **Skills over MCP**: distributing skills to clients with digests and a `_meta` slot for intermediaries.

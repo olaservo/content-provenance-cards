@@ -5,8 +5,8 @@ website: https://www.fairlytrained.org
 news: https://www.fairlytrained.org/blog
 feed: https://www.fairlytrained.org/blog?format=rss
 status: Quiet since 2024. Its sitemap shows no page changed after 2024-12-17, and the newest blog post is dated 2024-08-01 (read 2026-11-15)
-tags: [type/organization, layer/licensing]
-updated: 2026-11-21
+tags: [type/organization, layer/licensing, topic/quality]
+updated: 2026-11-24
 ---
 Non-profit that certifies generative AI companies, products and models whose training data was licensed for training, openly licensed, in the public domain or owned by the developer. Ed Newton-Rex is its CEO.
 

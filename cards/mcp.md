@@ -11,7 +11,7 @@ contribute: "[contributing guide](https://modelcontextprotocol.io/community/cont
 discussion: "[MCP community channels](https://modelcontextprotocol.io/community/communication), [MCP Contributor Discord](https://discord.gg/modelcontextprotocol)"
 meetings: "[meeting calendar](https://meet.modelcontextprotocol.io/)"
 tags: [type/specification, venue/mcp, layer/provenance, layer/attribution]
-updated: 2026-11-21
+updated: 2026-11-24
 ---
 The protocol between agents and the tools, resources, prompts and skills they read. MCP is the hop where content provenance can be carried or lost.
 
@@ -23,7 +23,7 @@ The protocol between agents and the tools, resources, prompts and skills they re
 ## Related
 - Built-in tracing and metrics in the SDKs: [[otel-mcp]].
 - Threads: [[mcp-c2pa-in-meta]], [[mcp-sep-3094-citations]], [[mcp-skills-extension]], [[mcp-interceptors]].
-- Groups: [[mcp-fsig]], [[mcp-security-ig]].
+- Groups: [[mcp-fsig]].
 - Discovery and authorization: [[mcp-registry]], [[mcp-server-cards]], [[mcp-enterprise-managed-authorization]].
 
 ## Compare

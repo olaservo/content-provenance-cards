@@ -179,7 +179,7 @@ console.log(isPublic ? "private notes excluded (--public)" : `${Object.keys(priv
 
 // Plain files for agents and scripts: the same cards as JSON and Markdown, and an llms.txt that points at them.
 const SITE = siteArg > -1 ? process.argv[siteArg + 1].replace(/\/*$/, "/") : "https://www.olahungerford.com/content-provenance/";
-const TITLE = "Content Provenance, Access and Attribution: A Field Guide";
+const TITLE = "Provenance, Attribution, Rights and Payment for AI Content: A Field Guide from an MCP Point of View";
 const REPO = "https://github.com/olaservo/content-provenance-cards";
 // The Worker serves one file per card. The site's llms.txt points at it.
 const WORKER = "https://content-provenance-field-guide.olahungerford.workers.dev/";

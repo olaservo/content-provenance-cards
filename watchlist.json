@@ -61,5 +61,18 @@
   "news": "https://frmoretto.github.io/agentic-standards-map/",
   "feed": "https://github.com/frmoretto/agentic-standards-map/releases.atom",
   "note": "Francesco Marinoni Moretto's map of agentic commerce standards, with a new version each Monday"
+ },
+ {
+  "id": "mcp-progressive-disclosure-wg",
+  "name": "MCP Progressive Disclosure WG",
+  "news": "https://github.com/modelcontextprotocol/progressive-disclosure-wg",
+  "feed": "https://github.com/modelcontextprotocol/progressive-disclosure-wg/commits/main.atom",
+  "note": "How a server's tools, resources, prompts and tasks load progressively. A card until 2026-11-24, removed because no layer fits it yet. Its draft groups SEP borrows from Agent Skills"
+ },
+ {
+  "id": "mcp-security-ig",
+  "name": "MCP Security Interest Group",
+  "news": "https://modelcontextprotocol.io/community/interest-groups/security",
+  "note": "First stop for MCP security topics, routing each to an owning group. A card until 2026-11-24, removed because it routes no provenance or attribution work yet"
  }
 ]
