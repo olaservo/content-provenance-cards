@@ -13,8 +13,8 @@ Stripe and Tempo protocol: HTTP 402 with a `Payment` authentication scheme, paym
 ## Topics
 - **Method-neutral HTTP payment**: one auth scheme for any payment method, an alternative to [[x402]].
 
-## Compare
-- [draft-nottingham-httpbis-402](https://datatracker.ietf.org/doc/draft-nottingham-httpbis-402/), an individual draft that defines semantics for the 402 status code, does not mention MPP (read 2026-11-23).
+## Related
+- Mark Nottingham's [IETF 127 slides](https://datatracker.ietf.org/meeting/127/materials/slides-127-httpbis-402-payment-required-00) for [draft-nottingham-httpbis-402](https://datatracker.ietf.org/doc/draft-nottingham-httpbis-402/) list draft-httpauth-payment with [[x402]], h402 and L402 as current uses of 402. The draft text names none of them.
 
 ## In use
 - Amazon Bedrock AgentCore payments, generally available since August 2026, pays MPP and x402 sellers ([AWS, 2026-11-19](https://aws.amazon.com/blogs/machine-learning/enable-ai-agents-to-pay-for-aws-marketplace-x402-products-with-amazon-bedrock-agentcore-payments/)).

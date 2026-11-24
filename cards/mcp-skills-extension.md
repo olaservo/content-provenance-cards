@@ -20,7 +20,7 @@ Serves [[agent-skills]] over MCP, with digests and a `_meta` slot for intermedia
 - At-rest signing is not on the Skills WG agenda ([[agent-skills-signing]]).
 
 ## In use
-- [ext-skills v0.1.0](https://github.com/modelcontextprotocol/ext-skills/releases/tag/v0.1.0) (2026-11-20): the Beta specification with a JSON Schema and TypeScript types, against MCP base revision 2026-07-28.
+- [ext-skills v0.1.0](https://github.com/modelcontextprotocol/ext-skills/releases/tag/v0.1.0) (2026-11-20), a GitHub pre-release: the Beta specification with a JSON Schema and TypeScript types, against MCP base revision 2026-07-28.
 
 ## History
 - 2026-11-20: agentgateway merged initial support for the extension, without multiplexing ([agentgateway#4214](https://github.com/agentgateway/agentgateway/pull/4214)).

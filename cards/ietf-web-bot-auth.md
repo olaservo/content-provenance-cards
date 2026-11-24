@@ -6,7 +6,7 @@ website: https://datatracker.ietf.org/wg/webbotauth/about/
 news: https://datatracker.ietf.org/wg/webbotauth/history/
 feed: https://datatracker.ietf.org/feed/group-changes/webbotauth/
 part_of: "[[ietf]]"
-status: WG draft httpsig-protocol-01 (2026-10-29); met at IETF 127 on 2026-11-18; Cloudflare libraries
+status: WG draft httpsig-protocol-01 (2026-10-29); met at IETF 127 on 2026-11-17; Cloudflare libraries
 contribute: "[GitHub issues](https://github.com/webbotauth/draft-ietf-webbotauth-httpsig-protocol/issues)"
 discussion: "[web-bot-auth mailing list](https://mailarchive.ietf.org/arch/browse/web-bot-auth/), [Zulip](https://zulip.ietf.org/#narrow/stream/webbotauth)"
 meetings: "[meetings](https://datatracker.ietf.org/wg/webbotauth/meetings/)"
@@ -25,4 +25,4 @@ Signed bot traffic with RFC 9421 HTTP message signatures and a key directory at 
 - [cloudflare/web-bot-auth](https://github.com/cloudflare/web-bot-auth) publishes libraries for signing and verifying requests. `web-bot-auth` on npm is at 0.2.0 (2026-08-31) and was first published on 2025-04-14.
 
 ## History
-- 2026-11-18: At IETF 127 the chair confirmed that tracking or reputation for sub-agents, sessions or end users is out of scope under the charter, in discussion of the Signed Agent Metadata and PACE proposals. The httpsig-protocol draft will replace the `tag` parameter, define a minimal set of signed components and add signature-failure response headers ([minutes](https://datatracker.ietf.org/meeting/127/materials/minutes-127-webbotauth-00)).
+- 2026-11-17: At IETF 127 the WG re-confirmed that tracking or reputation for sub-agents, sessions or end users is out of scope under the charter, in discussion of the Signed Agent Metadata and PACE proposals. The httpsig-protocol draft will replace the `tag` parameter, define a minimal set of signed components and add signature-failure response headers ([minutes](https://datatracker.ietf.org/meeting/127/materials/minutes-127-webbotauth-00)).
