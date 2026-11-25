@@ -7,7 +7,7 @@ feed: https://ddex.net/feed/
 status: Generative AI Declaration Standard (GAI-D) committee draft finished member comments and goes to peer review next, with publication expected in early 2027 (announced 2026-11-05)
 contribute: "[working groups](https://ddex.net/about-ddex/working-groups/), for Charter and Full Members"
 tags: [type/organization, layer/provenance, layer/attribution, layer/licensing, medium/audio]
-updated: 2026-11-21
+updated: 2026-11-25
 ---
 Not-for-profit membership organisation, set up in 2006, that writes the message standards labels, distributors and streaming services use to exchange release data, credits and sales reports. It says the standards are free to implement and that implementers do not need to be members.
 
@@ -18,8 +18,8 @@ Not-for-profit membership organisation, set up in 2006, that writes the message 
 - **AI as a use type**: naming AI training among the uses a message can refer to. The [allowed value sets](https://kb.ddex.net/reference-material/current-allowed-value-sets/) include `UseForGenerativeAI`, `UseForTrainingGenerativeAI` and `UseForTrainingNonGenerativeAI`.
 - **A standard for AI declarations**: its Artificial Intelligence group is set up "to investigate the metadata requirements for the communication of AI-generated music", including musical works. The group's Generative AI Declaration Standard (GAI-D) has finished member comments on its committee draft and goes to peer review next, with publication expected in early 2027.
 
-## Compare
-- [[c2pa]] records how an asset was made in a signed manifest bound to the file. No DDEX page refers to it, and no C2PA page refers to DDEX (searched 2026-11-15).
+## Related
+- [[c2pa]]'s music guidance, [Applying Content Credentials to Music Assets](https://spec.c2pa.org/specifications/specifications/2.4/music/guidance_applying_content_credential_music_assets.html), has an annex, [DDEX and Metadata Alignment](https://spec.c2pa.org/specifications/specifications/2.4/music/guidance_applying_content_credential_music_assets.html#_ddex_and_metadata_alignment). It says Content Credentials act as "an upstream provenance layer" for DDEX metadata and that "DDEX remains the exchange format for structured music metadata". Labels may use what a credential records "to populate, validate, or support DDEX metadata" (read 2026-11-25).
 
 ## In use
 - ERN 4.3.2 is the latest published version, and DDEX [advises implementing it](https://kb.ddex.net/implementing-each-standard/electronic-release-notification-message-suite-(ern)/). Its data dictionary is dated 2025-06-26. The allowed value sets are at version 012 (2026-09-16).
@@ -27,6 +27,7 @@ Not-for-profit membership organisation, set up in 2006, that writes the message 
 
 ## History
 - 2026-11-05: [Announced](https://ddex.net/ddex-announces-elevenlabs-as-first-ai-company-to-join-membership/) ElevenLabs as the first AI company among its members, and said GAI-D would go through peer review before publication in early 2027.
+- 2025-11: At its 45th plenary in Toronto, DDEX members present agreed to engage further with [[c2pa]] and [[cawg]] to describe music-specific metadata, starting with what is released to the public. The [readout](https://cawg.io/meeting-notes/2025/2025-11-24-media-identifiers-tf/) at CAWG's Media Identifiers Task Force on 2025-11-24 also says DDEX will send more representatives to CAWG.
 - 2025-09-25: Spotify [said](https://newsroom.spotify.com/2025-09-25/spotify-strengthens-ai-protections/) it would support "the new industry standard for AI disclosures in music credits, developed through DDEX", and named 19 labels and distributors working on it.
 - 2024-08-09: Date of the ERN 4.3.1 data dictionary, which includes `ContainsAI` and `AiContribution`.
 - 2006: Founded.

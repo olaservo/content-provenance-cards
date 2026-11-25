@@ -2,6 +2,10 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-25
+
+- [[ddex]] and [[c2pa]] are now linked. C2PA's music guidance has an annex on DDEX metadata, and DDEX members agreed at their 45th plenary in November 2025 to engage further with C2PA and [[cawg]]. The pair is no longer on the not-connected list.
+
 ## 2026-11-24
 
 - The plugin no longer bundles the skills. Its MCP server serves them with the Skills over MCP extension, and as `skill://` resources to clients without it.
