@@ -1,7 +1,7 @@
 {
   "name": "content-provenance-field-guide",
-  "version": "2026.11.24+52",
-  "description": "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Skills for reading, contributing, reviewing and feedback, and a read-only MCP server.",
+  "version": "2026.11.24+53",
+  "description": "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. A read-only MCP server that serves skills for reading, contributing, reviewing and feedback.",
   "author": {
     "name": "Ola Hungerford",
     "url": "https://www.olahungerford.com/about/"
