@@ -4,6 +4,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 ## 2026-11-24
 
+- The plugin no longer bundles the skills. Its MCP server serves them with the Skills over MCP extension, and as `skill://` resources to clients without it.
 - New title: Provenance, Attribution, Rights and Payment for AI Content: A Field Guide from an MCP Point of View. The README, the explorer intro and the agent files (`index.md`, `llms.txt`, `cards.md`) name all seven layers and say the guide is written from inside the MCP community.
 - CONTRIBUTING states the scope: a card is about content that AI systems read, train on, act on or pass along, its tags name at least one layer, and its summary says what the effort does there. An MCP effort also qualifies when it is the place in MCP where work on a layer happens, and then links or compares a card outside MCP on that layer. An effort named after MCP but outside the MCP project takes the same test as any other.
 - The attribution layer now covers measuring a source's contribution to an output so it can be paid, as well as crediting it.

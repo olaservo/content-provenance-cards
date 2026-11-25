@@ -8,7 +8,7 @@ This field guide is an early alpha, shared for feedback, and these are one perso
 
 To read the guide, browse https://www.olahungerford.com/content-provenance/.
 
-To ask an agent about it, install the plugin locally from GitHub. It adds the skills below and a read-only MCP server. The plugin comes in Claude Code's plugin format and in the portable [Agent Plugins](https://agent-plugins.org/) format, which the [compatible clients](https://agent-plugins.org/compatible-clients) load.
+To ask an agent about it, install the plugin locally from GitHub. It adds a read-only MCP server that serves the skills below. The plugin comes in Claude Code's plugin format and in the portable [Agent Plugins](https://agent-plugins.org/) format, which the [compatible clients](https://agent-plugins.org/compatible-clients) load.
 
 In Claude Code:
 
@@ -38,7 +38,7 @@ A prototype at https://content-provenance-field-guide.olahungerford.workers.dev 
 claude mcp add --transport http field-guide https://content-provenance-field-guide.olahungerford.workers.dev/mcp
 ```
 
-Other clients take the same URL as a Streamable HTTP server. A client with the [Skills over MCP extension](https://modelcontextprotocol.io/extensions/skills/overview) (`io.modelcontextprotocol/skills`) reads the [skills](#skills) from the server and needs only this URL, with no local install. Clients that don't support the extension yet use the four read-only tools, which every client gets:
+Other clients take the same URL as a Streamable HTTP server. A client with the [Skills over MCP extension](https://modelcontextprotocol.io/extensions/skills/overview) (`io.modelcontextprotocol/skills`) reads the [skills](#skills) from the server and needs only this URL, with no local install. Clients that don't support the extension yet can read the same skills as resources at `skill://<name>/SKILL.md`, which the server's instructions name. Every client gets the four read-only tools:
 
 | Tool | Returns |
 |---|---|
@@ -54,7 +54,7 @@ Other clients take the same URL as a Streamable HTTP server. A client with the [
 - `content-provenance-field-guide-feedback` files an issue with your own GitHub account when a card is wrong, stale or missing. The guide never posts anything itself.
 - `content-provenance-field-guide-reviewer` checks a card change against [CONTRIBUTING.md](CONTRIBUTING.md). The `pr-review` workflow runs it on pull requests.
 
-They come with the plugin, over the MCP endpoint, or as plain files at `skills/<name>/` on the Worker.
+The MCP endpoint serves them, so they come with the plugin or with the endpoint URL alone. They are also plain files at `skills/<name>/` on the Worker.
 
 ### Plain files
 

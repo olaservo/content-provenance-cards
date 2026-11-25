@@ -4,7 +4,7 @@
 // --public ignores private/ and leaves out cards marked `publish: false`.
 // --out <dir> also copies the finished site to <dir>.
 // --worker also writes the site the Cloudflare Worker serves to worker/site, the skills and card data it bundles to worker/generated,
-// and the same skills as an Agent Plugins package to plugin/.
+// and an Agent Plugins package with the MCP endpoint to plugin/.
 // --site <url> sets the URL the output is published at.
 // No dependencies. Frontmatter supports scalars, quoted strings and inline [a, b] lists.
 import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, copyFileSync, rmSync, statSync } from "node:fs";
@@ -323,7 +323,7 @@ A prototype at ${WORKER} serves each card as its own file. It is experimental an
 - [Guide index](${WORKER}index.md): the layer and stage definitions and one line per card. One card is at ${WORKER}cards/<id>.md
 - [Field guide skill](${WORKER}skills/${READER}/SKILL.md): how to answer questions from the guide, loading only the cards a question needs
 - [More for agents](${WORKER}llms.txt): the cards by layer, the contributor and feedback skills and an MCP server
-- [Plugin](${REPO}#start-here): the skills and the MCP server for Codex and Claude Code
+- [Plugin](${REPO}#start-here): the MCP server, which serves the skills, for Codex and Claude Code
 
 ## Updates and topics
 
@@ -509,8 +509,8 @@ if (workerMode) {
       "- [Changelog](changelog.md): cards added and changed in the guide.",
       "- Everything in one file: [cards.md](cards.md) or [cards.json](cards.json).",
       `- As an agent skill: [${READER}](skills/${READER}/SKILL.md). To suggest a change: [${CONTRIBUTOR}](skills/${CONTRIBUTOR}/SKILL.md). To report a problem: [${FEEDBACK}](skills/${FEEDBACK}/SKILL.md).`,
-      `- Over MCP: ${SITE}mcp serves the skills with the Skills extension, plus tools to search cards and list updates.`,
-      `- As a plugin for Codex and Claude Code, with the skills and the MCP server: ${REPO}#start-here.`,
+      `- Over MCP: ${SITE}mcp serves the skills with the Skills extension and as skill:// resources, plus tools to search cards and list updates.`,
+      `- As a plugin for Codex and Claude Code, with the MCP server: ${REPO}#start-here.`,
       "",
       "## Layers",
       "",
@@ -592,9 +592,9 @@ One card is at ${SITE}cards/<id>.md and ${SITE}cards/<id>.json. The ids are in t
 - [Contributor skill](${SITE}skills/${CONTRIBUTOR}/SKILL.md): when and how to suggest a new card or a correction
 - [Feedback skill](${SITE}skills/${FEEDBACK}/SKILL.md): when and how to report a wrong, stale or missing card, or a problem with the tools, as a GitHub issue
 
-An MCP server at ${SITE}mcp serves the skills with the Skills extension (io.modelcontextprotocol/skills), plus tools to search cards and list updates.
+An MCP server at ${SITE}mcp serves the skills with the Skills extension (io.modelcontextprotocol/skills), and as skill:// resources to clients without it, plus tools to search cards and list updates.
 
-The skills and the MCP server also install as one plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
+The MCP server also installs as a plugin in the Agent Plugins layout. The steps are at ${REPO}#start-here.
 
 ## Optional
 
@@ -752,7 +752,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   put(genDir, "data.json", JSON.stringify({ site: SITE, title: TITLE, as_of: asOf, vocab, cards, updates, matches: pairs }));
   console.log(`${Object.keys(site).length + 3} files -> worker/site, ${Object.keys(skills).length} skill files -> worker/generated`);
 
-  // The plugin: the skills and the MCP endpoint in one directory, in the Agent Plugins layout (plugin.json, mcp.json, skills/).
+  // The plugin: the MCP endpoint in the Agent Plugins layout (plugin.json, mcp.json). The endpoint serves the skills.
   // Claude Code reads .claude-plugin/plugin.json and .mcp.json, so the package carries those as well.
   // The version is the newest date in the cards or the changelog, then the number of commits on the branch: 2026.11.17+19.
   // Codex and Claude Code keep an installed copy until the version string changes, and two publishes can share a date.
@@ -764,7 +764,7 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
   const about = {
     name: READER,
     version: newest.split("-").map(Number).join(".") + commits,
-    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. Skills for reading, contributing, reviewing and feedback, and a read-only MCP server.",
+    description: "Cards for the standards bodies, working groups, specifications and proposals on content provenance, access, licensing, attribution and payment for AI systems. A read-only MCP server that serves skills for reading, contributing, reviewing and feedback.",
     author: { name: "Ola Hungerford", url: "https://www.olahungerford.com/about/" },
     homepage: SITE,
     repository: REPO,
@@ -792,10 +792,9 @@ ${[loc("", asOf), loc("cards/", asOf), ...cards.map((c) => loc("cards/" + c.id, 
       "",
       `Generated from ${REPO} by build.mjs${asOf ? ", with cards as of " + asOf : ""}. Do not edit these files. Changes go to the cards and skills on the main branch.`,
       "",
-      `Two agent skills and the MCP server at ${SITE}mcp, in the [Agent Plugins](https://agent-plugins.org/) layout. Install steps are in the [README on main](${REPO}#start-here).`,
+      `The MCP server at ${SITE}mcp, in the [Agent Plugins](https://agent-plugins.org/) layout. The server serves the skills with the Skills over MCP extension, and as \`skill://\` resources to clients without it. Install steps are in the [README on main](${REPO}#start-here).`,
       "",
     ].join("\n"),
-    ...Object.fromEntries(Object.entries(skills).map(([f, text]) => ["skills/" + f, text])),
   };
   const pluginDir = join(root, "plugin");
   rmSync(pluginDir, { recursive: true, force: true });

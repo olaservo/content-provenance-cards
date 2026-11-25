@@ -54,9 +54,9 @@ The files under `skills/` contain `{{site}}` and `{{repo}}`, which the `--worker
 
 ## The plugin
 
-The plugin holds the skills and the MCP endpoint in the [Agent Plugins](https://agent-plugins.org/) 1.0.0 layout: a root `plugin.json`, an `mcp.json` and a `skills/` folder. The same folder carries `.claude-plugin/plugin.json` and `.mcp.json`, which Claude Code reads. The published copy is the `plugin` branch, and `.claude-plugin/marketplace.json` on `main` points at that branch.
+The plugin holds the MCP endpoint in the [Agent Plugins](https://agent-plugins.org/) 1.0.0 layout: a root `plugin.json` and an `mcp.json`. It carries no skills. The endpoint serves them with the Skills over MCP extension, and as `skill://` resources to clients without it. The same folder carries `.claude-plugin/plugin.json` and `.mcp.json`, which Claude Code reads. The published copy is the `plugin` branch, and `.claude-plugin/marketplace.json` on `main` points at that branch.
 
-The reader skill in the plugin carries the cards as they were at the last publish. The MCP tools read the Worker's copy. The plugin's version is the newest date in the cards or the changelog, then the number of commits on `main`, written as `2026.11.17+19`. Codex and Claude Code keep an installed copy until that string changes.
+The plugin's version is the newest date in the cards or the changelog, then the number of commits on `main`, written as `2026.11.17+19`. Codex and Claude Code keep an installed copy until that string changes.
 
 ## Releases
 
