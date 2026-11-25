@@ -344,7 +344,7 @@ function initGraph() {
     const t = mk("text", n.el, { x: n.r + 3, y: 4 });
     t.textContent = n.c.name;
   }
-  $("legend").innerHTML = LAYERS.map(l => `<div><span style="background:var(--l-${l})"></span>${l}</div>`).join("") + `<div class="note">size: number of sourced links</div><div><svg width="26" height="8"><line class="edge on" x1="0" y1="4" x2="26" y2="4"/></svg> a source connects them</div><div><svg width="26" height="8"><line class="edge on cmp" x1="0" y1="4" x2="26" y2="4"/></svg> compared by this guide</div>`;
+  $("legend").innerHTML = LAYERS.map(l => `<div><span style="background:var(--l-${l})"></span>${l}</div>`).join("") + `<div class="note">size: number of sourced links in this guide</div><div><svg width="26" height="8"><line class="edge on" x1="0" y1="4" x2="26" y2="4"/></svg> a source connects them</div><div><svg width="26" height="8"><line class="edge on cmp" x1="0" y1="4" x2="26" y2="4"/></svg> compared by this guide</div>`;
 
   for (let i = 0; i < 250; i++) tick();
   fit();
