@@ -5,6 +5,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 ## 2026-11-25
 
 - [[ddex]] and [[c2pa]] are now linked. C2PA's music guidance has an annex on DDEX metadata, and DDEX members agreed at their 45th plenary in November 2025 to engage further with C2PA and [[cawg]]. The pair is no longer on the not-connected list.
+- In the graph, a node's size now counts only the links a source backs. A link that appears only under Compare still draws as a dotted edge and adds nothing to size. Cards with six or more sourced links keep their label showing.
 
 ## 2026-11-24
 

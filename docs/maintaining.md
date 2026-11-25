@@ -33,7 +33,7 @@ node build.mjs --public --out ../olaservo.github.io/content-provenance  # publis
 
 Then open `ui/index.html` directly in a browser. The generated files are gitignored.
 
-In the explorer, the Graph button draws cards as nodes and `[[links]]` as edges, dotted where the only links between two cards are under Compare, coloured by the first `layer/` tag and sized by link count. Hover to see neighbours, click to open a card, drag to move nodes or pan, scroll to zoom. Tag filters and search fade out cards that do not match.
+In the explorer, the Graph button draws cards as nodes and `[[links]]` as edges, dotted where the only links between two cards are under Compare, coloured by the first `layer/` tag and sized by the number of solid edges. Hover to see neighbours, click to open a card, drag to move nodes or pan, scroll to zoom. Tag filters and search fade out cards that do not match.
 
 To use the cards in Obsidian, open this folder as a vault. Dataview can query the frontmatter, for example `TABLE status FROM #layer/attribution`.
 
