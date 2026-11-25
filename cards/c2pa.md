@@ -8,7 +8,7 @@ feed: https://c2pa.org/feed/
 status: Spec 2.5 published October 2026
 tags: [type/organization, layer/provenance, stage/at-rest, stage/in-transit, stage/trust, medium/image, medium/video, medium/audio, medium/text, topic/lineage]
 contribute: "[membership](https://c2pa.org/membership/), [spec issues](https://github.com/c2pa-org/specifications/issues)"
-updated: 2026-11-22
+updated: 2026-11-25
 ---
 Standards body for content credentials: signed manifests (claims and assertions) bound to an asset, with ingredients for derived works. Reference code is maintained by the [[content-authenticity-initiative]].
 
@@ -23,6 +23,7 @@ Standards body for content credentials: signed manifests (claims and assertions)
 ## Related
 - Identity and consent assertions come from [[cawg]].
 - Signing skill folders: [[agent-skills-signing]].
+- Its music guidance, [Applying Content Credentials to Music Assets](https://spec.c2pa.org/specifications/specifications/2.4/music/guidance_applying_content_credential_music_assets.html), has an annex on aligning credentials with [[ddex]] metadata (read 2026-11-25).
 - [[spur-coalition]]'s Content Telemetry accepts a C2PA manifest hash as a content identifier.
 
 ## Compare

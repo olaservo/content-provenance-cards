@@ -18,9 +18,9 @@
  { "id": "find-servers", "kind": "lookup", "question": "How does an agent find the MCP servers a domain offers?", "cards": ["mcp-server-cards", "ai-catalog", "ard", "mcp-registry"] },
  { "id": "entitlement", "kind": "lookup", "question": "How does an AI assistant learn whether a user's library has licensed an article?", "cards": ["getftr", "kbart"] },
  { "id": "scholarly-ai", "kind": "lookup", "question": "Who in scholarly publishing is working on provenance and usage reporting for AI?", "cards": ["trace", "niso", "counter"] },
- { "id": "who-should-talk", "kind": "match", "question": "Who should talk sometime?", "pairs": [["agent-skills-signing", "ai-catalog"], ["c2pa", "ddex"], ["content-telemetry", "internet-licensing-collective"]], "say": "these are pairs the guide compares and no primary source connects, with the date searched" },
+ { "id": "who-should-talk", "kind": "match", "question": "Who should talk sometime?", "pairs": [["agent-skills-signing", "ai-catalog"], ["content-telemetry", "internet-licensing-collective"]], "say": "these are pairs the guide compares and no primary source connects, with the date searched" },
  { "id": "music-and-web", "kind": "match", "question": "Who in music should talk to someone working on web publishing?", "pairs": [["cisac", "internet-licensing-collective"], ["gema", "internet-licensing-collective"]] },
  { "id": "skills-signing", "kind": "match", "question": "Who is working on signing agent skills without citing each other?", "pairs": [["agent-skills-signing", "ai-catalog"], ["agent-skills-signing", "aaif-security-privacy-wg"], ["agent-skills-signing", "agent-plugins"]] },
  { "id": "agent-identity", "kind": "match", "question": "Which agent identity efforts do not reference each other?", "pairs": [["aims", "ietf-web-bot-auth"], ["aaif-identity-trust-wg", "aims"]] },
- { "id": "ddex-c2pa", "kind": "match", "question": "Is DDEX connected to C2PA?", "pairs": [["c2pa", "ddex"]], "say": "no primary source connects them; do not say they have never talked" }
+ { "id": "ddex-c2pa", "kind": "lookup", "question": "Is DDEX connected to C2PA?", "cards": ["ddex", "c2pa"], "say": "yes: C2PA's music guidance has an annex on DDEX metadata, and DDEX members agreed in November 2025 to engage further with C2PA and CAWG" }
 ]
