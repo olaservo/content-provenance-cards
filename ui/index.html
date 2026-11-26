@@ -313,7 +313,7 @@ function mk(tag, parent, attrs = {}) {
 function initGraph() {
   const nodes = cards.map((c, i) => {
     const a = (i / cards.length) * Math.PI * 2;
-    return { id: c.id, c, x: Math.cos(a) * 300, y: Math.sin(a) * 300, vx: 0, vy: 0, deg: 0 };
+    return { id: c.id, c, x: Math.cos(a) * 300, y: Math.sin(a) * 300, vx: 0, vy: 0, src: 0 };
   });
   const idx = Object.fromEntries(nodes.map(n => [n.id, n]));
   const seen = new Set(), edges = [];
@@ -324,8 +324,10 @@ function initGraph() {
     seen.add(key);
     // Dotted when every link between the two cards sits under a Compare heading.
     const o = byId[l], cmpOnly = (a, b) => !a.links.includes(b.id) || (a.compares || []).includes(b.id);
-    edges.push({ s: idx[c.id], t: idx[l], cmp: cmpOnly(c, o) && cmpOnly(o, c) });
-    idx[c.id].deg++; idx[l].deg++;
+    const cmp = cmpOnly(c, o) && cmpOnly(o, c);
+    edges.push({ s: idx[c.id], t: idx[l], cmp });
+    // Node size counts sourced links only.
+    if (!cmp) { idx[c.id].src++; idx[l].src++; }
   }
   G = { nodes, edges, idx, alpha: 1 };
 
@@ -335,14 +337,14 @@ function initGraph() {
   const eg = mk("g", vp), ng = mk("g", vp);
   for (const e of edges) e.el = mk("line", eg, { class: "edge" + (e.cmp ? " cmp" : "") });
   for (const n of nodes) {
-    n.r = 4 + Math.sqrt(n.deg) * 2.2;
+    n.r = 4 + Math.sqrt(n.src) * 2.2;
     n.el = mk("g", ng, { class: "node" });
     n.el.dataset.id = n.id;
     mk("circle", n.el, { r: n.r, fill: `var(--l-${layerOf(n.c)})` });
     const t = mk("text", n.el, { x: n.r + 3, y: 4 });
     t.textContent = n.c.name;
   }
-  $("legend").innerHTML = LAYERS.map(l => `<div><span style="background:var(--l-${l})"></span>${l}</div>`).join("") + `<div class="note">size: number of links</div><div><svg width="26" height="8"><line class="edge on" x1="0" y1="4" x2="26" y2="4"/></svg> a source connects them</div><div><svg width="26" height="8"><line class="edge on cmp" x1="0" y1="4" x2="26" y2="4"/></svg> compared by this guide</div>`;
+  $("legend").innerHTML = LAYERS.map(l => `<div><span style="background:var(--l-${l})"></span>${l}</div>`).join("") + `<div class="note">size: number of sourced links in this guide</div><div><svg width="26" height="8"><line class="edge on" x1="0" y1="4" x2="26" y2="4"/></svg> a source connects them</div><div><svg width="26" height="8"><line class="edge on cmp" x1="0" y1="4" x2="26" y2="4"/></svg> compared by this guide</div>`;
 
   for (let i = 0; i < 250; i++) tick();
   fit();
@@ -409,7 +411,7 @@ function styleGraph() {
     if (!vis.has(n.id)) cls.push("dim");
     else if (nb.size && !nb.has(n.id)) cls.push("fade");
     if (n.id === sel) cls.push("sel");
-    if (nb.has(n.id) || n.deg >= 7 || (few && vis.has(n.id))) cls.push("lab");
+    if (nb.has(n.id) || n.src >= 6 || (few && vis.has(n.id))) cls.push("lab");
     n.el.setAttribute("class", cls.join(" "));
   }
   for (const e of G.edges) {
