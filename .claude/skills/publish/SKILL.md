@@ -38,7 +38,7 @@ Running this skill is the request to open and merge both PRs, deploy the Worker,
 1. From `worker/`, run the `build.command` in `wrangler.jsonc`. It is the same build `wrangler deploy` runs. It also writes `plugin/` in the repo root.
 2. Run `bash ../.claude/skills/publish/check-private.sh site generated ../plugin`. It must exit 0.
 3. Run `npx wrangler deploy`.
-4. Fetch `index.md` from the Worker and confirm the card count. If cards were added, fetch one of them at `cards/<id>.md`.
+4. Fetch `cards.json` from the Worker and confirm the length of `cards` and `as_of` match the build. If cards were added, fetch one of them at `cards/<id>.md`.
 
 ## 4. Plugin
 
