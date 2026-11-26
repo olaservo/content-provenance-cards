@@ -215,7 +215,7 @@ const partDefs = [
   "",
   ...Object.entries(vocab.participation).map(([k, v]) => `- ${partLabel(k)}: ${v}.`),
 ];
-const blurb = `${cards.length} cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited and its contribution measured (attribution), plus who the agent or signer is (identity) and the bodies and law around them (governance). It is written from inside the Model Context Protocol (MCP) community, so MCP efforts get more cards and more detail than other venues.`;
+const blurb = `Cards for the organizations, working groups, specifications and proposals that decide where content came from (provenance), what may be done with it (access, licensing, payment) and whether its source gets credited and its contribution measured (attribution), plus who the agent or signer is (identity) and the bodies and law around them (governance). It is written from inside the Model Context Protocol (MCP) community, so MCP efforts get more cards and more detail than other venues.`;
 const caveat = `This field guide is an early alpha, shared for feedback. Card fields, the MCP tools, the plugin layout and the published file formats may change. Send feedback as an issue or pull request at ${REPO}. One person's working notes. Status lines carry the dates the sources gave, so check upstream before relying on one.`;
 // The cards and everything built from them are CC BY 4.0. The code is MIT. See the README.
 const LICENCE = "https://creativecommons.org/licenses/by/4.0/";
