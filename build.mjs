@@ -405,14 +405,17 @@ const matchesMd = (href) =>
 
 // smoke/questions.json lists questions the guide should be able to answer, with the cards or pairs a good answer names.
 // A "match" question expects pairs that are still unconnected. It fails when a source turns up and the link moves out of Compare.
+// "pairs": "any" accepts any unconnected pair, for a question too open to list the pairs for.
 const smokeFile = join(root, "smoke", "questions.json");
 if (existsSync(smokeFile)) {
   const isMatch = (x, y) => matches.some(([a, o]) => (a.id === x && o.id === y) || (a.id === y && o.id === x));
   let bad = 0;
   const questions = JSON.parse(readFileSync(smokeFile, "utf8"));
   for (const q of questions) {
-    for (const id of [...(q.cards || []), ...(q.pairs || []).flat()]) if (!ids.has(id)) (bad++, console.warn(`smoke ${q.id}: no card ${id}`));
-    for (const [x, y] of q.pairs || []) if (ids.has(x) && ids.has(y) && !isMatch(x, y)) (bad++, console.warn(`smoke ${q.id}: ${x} and ${y} are no longer an unconnected pair`));
+    const pairs = Array.isArray(q.pairs) ? q.pairs : [];
+    if (q.pairs && !pairs.length && (q.pairs !== "any" || !matches.length)) (bad++, console.warn(`smoke ${q.id}: "pairs" names no unconnected pair`));
+    for (const id of [...(q.cards || []), ...pairs.flat()]) if (!ids.has(id)) (bad++, console.warn(`smoke ${q.id}: no card ${id}`));
+    for (const [x, y] of pairs) if (ids.has(x) && ids.has(y) && !isMatch(x, y)) (bad++, console.warn(`smoke ${q.id}: ${x} and ${y} are no longer an unconnected pair`));
   }
   console.log(`smoke: ${questions.length} questions, ${bad} problems`);
 }

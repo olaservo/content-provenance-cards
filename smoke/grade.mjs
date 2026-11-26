@@ -3,8 +3,12 @@
 // answers.json is a list of { id, answer, cards: [{ id, updated }] }, one per question.
 // A question passes when the answer names at least half of its expected cards, names no card
 // for a question that expects none, or names both cards of at least one expected pair.
+// Three expected cards are enough for a longer list, since the agent is asked for a short answer.
+// A question with "pairs": "any" passes when two of the cards it names are an unconnected pair.
 // Every `updated` the agent reports must match the card in this checkout, which shows it read the cards over MCP.
+// Runs the public build first, so ui/ holds a public build afterwards.
 import { readFileSync, readdirSync, appendFileSync } from "node:fs";
+import { execFileSync } from "node:child_process";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -18,6 +22,12 @@ for (const f of readdirSync(join(root, "cards")).filter((f) => f.endsWith(".md")
   updatedOf[f.slice(0, -3)] = m ? m[1] : null;
 }
 const ids = Object.keys(updatedOf);
+
+// The build writes each card's links and which of them sit only under Compare.
+execFileSync(process.execPath, [join(root, "build.mjs"), "--public"], { stdio: "ignore" });
+const built = Object.fromEntries(JSON.parse(readFileSync(join(root, "ui", "cards.json"), "utf8")).cards.map((c) => [c.id, c]));
+const cmpOnly = (a, b) => !a.links.includes(b.id) || a.compares.includes(b.id);
+const unconnected = (a, b) => (a.links.includes(b.id) || b.links.includes(a.id)) && cmpOnly(a, b) && cmpOnly(b, a);
 
 const rows = [];
 let failed = 0, datesChecked = 0, datesWrong = [];
@@ -35,6 +45,10 @@ for (const q of questions) {
   let pass, detail;
   if (!a || !a.answer) {
     pass = false; detail = "no answer";
+  } else if (q.pairs === "any") {
+    const got = [...named].map((id) => built[id]).filter(Boolean);
+    const hit = got.flatMap((x, i) => got.slice(i + 1).filter((y) => unconnected(x, y)));
+    pass = hit.length > 0; detail = `${hit.length} unconnected pairs among ${got.length} cards`;
   } else if (q.pairs) {
     const hit = q.pairs.filter(([x, y]) => named.has(x) && named.has(y));
     pass = hit.length > 0; detail = `${hit.length} of ${q.pairs.length} pairs`;
@@ -43,7 +57,7 @@ for (const q of questions) {
   } else {
     const found = q.cards.filter((id) => named.has(id));
     const missing = q.cards.filter((id) => !named.has(id));
-    pass = found.length >= Math.ceil(q.cards.length / 2);
+    pass = found.length >= Math.min(3, Math.ceil(q.cards.length / 2));
     detail = `${found.length} of ${q.cards.length} cards` + (missing.length ? `, missing ${missing.join(", ")}` : "");
   }
   if (!pass) failed++;

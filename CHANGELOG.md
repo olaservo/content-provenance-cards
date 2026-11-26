@@ -6,6 +6,7 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 
 - [[ddex]] and [[c2pa]] are now linked. C2PA's music guidance has an annex on DDEX metadata, and DDEX members agreed at their 45th plenary in November 2025 to engage further with C2PA and [[cawg]]. The pair is no longer on the not-connected list.
 - In the graph, a node's size now counts only the links a source backs. A link that appears only under Compare still draws as a dotted edge and adds nothing to size. Cards with six or more sourced links keep their label showing.
+- The MCP smoke test scores two questions differently. "Who should talk sometime?" passes when the answer names any pair on the not-connected list, where it used to expect one of two listed pairs. A question that expects more than six cards passes when the answer names three of them.
 
 ## 2026-11-24
 
