@@ -2,6 +2,10 @@
 
 Changes to the cards and the explorer, newest first. Dates are when the change was made in the source repo. The site is rebuilt from it afterwards.
 
+## 2026-11-27
+
+- A weekly workflow reads the feeds on the watch list and opens a draft pull request when a new post supports a card update. Each one is checked by the maintainer before it merges, and its changelog lines are added then.
+
 ## 2026-11-26
 
 - The intro and the guide's description no longer state the number of cards. The count next to the card list is still worked out from the cards when the page loads.

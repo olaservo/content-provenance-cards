@@ -73,4 +73,6 @@ Required: `name`, `type`, `tags`, and a `## Topics` section. Everything else is 
 
 The build collects every card's `news` and `feed` into `watch.md` and `watch.json`, and adds the entries in `watchlist.json`. That file is for sources with no card: a blog that covers the field and belongs to no single effort, or an effort that has not earned a card yet. When one of them gets a card, move its `news` and `feed` to the card. The build warns when an id is in both places.
 
-`watch.json` has one entry per source under `sources`, each with `id`, `name`, `news` and `feed` as lists, and `card`, which is the card's id or `null`. It is the list a feed watcher reads. Fetching the feeds and analysing the posts happen outside this repo.
+`watch.json` has one entry per source under `sources`, each with `id`, `name`, `news` and `feed` as lists, and `card`, which is the card's id or `null`. It is the list a feed watcher reads.
+
+The `feed-watch` workflow reads it each week, see [docs/maintaining.md](docs/maintaining.md). It drafts edits only to cards whose own feed, or whose parent's feed, carried the post. Posts from sources with no card go in the pull request description. Sources with a news page and no feed are not checked, and neither are the cards that have no `news` or `feed`.
