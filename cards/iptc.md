@@ -9,7 +9,7 @@ status: RightsML and the Data Mining property; Verified News Publishers List; an
 contribute: "[membership](https://iptc.org/participate/membership/)"
 discussion: "[public discussion forums](https://iptc.org/about-iptc/working-groups/), [RightsML forum](https://groups.io/g/iptc-rightsml)"
 tags: [type/organization, layer/licensing, layer/access, layer/provenance, stage/trust, medium/image, medium/video]
-updated: 2026-11-21
+updated: 2026-11-27
 ---
 News-media standards body. RightsML is a profile of [[w3c-odrl]]. Its photo metadata standard has a Data Mining property. [[cawg]]'s metadata assertion can bind IPTC metadata to a C2PA manifest. With Project Origin it runs the Origin Verified News Publishers List for [[c2pa]] signing.
 
@@ -21,3 +21,6 @@ News-media standards body. RightsML is a profile of [[w3c-odrl]]. Its photo meta
 ## In use
 - The [Origin Verified News Publishers List](https://iptc.org/verified-news-publishers-list/) names the BBC, CBC/Radio-Canada, WDR, Deutsche Welle, AFP, France Télévisions, NTB and RTÉ (read 2026-11-15). Its sample content is images.
 - The C2PA conforming products list (2026-11-14) has IPTC's C2PA Signer Tool (2026-03-20) and Content Credentials Signing Service (2026-11-11), CBC/Radio-Canada's Content Provenance Platform (2026-08-26) and BBC Image Distribution Services (2026-10-16). All four sign images or video.
+
+## History
+- 2026-11-19: The new Controlled Vocabulary server took over the cv.iptc.org address, replacing the server launched in 2014 ([IPTC](https://iptc.org/news/new-controlled-vocabulary-server-now-live-at-cv-iptc-org/)). It publishes IPTC's NewsCodes, including Digital Source Type. IPTC says every vocabulary and concept keeps its identifier URI.
