@@ -5,6 +5,8 @@ Changes to the cards and the explorer, newest first. Dates are when the change w
 ## 2026-11-27
 
 - A weekly workflow reads the feeds on the watch list and opens a draft pull request when a new post supports a card update. Each one is checked by the maintainer before it merges, and its changelog lines are added then.
+- [[iptc]] now has a History section, starting with the new Controlled Vocabulary server taking over cv.iptc.org on 2026-11-19. It serves NewsCodes such as Digital Source Type under the same identifier URIs.
+- [[cawg]] plans to become independent of [[dif]], and the DIF Steering Committee supports transferring the standards. Its status and History say so, along with the interim S/MIME trust-list sunset being extended to 31 December 2027.
 
 ## 2026-11-26
 
