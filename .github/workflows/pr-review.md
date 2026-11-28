@@ -19,6 +19,8 @@ tools:
     toolsets: [pull_requests, repos]
   bash: ["cat", "ls", "head", "grep", "node build.mjs", "git diff:*", "git log:*"]
 safe-outputs:
+  # Hosts in watch.json, so links in reviews are not redacted. The build warns when one is missing.
+  allowed-domains: [default-safe-outputs, aaif.io, ai-disclosures.org, asimovaddendum.substack.com, blog.identity.foundation, blog.modelcontextprotocol.io, blog.okfn.org, blogs.bing.com, c2pa.org, contentauthenticity.org, creativecommons.org, datatracker.ietf.org, ddex.net, developers.google.com, encypher.com, frmoretto.github.io, github.com, iabtechlab.com, internet.exchangepoint.tech, internetcollective.org, iptc.org, kgi.georgetown.edu, mlcommons.org, modelcontextprotocol.io, openai.com, openattribution.org, openfuture.eu, openlineage.io, opentelemetry.io, rslstandard.org, scholarlykitchen.sspnet.org, ucp.dev, wikimediafoundation.org, www.cisac.org, www.countermetrics.org, www.fairlytrained.org, www.gema.de, www.getfulltextresearch.com, www.ietf.org, www.niso.org, www.socan.com, www.spurcoalition.org, www.stim.se, www.w3.org, x402.org]
   create-pull-request-review-comment:
     max: 20
   submit-pull-request-review:

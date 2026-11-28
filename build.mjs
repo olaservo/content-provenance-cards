@@ -130,15 +130,16 @@ const watchlist = JSON.parse(readFileSync(join(root, "watchlist.json"), "utf8"))
 for (const s of [...cards, ...watchlist]) for (const u of [...s.news, ...s.feed]) if (!/^https?:\/\/\S+$/.test(u)) console.warn(`news or feed of ${s.id} is not a URL: ${u}`);
 for (const w of watchlist) if (ids.has(w.id)) console.warn(`watchlist.json: ${w.id} has a card, so its news and feed belong there`);
 const watched = cards.filter((c) => c.news.length || c.feed.length);
-// The feed-watch workflow redacts links in its pull request description unless the host is in its allowed-domains. Private cards are left out.
-const feedWatch = join(root, ".github", "workflows", "feed-watch.md");
-if (existsSync(feedWatch)) {
-  const allowed = new Set((readFileSync(feedWatch, "utf8").match(/allowed-domains:\s*\[([^\]]*)\]/)?.[1] || "").split(",").map((s) => s.trim().replace(/^["']|["']$/g, "")));
+// The feed-watch and pr-review workflows redact links in what they post unless the host is in their allowed-domains. Private cards are left out.
+for (const workflow of ["feed-watch.md", "pr-review.md"]) {
+  const file = join(root, ".github", "workflows", workflow);
+  if (!existsSync(file)) continue;
+  const allowed = new Set((readFileSync(file, "utf8").match(/allowed-domains:\s*\[([^\]]*)\]/)?.[1] || "").split(",").map((s) => s.trim().replace(/^["']|["']$/g, "")));
   const inRepo = new Set(mdFiles(join(root, "cards")).map((f) => basename(f, ".md")));
   const missing = new Map();
   for (const s of [...watched.filter((c) => inRepo.has(c.id)), ...watchlist])
     for (const u of [...s.news, ...s.feed]) if (!allowed.has(new URL(u).hostname)) missing.set(new URL(u).hostname, s.id);
-  for (const [host, id] of missing) console.warn(`feed-watch.md: allowed-domains has no ${host}, from ${id}`);
+  for (const [host, id] of missing) console.warn(`${workflow}: allowed-domains has no ${host}, from ${id}`);
 }
 
 // "## History" bullets are dated events: "- 2026-11-12: what happened". A date is YYYY, YYYY-MM or YYYY-MM-DD.
